@@ -41,11 +41,11 @@
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
+            "show_text_box": false,
+            "box_align": "bottom-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "color_scheme": "scheme-3"
           }
         }
       },
