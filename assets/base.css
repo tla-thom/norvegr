@@ -2381,7 +2381,7 @@ input[type='checkbox'] {
 }
 
 .transparent-header #MainContent > .shopify-section:first-child {
-  margin-top: calc(-1 * var(--header-group-height, var(--header-height, 0px)));
+  margin-top: calc(-1 * var(--header-height, 0px));
   position: relative;
   z-index: 1;
 }
