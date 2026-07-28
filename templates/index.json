@@ -36,6 +36,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/the-norvegr-way-scaled.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
