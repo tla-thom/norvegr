@@ -38,7 +38,7 @@
       "settings": {
         "image": "shopify://shop_images/the-norvegr-way-scaled.jpg",
         "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
@@ -84,7 +84,7 @@
         "heading": "",
         "heading_size": "h2",
         "enable_video_looping": true,
-        "enable_autoplay": false,
+        "enable_autoplay": true,
         "enable_mute": true,
         "video": "shopify://files/videos/nor.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
