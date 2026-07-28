@@ -323,20 +323,39 @@
 
   {%- liquid
     assign transparent_header = false
-    assign page_metaobjects = null
+    assign header_metaobject = null
+    assign transparent_header_metaobject = null
 
     if template.name == 'product'
-      assign page_metaobjects = product.metafields.custom.metaobjects.value
+      assign header_metaobject = product.metafields.custom.header.value
+      assign transparent_header_metaobject = product.metafields.custom.transparent_header.value
     elsif template.name == 'collection'
-      assign page_metaobjects = collection.metafields.custom.metaobjects.value
+      assign header_metaobject = collection.metafields.custom.header.value
+      assign transparent_header_metaobject = collection.metafields.custom.transparent_header.value
     elsif template.name == 'page'
-      assign page_metaobjects = page.metafields.custom.metaobjects.value
+      assign header_metaobject = page.metafields.custom.header.value
+      assign transparent_header_metaobject = page.metafields.custom.transparent_header.value
     endif
 
-    if page_metaobjects != blank and page_metaobjects.header == 1
+    comment
+      Transparent header is enabled when either:
+      - A "Transparent header" metaobject entry is assigned, or
+      - A "Header" metaobject entry is assigned with its Header integer field set to 1
+    endcomment
+
+    if transparent_header_metaobject != blank
       assign transparent_header = true
+    elsif header_metaobject != blank
+      assign header_setting = header_metaobject.header.value | default: header_metaobject.header
+      if header_setting == 1 or header_setting == '1'
+        assign transparent_header = true
+      endif
     endif
   -%}
+
+  {%- if request.design_mode -%}
+    <!-- Norvegr header metaobjects: template={{ template.name }} header={{ header_metaobject | json }} transparent_header={{ transparent_header_metaobject | json }} enabled={{ transparent_header }} -->
+  {%- endif -%}
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if transparent_header %} transparent-header{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">

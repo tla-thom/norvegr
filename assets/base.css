@@ -2365,6 +2365,25 @@ input[type='checkbox'] {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+.transparent-header .shopify-section-group-header-group {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+
+.transparent-header .header-wrapper,
+.transparent-header .announcement-bar-section {
+  background: transparent;
+}
+
+.transparent-header .header-wrapper--border-bottom {
+  border-bottom: none;
+}
+
+.transparent-header #MainContent > .shopify-section:first-child {
+  margin-top: calc(-1 * var(--header-height, 0px));
+}
+
 .header {
   display: grid;
   grid-template-areas: 'left-icons heading icons';
