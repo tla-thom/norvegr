@@ -327,6 +327,10 @@
 
       this.setHeaderHeight();
 
+      if (document.body.classList.contains('transparent-header')) {
+        this.header.classList.remove('scrolled-past-header');
+      }
+
       this.onResizeHandler = this.setHeaderHeight.bind(this);
       this.onMediaChangeHandler = this.setHeaderHeight.bind(this);
 

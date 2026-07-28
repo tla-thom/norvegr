@@ -2376,8 +2376,14 @@ input[type='checkbox'] {
   top: 0;
 }
 
+.transparent-header .section-header:not(.scrolled-past-header) {
+  margin-bottom: 0 !important;
+}
+
 .transparent-header #MainContent > .shopify-section:first-child {
   margin-top: calc(-1 * var(--header-group-height, var(--header-height, 0px)));
+  position: relative;
+  z-index: 1;
 }
 
 .transparent-header .section-header .header-wrapper,
@@ -2388,10 +2394,14 @@ input[type='checkbox'] {
 }
 
 /* At page top: transparent header, white nav, inverted logo */
+.transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper,
 .transparent-header .section-header:not(.scrolled-past-header) .header-wrapper,
+.transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper.gradient,
 .transparent-header .section-header:not(.scrolled-past-header) .header-wrapper.gradient {
-  background: transparent;
-  background-color: transparent;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  --gradient-background: transparent;
   background-attachment: scroll;
   --color-foreground: 255, 255, 255;
   --color-link: 255, 255, 255;
