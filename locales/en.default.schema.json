@@ -2972,6 +2972,14 @@
         "enable_video_looping": {
           "label": "Loop video"
         },
+        "enable_autoplay": {
+          "label": "Autoplay",
+          "info": "Automatically plays the video when the page loads. Browsers require the video to be muted."
+        },
+        "enable_mute": {
+          "label": "Mute",
+          "info": "Mutes the video. Required for autoplay in most browsers."
+        },
         "header__1": {
           "content": "Shopify-hosted video"
         },

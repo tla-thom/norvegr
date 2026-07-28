@@ -20,6 +20,13 @@
   assign video_alt = section.settings.video.alt | default: section.settings.description
   assign alt = 'sections.video.load_video' | t: description: video_alt | escape
   assign poster = section.settings.video.preview_image | default: section.settings.cover_image
+  assign youtube_mute = ''
+  assign vimeo_mute = ''
+
+  if section.settings.enable_mute
+    assign youtube_mute = '&mute=1'
+    assign vimeo_mute = '&muted=1'
+  endif
 
   if section.settings.video != null
     assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
@@ -54,6 +61,9 @@
     <deferred-media
       class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
+      {% if section.settings.enable_autoplay %}
+        data-autoplay="true"
+      {% endif %}
       {% if poster != null %}
         style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
       {% endif %}
@@ -89,7 +99,7 @@
           -%}
           {%- if section.settings.video_url.type == 'youtube' -%}
             <iframe
-              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ youtube_mute }}{{ loop }}"
               class="js-youtube"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -97,7 +107,7 @@
             ></iframe>
           {%- else -%}
             <iframe
-              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ vimeo_mute }}{{ loop }}"
               class="js-vimeo"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -112,7 +122,8 @@
               autoplay: true,
               loop: section.settings.enable_video_looping,
               controls: true,
-              muted: false
+              muted: section.settings.enable_mute,
+              playsinline: true
           }}
         {%- endif -%}
       </template>
@@ -168,6 +179,20 @@
       "id": "enable_video_looping",
       "label": "t:sections.video.settings.enable_video_looping.label",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "t:sections.video.settings.enable_autoplay.label",
+      "info": "t:sections.video.settings.enable_autoplay.info",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mute",
+      "label": "t:sections.video.settings.enable_mute.label",
+      "info": "t:sections.video.settings.enable_mute.info",
+      "default": true
     },
     {
       "type": "header",
