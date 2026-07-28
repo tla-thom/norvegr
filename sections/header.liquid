@@ -137,7 +137,7 @@
       endif
 
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
+        render 'header-search', input_id: 'Search-In-Modal-1', color_scheme: section.settings.color_scheme
       endif
     -%}
 
@@ -241,7 +241,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      {% render 'header-search', input_id: 'Search-In-Modal', color_scheme: section.settings.color_scheme %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a

@@ -2477,6 +2477,89 @@ input[type='checkbox'] {
   filter: none;
 }
 
+/* Search modal keeps header color scheme when header is transparent */
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal {
+  background: rgb(var(--color-background)) !important;
+  background-color: rgb(var(--color-background)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-foreground));
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .svg-wrapper svg,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .icon,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .field__input,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .field__label,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .link,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .predictive-search__heading,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .predictive-search__item,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .predictive-search__item-heading {
+  color: rgb(var(--color-foreground));
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal img,
+.transparent-header .section-header:not(.scrolled-past-header) .search-modal .predictive-search__image {
+  filter: none;
+}
+
+/* Menu drawer keeps menu color scheme when header is transparent */
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer__submenu {
+  background: rgb(var(--color-background)) !important;
+  background-color: rgb(var(--color-background)) !important;
+  background-image: none !important;
+  color: rgb(var(--color-foreground));
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .menu-drawer__menu-item,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .menu-drawer__close-button,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .menu-drawer__account,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .link,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .svg-wrapper svg,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .localization-form__select,
+.transparent-header .section-header:not(.scrolled-past-header) .menu-drawer .disclosure__link {
+  color: rgb(var(--color-foreground));
+}
+
+/* Mobile menu open: white header bar and black logo on transparent header */
+@media screen and (max-width: 989px) {
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) sticky-header.header-wrapper,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header-wrapper,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) sticky-header.header-wrapper.gradient,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header-wrapper.gradient {
+    background: #fff !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    --gradient-background: #fff;
+    --color-foreground: 0, 0, 0;
+    --color-link: 0, 0, 0;
+    --color-secondary-button-text: 0, 0, 0;
+    color: rgb(var(--color-foreground));
+  }
+
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header-wrapper--border-bottom {
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__menu-item,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__menu-item span,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__heading-link,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__heading-link .h2,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header .disclosure__link,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header .localization-form__select {
+    color: rgb(var(--color-foreground));
+  }
+
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__icon .icon,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__icon svg,
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header .svg-wrapper svg {
+    color: rgb(var(--color-foreground));
+  }
+
+  .transparent-header .section-header:not(.scrolled-past-header):has(.menu-drawer-container[open].menu-opening) .header__heading-logo {
+    filter: none;
+  }
+}
+
 .header {
   display: grid;
   grid-template-areas: 'left-icons heading icons';

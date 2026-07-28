@@ -3,9 +3,10 @@
 
   Accepts:
   - input_id: {String} Id for the search input element (required)
+  - color_scheme: {String} Color scheme id for modal styling (optional)
 
   Usage:
-  {% render 'header-search', input_id: 'My-Id'%}
+  {% render 'header-search', input_id: 'My-Id', color_scheme: section.settings.color_scheme %}
 {% endcomment %}
 
 <details-modal class="header__search">
@@ -25,7 +26,7 @@
       </span>
     </summary>
     <div
-      class="search-modal modal__content gradient"
+      class="search-modal modal__content gradient{% if color_scheme != blank %} color-{{ color_scheme }}{% endif %}"
       role="dialog"
       aria-modal="true"
       aria-label="{{ 'general.search.search' | t }}"
