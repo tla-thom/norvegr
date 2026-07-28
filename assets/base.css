@@ -2385,22 +2385,17 @@ input[type='checkbox'] {
 }
 
 .transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper.gradient,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .utility-bar,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .utility-bar.gradient {
+.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper.gradient {
   background: transparent;
   background-color: transparent;
   background-attachment: scroll;
 }
 
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper--border-bottom,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .utility-bar--bottom-border,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .utility-bar--bottom-border-social-only {
+.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper--border-bottom {
   border-bottom-color: transparent;
 }
 
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .utility-bar {
+.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper {
   --color-foreground: 255, 255, 255;
   --color-link: 255, 255, 255;
   --color-secondary-button-text: 255, 255, 255;
@@ -2411,17 +2406,14 @@ input[type='checkbox'] {
 .transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__menu-item span,
 .transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__heading-link,
 .transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__heading-link .h2,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .announcement-bar,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .announcement-bar__message,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .announcement-bar__link,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .disclosure__link,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .localization-form__select {
+.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header .disclosure__link,
+.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header .localization-form__select {
   color: rgb(var(--color-foreground));
 }
 
 .transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__icon .icon,
 .transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__icon svg,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .svg-wrapper svg {
+.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header .svg-wrapper svg {
   color: rgb(var(--color-foreground));
 }
 
