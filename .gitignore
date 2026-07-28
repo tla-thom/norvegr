@@ -1,4 +1,4 @@
-# OS generated files #
+# OS generated files
 ######################
 .DS_Store
 .DS_Store?
@@ -7,6 +7,77 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-.shopify
-node_modules
+
+# Shopify CLI and store config
+######################
+.shopify/
+shopify.theme.toml
+config.yml
+
+# Store-specific theme settings (pull from store, do not commit)
+config/settings_data.json
+config/markets.json
+
+# Dependencies
+######################
+node_modules/
+.pnpm-store/
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Build output
+######################
+dist/
+build/
+.cache/
+.vite/
+assets/.vite/
+.parcel-cache/
+.turbo/
+*.map
+
+# Compiled assets (when using a source + build workflow)
+assets/**/*.min.js
+assets/**/*.min.css
+assets/**/manifest.json
+
+# Environment and secrets
+######################
+.env
+.env.*
+!.env.example
+
+# Logs and debug
+######################
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Theme packages
+######################
 *.zip
+
+# IDE and editor
+######################
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# Theme Check
+######################
+.theme-check.yml.local
+
+# Non-essential upstream Dawn files
+######################
+release-notes.md
