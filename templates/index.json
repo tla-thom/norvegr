@@ -124,11 +124,28 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "video_wP7pDz": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/nor.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "image_banner_FjLt8T"
+    "image_banner_FjLt8T",
+    "video_wP7pDz"
   ]
 }
