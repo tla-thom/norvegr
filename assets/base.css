@@ -2367,12 +2367,13 @@ input[type='checkbox'] {
 
 /* Transparent header */
 .transparent-header .shopify-section-group-header-group {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+  position: relative;
   z-index: 4;
+}
+
+.transparent-header .section-header {
+  position: sticky;
+  top: 0;
 }
 
 .transparent-header #MainContent > .shopify-section:first-child {
@@ -2429,21 +2430,25 @@ input[type='checkbox'] {
   transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
 }
 
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper {
+.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper,
+.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header-wrapper {
   background: #fff;
   background-color: #fff;
 }
 
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper.gradient {
+.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper.gradient,
+.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header-wrapper.gradient {
   background: #fff;
   background-attachment: scroll;
 }
 
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header__heading-logo {
+.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header__heading-logo,
+.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header__heading-logo {
   filter: none;
 }
 
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper--border-bottom {
+.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper--border-bottom,
+.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
