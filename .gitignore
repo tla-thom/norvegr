@@ -62,6 +62,10 @@ pnpm-debug.log*
 ######################
 *.zip
 
+# Product import exports (local use only)
+######################
+norvegr-shopify-import.csv
+
 # IDE and editor
 ######################
 .idea/
