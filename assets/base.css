@@ -2432,6 +2432,16 @@ input[type='checkbox'] {
   filter: brightness(0) invert(1);
 }
 
+.transparent-header .section-header .header__heading-logo-wrapper {
+  width: 100%;
+  transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
+}
+
+.transparent-header .section-header.scrolled-past-header .header__heading-logo-wrapper,
+.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header__heading-logo-wrapper {
+  width: 50%;
+}
+
 /* Scrolled: white header, black nav, normal logo */
 .transparent-header .section-header.scrolled-past-header .header-wrapper,
 .transparent-header .section-header.scrolled-past-header .header-wrapper.gradient {
