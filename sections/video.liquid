@@ -22,6 +22,11 @@
   assign poster = section.settings.video.preview_image | default: section.settings.cover_image
   assign youtube_mute = ''
   assign vimeo_mute = ''
+  assign show_video_controls = true
+
+  if section.settings.enable_autoplay
+    assign show_video_controls = false
+  endif
 
   if section.settings.enable_mute
     assign youtube_mute = '&mute=1'
@@ -121,7 +126,7 @@
               image_size: '1100x',
               autoplay: true,
               loop: section.settings.enable_video_looping,
-              controls: true,
+              controls: show_video_controls,
               muted: section.settings.enable_mute,
               playsinline: true
           }}
