@@ -2371,8 +2371,7 @@ input[type='checkbox'] {
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
 
-.section-header.scrolled-past-header .header__heading-logo-wrapper,
-.section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header__heading-logo-wrapper {
+.section-header.scrolled-past-header .header__heading-logo-wrapper {
   width: 50%;
 }
 

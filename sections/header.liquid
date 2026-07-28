@@ -346,6 +346,7 @@
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
+      this.onScroll();
     }
 
     setHeaderHeight() {
@@ -404,7 +405,9 @@
         this.header.classList.add('scrolled-past-header');
       } else {
         this.header.classList.remove('scrolled-past-header');
-        requestAnimationFrame(this.reset.bind(this));
+        if (!this.headerIsAlwaysSticky) {
+          requestAnimationFrame(this.reset.bind(this));
+        }
         this.currentScrollTop = scrollTop;
         return;
       }
