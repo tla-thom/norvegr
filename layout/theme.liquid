@@ -323,18 +323,18 @@
 
   {%- liquid
     assign transparent_header = false
-    assign transparent_header_metaobject = null
+    assign header_metaobject = null
 
     if template.name == 'product'
-      assign transparent_header_metaobject = product.metafields.custom.transparent_header.value
+      assign header_metaobject = product.metafields.custom.header.value
     elsif template.name == 'collection'
-      assign transparent_header_metaobject = collection.metafields.custom.transparent_header.value
+      assign header_metaobject = collection.metafields.custom.header.value
     elsif template.name == 'page'
-      assign transparent_header_metaobject = page.metafields.custom.transparent_header.value
+      assign header_metaobject = page.metafields.custom.header.value
     endif
 
-    if transparent_header_metaobject != blank
-      assign transparent_logo_setting = transparent_header_metaobject.transparent_logo.value | default: transparent_header_metaobject.transparent_logo
+    if header_metaobject != blank
+      assign transparent_logo_setting = header_metaobject.transparent_logo.value | default: header_metaobject.transparent_logo
       if transparent_logo_setting == 1 or transparent_logo_setting == '1'
         assign transparent_header = true
       endif
@@ -342,7 +342,7 @@
   -%}
 
   {%- if request.design_mode -%}
-    <!-- Norvegr transparent header: template={{ template.name }} metaobject={{ transparent_header_metaobject | json }} transparent_logo={{ transparent_logo_setting | default: 'blank' }} enabled={{ transparent_header }} -->
+    <!-- Norvegr transparent header: template={{ template.name }} header={{ header_metaobject | json }} transparent_logo={{ transparent_logo_setting | default: 'blank' }} enabled={{ transparent_header }} -->
   {%- endif -%}
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if transparent_header %} transparent-header{% endif %}">
