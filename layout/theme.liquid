@@ -339,6 +339,10 @@
         assign transparent_header = true
       endif
     endif
+
+    if template.name == 'index'
+      assign transparent_header = true
+    endif
   -%}
 
   {%- if request.design_mode -%}
