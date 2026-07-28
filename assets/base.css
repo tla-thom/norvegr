@@ -2380,76 +2380,81 @@ input[type='checkbox'] {
   margin-top: calc(-1 * var(--header-group-height, var(--header-height, 0px)));
 }
 
-.transparent-header .shopify-section-group-header-group .header-wrapper,
-.transparent-header .shopify-section-group-header-group .utility-bar {
-  transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+.transparent-header .section-header .header-wrapper,
+.transparent-header .section-header .header__heading-logo,
+.transparent-header .section-header .header__menu-item,
+.transparent-header .section-header .header__icon .icon {
+  transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
 }
 
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper.gradient {
+/* At page top: transparent header, white nav, inverted logo */
+.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper,
+.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper.gradient {
   background: transparent;
   background-color: transparent;
   background-attachment: scroll;
-}
-
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper--border-bottom {
-  border-bottom-color: transparent;
-}
-
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header-wrapper {
   --color-foreground: 255, 255, 255;
   --color-link: 255, 255, 255;
   --color-secondary-button-text: 255, 255, 255;
   color: rgb(var(--color-foreground));
 }
 
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__menu-item,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__menu-item span,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__heading-link,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__heading-link .h2,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header .disclosure__link,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header .localization-form__select {
+.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper--border-bottom {
+  border-bottom-color: transparent;
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .header__menu-item,
+.transparent-header .section-header:not(.scrolled-past-header) .header__menu-item span,
+.transparent-header .section-header:not(.scrolled-past-header) .header__heading-link,
+.transparent-header .section-header:not(.scrolled-past-header) .header__heading-link .h2,
+.transparent-header .section-header:not(.scrolled-past-header) .header .disclosure__link,
+.transparent-header .section-header:not(.scrolled-past-header) .header .localization-form__select {
   color: rgb(var(--color-foreground));
 }
 
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__icon .icon,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__icon svg,
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header .svg-wrapper svg {
+.transparent-header .section-header:not(.scrolled-past-header) .header__icon .icon,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icon svg,
+.transparent-header .section-header:not(.scrolled-past-header) .header .svg-wrapper svg {
   color: rgb(var(--color-foreground));
 }
 
-.transparent-header .shopify-section-group-header-group:not(:has(.scrolled-past-header)) .header__heading-logo {
+.transparent-header .section-header:not(.scrolled-past-header) .header__heading-logo {
   filter: brightness(0) invert(1);
 }
 
-.transparent-header .shopify-section-group-header-group .header-wrapper,
-.transparent-header .shopify-section-group-header-group .utility-bar,
-.transparent-header .shopify-section-group-header-group .header__heading-logo,
-.transparent-header .shopify-section-group-header-group .header__menu-item,
-.transparent-header .shopify-section-group-header-group .header__icon .icon {
-  transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
-}
-
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper,
-.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header-wrapper {
+/* Scrolled: white header, black nav, normal logo */
+.transparent-header .section-header.scrolled-past-header .header-wrapper,
+.transparent-header .section-header.scrolled-past-header .header-wrapper.gradient {
   background: #fff;
   background-color: #fff;
-}
-
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper.gradient,
-.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header-wrapper.gradient {
-  background: #fff;
   background-attachment: scroll;
+  --color-foreground: 0, 0, 0;
+  --color-link: 0, 0, 0;
+  --color-secondary-button-text: 0, 0, 0;
+  color: rgb(var(--color-foreground));
 }
 
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header__heading-logo,
-.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header__heading-logo {
+.transparent-header .section-header.scrolled-past-header .header-wrapper--border-bottom {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
+}
+
+.transparent-header .section-header.scrolled-past-header .header__menu-item,
+.transparent-header .section-header.scrolled-past-header .header__menu-item span,
+.transparent-header .section-header.scrolled-past-header .header__heading-link,
+.transparent-header .section-header.scrolled-past-header .header__heading-link .h2,
+.transparent-header .section-header.scrolled-past-header .header .disclosure__link,
+.transparent-header .section-header.scrolled-past-header .header .localization-form__select {
+  color: rgb(var(--color-foreground));
+}
+
+.transparent-header .section-header.scrolled-past-header .header__icon .icon,
+.transparent-header .section-header.scrolled-past-header .header__icon svg,
+.transparent-header .section-header.scrolled-past-header .header .svg-wrapper svg {
+  color: rgb(var(--color-foreground));
+}
+
+.transparent-header .section-header.scrolled-past-header .header__heading-logo {
   filter: none;
-}
-
-.transparent-header .shopify-section-group-header-group:has(.scrolled-past-header) .header-wrapper--border-bottom,
-.transparent-header .section-header.shopify-section-header-sticky:not(.shopify-section-header-hidden) .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .header {

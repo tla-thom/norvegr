@@ -357,6 +357,24 @@
       if (headerGroup) {
         document.documentElement.style.setProperty('--header-group-height', `${headerGroup.offsetHeight}px`);
       }
+
+      this.updateHeaderBounds();
+    }
+
+    updateHeaderBounds() {
+      if (document.body.classList.contains('transparent-header')) {
+        const headerGroup = document.querySelector('.shopify-section-group-header-group');
+        const height = headerGroup ? headerGroup.offsetHeight : this.header.offsetHeight;
+
+        this.headerBounds = {
+          top: 0,
+          bottom: height,
+          height,
+          left: 0,
+          right: window.innerWidth,
+          width: window.innerWidth,
+        };
+      }
     }
 
     disconnectedCallback() {
@@ -366,6 +384,11 @@
     }
 
     createObserver() {
+      if (document.body.classList.contains('transparent-header')) {
+        this.updateHeaderBounds();
+        return;
+      }
+
       let observer = new IntersectionObserver((entries, observer) => {
         this.headerBounds = entries[0].intersectionRect;
         observer.disconnect();
@@ -396,7 +419,10 @@
 
           requestAnimationFrame(this.hide.bind(this));
         }
-      } else if (scrollTop <= this.headerBounds.top) {
+      } else if (
+        scrollTop <=
+        (document.body.classList.contains('transparent-header') ? this.headerBounds.bottom : this.headerBounds.top)
+      ) {
         this.header.classList.remove('scrolled-past-header');
         requestAnimationFrame(this.reset.bind(this));
       }
