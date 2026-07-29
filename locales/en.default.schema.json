@@ -1209,6 +1209,9 @@
           },
           "options__4": {
             "label": "Large"
+          },
+          "options__5": {
+            "label": "X-large"
           }
           },
         "content": {
@@ -3070,6 +3073,9 @@
           },
           "options__4": {
             "label": "Large"
+          },
+          "options__5": {
+            "label": "X-large"
           }
         },
         "slider_visual": {
