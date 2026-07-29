@@ -39,6 +39,7 @@
         "image": "shopify://shop_images/the-norvegr-way-scaled.jpg",
         "image_overlay_opacity": 40,
         "image_height": "adapt",
+        "mobile_height": "70",
         "image_behavior": "none",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
@@ -133,6 +134,7 @@
       "settings": {
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
