@@ -59,6 +59,7 @@
         "image": "shopify://shop_images/norwegian-down-duvets-pillows.webp",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
+        "mobile_height": "70",
         "image_behavior": "none",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
