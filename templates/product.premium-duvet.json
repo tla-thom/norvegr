@@ -212,7 +212,7 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Peace of Mind",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "Button label",
