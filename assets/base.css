@@ -2404,10 +2404,19 @@ input[type='checkbox'] {
 }
 
 .transparent-header .section-header .header-wrapper,
-.transparent-header .section-header .header__heading-logo,
 .transparent-header .section-header .header__menu-item,
 .transparent-header .section-header .header__icon .icon {
-  transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
+  transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.transparent-header .section-header .header__heading-logo {
+  width: var(--header-logo-width, auto);
+  max-width: 100%;
+  transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99), filter 0.2s ease;
+}
+
+.transparent-header .section-header.scrolled-past-header .header__heading-logo {
+  width: var(--header-logo-width-scrolled, auto);
 }
 
 /* At page top: transparent header, white nav, inverted logo */
