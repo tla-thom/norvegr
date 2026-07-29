@@ -324,18 +324,14 @@
 
       if (document.body.classList.contains('transparent-header')) {
         this.header.classList.remove('scrolled-past-header');
-        this.measureTransparentHeaderDimensions();
+        this.headerResizeObserver = new ResizeObserver(() => this.setHeaderHeight());
+        this.headerResizeObserver.observe(this.header);
       }
 
       this.setHeaderHeight();
 
-      this.onResizeHandler = () => {
-        if (document.body.classList.contains('transparent-header')) {
-          this.measureTransparentHeaderDimensions();
-        }
-        this.setHeaderHeight();
-      };
-      this.onMediaChangeHandler = this.onResizeHandler;
+      this.onResizeHandler = this.setHeaderHeight.bind(this);
+      this.onMediaChangeHandler = this.setHeaderHeight.bind(this);
 
       window.matchMedia('(max-width: 990px)').addEventListener('change', this.onMediaChangeHandler);
       window.addEventListener('resize', this.onResizeHandler);
@@ -369,22 +365,6 @@
       this.updateHeaderBounds();
     }
 
-    measureTransparentHeaderDimensions() {
-      if (!document.body.classList.contains('transparent-header')) return;
-
-      const wasScrolled = this.header.classList.contains('scrolled-past-header');
-      if (wasScrolled) this.header.classList.remove('scrolled-past-header');
-
-      const headerInner = this.header.querySelector('.header');
-      document.documentElement.style.setProperty('--header-offset-height', `${this.header.offsetHeight}px`);
-
-      if (headerInner) {
-        document.documentElement.style.setProperty('--header-inner-height', `${headerInner.offsetHeight}px`);
-      }
-
-      if (wasScrolled) this.header.classList.add('scrolled-past-header');
-    }
-
     updateScrolledHeaderHeight() {
       this.setHeaderHeight();
       clearTimeout(this.scrolledHeaderHeightTimeout);
@@ -411,6 +391,7 @@
       this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
       window.removeEventListener('scroll', this.onScrollHandler);
       window.removeEventListener('resize', this.onResizeHandler);
+      if (this.headerResizeObserver) this.headerResizeObserver.disconnect();
     }
 
     createObserver() {
