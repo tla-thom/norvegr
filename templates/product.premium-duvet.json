@@ -179,8 +179,8 @@
         "column_YDiQjp": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "10-Year Restoration",
+            "text": "<p>Ship it back every decade. We restore the down up to 5 times. A duvet engineered to last 60 years.</p>",
             "link_label": "",
             "link": ""
           }
@@ -188,8 +188,8 @@
         "column_UjCLpc": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Complimentary Adjustments",
+            "text": "<p>Test it for a few nights. We will adjust the filling for free until your sleep is perfect.</p>",
             "link_label": "",
             "link": ""
           }
@@ -197,8 +197,8 @@
         "column_9pALFy": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Infinite Transformation",
+            "text": "<p>Your product can evolve. We can transform your pillows into duvets or adapt them to a new bed size anytime.</p>",
             "link_label": "",
             "link": ""
           }
@@ -212,14 +212,14 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Peace of Mind",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "Button label",
         "button_link": "",
         "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
+        "column_alignment": "center",
+        "background_style": "none",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
