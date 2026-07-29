@@ -2425,6 +2425,18 @@
             "label": "Fill"
           }
         },
+        "image_ratio": {
+          "label": "Image ratio",
+          "options__1": {
+            "label": "Adapt to image"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
         "mobile_thumbnails": {
           "label": "Mobile layout",
           "options__1": {

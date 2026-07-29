@@ -1315,6 +1315,11 @@ a.product__text {
   padding-top: var(--ratio-percent);
 }
 
+.product-media-container.media-fit-contain.media-ratio-fixed .media > img,
+.product-media-container.media-fit-contain.media-ratio-fixed .deferred-media__poster img {
+  object-fit: contain;
+}
+
 .product-media-container.constrain-height .media {
   padding-top: min(var(--constrained-height), var(--ratio-percent));
 }
