@@ -14,3 +14,18 @@
     }    
 }
 /* collection section*/
+
+.header-localization .localization-form__select > .header-localization__currency {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: none;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: nowrap;
+}
+
+.header-localization .header-localization__currency-code,
+.header-localization .header-localization__currency-symbol {
+  display: inline-block;
+}
