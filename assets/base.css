@@ -2454,6 +2454,17 @@ input[type='checkbox'] {
   color: rgb(var(--color-foreground));
 }
 
+/* Keep localization, search, account, and cart black at page top on transparent header */
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .localization-form__select,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .localization-selector,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__button,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .header__icon,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .header__icon .icon,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .header__icon svg,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .svg-wrapper svg {
+  color: rgb(0, 0, 0);
+}
+
 .transparent-header .section-header:not(.scrolled-past-header) .header__heading-logo {
   filter: brightness(0) invert(1);
 }
