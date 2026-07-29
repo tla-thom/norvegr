@@ -2365,16 +2365,6 @@ input[type='checkbox'] {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
-/* Sticky header logo shrink on scroll */
-.section-header .header__heading-logo-wrapper {
-  width: 100%;
-  transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
-}
-
-.section-header.scrolled-past-header .header__heading-logo-wrapper {
-  width: 50%;
-}
-
 /* Transparent header */
 .transparent-header .shopify-section-group-header-group {
   position: relative;
@@ -2668,7 +2658,6 @@ input[type='checkbox'] {
 .header__heading-logo-wrapper {
   width: 100%;
   display: inline-block;
-  transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
 
 @media screen and (max-width: 989px) {
