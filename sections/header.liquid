@@ -72,9 +72,7 @@
 
 {%- style -%}
   .header {
-    --header-padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
-    --header-padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
-    padding: var(--header-padding-top) 3rem var(--header-padding-bottom) 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
 
   .section-header {
@@ -90,8 +88,8 @@
 
   @media screen and (min-width: 990px) {
     .header {
-      --header-padding-top: {{ section.settings.padding_top }}px;
-      --header-padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
@@ -403,8 +401,6 @@
 
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
-      const wasScrolledPast = this.header.classList.contains('scrolled-past-header');
-
       if (scrollTop > 0) {
         this.header.classList.add('scrolled-past-header');
       } else {
@@ -412,17 +408,8 @@
         if (!this.headerIsAlwaysSticky) {
           requestAnimationFrame(this.reset.bind(this));
         }
-        if (wasScrolledPast) {
-          this.setHeaderHeight();
-        }
         this.currentScrollTop = scrollTop;
         return;
-      }
-
-      if (!wasScrolledPast) {
-        this.setHeaderHeight();
-        clearTimeout(this.compactHeaderTimeout);
-        this.compactHeaderTimeout = setTimeout(() => this.setHeaderHeight(), 300);
       }
 
       const hideThreshold = this.headerBounds.bottom || this.header.offsetHeight;
