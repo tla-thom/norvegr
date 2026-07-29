@@ -1315,6 +1315,21 @@ a.product__text {
   padding-top: var(--ratio-percent);
 }
 
+.product-media-container.media-ratio-fixed .product__modal-opener {
+  height: 100%;
+}
+
+.product-media-container.media-ratio-fixed.constrain-height .media {
+  padding-top: var(--ratio-percent);
+}
+
+.product-media-container.media-ratio-fixed .media > img,
+.product-media-container.media-ratio-fixed .deferred-media__poster img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .product-media-container.media-fit-contain.media-ratio-fixed .media > img,
 .product-media-container.media-fit-contain.media-ratio-fixed .deferred-media__poster img {
   object-fit: contain;
