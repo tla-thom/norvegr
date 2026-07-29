@@ -1,0 +1,4 @@
+cd /Users/thombennett/Documents/GitHub/norvegr-new
+git add .
+git commit -m "Your message"
+git pull && git push origin HEAD:dawn-theme
