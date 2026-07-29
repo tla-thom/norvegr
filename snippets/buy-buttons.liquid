@@ -24,6 +24,18 @@
       endif
     -%}
 
+    {%- capture country_default_variant_id -%}
+      {%- render 'country-default-variant', product: product -%}
+    {%- endcapture -%}
+    {%- assign country_default_variant_id = country_default_variant_id | strip | plus: 0 -%}
+    {%- assign country_default_variant = product.selected_or_first_available_variant -%}
+    {%- for variant in product.variants -%}
+      {%- if variant.id == country_default_variant_id -%}
+        {%- assign country_default_variant = variant -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+
     <product-form
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -46,10 +58,10 @@
         <input
           type="hidden"
           name="id"
-          value="{{ product.selected_or_first_available_variant.id }}"
-          {% if product.selected_or_first_available_variant.available == false
+          value="{{ country_default_variant.id }}"
+          {% if country_default_variant.available == false
             or quantity_rule_soldout
-            or product.selected_or_first_available_variant == null
+            or country_default_variant == null
           %}
             disabled
           {% endif %}

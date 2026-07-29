@@ -9,6 +9,17 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
+  {%- capture country_default_variant_id -%}
+    {%- render 'country-default-variant', product: product -%}
+  {%- endcapture -%}
+  {%- assign country_default_variant_id = country_default_variant_id | strip | plus: 0 -%}
+  {%- assign country_default_variant = product.selected_or_first_available_variant -%}
+  {%- for variant in product.variants -%}
+    {%- if variant.id == country_default_variant_id -%}
+      {%- assign country_default_variant = variant -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"
@@ -17,7 +28,7 @@
     data-product-id="{{ product.id }}"
     data-currency-code="{{ cart.currency.iso_code }}"
     {% # theme-check-disable %}
-    data-selected-price-amount="{{ product.selected_or_first_available_variant.price | default: 0 | money_amount | escape }}"
+    data-selected-price-amount="{{ country_default_variant.price | default: 0 | money_amount | escape }}"
     {% # theme-check-enable %}
     {{ block.shopify_attributes }}
   >
@@ -46,7 +57,8 @@
             product: product,
             option: option,
             block: block,
-            picker_type: picker_type
+            picker_type: picker_type,
+            default_variant: country_default_variant
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
@@ -56,7 +68,8 @@
             product: product,
             option: option,
             block: block,
-            picker_type: picker_type
+            picker_type: picker_type,
+            default_variant: country_default_variant
           %}
         </fieldset>
       {%- else -%}
@@ -83,7 +96,8 @@
                 product: product,
                 option: option,
                 block: block,
-                picker_type: picker_type
+                picker_type: picker_type,
+                default_variant: country_default_variant
               %}
             </select>
             <span class="svg-wrapper">
@@ -95,7 +109,7 @@
     {%- endfor -%}
 
     <script type="application/json" data-selected-variant>
-      {{ product.selected_or_first_available_variant | json }}
+      {{ country_default_variant | json }}
     </script>
   </variant-selects>
 {%- endunless -%}

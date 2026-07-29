@@ -1,0 +1,46 @@
+{% comment %}
+  Renders the id of the first variant allowed in the current country.
+  Falls back to selected_or_first_available_variant when none match.
+
+  Accepts:
+  - product: {Object} product object.
+
+  Usage:
+  {% capture country_default_variant_id %}{% render 'country-default-variant', product: product %}{% endcapture %}
+{% endcomment %}
+{%- liquid
+  assign current_country = localization.country.iso_code
+  assign country_default_variant = nil
+
+  for variant in product.variants
+    assign variant_allowed = false
+    assign allowed_countries = variant.metafields.custom.allowed_countries.value
+
+    if allowed_countries == blank
+      assign variant_allowed = true
+    else
+      for country in allowed_countries
+        if country == current_country
+          assign variant_allowed = true
+          break
+        elsif current_country == 'GB' and country == 'UK'
+          assign variant_allowed = true
+          break
+        endif
+      endfor
+    endif
+
+    if variant_allowed
+      if variant.available
+        assign country_default_variant = variant
+        break
+      elsif country_default_variant == nil
+        assign country_default_variant = variant
+      endif
+    endif
+  endfor
+
+  if country_default_variant == nil
+    assign country_default_variant = product.selected_or_first_available_variant
+  endif
+-%}{{- country_default_variant.id -}}
