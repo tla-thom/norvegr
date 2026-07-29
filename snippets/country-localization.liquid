@@ -6,6 +6,7 @@
 {%- endcomment -%}
 
 {%- liquid
+  assign currencies = localization.available_countries | map: 'currency' | map: 'iso_code' | uniq
   assign popular_countries = localization.available_countries | where: 'popular?' | sort: 'name'
 
   assign show_country_filter = false
@@ -16,6 +17,11 @@
   assign show_popular_countries = false
   if localization.available_countries.size > 9 and popular_countries.size > 1
     assign show_popular_countries = true
+  endif
+
+  assign show_currencies = false
+  if currencies.size > 1
+    assign show_currencies = true
   endif
 -%}
 
@@ -28,6 +34,7 @@
     aria-describedby="{{ localPosition }}Label"
   >
     <span>
+      {{- localization.country.name }} |
       {{ localization.country.currency.iso_code }}
       {{ localization.country.currency.symbol -}}
     </span>
@@ -77,7 +84,7 @@
     </div>
     <div id="sr-country-search-results" class="visually-hidden" aria-live="polite"></div>
     <div
-      class="disclosure__list country-selector__list country-selector__list--with-multiple-currencies"
+      class="disclosure__list country-selector__list{% if show_currencies %} country-selector__list--with-multiple-currencies{% endif %}"
       id="{{ localPosition }}-country-results"
     >
       {% if show_popular_countries %}
@@ -105,7 +112,7 @@
                   {{- 'icon-checkmark.svg' | inline_asset_content -}}
                 </span>
                 <span class="country">{{- country.name }}</span>
-                <span class="localization-form__currency motion-reduce">
+                <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">
                   {{ country.currency.iso_code }}
                   {{ country.currency.symbol -}}
                 </span>
@@ -134,7 +141,7 @@
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
               </span>
               <span class="country">{{- country.name }}</span>
-              <span class="localization-form__currency motion-reduce">
+              <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">
                 {{ country.currency.iso_code }}
                 {{ country.currency.symbol -}}
               </span>
