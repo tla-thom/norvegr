@@ -13,8 +13,8 @@
         }
     }    
 }
-/* collection section*/
 
+/* header localization section*/
 .header-localization .localization-form__select > .header-localization__currency {
   display: inline-flex;
   align-items: center;
@@ -28,4 +28,11 @@
 .header-localization .header-localization__currency-code,
 .header-localization .header-localization__currency-symbol {
   display: inline-block;
+}
+
+/* multi-column section*/   
+.multicolumn {
+    .multicolumn__title {
+        text-align: center;
+    }
 }
