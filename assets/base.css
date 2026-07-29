@@ -2391,6 +2391,11 @@ input[type='checkbox'] {
 .transparent-header .section-header {
   position: sticky;
   top: 0;
+  min-height: var(--header-offset-height, auto);
+}
+
+.transparent-header .section-header .header-wrapper {
+  min-height: var(--header-inner-height, auto);
 }
 
 .transparent-header .section-header:not(.scrolled-past-header) {
