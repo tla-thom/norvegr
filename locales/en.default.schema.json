@@ -3183,6 +3183,9 @@
             "header_layout": {
             "content": "Layout"                 
             },
+            "split_layout": {
+              "label": "Make 50/50 split"
+            },
             "show_text_box": {
               "label": "Container"
             },

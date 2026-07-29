@@ -199,3 +199,34 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(0.8);
 }
+
+@media screen and (min-width: 750px) {
+  .slideshow__slide.slide--split {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .slideshow__slide.slide--split .slideshow__media {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .slideshow__slide.slide--split .slideshow__text-wrapper {
+    position: relative;
+    width: 50%;
+    max-width: none;
+    height: auto;
+    padding: 6rem 7rem 7rem;
+  }
+
+  .slideshow__slide.slide--split .slideshow__text-wrapper.page-width {
+    max-width: none;
+  }
+
+  .slideshow__slide.slide--split .slideshow__text.banner__box {
+    max-width: none;
+  }
+}

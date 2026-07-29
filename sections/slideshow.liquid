@@ -117,7 +117,7 @@
         }
       </style>
       <div
-        class="slideshow__slide grid__item grid--1-col slider__slide"
+        class="slideshow__slide grid__item grid--1-col slider__slide{% if block.settings.split_layout %} slide--split{% endif %}"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
         {{ block.shopify_attributes }}
         role="group"
@@ -519,7 +519,13 @@
         {
           "type": "header",
           "content": "t:sections.slideshow.blocks.slide.settings.header_layout.content"
-        },         
+        },
+        {
+          "type": "checkbox",
+          "id": "split_layout",
+          "label": "t:sections.slideshow.blocks.slide.settings.split_layout.label",
+          "default": false
+        },
         {
           "type": "checkbox",
           "id": "show_text_box",
