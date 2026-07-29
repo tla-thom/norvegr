@@ -23,16 +23,6 @@
   if currencies.size > 1
     assign show_currencies = true
   endif
-
-  assign currency_code = localization.country.currency.iso_code
-  if currency_code == blank
-    assign currency_code = cart.currency.iso_code
-  endif
-
-  assign currency_symbol = localization.country.currency.symbol
-  if currency_symbol == blank
-    assign currency_symbol = cart.currency.symbol
-  endif
 -%}
 
 <div class="disclosure">
@@ -43,9 +33,10 @@
     aria-controls="{{ localPosition }}-country-results"
     aria-describedby="{{ localPosition }}Label"
   >
-    <span class="header-localization__currency">
-      <span class="header-localization__currency-code">{{ currency_code }}</span>
-      <span class="header-localization__currency-symbol">{{ currency_symbol }}</span>
+    <span>
+      {{- localization.country.name }} |
+      {{ localization.country.currency.iso_code }}
+      {{ localization.country.currency.symbol -}}
     </span>
     {{ 'icon-caret.svg' | inline_asset_content }}
   </button>
