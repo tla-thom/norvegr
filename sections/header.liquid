@@ -117,6 +117,9 @@
     data-sticky-type="{{ section.settings.sticky_header_type }}"
   {% endif %}
   class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+  {% if settings.logo != blank %}
+    style="--header-logo-width: {{ settings.logo_width }}px; --header-logo-width-scrolled: {{ settings.logo_width | times: 0.5 | round }}px;"
+  {% endif %}
 >
   {%- liquid
     assign social_links = false
@@ -360,6 +363,12 @@
       this.updateHeaderBounds();
     }
 
+    updateScrolledHeaderHeight() {
+      this.setHeaderHeight();
+      clearTimeout(this.scrolledHeaderHeightTimeout);
+      this.scrolledHeaderHeightTimeout = setTimeout(() => this.setHeaderHeight(), 300);
+    }
+
     updateHeaderBounds() {
       if (document.body.classList.contains('transparent-header')) {
         const headerGroup = document.querySelector('.shopify-section-group-header-group');
@@ -401,6 +410,8 @@
 
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
+      const wasScrolledPast = this.header.classList.contains('scrolled-past-header');
+
       if (scrollTop > 0) {
         this.header.classList.add('scrolled-past-header');
       } else {
@@ -408,8 +419,15 @@
         if (!this.headerIsAlwaysSticky) {
           requestAnimationFrame(this.reset.bind(this));
         }
+        if (wasScrolledPast) {
+          this.updateScrolledHeaderHeight();
+        }
         this.currentScrollTop = scrollTop;
         return;
+      }
+
+      if (!wasScrolledPast) {
+        this.updateScrolledHeaderHeight();
       }
 
       const hideThreshold = this.headerBounds.bottom || this.header.offsetHeight;
