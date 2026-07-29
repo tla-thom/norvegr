@@ -34,5 +34,8 @@
 .multicolumn {
     .multicolumn__title {
         text-align: center;
+        h2 {
+            margin: auto;
+        }
     }
 }
