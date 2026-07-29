@@ -4,6 +4,7 @@
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
+    {%- unless section.settings.mobile_height != 'default' -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before,
@@ -13,6 +14,7 @@
         display: block;
       }
     }
+    {%- endunless -%}
 
     @media screen and (min-width: 750px) {
       #Slider-{{ section.id }}::before,
@@ -98,8 +100,11 @@
   {%- endif -%}
 
   <div
-    class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}{% if section.settings.mobile_height != 'default' %} banner--mobile-height{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
     id="Slider-{{ section.id }}"
+    {% if section.settings.mobile_height != 'default' %}
+      style="--banner-mobile-height: {{ section.settings.mobile_height }}lvh;"
+    {% endif %}
     aria-live="polite"
     aria-atomic="true"
     data-autoplay="{{ section.settings.auto_rotate }}"
@@ -309,6 +314,42 @@
       ],
       "default": "medium",
       "label": "t:sections.slideshow.settings.slide_height.label"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.mobile_height.options__1.label"
+        },
+        {
+          "value": "50",
+          "label": "t:sections.all.mobile_height.options__2.label"
+        },
+        {
+          "value": "60",
+          "label": "t:sections.all.mobile_height.options__3.label"
+        },
+        {
+          "value": "70",
+          "label": "t:sections.all.mobile_height.options__4.label"
+        },
+        {
+          "value": "80",
+          "label": "t:sections.all.mobile_height.options__5.label"
+        },
+        {
+          "value": "90",
+          "label": "t:sections.all.mobile_height.options__6.label"
+        },
+        {
+          "value": "100",
+          "label": "t:sections.all.mobile_height.options__7.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.mobile_height.label"
     },
     {
       "type": "select",

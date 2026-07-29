@@ -78,6 +78,21 @@
   .banner--large:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
     min-height: 39rem;
   }
+
+  .banner.banner--mobile-height .banner__media,
+  .banner.banner--mobile-height.banner--mobile-bottom .banner__media,
+  .banner.banner--mobile-height.banner--stacked:not(.banner--mobile-bottom) > .banner__media {
+    height: var(--banner-mobile-height);
+    min-height: var(--banner-mobile-height);
+  }
+
+  .banner.banner--mobile-height:not(.banner--mobile-bottom) .banner__content {
+    min-height: var(--banner-mobile-height);
+  }
+
+  .banner.banner--mobile-height .slideshow__slide {
+    min-height: var(--banner-mobile-height);
+  }
 }
 
 @media screen and (min-width: 750px) {

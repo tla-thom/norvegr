@@ -402,6 +402,30 @@
         "label": "Color scheme",
         "has_cards_info": "To change the card color scheme, update your theme settings."
       },
+      "mobile_height": {
+        "label": "Mobile height",
+        "options__1": {
+          "label": "Default"
+        },
+        "options__2": {
+          "label": "50% screen height"
+        },
+        "options__3": {
+          "label": "60% screen height"
+        },
+        "options__4": {
+          "label": "70% screen height"
+        },
+        "options__5": {
+          "label": "80% screen height"
+        },
+        "options__6": {
+          "label": "90% screen height"
+        },
+        "options__7": {
+          "label": "100% screen height"
+        }
+      },
       "heading_size": {
         "label": "Heading size",
         "options__1": {
