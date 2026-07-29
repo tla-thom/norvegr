@@ -6,7 +6,6 @@
 {%- endcomment -%}
 
 {%- liquid
-  assign currencies = localization.available_countries | map: 'currency' | map: 'iso_code' | uniq
   assign popular_countries = localization.available_countries | where: 'popular?' | sort: 'name'
 
   assign show_country_filter = false
@@ -18,12 +17,7 @@
   if localization.available_countries.size > 9 and popular_countries.size > 1
     assign show_popular_countries = true
   endif
-
-  assign show_currencies = false
-  if currencies.size > 1
-    assign show_currencies = true
-  endif
-%}
+-%}
 
 <div class="disclosure">
   <button
@@ -83,7 +77,7 @@
     </div>
     <div id="sr-country-search-results" class="visually-hidden" aria-live="polite"></div>
     <div
-      class="disclosure__list country-selector__list{% if show_currencies %} country-selector__list--with-multiple-currencies{% endif %}"
+      class="disclosure__list country-selector__list country-selector__list--with-multiple-currencies"
       id="{{ localPosition }}-country-results"
     >
       {% if show_popular_countries %}
@@ -111,7 +105,7 @@
                   {{- 'icon-checkmark.svg' | inline_asset_content -}}
                 </span>
                 <span class="country">{{- country.name }}</span>
-                <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">
+                <span class="localization-form__currency motion-reduce">
                   {{ country.currency.iso_code }}
                   {{ country.currency.symbol -}}
                 </span>
@@ -140,7 +134,7 @@
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
               </span>
               <span class="country">{{- country.name }}</span>
-              <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">
+              <span class="localization-form__currency motion-reduce">
                 {{ country.currency.iso_code }}
                 {{ country.currency.symbol -}}
               </span>

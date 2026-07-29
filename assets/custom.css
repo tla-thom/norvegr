@@ -14,3 +14,8 @@
     }    
 }
 /* collection section*/
+
+/* Country selector: always show each market's currency */
+.country-selector .localization-form__currency {
+  opacity: 1;
+}

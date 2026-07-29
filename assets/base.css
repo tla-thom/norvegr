@@ -2454,14 +2454,22 @@ input[type='checkbox'] {
   color: rgb(var(--color-foreground));
 }
 
-/* Keep localization, search, account, and cart black at page top on transparent header */
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .localization-form__select,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .localization-selector,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__button,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .header__icon,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .header__icon .icon,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .header__icon svg,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icons .svg-wrapper svg {
+/* Localization dropdown panel only: keep black text on transparent header at page top */
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper {
+  --color-foreground: 0, 0, 0;
+  --color-link: 0, 0, 0;
+  --color-background: 255, 255, 255;
+  background-color: rgb(var(--color-background));
+  color: rgb(0, 0, 0);
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .disclosure__link,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .field__input,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .field__label,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .localization-form__currency,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .country,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .country-filter__input,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icons .disclosure__list-wrapper .svg-wrapper svg {
   color: rgb(0, 0, 0);
 }
 
