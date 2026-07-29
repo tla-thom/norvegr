@@ -1,0 +1,4 @@
+/* Norvegr theme overrides — load after base.css */
+.collection__title title-wrapper {
+    text-align: center;
+}
