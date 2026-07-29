@@ -18,9 +18,46 @@
 {% endcomment %}
 {%- liquid
   assign product_form_id = 'product-form-' | append: section.id
+  assign current_country = localization.country.iso_code
+  assign option_index = option.position | minus: 1
 -%}
 
 {%- for value in option.values -%}
+  {%- liquid
+    assign variant_allowed = false
+
+    for variant in product.variants
+      assign variant_option_value = variant.options[option_index]
+      if variant_option_value != value
+        continue
+      endif
+
+      assign allowed_countries = variant.metafields.custom.allowed_countries.value
+      if allowed_countries == blank
+        assign variant_allowed = true
+        break
+      endif
+
+      for country in allowed_countries
+        if country == current_country
+          assign variant_allowed = true
+          break
+        elsif current_country == 'GB' and country == 'UK'
+          assign variant_allowed = true
+          break
+        endif
+      endfor
+
+      if variant_allowed
+        break
+      endif
+    endfor
+  -%}
+
+  {%- unless variant_allowed -%}
+    {%- continue -%}
+  {%- endunless -%}
+
   {%- liquid
     assign swatch_focal_point = null
     if value.swatch.image
