@@ -302,10 +302,10 @@
     "multicolumn_rBmcKU": {
       "type": "multicolumn",
       "blocks": {
-        "column_FHppJJ": {
+        "column_pnqnaL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_4_robb-report-duvets-pillows.png",
+            "image": "shopify://shop_images/imgi_9_how-to-spend-it-norwegian-duvets.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -316,16 +316,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/imgi_5_the-world-interiors-duvets.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pnqnaL": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_9_how-to-spend-it-norwegian-duvets.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -374,9 +364,8 @@
         }
       },
       "block_order": [
-        "column_FHppJJ",
-        "column_jDEUFt",
         "column_pnqnaL",
+        "column_jDEUFt",
         "column_46h9xb",
         "column_wrmUbk",
         "column_mpjwpM",
