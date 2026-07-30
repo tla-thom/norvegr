@@ -50,7 +50,23 @@
   {%- endif %}
 {%- endcapture -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+{%- liquid
+  assign video_transparent_bg = false
+  assign video_transparent_button = false
+  for scheme in settings.color_schemes
+    if scheme.id == section.settings.color_scheme
+      if scheme.settings.background.alpha == 0
+        assign video_transparent_bg = true
+      endif
+      if scheme.settings.button.alpha == 0
+        assign video_transparent_button = true
+      endif
+      break
+    endif
+  endfor
+-%}
+
+<div class="video-section-wrapper color-{{ section.settings.color_scheme }}{% if video_transparent_bg %} video-section--transparent-bg{% endif %}{% if video_transparent_button %} video-section--transparent-button{% endif %}">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
       class="video-section__height video-section__height--{{ section.settings.video_height }}{% if section.settings.video_height == 'adapt' %} video-section__height--adapt{% endif %}{% if section.settings.mobile_height != 'default' %} video-section__height--mobile-height{% endif %}"
@@ -59,7 +75,7 @@
       {% endif %}
     >
     <deferred-media
-      class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="video-section__media deferred-media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
       {% if section.settings.enable_autoplay %}
         data-autoplay="true"
