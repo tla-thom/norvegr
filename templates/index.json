@@ -13,8 +13,12 @@
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "",
+        "heading": "A Journey to Tranquility",
         "heading_size": "h2",
+        "text": "",
+        "button_label": "SHOP DUVETS",
+        "button_link": "#",
+        "button_style_secondary": true,
         "enable_video_looping": true,
         "enable_autoplay": true,
         "enable_mute": true,
