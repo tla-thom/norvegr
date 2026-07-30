@@ -1,3 +1,49 @@
+.video-section__height {
+  position: relative;
+}
+
+.video-section__content {
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  pointer-events: none;
+}
+
+.video-section__content-inner {
+  width: 100%;
+  max-width: 80rem;
+  text-align: center;
+  color: #fff;
+  pointer-events: auto;
+}
+
+.video-section__heading {
+  margin: 0;
+}
+
+.video-section__text {
+  margin-top: 1rem;
+}
+
+.video-section__text > *:first-child {
+  margin-top: 0;
+}
+
+.video-section__content-inner .button {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .video-section__content {
+    bottom: 4rem;
+  }
+}
+
 .video-section__media {
   --ratio-percent: 56.25%;
   position: relative;

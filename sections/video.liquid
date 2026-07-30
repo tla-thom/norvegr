@@ -53,17 +53,6 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
-      {% if section.settings.full_width %}
-        class="page-width"
-      {% endif %}
-    >
-      {%- unless section.settings.heading == blank -%}
-        <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
-        </div>
-      {%- endunless -%}
-    </div>
-    <div
       class="video-section__height video-section__height--{{ section.settings.video_height }}{% if section.settings.video_height == 'adapt' %} video-section__height--adapt{% endif %}{% if section.settings.mobile_height != 'default' %} video-section__height--mobile-height{% endif %}"
       {% if section.settings.mobile_height != 'default' %}
         style="--banner-mobile-height: {{ section.settings.mobile_height }}lvh;"
@@ -139,6 +128,35 @@
         {%- endif -%}
       </template>
     </deferred-media>
+    {%- if section.settings.heading != blank
+      or section.settings.text != blank
+      or section.settings.button_label != blank
+    -%}
+      <div class="video-section__content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="video-section__content-inner">
+          {%- if section.settings.heading != blank -%}
+            <h2 class="video-section__heading inline-richtext {{ section.settings.heading_size }}">
+              {{ section.settings.heading }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="video-section__text rte">{{ section.settings.text }}</div>
+          {%- endif -%}
+          {%- if section.settings.button_label != blank -%}
+            <a
+              {% if section.settings.button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.button_link }}"
+              {% endif %}
+              class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+            >
+              {{- section.settings.button_label | escape -}}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
     </div>
   </div>
 </div>
@@ -152,6 +170,10 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
     {
       "type": "inline_richtext",
       "id": "heading",
@@ -187,6 +209,32 @@
       "label": "t:sections.all.heading_size.label"
     },
     {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.image-banner.blocks.text.settings.text.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+      "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.video.settings.header__1.content"
+    },
+    {
       "type": "checkbox",
       "id": "enable_video_looping",
       "label": "t:sections.video.settings.enable_video_looping.label",
@@ -205,10 +253,6 @@
       "label": "t:sections.video.settings.enable_mute.label",
       "info": "t:sections.video.settings.enable_mute.info",
       "default": true
-    },
-    {
-      "type": "header",
-      "content": "t:sections.video.settings.header__1.content"
     },
     {
       "type": "video",
