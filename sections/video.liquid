@@ -51,13 +51,9 @@
 {%- endcapture -%}
 
 {%- liquid
-  assign video_transparent_bg = false
   assign video_transparent_button = false
   for scheme in settings.color_schemes
     if scheme.id == section.settings.color_scheme
-      if scheme.settings.background.alpha == 0
-        assign video_transparent_bg = true
-      endif
       if scheme.settings.button.alpha == 0
         assign video_transparent_button = true
       endif
@@ -66,7 +62,7 @@
   endfor
 -%}
 
-<div class="video-section-wrapper color-{{ section.settings.color_scheme }}{% if video_transparent_bg %} video-section--transparent-bg{% endif %}{% if video_transparent_button %} video-section--transparent-button{% endif %}">
+<div class="video-section-wrapper color-{{ section.settings.color_scheme }}{% if video_transparent_button %} video-section--transparent-button{% endif %}">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
       class="video-section__height video-section__height--{{ section.settings.video_height }}{% if section.settings.video_height == 'adapt' %} video-section__height--adapt{% endif %}{% if section.settings.mobile_height != 'default' %} video-section__height--mobile-height{% endif %}"

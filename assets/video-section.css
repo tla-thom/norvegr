@@ -10,11 +10,11 @@
   background: transparent;
 }
 
-.video-section--transparent-bg .video-section__content-inner .button--secondary {
+.video-section--transparent-button .video-section__content-inner .button--primary {
   --alpha-button-background: 0;
 }
 
-.video-section--transparent-button .video-section__content-inner .button--primary {
+.video-section__content-inner .button--secondary {
   --alpha-button-background: 0;
 }
 
