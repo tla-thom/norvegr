@@ -133,7 +133,7 @@
       or section.settings.button_label != blank
     -%}
       <div class="video-section__content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <div class="video-section__content-inner">
+        <div class="video-section__content-inner color-{{ section.settings.color_scheme }}">
           {%- if section.settings.heading != blank -%}
             <h2 class="video-section__heading inline-richtext {{ section.settings.heading_size }}">
               {{ section.settings.heading }}
@@ -229,6 +229,12 @@
       "id": "button_style_secondary",
       "default": false,
       "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     },
     {
       "type": "header",
@@ -359,12 +365,6 @@
       "id": "full_width",
       "label": "t:sections.video.settings.full_width.label",
       "default": false
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
     },
     {
       "type": "header",

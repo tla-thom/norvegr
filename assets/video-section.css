@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 80rem;
   text-align: center;
-  color: #fff;
+  color: rgb(var(--color-foreground));
   pointer-events: auto;
 }
 
