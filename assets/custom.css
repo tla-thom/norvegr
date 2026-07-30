@@ -65,3 +65,8 @@ h1, h2, h3, h4, h5,
         }
     }
 }
+
+/* Slider section*/
+.slideshow__controls {
+    border: .1rem solid rgba(var(--color-foreground), .0);
+}
