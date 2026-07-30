@@ -121,11 +121,12 @@
         "slide_faJtwb": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
             "split_layout": true,
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "Peerless Fill Power",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.",
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
@@ -135,11 +136,51 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
+        },
+        "slide_c93Gwr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_34_image-13.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Lasting Legacy",
+            "heading_size": "h1",
+            "subheading": "Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_W7UQ8Q": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Made For Forever",
+            "heading_size": "h1",
+            "subheading": "An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
         "slide_yV9Ldt",
-        "slide_faJtwb"
+        "slide_faJtwb",
+        "slide_c93Gwr",
+        "slide_W7UQ8Q"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
