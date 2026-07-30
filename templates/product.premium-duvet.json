@@ -136,7 +136,7 @@
         "layout": "full_bleed",
         "slide_height": "xlarge",
         "mobile_height": "50",
-        "slider_visual": "dots",
+        "slider_visual": "counter",
         "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "ambient",
