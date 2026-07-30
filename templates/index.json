@@ -33,6 +33,97 @@
         "padding_bottom": 0
       }
     },
+    "multicolumn_rBmcKU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_pnqnaL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_9_how-to-spend-it-norwegian-duvets.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jDEUFt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_5_the-world-interiors-duvets.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_46h9xb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_6_cth-2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wrmUbk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mpjwpM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_8_Red-magazine-150x150.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UyXmmQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_10_architectural-digest-scandanavian-duvets.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pnqnaL",
+        "column_jDEUFt",
+        "column_46h9xb",
+        "column_wrmUbk",
+        "column_mpjwpM",
+        "column_UyXmmQ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "text_on_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -298,106 +389,15 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn_rBmcKU": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_pnqnaL": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_9_how-to-spend-it-norwegian-duvets.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_jDEUFt": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_5_the-world-interiors-duvets.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_46h9xb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_6_cth-2.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_wrmUbk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_mpjwpM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_8_Red-magazine-150x150.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_UyXmmQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_10_architectural-digest-scandanavian-duvets.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_pnqnaL",
-        "column_jDEUFt",
-        "column_46h9xb",
-        "column_wrmUbk",
-        "column_mpjwpM",
-        "column_UyXmmQ"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "text_on_image": false,
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 6,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "video_wP7pDz",
+    "multicolumn_rBmcKU",
     "featured_collection",
     "image_banner",
     "slideshow_eGbDHj",
     "image_banner_4dBkYj",
-    "multicolumn_y7zKHG",
-    "multicolumn_rBmcKU"
+    "multicolumn_y7zKHG"
   ]
 }
