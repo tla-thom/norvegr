@@ -11,7 +11,12 @@ h1, h2, h3, h4, h5,
 header {
     .header__active-menu-item {
         text-decoration: none;
-    }    
+    }   
+    @media screen and (min-width: 990px) {
+        .header:not(.header--middle-left,.header--middle-center) .header__inline-menu {
+            margin-top: 2px;
+        }
+    } 
 }
 
 .transparent-header #MainContent > .shopify-section:first-child::before {
