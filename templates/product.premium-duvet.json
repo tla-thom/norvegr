@@ -172,7 +172,9 @@
         "change_slides_speed": 5,
         "image_behavior": "ambient",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn_MpPDWq": {
@@ -181,6 +183,7 @@
         "column_YDiQjp": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1_1.jpg",
             "title": "10-Year Restoration",
             "text": "<p>Ship it back every decade. We restore the down up to 5 times. A duvet engineered to last 60 years.</p>",
             "link_label": "",
@@ -190,6 +193,7 @@
         "column_UjCLpc": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
             "title": "Complimentary Adjustments",
             "text": "<p>Test it for a few nights. We will adjust the filling for free until your sleep is perfect.</p>",
             "link_label": "",
@@ -199,6 +203,7 @@
         "column_9pALFy": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
             "title": "Infinite Transformation",
             "text": "<p>Your product can evolve. We can transform your pillows into duvets or adapt them to a new bed size anytime.</p>",
             "link_label": "",
@@ -217,6 +222,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
+        "text_on_image": false,
         "button_label": "Button label",
         "button_link": "",
         "columns_desktop": 3,
@@ -229,21 +235,21 @@
         "padding_bottom": 36
       }
     },
-    "slideshow_akKUXq": {
+    "slideshow_bppbjd": {
       "type": "slideshow",
       "blocks": {
-        "slide_7tz6aL": {
+        "slide_JMwxtW": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/imgi_32_1NORVEGR-SPRING_SUMMER2026-040-2048x1366.jpg",
+            "image": "shopify://shop_images/imgi_32_Norvegr-AW2025-Campaign-083.jpg",
             "split_layout": true,
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "heading": "CHANNEL CONSTRUCTION",
+            "heading_size": "h2",
+            "subheading": "Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.",
             "button_label": "Button label",
             "link": "",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
@@ -251,41 +257,83 @@
             "color_scheme": ""
           }
         },
-        "slide_8VEUVJ": {
+        "slide_tKrwTh": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/imgi_96_Norv-Ost-Couple-2023-05-2048x1365.jpg",
+            "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
             "split_layout": true,
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "heading": "Peerless Fill Power",
+            "heading_size": "h2",
+            "subheading": "Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.",
             "button_label": "Button label",
             "link": "",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
+        },
+        "slide_nFaxaf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_34_image-13.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Lasting Legacy",
+            "heading_size": "h2",
+            "subheading": "Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_G37QdF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Made For Forever",
+            "heading_size": "h2",
+            "subheading": "An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
-        "slide_7tz6aL",
-        "slide_8VEUVJ"
+        "slide_JMwxtW",
+        "slide_tKrwTh",
+        "slide_nFaxaf",
+        "slide_G37QdF"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "grid",
         "slide_height": "medium",
         "mobile_height": "default",
-        "slider_visual": "dots",
-        "auto_rotate": false,
+        "slider_visual": "counter",
+        "auto_rotate": true,
         "change_slides_speed": 5,
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
@@ -295,6 +343,6 @@
     "related-products",
     "slideshow_FeUcJJ",
     "multicolumn_MpPDWq",
-    "slideshow_akKUXq"
+    "slideshow_bppbjd"
   ]
 }
