@@ -2439,9 +2439,17 @@ input[type='checkbox'] {
   z-index: 1;
 }
 
-.transparent-header .section-header .header-wrapper,
-.transparent-header .section-header .header__menu-item,
-.transparent-header .section-header .header__icon .icon {
+.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper,
+.transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper,
+.transparent-header .section-header:not(.scrolled-past-header) .header__menu-item,
+.transparent-header .section-header:not(.scrolled-past-header) .header__icon .icon {
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.transparent-header .section-header.scrolled-past-header .header-wrapper,
+.transparent-header .section-header.scrolled-past-header sticky-header.header-wrapper,
+.transparent-header .section-header.scrolled-past-header .header__menu-item,
+.transparent-header .section-header.scrolled-past-header .header__icon .icon {
   transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 

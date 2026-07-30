@@ -1,5 +1,28 @@
+{%- liquid
+  assign transparent_header = false
+  assign header_metaobject = null
+
+  if template.name == 'product'
+    assign header_metaobject = product.metafields.custom.header.value
+  elsif template.name == 'collection'
+    assign header_metaobject = collection.metafields.custom.header.value
+  elsif template.name == 'page'
+    assign header_metaobject = page.metafields.custom.header.value
+  endif
+
+  if header_metaobject != blank
+    assign transparent_logo_setting = header_metaobject.transparent_logo.value | default: header_metaobject.transparent_logo
+    if transparent_logo_setting == 1 or transparent_logo_setting == '1'
+      assign transparent_header = true
+    endif
+  endif
+
+  if template.name == 'index'
+    assign transparent_header = true
+  endif
+-%}
 <!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
+<html class="js{% if transparent_header %} transparent-header{% endif %}" lang="{{ request.locale.iso_code }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -278,6 +301,31 @@
       }
     {% endstyle %}
 
+    {%- if transparent_header -%}
+      <style>
+        html.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper,
+        html.transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper,
+        html.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper.gradient,
+        html.transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper.gradient {
+          background: transparent !important;
+          background-color: transparent !important;
+          background-image: none !important;
+        }
+
+        html.transparent-header .section-header:not(.scrolled-past-header) .header__menu-item,
+        html.transparent-header .section-header:not(.scrolled-past-header) .header__menu-item span,
+        html.transparent-header .section-header:not(.scrolled-past-header) .header__heading-link,
+        html.transparent-header .section-header:not(.scrolled-past-header) .header__icon .icon,
+        html.transparent-header .section-header:not(.scrolled-past-header) .header__icon svg {
+          color: rgb(255, 255, 255);
+        }
+
+        html.transparent-header .section-header:not(.scrolled-past-header) .header__heading-logo {
+          filter: brightness(0) invert(1);
+        }
+      </style>
+    {%- endif -%}
+
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -321,30 +369,6 @@
       }
     </script>
   </head>
-
-  {%- liquid
-    assign transparent_header = false
-    assign header_metaobject = null
-
-    if template.name == 'product'
-      assign header_metaobject = product.metafields.custom.header.value
-    elsif template.name == 'collection'
-      assign header_metaobject = collection.metafields.custom.header.value
-    elsif template.name == 'page'
-      assign header_metaobject = page.metafields.custom.header.value
-    endif
-
-    if header_metaobject != blank
-      assign transparent_logo_setting = header_metaobject.transparent_logo.value | default: header_metaobject.transparent_logo
-      if transparent_logo_setting == 1 or transparent_logo_setting == '1'
-        assign transparent_header = true
-      endif
-    endif
-
-    if template.name == 'index'
-      assign transparent_header = true
-    endif
-  -%}
 
   {%- if request.design_mode -%}
     <!-- Norvegr transparent header: template={{ template.name }} header={{ header_metaobject | json }} transparent_logo={{ transparent_logo_setting | default: 'blank' }} enabled={{ transparent_header }} -->
