@@ -3,7 +3,8 @@ git add .
 git commit -m "Collection styling"
 git pull && git push origin HEAD:dawn-theme
 
+cd /Users/thombennett/Documents/GitHub/norvegr-new
 git add .
-git commit -m "Keep header localization and icons black on transparent header"
+git commit -m "Heading Font styling"
 git pull --no-rebase origin dawn-theme
 git push origin HEAD:dawn-theme

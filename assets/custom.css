@@ -6,6 +6,25 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
   letter-spacing: 0.12rem;
 }
+
+/* transparent header: darken hero under nav for logo/text legibility */
+.transparent-header #MainContent > .shopify-section:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: min(40vh, 28rem);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.transparent-header:has(.section-header.scrolled-past-header) #MainContent > .shopify-section:first-child::before {
+  opacity: 0;
+}
+
 /* collection section*/
 .collection {
     .collection__title.title-wrapper {
