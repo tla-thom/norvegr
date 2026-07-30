@@ -31,15 +31,22 @@
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
-    if card_product.featured_media and media_aspect_ratio == 'portrait'
+    assign ratio_percent = 100
+
+    if media_aspect_ratio == 'portrait'
       assign ratio = 0.8
-    elsif card_product.featured_media and media_aspect_ratio == 'landscape'
+      assign ratio_percent = 125
+    elsif media_aspect_ratio == 'landscape'
       assign ratio = 1.333
-    elsif card_product.featured_media and media_aspect_ratio == 'adapt'
+      assign ratio_percent = 75
+    elsif media_aspect_ratio == 'adapt' and card_product.featured_media
       assign ratio = card_product.featured_media.aspect_ratio
+      assign ratio_percent = 100.0 | divided_by: ratio | times: 100 | round: 2
     endif
+
     if ratio == 0 or ratio == null
       assign ratio = 1
+      assign ratio_percent = 100
     endif
   -%}
 
@@ -55,11 +62,11 @@
           {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
           {% if horizontal_class %} card--horizontal{% endif %}
         "
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+        style="--ratio-percent: {{ ratio_percent }}%;"
       >
         <div
           class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
-          style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+          style="--ratio-percent: {{ ratio_percent }}%;"
         >
           {%- if card_product.featured_media -%}
             <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
@@ -576,11 +583,15 @@
 {%- else -%}
   {%- liquid
     assign ratio = 1
+    assign ratio_percent = 100
     assign placeholder = true
+
     if media_aspect_ratio == 'portrait'
       assign ratio = 0.8
+      assign ratio_percent = 125
     elsif media_aspect_ratio == 'landscape'
       assign ratio = 1.333
+      assign ratio_percent = 75
     endif
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
@@ -591,7 +602,7 @@
         {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
       "
-      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      style="--ratio-percent: {{ ratio_percent }}%;"
     >
       <div
         class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
