@@ -119,7 +119,7 @@
         "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 0
       }
