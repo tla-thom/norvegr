@@ -21,6 +21,8 @@
         "video": "shopify://files/videos/novegr-home-sm.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
+        "video_height": "xlarge",
+        "mobile_height": "60",
         "full_width": true,
         "color_scheme": "",
         "padding_top": 0,
