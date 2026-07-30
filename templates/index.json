@@ -250,7 +250,7 @@
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": true,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
