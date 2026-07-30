@@ -14,7 +14,7 @@ header {
     }   
     @media screen and (min-width: 990px) {
         .shopify-section-header-sticky.scrolled-past-header {
-            .header:not(.header--middle-left,.header--middle-center) .header__inline-menu {
+            .header__inline-menu {
                 margin-top: 0px;
             }
         }       
