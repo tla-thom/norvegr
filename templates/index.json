@@ -105,6 +105,51 @@
         "padding_bottom": 40
       }
     },
+    "rich_text_DUQh9z": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zGBwxf": {
+          "type": "heading",
+          "settings": {
+            "heading": "As featured in",
+            "heading_size": "h2"
+          }
+        },
+        "text_4nMErb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_3gh7cK": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zGBwxf",
+        "text_4nMErb",
+        "button_3gh7cK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "multicolumn_rBmcKU": {
       "type": "multicolumn",
       "blocks": {
@@ -528,63 +573,18 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "rich_text_DUQh9z": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_zGBwxf": {
-          "type": "heading",
-          "settings": {
-            "heading": "As featured in",
-            "heading_size": "h2"
-          }
-        },
-        "text_4nMErb": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_3gh7cK": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_zGBwxf",
-        "text_4nMErb",
-        "button_3gh7cK"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "video_wP7pDz",
     "rich_text_iQiJ8h",
     "featured_collection",
+    "rich_text_DUQh9z",
     "multicolumn_rBmcKU",
     "image_banner",
     "slideshow_eGbDHj",
     "image_banner_4dBkYj",
     "multicolumn_y7zKHG",
-    "multicolumn_xhRMDL",
-    "rich_text_DUQh9z"
+    "multicolumn_xhRMDL"
   ]
 }
