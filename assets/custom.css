@@ -1,4 +1,11 @@
 /* Norvegr theme overrides load after base.css */
+/* Global heading styles */
+h1, h2, h3, h4, h5,
+.h0, .h1, .h2, .h3, .h4, .h5,
+.hxl, .hxxl {
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
 /* collection section*/
 .collection {
     .collection__title.title-wrapper {
