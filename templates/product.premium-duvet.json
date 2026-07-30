@@ -223,7 +223,7 @@
         "image_width": "half",
         "image_ratio": "adapt",
         "text_on_image": false,
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
@@ -335,6 +335,55 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "image_banner_b4Qm3Q": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Wgk38i": {
+          "type": "heading",
+          "settings": {
+            "heading": "Exclusive Eiderdown",
+            "heading_size": "h2"
+          }
+        },
+        "text_mLiGyG": {
+          "type": "text",
+          "settings": {
+            "text": "Our most indulgent and limited edition collection features supremely soft eiderdown, hand-harvested from Svalbard after the nesting season.",
+            "text_style": "body"
+          }
+        },
+        "buttons_kyF664": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wgk38i",
+        "text_mLiGyG",
+        "buttons_kyF664"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/imgi_39_Norvegr-AW2025-Campaign-035.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "xlarge",
+        "mobile_height": "70",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
     }
   },
   "order": [
@@ -343,6 +392,7 @@
     "related-products",
     "slideshow_FeUcJJ",
     "multicolumn_MpPDWq",
-    "slideshow_bppbjd"
+    "slideshow_bppbjd",
+    "image_banner_b4Qm3Q"
   ]
 }
