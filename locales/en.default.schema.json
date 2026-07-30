@@ -835,6 +835,9 @@
           },
           "options__3": {
             "label": "Square"
+          },
+          "options__4": {
+            "label": "Landscape"
           }
         },
         "show_secondary_image": {
