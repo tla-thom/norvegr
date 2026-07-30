@@ -85,37 +85,6 @@
         "padding_bottom": 32
       }
     },
-    "disclosures": {
-      "type": "disclosures",
-      "disabled": true,
-      "settings": {
-        "heading": "Disclosures",
-        "heading_size": "h2",
-        "open_by_default": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "slideshow_FeUcJJ": {
       "type": "slideshow",
       "blocks": {
@@ -222,6 +191,7 @@
         "heading_size": "h2",
         "image_width": "half",
         "image_ratio": "adapt",
+        "contain_image": false,
         "text_on_image": false,
         "button_label": "",
         "button_link": "",
@@ -384,15 +354,45 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "products_to_show": 2,
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    },
+    "disclosures": {
+      "type": "disclosures",
+      "disabled": true,
+      "settings": {
+        "heading": "Disclosures",
+        "heading_size": "h2",
+        "open_by_default": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "disclosures",
-    "related-products",
     "slideshow_FeUcJJ",
     "multicolumn_MpPDWq",
     "slideshow_bppbjd",
-    "image_banner_b4Qm3Q"
+    "image_banner_b4Qm3Q",
+    "related-products",
+    "disclosures"
   ]
 }
