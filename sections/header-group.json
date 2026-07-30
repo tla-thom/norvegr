@@ -20,18 +20,10 @@
             "text": "Subscribe for 10% off your first order.",
             "link": "shopify://pages/signup"
           }
-        },
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_ppR9Vz",
-        "announcement-bar-0"
+        "announcement_ppR9Vz"
       ],
       "settings": {
         "auto_rotate": false,
