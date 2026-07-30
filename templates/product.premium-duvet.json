@@ -123,6 +123,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/imgi_46_Norvegr-Winter-Campaign-01.jpg",
+            "split_layout": false,
             "image_overlay_opacity": 0,
             "heading": "The Art of Pure Insulation",
             "heading_size": "h1",
@@ -141,6 +142,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/imgi_73_NorvegrBlogPost7-1-2048x1830.jpg",
+            "split_layout": false,
             "image_overlay_opacity": 0,
             "heading": "The Batiste Casing",
             "heading_size": "h1",
@@ -233,6 +235,8 @@
         "slide_7tz6aL": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/imgi_32_1NORVEGR-SPRING_SUMMER2026-040-2048x1366.jpg",
+            "split_layout": true,
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -250,6 +254,8 @@
         "slide_8VEUVJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/imgi_96_Norv-Ost-Couple-2023-05-2048x1365.jpg",
+            "split_layout": true,
             "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
@@ -274,7 +280,7 @@
         "layout": "grid",
         "slide_height": "medium",
         "mobile_height": "default",
-        "slider_visual": "counter",
+        "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
