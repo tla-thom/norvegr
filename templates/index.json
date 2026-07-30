@@ -77,6 +77,54 @@
         "padding_bottom": 48
       }
     },
+    "multicolumn_y7zKHG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9AU49x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_40_NORVEGR-SPRING_SUMMER2026-047-scaled_1.jpg",
+            "title": "Travel Sets",
+            "text": "",
+            "link_label": "Shop Travel Sets",
+            "link": ""
+          }
+        },
+        "column_CDmRFP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
+            "title": "Duvets",
+            "text": "",
+            "link_label": "Shop Duvets",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9AU49x",
+        "column_CDmRFP"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "contain_image": false,
+        "text_on_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -87,7 +135,7 @@
         "description": "<p>Our fan-favourite duvet and pillow is an unbeatable combination, adding a touch of cloud-light elegance to take your sleep to the next level.</p>",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": false,
@@ -455,10 +503,10 @@
         "show_text_below": false
       }
     },
-    "multicolumn_y7zKHG": {
+    "multicolumn_cXzDmN": {
       "type": "multicolumn",
       "blocks": {
-        "column_9AU49x": {
+        "column_Amy6LG": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/imgi_40_NORVEGR-SPRING_SUMMER2026-047-scaled_1.jpg",
@@ -468,7 +516,7 @@
             "link": ""
           }
         },
-        "column_CDmRFP": {
+        "column_UJtBA7": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
@@ -480,8 +528,8 @@
         }
       },
       "block_order": [
-        "column_9AU49x",
-        "column_CDmRFP"
+        "column_Amy6LG",
+        "column_UJtBA7"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -578,13 +626,14 @@
   "order": [
     "video_wP7pDz",
     "rich_text_iQiJ8h",
+    "multicolumn_y7zKHG",
     "featured_collection",
     "rich_text_DUQh9z",
     "multicolumn_rBmcKU",
     "image_banner",
     "slideshow_eGbDHj",
     "image_banner_4dBkYj",
-    "multicolumn_y7zKHG",
+    "multicolumn_cXzDmN",
     "multicolumn_xhRMDL"
   ]
 }
