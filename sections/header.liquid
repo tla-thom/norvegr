@@ -324,14 +324,14 @@
 
       if (document.body.classList.contains('transparent-header')) {
         this.header.classList.remove('scrolled-past-header');
-        this.headerResizeObserver = new ResizeObserver(() => this.setHeaderHeight());
+        this.headerResizeObserver = new ResizeObserver(() => this.updateLiveHeaderHeight());
         this.headerResizeObserver.observe(this.header);
       }
 
-      this.setHeaderHeight();
+      this.setHeaderHeight(true);
 
-      this.onResizeHandler = this.setHeaderHeight.bind(this);
-      this.onMediaChangeHandler = this.setHeaderHeight.bind(this);
+      this.onResizeHandler = () => this.setHeaderHeight(true);
+      this.onMediaChangeHandler = () => this.setHeaderHeight(true);
 
       window.matchMedia('(max-width: 990px)').addEventListener('change', this.onMediaChangeHandler);
       window.addEventListener('resize', this.onResizeHandler);
@@ -354,21 +354,30 @@
       this.onScroll();
     }
 
-    setHeaderHeight() {
-      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+    setHeaderHeight(updateStickyOffset = false) {
+      const height = this.header.offsetHeight;
+      document.documentElement.style.setProperty('--header-height', `${height}px`);
 
       const headerGroup = document.querySelector('.shopify-section-group-header-group');
       if (headerGroup) {
         document.documentElement.style.setProperty('--header-group-height', `${headerGroup.offsetHeight}px`);
       }
 
+      if (updateStickyOffset) {
+        document.documentElement.style.setProperty('--header-sticky-offset', `${height}px`);
+      }
+
       this.updateHeaderBounds();
     }
 
+    updateLiveHeaderHeight() {
+      this.setHeaderHeight(false);
+    }
+
     updateScrolledHeaderHeight() {
-      this.setHeaderHeight();
+      this.updateLiveHeaderHeight();
       clearTimeout(this.scrolledHeaderHeightTimeout);
-      this.scrolledHeaderHeightTimeout = setTimeout(() => this.setHeaderHeight(), 400);
+      this.scrolledHeaderHeightTimeout = setTimeout(() => this.updateLiveHeaderHeight(), 400);
     }
 
     updateHeaderBounds() {
