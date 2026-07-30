@@ -17,7 +17,7 @@
         "announcement_ppR9Vz": {
           "type": "announcement",
           "settings": {
-            "text": "Subscribe to our mailing list for 10% off your first order. USE CODE 'NEW10'",
+            "text": "Subscribe for 10% off your first order. USE CODE 'NEW10'",
             "link": "shopify://pages/signup"
           }
         },
