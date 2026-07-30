@@ -194,12 +194,62 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "image_banner_4dBkYj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6pTLBx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Exclusive Eiderdown",
+            "heading_size": "h2"
+          }
+        },
+        "text_fjVhnb": {
+          "type": "text",
+          "settings": {
+            "text": "Our most indulgent and limited edition collection features supremely soft eiderdown, hand-harvested from Svalbard after the nesting season.",
+            "text_style": "body"
+          }
+        },
+        "buttons_mYbM79": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6pTLBx",
+        "text_fjVhnb",
+        "buttons_mYbM79"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/imgi_39_Norvegr-AW2025-Campaign-035.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "xlarge",
+        "mobile_height": "70",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
     }
   },
   "order": [
     "video_wP7pDz",
     "featured_collection",
     "image_banner",
-    "slideshow_eGbDHj"
+    "slideshow_eGbDHj",
+    "image_banner_4dBkYj"
   ]
 }
