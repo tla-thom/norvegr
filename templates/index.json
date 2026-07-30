@@ -64,6 +64,16 @@
     "multicolumn_rBmcKU": {
       "type": "multicolumn",
       "blocks": {
+        "column_mpjwpM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_8_Red-magazine-150x150.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_XCXfrL": {
           "type": "column",
           "settings": {
@@ -124,16 +134,6 @@
             "link": ""
           }
         },
-        "column_mpjwpM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_8_Red-magazine-150x150.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_UyXmmQ": {
           "type": "column",
           "settings": {
@@ -146,13 +146,13 @@
         }
       },
       "block_order": [
+        "column_mpjwpM",
         "column_XCXfrL",
         "column_p3JnK8",
         "column_pnqnaL",
         "column_jDEUFt",
         "column_46h9xb",
         "column_wrmUbk",
-        "column_mpjwpM",
         "column_UyXmmQ"
       ],
       "name": "t:sections.multicolumn.presets.name",
