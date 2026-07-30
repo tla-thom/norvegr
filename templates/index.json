@@ -64,6 +64,26 @@
     "multicolumn_rBmcKU": {
       "type": "multicolumn",
       "blocks": {
+        "column_XCXfrL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_4_robb-report-duvets-pillows.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_p3JnK8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_pnqnaL": {
           "type": "column",
           "settings": {
@@ -126,6 +146,8 @@
         }
       },
       "block_order": [
+        "column_XCXfrL",
+        "column_p3JnK8",
         "column_pnqnaL",
         "column_jDEUFt",
         "column_46h9xb",
@@ -142,7 +164,7 @@
         "text_on_image": false,
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 6,
+        "columns_desktop": 8,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
