@@ -63,13 +63,19 @@
         </div>
       {%- endunless -%}
     </div>
+    <div
+      class="video-section__height video-section__height--{{ section.settings.video_height }}{% if section.settings.video_height == 'adapt' %} video-section__height--adapt{% endif %}{% if section.settings.mobile_height != 'default' %} video-section__height--mobile-height{% endif %}"
+      {% if section.settings.mobile_height != 'default' %}
+        style="--banner-mobile-height: {{ section.settings.mobile_height }}lvh;"
+      {% endif %}
+    >
     <deferred-media
-      class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
       {% if section.settings.enable_autoplay %}
         data-autoplay="true"
       {% endif %}
-      {% if poster != null %}
+      {% if poster != null and section.settings.video_height == 'adapt' %}
         style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
       {% endif %}
     >
@@ -133,6 +139,7 @@
         {%- endif -%}
       </template>
     </deferred-media>
+    </div>
   </div>
 </div>
 
@@ -234,6 +241,70 @@
       "id": "description",
       "label": "t:sections.video.settings.description.label",
       "info": "t:sections.video.settings.description.info"
+    },
+    {
+      "type": "select",
+      "id": "video_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.image-banner.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.image-banner.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.image-banner.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-banner.settings.image_height.options__4.label"
+        },
+        {
+          "value": "xlarge",
+          "label": "t:sections.image-banner.settings.image_height.options__5.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.image-banner.settings.image_height.label"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.mobile_height.options__1.label"
+        },
+        {
+          "value": "50",
+          "label": "t:sections.all.mobile_height.options__2.label"
+        },
+        {
+          "value": "60",
+          "label": "t:sections.all.mobile_height.options__3.label"
+        },
+        {
+          "value": "70",
+          "label": "t:sections.all.mobile_height.options__4.label"
+        },
+        {
+          "value": "80",
+          "label": "t:sections.all.mobile_height.options__5.label"
+        },
+        {
+          "value": "90",
+          "label": "t:sections.all.mobile_height.options__6.label"
+        },
+        {
+          "value": "100",
+          "label": "t:sections.all.mobile_height.options__7.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.mobile_height.label"
     },
     {
       "type": "header",

@@ -46,3 +46,55 @@
 .video-section__media.media-fit-cover video {
   object-fit: cover;
 }
+
+.video-section__height:not(.video-section__height--adapt) .video-section__media {
+  padding-bottom: 0;
+}
+
+.video-section__height:not(.video-section__height--adapt) .video-section__media.media-fit-cover .video-section__poster img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .video-section__height--small:not(.video-section__height--adapt) .video-section__media {
+    height: 28rem;
+  }
+
+  .video-section__height--medium:not(.video-section__height--adapt) .video-section__media {
+    height: 34rem;
+  }
+
+  .video-section__height--large:not(.video-section__height--adapt) .video-section__media {
+    height: 39rem;
+  }
+
+  .video-section__height--xlarge:not(.video-section__height--adapt) .video-section__media {
+    height: 45rem;
+  }
+
+  .video-section__height--mobile-height .video-section__media {
+    height: var(--banner-mobile-height);
+    min-height: var(--banner-mobile-height);
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .video-section__height--small:not(.video-section__height--adapt) .video-section__media {
+    height: 42rem;
+  }
+
+  .video-section__height--medium:not(.video-section__height--adapt) .video-section__media {
+    height: 56rem;
+  }
+
+  .video-section__height--large:not(.video-section__height--adapt) .video-section__media {
+    height: 72rem;
+  }
+
+  .video-section__height--xlarge:not(.video-section__height--adapt) .video-section__media {
+    height: 93rem;
+  }
+}

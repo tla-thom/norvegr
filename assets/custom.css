@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5,
 }
 
 /* transparent header: darken hero under nav for logo/text legibility */
+header {
+    .header__active-menu-item {
+        text-decoration: none;
+    }    
+}
+
 .transparent-header #MainContent > .shopify-section:first-child::before {
   content: '';
   position: absolute;
