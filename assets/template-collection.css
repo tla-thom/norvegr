@@ -92,6 +92,57 @@
     padding: 0 1.5rem;
     max-width: none;
   }
+
+  .collection slider-component.slider-component-desktop.slider-component-contained.page-width {
+    max-width: var(--page-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop {
+    scroll-padding-left: 0;
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop:after {
+    content: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop .slider__slide:first-child {
+    margin-left: 0;
+    scroll-margin-left: 0;
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop.grid--6-col-desktop .grid__item {
+    width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
+    max-width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop.grid--5-col-desktop .grid__item {
+    width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+    max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop.grid--4-col-desktop .grid__item {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop.grid--3-col-desktop .grid__item {
+    width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+    max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop.grid--2-col-desktop .grid__item {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
+  .collection slider-component.slider-component-contained .slider--desktop.grid--1-col-desktop .grid__item {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .collection__view-all a:not(.link) {
