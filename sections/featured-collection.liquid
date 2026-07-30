@@ -92,7 +92,9 @@
       {%- endif -%}
     </div>
 
-    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% if section.settings.full_width == false %} slider-component-contained{% endif %}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <slider-component
+      class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% elsif show_desktop_slider %} page-width slider-component-contained{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if show_desktop_slider == false and show_mobile_slider == false and section.settings.full_width == false %} page-width page-width-desktop{% elsif show_desktop_slider == false and show_mobile_slider %} page-width-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    >
       <ul
         id="Slider-{{ section.id }}"
         data-id="{{ section.id }}"

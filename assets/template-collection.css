@@ -84,7 +84,7 @@
     padding: 0 5rem;
   }
 
-  .collection slider-component:not(.page-width-desktop) {
+  .collection slider-component:not(.page-width-desktop):not(.slider-component-contained) {
     padding: 0;
   }
 
@@ -95,8 +95,11 @@
 
   .collection slider-component.slider-component-desktop.slider-component-contained.page-width {
     max-width: var(--page-width);
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .collection slider-component.slider-component-contained .slider--desktop {
