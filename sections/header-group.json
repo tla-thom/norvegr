@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_ppR9Vz": {
+          "type": "announcement",
+          "settings": {
+            "text": "Subscribe to our mailing list for 10% off your first order. USE CODE 'NEW10'",
+            "link": "shopify://pages/signup"
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -23,6 +30,7 @@
         }
       },
       "block_order": [
+        "announcement_ppR9Vz",
         "announcement-bar-0"
       ],
       "settings": {
