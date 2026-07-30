@@ -981,6 +981,16 @@ summary::-webkit-details-marker {
     max-width: 100%;
   }
 
+  .grid--4-col-tablet-down .grid__item {
+    width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+    max-width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+  }
+
+  .grid--3-col-tablet-down .grid__item {
+    width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2 / 3);
+    max-width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2 / 3);
+  }
+
   .slider--tablet.grid--peek {
     margin: 0;
     width: 100%;
@@ -1004,6 +1014,16 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 990px) {
+  .grid--8-col-desktop .grid__item {
+    width: calc(12.5% - var(--grid-desktop-horizontal-spacing) * 7 / 8);
+    max-width: calc(12.5% - var(--grid-desktop-horizontal-spacing) * 7 / 8);
+  }
+
+  .grid--7-col-desktop .grid__item {
+    width: calc(14.28% - var(--grid-desktop-horizontal-spacing) * 6 / 7);
+    max-width: calc(14.28% - var(--grid-desktop-horizontal-spacing) * 6 / 7);
+  }
+
   .grid--6-col-desktop .grid__item {
     width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
     max-width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
@@ -1080,6 +1100,14 @@ summary::-webkit-details-marker {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
   }
 
+  .grid--4-col-tablet-down .grid__item {
+    width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+  }
+
+  .grid--3-col-tablet-down .grid__item {
+    width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2 / 3);
+  }
+
   .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item,
   .grid--peek .grid__item {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) - 3rem);
@@ -1103,6 +1131,14 @@ summary::-webkit-details-marker {
   .slider--tablet.grid--peek.grid--2-col-tablet .grid__item,
   .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) - 3rem);
+  }
+
+  .slider--tablet.grid--peek.grid--4-col-tablet-down .grid__item {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing) - 3rem);
+  }
+
+  .slider--tablet.grid--peek.grid--3-col-tablet-down .grid__item {
+    width: calc(33.33% - var(--grid-desktop-horizontal-spacing) - 3rem);
   }
 
   .slider--tablet.grid--peek .grid__item:first-of-type {

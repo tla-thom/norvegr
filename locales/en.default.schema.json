@@ -2602,6 +2602,12 @@
           },
           "options__2": {
             "label": "2"
+          },
+          "options__3": {
+            "label": "3"
+          },
+          "options__4": {
+            "label": "4"
           }
         },
         "swipe_on_mobile": {
