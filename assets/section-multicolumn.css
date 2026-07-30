@@ -231,3 +231,65 @@
     display: list-item;
   }
 }
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay {
+  overflow: hidden;
+}
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__image-wrapper {
+  position: relative;
+  margin: 0;
+}
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__image-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  padding: 0;
+  color: #fff;
+}
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__info h3,
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__info .rte,
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__info .rte p,
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__info .link {
+  color: #fff;
+}
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card__image-wrapper + .multicolumn-card__info {
+  padding-top: 0;
+}
+
+.multicolumn--text-on-image.background-none .multicolumn-card--text-overlay .multicolumn-card__info,
+.multicolumn--text-on-image.background-none .slider .multicolumn-card--text-overlay .multicolumn-card__info,
+.multicolumn--text-on-image.background-none .multicolumn-card--text-overlay .multicolumn-card__image-wrapper + .multicolumn-card__info {
+  padding: 0;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.multicolumn--text-on-image.background-none .multicolumn-card--text-overlay .multicolumn-card__image-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.multicolumn--text-on-image .multicolumn-card--text-overlay.multicolumn-card-spacing,
+.multicolumn--text-on-image .multicolumn-card--text-overlay .multicolumn-card-spacing {
+  padding: 0;
+  margin: 0;
+}
