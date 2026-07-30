@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
   letter-spacing: 0.12rem;
 }
+.facet-filters__label, .facets__heading, .product-count__text {
+    text-transform: none !important;
+}
 
 /* transparent header: darken hero under nav for logo/text legibility */
 header {
@@ -14,7 +17,7 @@ header {
     }      
 }
 @media screen and (min-width: 990px) {
-    .shopify-section-header-sticky.scrolled-past-header {
+    .section-header.scrolled-past-header {
         .header__inline-menu {
             margin-top: 0px;
         }
