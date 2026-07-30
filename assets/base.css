@@ -2422,6 +2422,28 @@ input[type='checkbox'] {
 .transparent-header .shopify-section-group-header-group {
   position: relative;
   z-index: 4;
+  opacity: 0;
+  animation: transparent-header-fade-in 0.4s ease 0.05s forwards;
+}
+
+@keyframes transparent-header-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transparent-header .shopify-section-group-header-group {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .transparent-header .section-header {

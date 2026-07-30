@@ -303,6 +303,23 @@
 
     {%- if transparent_header -%}
       <style>
+        html.transparent-header .shopify-section-group-header-group {
+          opacity: 0;
+          animation: transparent-header-fade-in 0.4s ease 0.05s forwards;
+        }
+
+        @keyframes transparent-header-fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
         html.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper,
         html.transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper,
         html.transparent-header .section-header:not(.scrolled-past-header) .header-wrapper.gradient,
