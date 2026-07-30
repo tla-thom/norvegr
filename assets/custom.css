@@ -81,10 +81,8 @@ slideshow-component {
 
 /* Default page section*/
 @media screen and (min-width: 750px) {
-    .main-page-title {
+    .main-page-title.page-title {
         margin-bottom: 0rem;
-    }
-    .h0 {
         font-size: calc(var(--font-heading-scale) * 3.2rem);
     }
 }
