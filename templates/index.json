@@ -160,7 +160,7 @@
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "text_on_image": false,
         "button_label": "",
         "button_link": "",
