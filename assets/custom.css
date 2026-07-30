@@ -78,3 +78,16 @@ slideshow-component {
         border: .1rem solid rgba(var(--color-foreground), .0);
     }
 }
+
+/* Default page section*/
+@media screen and (min-width: 750px) {
+    .main-page-title {
+        margin-bottom: 0rem;
+    }
+    .h0 {
+        font-size: calc(var(--font-heading-scale) * 3.2rem);
+    }
+}
+.main-page-title {
+    text-align: center;
+}
