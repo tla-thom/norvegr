@@ -118,7 +118,7 @@
   {% endif %}
   class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
   {% if settings.logo != blank %}
-    style="--header-logo-width: {{ settings.logo_width }}px;"
+    style="--header-logo-width: {{ settings.logo_width }}px; --header-logo-scale-scrolled: 0.5;"
   {% endif %}
 >
   {%- liquid

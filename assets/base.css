@@ -2401,11 +2401,18 @@ input[type='checkbox'] {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
-/* Header logo — fixed width; no shrink on scroll (prevents layout jump) */
+/* Logo scale on scroll — transform shrinks visually without changing layout height */
 .section-header .header__heading-logo {
   width: var(--header-logo-width, auto);
   height: auto;
   max-width: 100%;
+  transform: scale(1);
+  transform-origin: center top;
+  transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.section-header.scrolled-past-header .header__heading-logo {
+  transform: scale(var(--header-logo-scale-scrolled, 0.5));
 }
 
 .section-header .header__heading-logo-wrapper {
@@ -2443,7 +2450,13 @@ input[type='checkbox'] {
 .transparent-header .section-header .header__heading-logo {
   width: var(--header-logo-width, auto);
   max-width: 100%;
-  transition: filter 0.4s cubic-bezier(0, 0, 0.2, 1);
+  transform: scale(1);
+  transform-origin: center top;
+  transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1), filter 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.transparent-header .section-header.scrolled-past-header .header__heading-logo {
+  transform: scale(var(--header-logo-scale-scrolled, 0.5));
 }
 
 /* At page top: transparent header, white nav, inverted logo */
