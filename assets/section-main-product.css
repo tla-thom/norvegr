@@ -27,10 +27,6 @@ product-info {
     z-index: 2;
   }
 
-  .product__info-container.product__column-sticky {
-    top: calc(var(--header-height, 0px) + 3rem);
-  }
-
   .product--thumbnail .thumbnail-list {
     padding-right: var(--media-shadow-horizontal-offset);
   }

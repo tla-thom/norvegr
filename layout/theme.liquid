@@ -350,7 +350,7 @@
     <!-- Norvegr transparent header: template={{ template.name }} header={{ header_metaobject | json }} transparent_logo={{ transparent_logo_setting | default: 'blank' }} enabled={{ transparent_header }} -->
   {%- endif -%}
 
-  <body class="gradient template-{{ template.name }}{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if transparent_header %} transparent-header{% endif %}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if transparent_header %} transparent-header{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
