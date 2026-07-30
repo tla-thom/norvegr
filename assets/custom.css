@@ -14,7 +14,7 @@ header {
     }    
 }
 
-.transparent-header #MainContent > .shopify-section:first-child::before {
+.transparent-header.template-index #MainContent > .shopify-section:first-child::before {
   content: '';
   position: absolute;
   top: 0;
@@ -27,7 +27,7 @@ header {
   transition: opacity 0.3s ease;
 }
 
-.transparent-header:has(.section-header.scrolled-past-header) #MainContent > .shopify-section:first-child::before {
+.transparent-header.template-index:has(.section-header.scrolled-past-header) #MainContent > .shopify-section:first-child::before {
   opacity: 0;
 }
 

@@ -2433,7 +2433,7 @@ input[type='checkbox'] {
   margin-bottom: 0 !important;
 }
 
-.transparent-header #MainContent > .shopify-section:first-child {
+.transparent-header.template-index #MainContent > .shopify-section:first-child {
   margin-top: calc(-1 * var(--header-height, 0px));
   position: relative;
   z-index: 1;
