@@ -110,7 +110,6 @@
       "blocks": {
         "heading_zGBwxf": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "As featured in",
             "heading_size": "h2"
