@@ -522,7 +522,7 @@
         "image_overlay_opacity": 30,
         "image_height": "xlarge",
         "mobile_height": "70",
-        "image_behavior": "none",
+        "image_behavior": "zoom-in",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
