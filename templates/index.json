@@ -315,8 +315,8 @@
           "type": "heading",
           "settings": {
             "heading": "The Norvegr Way",
-            "heading_size": "h2",
-            "use_body_font": false
+            "heading_size": "h0",
+            "use_body_font": true
           }
         },
         "button": {
