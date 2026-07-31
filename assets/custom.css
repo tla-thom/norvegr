@@ -52,7 +52,7 @@ header {
 } 
 
 @media screen and (min-width: 750px) {
-    .product__column-sticky {
+    .product__info-container.product__column-sticky {
         top: 120px;
     }
 }
