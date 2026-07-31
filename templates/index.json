@@ -588,9 +588,9 @@
         "column_ah3gLm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_32_Norvegr-AW2025-Campaign-083.jpg",
-            "title": "CHANNEL CONSTRUCTION",
-            "text": "<p>Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.</p>",
+            "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1.jpg",
+            "title": "Designer’s Choice",
+            "text": "<p>Our clients include some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They span luxury hotels, manufacturers and designers for private yachts and aircrafts, plus exclusive retailers in Europe and America.</p>",
             "link_label": "",
             "link": ""
           }
@@ -598,9 +598,9 @@
         "column_zyRhYa": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
-            "title": "Peerless Fill Power",
-            "text": "<p>Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.</p>",
+            "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
+            "title": "Travel With Us",
+            "text": "<p>Without curiosity, where would we be? The desire to seek out new horizons, to find what happens next, is a driving force as old as the hills, and as old as the vikings. Follow the Norvegr Journey to the North and celebrate the spirit of travel with us.</p>",
             "link_label": "",
             "link": ""
           }
@@ -608,9 +608,9 @@
         "column_kYtzPx": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_78_NorvegrBlogPost1-1-2048x1512.jpg",
-            "title": "Lasting Legacy",
-            "text": "<p>Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.</p>",
+            "image": "shopify://shop_images/imgi_14_duvet-traditional-factory-150x150.jpg",
+            "title": "FAQ",
+            "text": "<p>Browse through some of our most recently asked questions, and we’ll help you find the perfect product for your ideal rest.</p>",
             "link_label": "",
             "link": ""
           }
@@ -618,9 +618,9 @@
         "column_adFiqA": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
-            "title": "Made For Forever",
-            "text": "<p>An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.</p>",
+            "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
+            "title": "Where to find us",
+            "text": "<p>From luxury hotels to exclusive showrooms, take a look at our map and see where you can experience the Norvegr way.</p>",
             "link_label": "",
             "link": ""
           }
@@ -632,15 +632,14 @@
         "column_kYtzPx",
         "column_adFiqA"
       ],
-      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "About Norvegr",
+        "title": "Comfort Customised",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
         "contain_image": false,
-        "text_on_image": true,
+        "text_on_image": false,
         "button_label": "",
         "button_link": "",
         "full_width": false,
