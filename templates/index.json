@@ -636,9 +636,9 @@
       "settings": {
         "title": "Comfort Customised",
         "heading_size": "h2",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "square",
-        "contain_image": false,
+        "contain_image": true,
         "text_on_image": false,
         "button_label": "",
         "button_link": "",
