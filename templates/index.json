@@ -261,56 +261,6 @@
         "padding_bottom": 28
       }
     },
-    "multicolumn_y7zKHG": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_9AU49x": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_40_NORVEGR-SPRING_SUMMER2026-047-scaled_1.jpg",
-            "title": "Travel Sets",
-            "text": "",
-            "link_label": "Shop Travel Sets",
-            "link": ""
-          }
-        },
-        "column_CDmRFP": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
-            "title": "Duvets",
-            "text": "",
-            "link_label": "Shop Duvets",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_9AU49x",
-        "column_CDmRFP"
-      ],
-      "disabled": true,
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "square",
-        "contain_image": false,
-        "text_on_image": true,
-        "button_label": "",
-        "button_link": "",
-        "full_width": false,
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -652,6 +602,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_y7zKHG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9AU49x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_40_NORVEGR-SPRING_SUMMER2026-047-scaled_1.jpg",
+            "title": "Travel Sets",
+            "text": "",
+            "link_label": "Shop Travel Sets",
+            "link": ""
+          }
+        },
+        "column_CDmRFP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
+            "title": "Duvets",
+            "text": "",
+            "link_label": "Shop Duvets",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9AU49x",
+        "column_CDmRFP"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "contain_image": false,
+        "text_on_image": true,
+        "button_label": "",
+        "button_link": "",
+        "full_width": true,
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -660,12 +659,12 @@
     "featured_collection",
     "rich_text_DUQh9z",
     "multicolumn_rBmcKU",
-    "multicolumn_y7zKHG",
     "image_banner",
     "slideshow_eGbDHj",
     "multicolumn_cXzDmN",
     "featured_collection_QRLXzG",
     "image_banner_4dBkYj",
-    "multicolumn_xhRMDL"
+    "multicolumn_xhRMDL",
+    "multicolumn_y7zKHG"
   ]
 }
