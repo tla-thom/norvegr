@@ -84,7 +84,7 @@
       "settings": {
         "collection": "all",
         "products_to_show": 4,
-        "title": "",
+        "title": "Latest",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
