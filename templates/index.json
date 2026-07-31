@@ -619,10 +619,10 @@
         "column_CDmRFP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
-            "title": "Duvets",
+            "image": "shopify://shop_images/luxury-bed-linen-sheets.jpg",
+            "title": "Bed Linen",
             "text": "",
-            "link_label": "Shop Duvets",
+            "link_label": "Shop Bed Linen",
             "link": ""
           }
         }
