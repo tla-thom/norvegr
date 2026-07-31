@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.multicolumn--full-width .page-width {
+  max-width: none;
+}
+
 .multicolumn.no-heading .title {
   display: none;
 }

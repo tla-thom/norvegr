@@ -23,7 +23,7 @@
   endif
 -%}
 
-<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% if section.settings.contain_image %} multicolumn--contain-image{% endif %}{% if section.settings.text_on_image %} multicolumn--text-on-image{% endif %}{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} multicolumn--full-width{% endif %}{% if section.settings.contain_image %} multicolumn--contain-image{% endif %}{% if section.settings.text_on_image %} multicolumn--text-on-image{% endif %}{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
   >
@@ -310,7 +310,14 @@
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_layout.content"
-    },     
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make fullwidth",
+      "default": false,
+      "info": "Removes the max-width constraint while keeping page padding."
+    },
     {
       "type": "range",
       "id": "columns_desktop",
