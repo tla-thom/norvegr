@@ -126,7 +126,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}{% if block.settings.use_body_font %} heading--body-font{% endif %}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
@@ -444,6 +444,12 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_body_font",
+          "label": "Use Italic",
+          "default": false
         }
       ]
     },

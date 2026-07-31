@@ -147,7 +147,7 @@
       <div class="video-section__content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <div class="video-section__content-inner color-{{ section.settings.color_scheme }}">
           {%- if section.settings.heading != blank -%}
-            <h2 class="video-section__heading inline-richtext {{ section.settings.heading_size }}">
+            <h2 class="video-section__heading inline-richtext {{ section.settings.heading_size }}{% if section.settings.use_body_font %} heading--body-font{% endif %}">
               {{ section.settings.heading }}
             </h2>
           {%- endif -%}
@@ -219,6 +219,12 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_body_font",
+      "label": "Use Italic",
+      "default": false
     },
     {
       "type": "richtext",
