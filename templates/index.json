@@ -108,35 +108,6 @@
         "padding_bottom": 40
       }
     },
-    "featured_collection_QRLXzG": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 4,
-        "title": "Our Top Picks For You",
-        "heading_size": "h2",
-        "use_body_font": true,
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 2,
-        "enable_desktop_slider": true,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "outline",
-        "color_scheme": "scheme-1",
-        "image_ratio": "landscape",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 40
-      }
-    },
     "rich_text_DUQh9z": {
       "type": "rich-text",
       "blocks": {
@@ -478,6 +449,35 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand",
         "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection_QRLXzG": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 4,
+        "title": "Duvet Collection",
+        "heading_size": "h1",
+        "use_body_font": true,
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "color_scheme": "scheme-1",
+        "image_ratio": "landscape",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
         "padding_bottom": 40
       }
     },
