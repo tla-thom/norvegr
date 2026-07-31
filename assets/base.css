@@ -2517,6 +2517,27 @@ input[type='checkbox'] {
   color: rgb(0, 0, 0);
 }
 
+/* Desktop dropdown submenu: black text on white panel when header is transparent at page top */
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu {
+  --color-foreground: 0, 0, 0;
+  --color-link: 0, 0, 0;
+  color: rgb(0, 0, 0);
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item span,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .link,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item .icon-caret,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .svg-wrapper svg {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item:hover,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item:hover span,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__active-menu-item {
+  color: rgb(0, 0, 0);
+}
+
 .transparent-header .section-header:not(.scrolled-past-header) .header__heading-logo {
   filter: brightness(0) invert(1);
 }
