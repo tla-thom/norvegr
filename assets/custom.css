@@ -26,6 +26,7 @@ button.shopify-payment-button__button--unbranded,
   font-family: var(--font-heading-family);
   text-transform: uppercase;
   letter-spacing: 0.12rem;
+  font-size: 1.2rem;
 }
 
 /* transparent header: darken hero under nav for logo/text legibility */
@@ -79,6 +80,7 @@ header {
     }
     .price {
         font-size: 1.3rem;
+        font-family: var(--font-heading-family);
     }
     @media only screen and (min-width: 750px) {
         h5, .h5 {
