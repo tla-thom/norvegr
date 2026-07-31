@@ -40,8 +40,11 @@ header {
         .header__inline-menu {
             margin-top: 0px;
         }
-    }       
-    
+    }
+
+    .header__inline-menu .header__menu-item {
+        font-size: 1.6rem;
+    }
 } 
 
 .transparent-header #MainContent > .shopify-section:first-child::before {
@@ -87,6 +90,12 @@ header {
             font-size: calc(var(--font-heading-scale) * 1.3rem);
         }
     }    
+}
+
+/* Product cards: no underline on text hover */
+.product-card-wrapper.underline-links-hover:hover a,
+.product-card-wrapper .card__heading:hover a {
+  text-decoration: none !important;
 }
 
 /* header localization section*/
