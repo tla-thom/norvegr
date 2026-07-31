@@ -15,6 +15,7 @@
       "settings": {
         "heading": "A Journey to Tranquility",
         "heading_size": "h1",
+        "use_body_font": true,
         "text": "",
         "button_label": "SHOP DUVETS",
         "button_link": "#",
@@ -40,7 +41,8 @@
           "type": "heading",
           "settings": {
             "heading": "The world's best down duvets.",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "use_body_font": false
           }
         },
         "text_Hfizqn": {
@@ -112,7 +114,8 @@
           "type": "heading",
           "settings": {
             "heading": "As featured in",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "use_body_font": false
           }
         },
         "text_4nMErb": {
@@ -319,7 +322,8 @@
           "type": "heading",
           "settings": {
             "heading": "The Norvegr Way",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "use_body_font": false
           }
         },
         "button": {
@@ -461,7 +465,8 @@
           "type": "heading",
           "settings": {
             "heading": "Exclusive Eiderdown",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "use_body_font": false
           }
         },
         "text_fjVhnb": {
