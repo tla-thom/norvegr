@@ -187,7 +187,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Peace of Mind",
+        "title": "",
         "heading_size": "h2",
         "image_width": "half",
         "image_ratio": "adapt",
@@ -201,7 +201,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
