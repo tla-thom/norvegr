@@ -458,8 +458,8 @@
           "type": "heading",
           "settings": {
             "heading": "Exclusive Eiderdown",
-            "heading_size": "h2",
-            "use_body_font": false
+            "heading_size": "h0",
+            "use_body_font": true
           }
         },
         "text_fjVhnb": {
