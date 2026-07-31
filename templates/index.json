@@ -14,7 +14,7 @@
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "A Journey to Tranquility",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "use_body_font": true,
         "text": "",
         "button_label": "SHOP DUVETS",
@@ -115,13 +115,7 @@
           "settings": {
             "heading": "As featured in",
             "heading_size": "h2",
-            "use_body_font": false
-          }
-        },
-        "text_4nMErb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As Featured in </p>"
+            "use_body_font": true
           }
         },
         "button_3gh7cK": {
@@ -139,7 +133,6 @@
       },
       "block_order": [
         "heading_zGBwxf",
-        "text_4nMErb",
         "button_3gh7cK"
       ],
       "name": "t:sections.rich-text.presets.name",
