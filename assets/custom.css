@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5,
   text-transform: none;
 }
 
+/* Buttons use heading font */
+.button,
+.button-label,
+.shopify-challenge__button,
+.customer button,
+button.shopify-payment-button__button--unbranded,
+.shopify-payment-button__button {
+  font-family: var(--font-heading-family);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
 /* transparent header: darken hero under nav for logo/text legibility */
 header {
     .header__active-menu-item {
