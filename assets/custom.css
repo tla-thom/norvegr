@@ -51,6 +51,12 @@ header {
     }
 } 
 
+@media screen and (min-width: 750px) {
+    .product__column-sticky {
+        top: 120px;
+    }
+}
+
 .transparent-header #MainContent > .shopify-section:first-child::before {
   content: '';
   position: absolute;
