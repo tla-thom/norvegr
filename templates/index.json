@@ -407,16 +407,6 @@
     "multicolumn_cXzDmN": {
       "type": "multicolumn",
       "blocks": {
-        "column_Amy6LG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_40_NORVEGR-SPRING_SUMMER2026-047-scaled_1.jpg",
-            "title": "Travel Sets",
-            "text": "",
-            "link_label": "Shop Travel Sets",
-            "link": ""
-          }
-        },
         "column_UJtBA7": {
           "type": "column",
           "settings": {
@@ -426,11 +416,21 @@
             "link_label": "Shop Duvets",
             "link": ""
           }
+        },
+        "column_Amy6LG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/european-white-goose-down-pillow.jpg",
+            "title": "Pillows",
+            "text": "",
+            "link_label": "Shop Pillows",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_Amy6LG",
-        "column_UJtBA7"
+        "column_UJtBA7",
+        "column_Amy6LG"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
