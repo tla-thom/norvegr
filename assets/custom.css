@@ -29,6 +29,10 @@ button.shopify-payment-button__button--unbranded,
   font-size: 1.2rem;
 }
 
+.cart-count-bubble {
+  font-family: var(--font-heading-family);
+}
+
 /* transparent header: darken hero under nav for logo/text legibility */
 header {
     .header__active-menu-item {
