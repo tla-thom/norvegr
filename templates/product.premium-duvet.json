@@ -85,65 +85,55 @@
         "padding_bottom": 32
       }
     },
-    "slideshow_FeUcJJ": {
-      "type": "slideshow",
+    "image_banner_b4Qm3Q": {
+      "type": "image-banner",
       "blocks": {
-        "slide_74xcXK": {
-          "type": "slide",
+        "heading_Wgk38i": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/imgi_46_Norvegr-Winter-Campaign-01.jpg",
-            "split_layout": false,
-            "image_overlay_opacity": 0,
-            "heading": "The Art of Pure Insulation",
-            "heading_size": "h1",
-            "subheading": "Huge, dense down clusters that trap air like no other material on Earth. ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
+            "heading": "The Batiste Casing",
+            "heading_size": "h0",
+            "use_body_font": true
           }
         },
-        "slide_YFV34j": {
-          "type": "slide",
+        "text_mLiGyG": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/imgi_73_NorvegrBlogPost7-1-2048x1830.jpg",
-            "split_layout": false,
-            "image_overlay_opacity": 0,
-            "heading": "The Batiste Casing",
-            "heading_size": "h1",
-            "subheading": "100% Egyptian cotton woven into a channel construction with internal baffle walls  No cold spots.  ",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
+            "text": "100% Egyptian cotton woven into a channel construction with internal baffle walls  No cold spots.  ",
+            "text_style": "body"
+          }
+        },
+        "buttons_kyF664": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "slide_74xcXK",
-        "slide_YFV34j"
+        "heading_Wgk38i",
+        "text_mLiGyG",
+        "buttons_kyF664"
       ],
-      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "xlarge",
-        "mobile_height": "50",
-        "slider_visual": "counter",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "ambient",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/imgi_73_NorvegrBlogPost7-1-2048x1830.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "xlarge",
+        "mobile_height": "70",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
       }
     },
     "multicolumn_MpPDWq": {
@@ -307,10 +297,10 @@
         "padding_bottom": 40
       }
     },
-    "image_banner_b4Qm3Q": {
+    "image_banner_U8xrQz": {
       "type": "image-banner",
       "blocks": {
-        "heading_Wgk38i": {
+        "heading_nk8QJQ": {
           "type": "heading",
           "settings": {
             "heading": "Exclusive Eiderdown",
@@ -318,14 +308,14 @@
             "use_body_font": true
           }
         },
-        "text_mLiGyG": {
+        "text_taAPLm": {
           "type": "text",
           "settings": {
             "text": "Our most indulgent and limited edition collection features supremely soft eiderdown, hand-harvested from Svalbard after the nesting season.",
             "text_style": "body"
           }
         },
-        "buttons_kyF664": {
+        "buttons_kHktnf": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
@@ -338,9 +328,9 @@
         }
       },
       "block_order": [
-        "heading_Wgk38i",
-        "text_mLiGyG",
-        "buttons_kyF664"
+        "heading_nk8QJQ",
+        "text_taAPLm",
+        "buttons_kHktnf"
       ],
       "settings": {
         "image": "shopify://shop_images/imgi_66_NorvegrBlogPost8-1-2048x2048.jpg",
@@ -390,10 +380,10 @@
   },
   "order": [
     "main",
-    "slideshow_FeUcJJ",
+    "image_banner_b4Qm3Q",
     "multicolumn_MpPDWq",
     "slideshow_bppbjd",
-    "image_banner_b4Qm3Q",
+    "image_banner_U8xrQz",
     "related-products",
     "disclosures"
   ]
