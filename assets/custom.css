@@ -171,6 +171,10 @@ header {
   }
 }
 
+summary .icon-caret {
+  top: calc(50% - 0.4rem);
+}
+
 /* Product cards: no underline on text hover */
 .product-card-wrapper.underline-links-hover:hover a,
 .product-card-wrapper .card__heading:hover a {
