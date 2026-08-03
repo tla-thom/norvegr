@@ -34,22 +34,13 @@
       endif
 
       assign allowed_countries = variant.metafields.custom.allowed_countries.value
-      if allowed_countries == blank
+      capture variant_allowed_capture
+        render 'variant-country-allowed', allowed_countries: allowed_countries, current_country: current_country
+      endcapture
+      assign variant_allowed_result = variant_allowed_capture | strip
+
+      if variant_allowed_result == 'true'
         assign variant_allowed = true
-        break
-      endif
-
-      for country in allowed_countries
-        if country == current_country
-          assign variant_allowed = true
-          break
-        elsif current_country == 'GB' and country == 'UK'
-          assign variant_allowed = true
-          break
-        endif
-      endfor
-
-      if variant_allowed
         break
       endif
     endfor

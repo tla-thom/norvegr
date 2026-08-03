@@ -1,0 +1,31 @@
+{% comment %}
+  Checks whether a variant's allowed_countries list includes the visitor's country.
+
+  Accepts:
+  - allowed_countries: {Array} variant metafield value
+  - current_country: {String} localization.country.iso_code
+
+  Returns via echo: "true" or "false"
+{% endcomment %}
+{%- liquid
+  assign variant_country_allowed = false
+
+  if allowed_countries == blank
+    assign variant_country_allowed = true
+  else
+    for country in allowed_countries
+      if country == current_country
+        assign variant_country_allowed = true
+        break
+      elsif current_country == 'GB' and country == 'UK'
+        assign variant_country_allowed = true
+        break
+      elsif country == 'EURO' or country == 'EU'
+        if current_country != 'GB' and current_country != 'UK' and current_country != 'US' and current_country != 'NO'
+          assign variant_country_allowed = true
+          break
+        endif
+      endif
+    endfor
+  endif
+-%}{{- variant_country_allowed -}}
