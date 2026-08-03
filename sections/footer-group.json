@@ -14,12 +14,15 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_4CbUkx": {
-          "type": "image",
+        "footer_image_KyKFrM": {
+          "type": "footer_image",
           "settings": {
             "image": "shopify://shop_images/prow.svg",
-            "image_width": 280,
-            "alignment": "center"
+            "image_width": "small",
+            "alignment": "center",
+            "display_block": true,
+            "padding_top": 36,
+            "padding_bottom": 0
           }
         },
         "link_list_W7NqxQ": {
@@ -45,7 +48,7 @@
         }
       },
       "block_order": [
-        "image_4CbUkx",
+        "footer_image_KyKFrM",
         "link_list_W7NqxQ",
         "link_list_mA6MUP",
         "link_list_6fUWTK"
