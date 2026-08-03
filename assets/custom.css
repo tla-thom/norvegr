@@ -221,3 +221,8 @@ slideshow-component {
 .main-page-title {
     text-align: center;
 }
+
+/* footer section*/
+.footer__content-top.page-width{
+    text-align: center;
+}
