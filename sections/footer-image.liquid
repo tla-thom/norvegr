@@ -32,17 +32,14 @@
         {%- assign image_width_2x = image_width | times: 2 | at_most: 5760 -%}
         {%- assign image_height = image_width | divided_by: section.settings.image.aspect_ratio | round -%}
         <div class="footer-image__media" style="max-width: min(100%, {{ image_width }}px);">
-          {{
-            section.settings.image
-            | image_url: width: image_width_2x
-            | image_tag:
-              widths: '150, 200, 250, 300, 400, 500',
-              sizes: '(min-width: 750px) {{ image_width }}px, 100vw',
-              width: image_width,
-              height: image_height,
-              loading: 'lazy',
-              alt: section.settings.image.alt
-          }}
+          <img
+            srcset="{{ section.settings.image | image_url: width: image_width }}, {{ section.settings.image | image_url: width: image_width_2x }} 2x"
+            src="{{ section.settings.image | image_url: width: image_width }}"
+            alt="{{ section.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ image_width }}"
+            height="{{ image_height }}"
+          >
         </div>
       {%- else -%}
         <div class="footer-image__media" style="max-width: min(100%, {{ image_width }}px);">

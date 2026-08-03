@@ -191,17 +191,14 @@
                           class="footer-block__image-wrapper"
                           style="max-width: min(100%, {{ footer_image_width }}px);"
                         >
-                          {{
-                            block.settings.image
-                            | image_url: width: footer_image_size_2x
-                            | image_tag:
-                              widths: '150, 200, 250, 300, 400, 500',
-                              sizes: '(min-width: 750px) {{ footer_image_width }}px, 100vw',
-                              width: footer_image_width,
-                              height: footer_image_height,
-                              loading: 'lazy',
-                              alt: block.settings.image.alt
-                          }}
+                          <img
+                            srcset="{{ block.settings.image | image_url: width: footer_image_width }}, {{ block.settings.image | image_url: width: footer_image_size_2x }} 2x"
+                            src="{{ block.settings.image | image_url: width: footer_image_width }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ footer_image_width }}"
+                            height="{{ footer_image_height }}"
+                          >
                         </div>
                       {%- else -%}
                         <div
