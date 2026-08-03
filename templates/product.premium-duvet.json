@@ -144,6 +144,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1_1.jpg",
             "title": "10-Year Restoration",
+            "heading_size": "hxs",
             "text": "<p>Ship it back every decade. We restore the down up to 5 times. A duvet engineered to last 60 years.</p>",
             "link_label": "",
             "link": ""
@@ -154,6 +155,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
             "title": "Complimentary Adjustments",
+            "heading_size": "hxs",
             "text": "<p>Test it for a few nights. We will adjust the filling for free until your sleep is perfect.</p>",
             "link_label": "",
             "link": ""
@@ -164,6 +166,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
             "title": "Infinite Transformation",
+            "heading_size": "hxs",
             "text": "<p>Your product can evolve. We can transform your pillows into duvets or adapt them to a new bed size anytime.</p>",
             "link_label": "",
             "link": ""
