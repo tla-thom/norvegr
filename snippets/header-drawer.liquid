@@ -206,6 +206,16 @@
                   </a>
                 </li>
               {%- endif -%}
+              {%- if settings.social_linkedin_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_linkedin_link }}" class="list-social__link link">
+                    <span class="svg-wrapper">
+                      {{- 'icon-linkedin.svg' | inline_asset_content -}}
+                    </span>
+                    <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
               {%- if settings.social_facebook_link != blank -%}
                 <li class="list-social__item">
                   <a href="{{ settings.social_facebook_link }}" class="list-social__link link">

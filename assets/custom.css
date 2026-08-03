@@ -6,8 +6,14 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
   letter-spacing: 0.12rem;
 }
-.product-count__text {
+.facet-filters__label, .facets__heading, .product-count__text {
     text-transform: none !important;
+}
+
+/* Paragraph line height — no theme setting; body_scale is font size only */
+p,
+.rte p {
+  line-height: calc((1 + 0.8 / var(--font-body-scale)) * 0.9);
 }
 
 :is(h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .hxl, .hxxl).heading--body-font {

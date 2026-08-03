@@ -263,6 +263,10 @@
           "label": "X / Twitter",
           "info": "https://x.com/shopify"
         },
+        "social_linkedin_link": {
+          "label": "LinkedIn",
+          "info": "https://www.linkedin.com/company/shopify"
+        },
         "social_facebook_link": {
           "label": "Facebook",
           "info": "https://facebook.com/shopify"
