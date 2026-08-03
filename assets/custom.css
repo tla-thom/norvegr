@@ -146,12 +146,12 @@ header {
 /* Buy it now button */
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded {
   background-color: #C2A356 !important;
-  color: #91783c !important;
+  color: rgb(var(--color-background)) !important;
   transition: background-color var(--duration-short) ease, color var(--duration-short) ease;
 }
 
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: rgb(var(--color-background)) !important;
+  background-color: #C2A356 !important;
   color: rgb(var(--color-foreground)) !important;
 }
 
