@@ -450,6 +450,9 @@
         },
         "options__5": {
           "label": "Extra extra large"
+        },
+        "options__6": {
+          "label": "Extra small"
         }
       },
       "image_shape": {

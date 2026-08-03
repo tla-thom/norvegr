@@ -2,7 +2,7 @@
 /* Global heading styles */
 h1, h2, h3, h4, h5,
 .h0, .h1, .h2, .h3, .h4, .h5,
-.hxl, .hxxl {
+.hxs, .hxl, .hxxl {
   text-transform: uppercase;
   letter-spacing: 0.12rem;
 }
@@ -16,7 +16,7 @@ p,
   line-height: calc((1 + 0.8 / var(--font-body-scale)) * 0.9);
 }
 
-:is(h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .hxl, .hxxl).heading--body-font {
+:is(h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .hxs, .hxl, .hxxl).heading--body-font {
   font-family: var(--font-body-family);
   font-weight: 300;
   text-transform: none;
