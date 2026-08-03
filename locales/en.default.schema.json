@@ -185,6 +185,10 @@
     "typography": {
       "name": "Typography",
       "settings": {
+        "use_custom_fonts": {
+          "label": "Use custom fonts",
+          "info": "Uses Styrene A and Adobe Caslon Pro from theme assets instead of Shopify fonts."
+        },
         "type_header_font": {
           "label": "Font"
         },
