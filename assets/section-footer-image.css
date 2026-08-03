@@ -1,0 +1,29 @@
+.footer-image__wrapper {
+  display: flex;
+}
+
+.footer-image__wrapper--left {
+  justify-content: flex-start;
+}
+
+.footer-image__wrapper--center {
+  justify-content: center;
+}
+
+.footer-image__wrapper--right {
+  justify-content: flex-end;
+}
+
+.footer-image__media img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .footer-image__wrapper--left,
+  .footer-image__wrapper--center,
+  .footer-image__wrapper--right {
+    justify-content: center;
+  }
+}
