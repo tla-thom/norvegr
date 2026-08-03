@@ -115,6 +115,7 @@
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
+    "social_linkedin_link": "https://www.linkedin.com/company/norvegrofficial/about/",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -197,11 +198,11 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#7D7D7D",
+          "background": "#7d7d7d",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#7D7D7D",
+          "button_label": "#7d7d7d",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
