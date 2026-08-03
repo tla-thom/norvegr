@@ -461,7 +461,7 @@
         "title": "Duvet Collection",
         "heading_size": "h1",
         "use_body_font": true,
-        "description": "",
+        "description": "<p>Norvegr duvets are available in summer, all-year, winter and polar weights. Each is designed to moderate heat, keeping you at the perfect temperature. All down products are eligible for our restoration service, reducing waste and ensuring a lifetime of comfort.</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
@@ -479,7 +479,53 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 40
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_wJwrgp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mieKjN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "use_body_font": false
+          }
+        },
+        "text_Bgdhxq": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Fill Power Explained:</strong> Fill power indicates how many cubic inches are occupied by one ounce of down. Higher fill power means larger, fluffier and denser down, providing better heat modulation while also being lighter in weight as less feathers are used.</p>"
+          }
+        },
+        "button_wmViUX": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mieKjN",
+        "text_Bgdhxq",
+        "button_wmViUX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     },
     "image_banner_4dBkYj": {
@@ -663,6 +709,7 @@
     "slideshow_eGbDHj",
     "multicolumn_cXzDmN",
     "featured_collection_QRLXzG",
+    "rich_text_wJwrgp",
     "image_banner_4dBkYj",
     "multicolumn_xhRMDL",
     "multicolumn_y7zKHG"
