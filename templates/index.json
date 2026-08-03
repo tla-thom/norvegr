@@ -578,6 +578,51 @@
         "show_text_below": false
       }
     },
+    "rich_text_QBdXjR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_46kYtm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Comfort Customised",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_dThKzb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Norvegr are global experts in comfort, merging three generations of family tradition and an ancestral Norwegian culture of craft. Combining the purest natural products with contemporary sleep culture to elevate the essentials of sleep and create moments of tranquility that bring people closer to the things that matter most.</p>"
+          }
+        },
+        "button_Yp3djr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_46kYtm",
+        "text_dThKzb",
+        "button_Yp3djr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "multicolumn_xhRMDL": {
       "type": "multicolumn",
       "blocks": {
@@ -630,7 +675,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Comfort Customised",
+        "title": "",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "square",
@@ -645,7 +690,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -711,6 +756,7 @@
     "featured_collection_QRLXzG",
     "rich_text_wJwrgp",
     "image_banner_4dBkYj",
+    "rich_text_QBdXjR",
     "multicolumn_xhRMDL",
     "multicolumn_y7zKHG"
   ]
