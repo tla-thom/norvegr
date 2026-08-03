@@ -37,7 +37,16 @@ button.shopify-payment-button__button--unbranded,
 header {
     .header__active-menu-item {
         text-decoration: none;
-    }      
+    }
+
+    .header__menu-item,
+    .header__menu-item span,
+    .menu-drawer__menu-item,
+    .menu-drawer__close-button,
+    .menu-drawer__account {
+        font-family: var(--font-heading-family);
+        font-weight: 300;
+    }
 }
 @media screen and (min-width: 990px) {
     .section-header.scrolled-past-header {
