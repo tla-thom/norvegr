@@ -139,11 +139,11 @@ header {
   font-family: var(--font-heading-family);
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.12rem;
-  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+  font-size: 1rem;
 }
 
-/* Buy it now button */
+/* Buy it now button 
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded {
   background-color: #C2A356 !important;
   color: rgb(var(--color-background)) !important;
@@ -159,7 +159,7 @@ header {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-foreground), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-background), 1);
-}
+}*/
 
 /* collection section*/
 .collection {
