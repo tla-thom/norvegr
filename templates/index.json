@@ -125,6 +125,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_8_Red-magazine-150x150_e5a4bfe6-9dad-4d49-ad12-f1e74ecab821.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -135,6 +136,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_4_robb-report-duvets-pillows.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -145,6 +147,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -155,6 +158,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_9_how-to-spend-it-norwegian-duvets.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -165,6 +169,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_5_the-world-interiors-duvets.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -175,6 +180,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_6_cth-2.jpg",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -185,6 +191,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -195,6 +202,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_10_architectural-digest-scandanavian-duvets_8e68c260-217e-476b-a6e9-99f39fdfb693.png",
             "title": "",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": ""
@@ -412,6 +420,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
             "title": "Duvets",
+            "heading_size": "h2",
             "text": "",
             "link_label": "Shop Duvets",
             "link": ""
@@ -422,6 +431,7 @@
           "settings": {
             "image": "shopify://shop_images/european-white-goose-down-pillow.jpg",
             "title": "Pillows",
+            "heading_size": "h2",
             "text": "",
             "link_label": "Shop Pillows",
             "link": ""
@@ -631,6 +641,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1.jpg",
             "title": "Designer’s Choice",
+            "heading_size": "hxs",
             "text": "<p>Our clients include some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They span luxury hotels, manufacturers and designers for private yachts and aircrafts, plus exclusive retailers in Europe and America.</p>",
             "link_label": "",
             "link": ""
@@ -641,6 +652,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
             "title": "Travel With Us",
+            "heading_size": "hxs",
             "text": "<p>Without curiosity, where would we be? The desire to seek out new horizons, to find what happens next, is a driving force as old as the hills, and as old as the vikings. Follow the Norvegr Journey to the North and celebrate the spirit of travel with us.</p>",
             "link_label": "",
             "link": ""
@@ -651,6 +663,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_14_duvet-traditional-factory-150x150.jpg",
             "title": "FAQ",
+            "heading_size": "hxs",
             "text": "<p>Browse through some of our most recently asked questions, and we’ll help you find the perfect product for your ideal rest.</p>",
             "link_label": "",
             "link": ""
@@ -661,6 +674,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
             "title": "Where to find us",
+            "heading_size": "hxs",
             "text": "<p>From luxury hotels to exclusive showrooms, take a look at our map and see where you can experience the Norvegr way.</p>",
             "link_label": "",
             "link": ""
@@ -702,6 +716,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_40_NORVEGR-SPRING_SUMMER2026-047-scaled_1.jpg",
             "title": "Travel Sets",
+            "heading_size": "h2",
             "text": "",
             "link_label": "Shop Travel Sets",
             "link": ""
@@ -712,6 +727,7 @@
           "settings": {
             "image": "shopify://shop_images/luxury-bed-linen-sheets.jpg",
             "title": "Bed Linen",
+            "heading_size": "h2",
             "text": "",
             "link_label": "Shop Bed Linen",
             "link": ""
