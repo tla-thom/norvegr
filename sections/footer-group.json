@@ -14,6 +14,20 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "link_list_W7NqxQ": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "information"
+          }
+        },
+        "link_list_mA6MUP": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "about-nervegr"
+          }
+        },
         "link_list_6fUWTK": {
           "type": "link_list",
           "settings": {
@@ -23,6 +37,8 @@
         }
       },
       "block_order": [
+        "link_list_W7NqxQ",
+        "link_list_mA6MUP",
         "link_list_6fUWTK"
       ],
       "settings": {
