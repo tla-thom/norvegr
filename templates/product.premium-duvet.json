@@ -349,6 +349,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
