@@ -145,6 +145,7 @@ header {
 .facets-vertical-sort {
   .facets__heading,
   .facets__summary-label,
+  .facets__summary > div > span,
   .facets__label,
   .facet-filters__label,
   .facet-filters__sort,
@@ -155,11 +156,18 @@ header {
   .mobile-facets__heading,
   .mobile-facets__open-label,
   .mobile-facets__label,
-  .mobile-facets__close-button {
+  .mobile-facets__close-button,
+  .product-count__text {
     font-family: var(--font-heading-family);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.12rem;
+    font-size: 1.1rem;
+  }
+
+  .product-count__text {
+    text-transform: none !important;
+    font-size: 1.2rem;
   }
 }
 
