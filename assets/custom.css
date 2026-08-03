@@ -132,6 +132,35 @@ header {
     }  
 }
 
+/* Product variant picker */
+.product-form__input .form__label,
+.product-form__input--pill input[type='radio'] + label,
+.product-form__input--dropdown .select__select {
+  font-family: var(--font-heading-family);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-size: 1.2rem;
+}
+
+/* Buy it now button */
+.product-form .shopify-payment-button button.shopify-payment-button__button--unbranded {
+  background-color: #C2A356 !important;
+  color: #91783c !important;
+  transition: background-color var(--duration-short) ease, color var(--duration-short) ease;
+}
+
+.product-form .shopify-payment-button button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: rgb(var(--color-background)) !important;
+  color: rgb(var(--color-foreground)) !important;
+}
+
+.product-form .shopify-payment-button button.shopify-payment-button__button--unbranded:hover:not([disabled])::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-foreground), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-background), 1);
+}
+
 /* collection section*/
 .collection {
     .collection__title.title-wrapper {
