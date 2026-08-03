@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
   letter-spacing: 0.12rem;
 }
-.facet-filters__label, .facets__heading, .product-count__text {
+.product-count__text {
     text-transform: none !important;
 }
 
@@ -138,6 +138,29 @@ header {
             font-size: calc(var(--font-heading-scale) * 1.3rem);
         }
     }    
+}
+
+/* Collection filters */
+#main-collection-filters,
+.facets-vertical-sort {
+  .facets__heading,
+  .facets__summary-label,
+  .facets__label,
+  .facet-filters__label,
+  .facet-filters__sort,
+  .facets__reset,
+  .active-facets__button-inner,
+  .facets__selected,
+  .button-show-more,
+  .mobile-facets__heading,
+  .mobile-facets__open-label,
+  .mobile-facets__label,
+  .mobile-facets__close-button {
+    font-family: var(--font-heading-family);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+  }
 }
 
 /* Product cards: no underline on text hover */
