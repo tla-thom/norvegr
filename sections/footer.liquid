@@ -25,6 +25,22 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'footer_image' -%}
+      #shopify-block-{{ block.id }} {
+        padding-top: {{ block.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ block.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      }
+
+      @media screen and (min-width: 750px) {
+        #shopify-block-{{ block.id }} {
+          padding-top: {{ block.settings.padding_top }}px;
+          padding-bottom: {{ block.settings.padding_bottom }}px;
+        }
+      }
+    {%- endif -%}
+  {%- endfor -%}
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -68,14 +84,14 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if block.type == 'footer_image' %} footer-block--footer-image{% endif %}{% if block.type == 'footer_image' and block.settings.display_block %} footer-block--display-block{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {%- if block.settings.heading != blank -%}
+                {%- if block.settings.heading != blank and block.type != 'footer_image' -%}
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
@@ -151,6 +167,49 @@
                         </div>
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
+                    </div>
+                  {%- when 'footer_image' -%}
+                    {%- liquid
+                      case block.settings.image_width
+                        when 'small'
+                          assign footer_image_width = 150
+                        when 'large'
+                          assign footer_image_width = 250
+                        else
+                          assign footer_image_width = 200
+                      endcase
+                    -%}
+                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                      {%- if block.settings.image != blank -%}
+                        {%- assign footer_image_size_2x = footer_image_width | times: 2 | at_most: 5760 -%}
+                        {%- assign footer_image_height = footer_image_width
+                          | divided_by: block.settings.image.aspect_ratio
+                          | round
+                        -%}
+                        <div
+                          class="footer-block__image-wrapper"
+                          style="max-width: min(100%, {{ footer_image_width }}px);"
+                        >
+                          {{
+                            block.settings.image
+                            | image_url: width: footer_image_size_2x
+                            | image_tag:
+                              widths: '150, 200, 250, 300, 400, 500',
+                              sizes: '(min-width: 750px) {{ footer_image_width }}px, 100vw',
+                              width: footer_image_width,
+                              height: footer_image_height,
+                              loading: 'lazy',
+                              alt: block.settings.image.alt
+                          }}
+                        </div>
+                      {%- else -%}
+                        <div
+                          class="footer-block__image-wrapper"
+                          style="max-width: min(100%, {{ footer_image_width }}px);"
+                        >
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        </div>
                       {%- endif -%}
                     </div>
                 {%- endcase -%}
@@ -378,6 +437,88 @@
           "id": "subtext",
           "default": "t:sections.footer.blocks.text.settings.subtext.default",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
+        }
+      ]
+    },
+    {
+      "type": "footer_image",
+      "name": "Footer image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_width",
+          "label": "Image width",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small (150px)"
+            },
+            {
+              "value": "medium",
+              "label": "Medium (200px)"
+            },
+            {
+              "value": "large",
+              "label": "Large (250px)"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "checkbox",
+          "id": "display_block",
+          "default": true,
+          "label": "Display block",
+          "info": "Show on its own line instead of in a grid column"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 0
         }
       ]
     },

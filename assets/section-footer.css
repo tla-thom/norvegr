@@ -376,6 +376,16 @@
   }
 }
 
+.footer-block--display-block {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+.footer-block--footer-image .footer-block__image-wrapper {
+  margin-bottom: 0;
+}
+
 .footer-block-image {
   display: flex;
 }
