@@ -46,6 +46,8 @@ header {
     .menu-drawer__account {
         font-family: var(--font-heading-family);
         font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.12rem;
     }
 }
 @media screen and (min-width: 990px) {
@@ -56,9 +58,34 @@ header {
     }
 
     .header__inline-menu .header__menu-item {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 } 
+/* header localization section*/
+.header-localization .localization-form__select,
+.header-localization .header-localization__currency,
+.header-localization .header-localization__currency-code,
+.header-localization .header-localization__currency-symbol {
+  font-family: var(--font-heading-family);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+.header-localization .localization-form__select > .header-localization__currency {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    max-width: none;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: nowrap;
+  }
+  
+  .header-localization .header-localization__currency-code,
+  .header-localization .header-localization__currency-symbol {
+    display: inline-block;
+  }
 
 .transparent-header #MainContent > .shopify-section:first-child::before {
   content: '';
@@ -109,22 +136,6 @@ header {
 .product-card-wrapper.underline-links-hover:hover a,
 .product-card-wrapper .card__heading:hover a {
   text-decoration: none !important;
-}
-
-/* header localization section*/
-.header-localization .localization-form__select > .header-localization__currency {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  max-width: none;
-  overflow: visible;
-  text-overflow: unset;
-  white-space: nowrap;
-}
-
-.header-localization .header-localization__currency-code,
-.header-localization .header-localization__currency-symbol {
-  display: inline-block;
 }
 
 /* multi-column section*/   
