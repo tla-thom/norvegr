@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5,
   font-family: var(--font-body-family);
   font-weight: 300;
   text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Buttons use heading font */
