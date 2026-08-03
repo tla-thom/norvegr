@@ -140,7 +140,7 @@ header {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
-  font-size: 1rem;
+  font-size: 1.1rem !important;
 }
 
 /* Buy it now button 
