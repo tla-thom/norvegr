@@ -120,6 +120,13 @@ header {
   opacity: 0;
 }
 
+/* default product page section*/
+@media only screen and (min-width: 750px) {
+  h1, .h1 {
+      font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+}
+
 /* Product section*/
 .product {
     h1, .h1 {

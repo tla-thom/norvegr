@@ -10,5 +10,5 @@ git pull --no-rebase origin dawn-theme
 git push origin HEAD:dawn-theme
 
 git add .
-git commit -m "Filter styling"
+git commit -m "Default page styling"
 git push origin HEAD:dawn-theme
