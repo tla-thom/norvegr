@@ -191,6 +191,10 @@ header {
     }  
 }
 
+.product__accordion .accordion__content {
+  padding: 0;
+}
+
 /* Product variant picker */
 .product-form__input .form__label,
 .product-form__input--pill input[type='radio'] + label,
