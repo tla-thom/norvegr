@@ -42,7 +42,7 @@
   endunless
 -%}
 
-<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}">
+<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
@@ -197,6 +197,13 @@
       "label": "Fullpage width",
       "default": false,
       "info": "Removes the max-width constraint while keeping page padding. Text boxes use equal padding on all sides."
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_horizontal_padding",
+      "label": "Remove left and right padding",
+      "default": false,
+      "info": "Removes page side padding on all screen sizes so images bleed to the browser edge."
     },
     {
       "type": "select",

@@ -277,6 +277,11 @@ summary .icon-caret {
   max-width: none;
 }
 
+.multirow--no-horizontal-padding .multirow__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .multirow--fullpage-width .image-with-text__content {
   padding: 4rem;
 }
