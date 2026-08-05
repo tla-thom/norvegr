@@ -9,6 +9,59 @@
  */
 {
   "sections": {
+    "image_banner_kjAEK9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_yr7iWF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed to last a lifetime",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_cDRB89": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_JAXL94": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yr7iWF",
+        "text_cDRB89",
+        "buttons_JAXL94"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_10_high-end-bedding.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -18,6 +71,7 @@
     }
   },
   "order": [
+    "image_banner_kjAEK9",
     "main"
   ]
 }
