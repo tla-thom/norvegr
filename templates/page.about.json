@@ -24,7 +24,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
             "text_style": "body"
           }
         },
@@ -111,6 +111,7 @@
         "image_layout": "alternate-right",
         "fullpage_width": true,
         "remove_horizontal_padding": true,
+        "no_margin_top": false,
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
@@ -205,6 +206,7 @@
         "image_layout": "alternate-left",
         "fullpage_width": true,
         "remove_horizontal_padding": true,
+        "no_margin_top": false,
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
@@ -258,7 +260,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 0,
+        "padding_top": 40,
         "padding_bottom": 0
       }
     },
@@ -304,7 +306,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 52
+        "padding_bottom": 80
       }
     },
     "main": {
