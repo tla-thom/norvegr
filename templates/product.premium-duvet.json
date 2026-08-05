@@ -46,13 +46,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "text_LJFFcf": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Premium Collection Duvet - European White Goose, 100% down, fill power 850 (EU).</strong> Highest fill power that is commercially available.",
-            "text_style": "body"
-          }
-        },
         "collapsible_tab_nATAN9": {
           "type": "collapsible_tab",
           "settings": {
@@ -99,7 +92,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "text_LJFFcf",
         "collapsible_tab_nATAN9",
         "collapsible_tab_C3iK9C",
         "collapsible_tab_ah43NT",
