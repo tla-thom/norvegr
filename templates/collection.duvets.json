@@ -30,6 +30,7 @@
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
+        "no_margin_top": true,
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
