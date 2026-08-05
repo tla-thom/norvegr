@@ -155,69 +155,6 @@
         "show_text_below": false
       }
     },
-    "multicolumn_MpPDWq": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_YDiQjp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1_1.jpg",
-            "title": "10-Year Restoration",
-            "heading_size": "hxs",
-            "text": "<p>Ship it back every decade. We restore the down up to 5 times. A duvet engineered to last 60 years.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_UjCLpc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
-            "title": "Complimentary Adjustments",
-            "heading_size": "hxs",
-            "text": "<p>Test it for a few nights. We will adjust the filling for free until your sleep is perfect.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_9pALFy": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
-            "title": "Infinite Transformation",
-            "heading_size": "hxs",
-            "text": "<p>Your product can evolve. We can transform your pillows into duvets or adapt them to a new bed size anytime.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_YDiQjp",
-        "column_UjCLpc",
-        "column_9pALFy"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "contain_image": false,
-        "text_on_image": false,
-        "button_label": "",
-        "button_link": "",
-        "full_width": false,
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "slideshow_bppbjd": {
       "type": "slideshow",
       "blocks": {
@@ -369,6 +306,69 @@
         "show_text_below": false
       }
     },
+    "multicolumn_MpPDWq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YDiQjp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1_1.jpg",
+            "title": "10-Year Restoration",
+            "heading_size": "hxs",
+            "text": "<p>Ship it back every decade. We restore the down up to 5 times. A duvet engineered to last 60 years.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UjCLpc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
+            "title": "Complimentary Adjustments",
+            "heading_size": "hxs",
+            "text": "<p>Test it for a few nights. We will adjust the filling for free until your sleep is perfect.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9pALFy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
+            "title": "Infinite Transformation",
+            "heading_size": "hxs",
+            "text": "<p>Your product can evolve. We can transform your pillows into duvets or adapt them to a new bed size anytime.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YDiQjp",
+        "column_UjCLpc",
+        "column_9pALFy"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "contain_image": false,
+        "text_on_image": false,
+        "button_label": "",
+        "button_link": "",
+        "full_width": false,
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -404,9 +404,9 @@
   "order": [
     "main",
     "image_banner_b4Qm3Q",
-    "multicolumn_MpPDWq",
     "slideshow_bppbjd",
     "image_banner_U8xrQz",
+    "multicolumn_MpPDWq",
     "related-products",
     "disclosures"
   ]
