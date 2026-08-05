@@ -118,7 +118,7 @@
         "text_mLiGyG": {
           "type": "text",
           "settings": {
-            "text": "<h3>What constitutes a good duvet?</h3><h3>How to Choose a Duvet Collection</h3><h3>How to Choose a Duvet Size</h3><h3>How to Choose a Duvet Weight</h3><h3>Duvet Vs Comforter</h3>",
+            "text": "<h3><a href=\"#\" title=\"#\">What constitutes a good duvet?</a></h3><h3><a href=\"#\" title=\"#\">How to Choose a Duvet Collection</a></h3><h3><a href=\"#\" title=\"#\">How to Choose a Duvet Size</a></h3><h3><a href=\"#\" title=\"#\">How to Choose a Duvet Weight</a></h3><h3><a href=\"#\" title=\"#\">Duvet Vs Comforter</a></h3>",
             "text_style": "body"
           }
         },
