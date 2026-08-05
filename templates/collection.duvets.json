@@ -41,7 +41,52 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_hiBEC8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Q3TAbH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fill Power Explained",
+            "heading_size": "h1",
+            "use_body_font": false
+          }
+        },
+        "text_X86rjb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fill power indicates how many cubic inches are occupied by one ounce of down. Higher fill power means larger, fluffier and denser down, providing better heat modulation while also being lighter in weight as less feathers are used.</p>"
+          }
+        },
+        "button_RcyKiQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q3TAbH",
+        "text_X86rjb",
+        "button_RcyKiQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     },
     "image_banner_MYw3xj": {
@@ -102,6 +147,7 @@
   "order": [
     "banner",
     "product-grid",
+    "rich_text_hiBEC8",
     "image_banner_MYw3xj"
   ]
 }
