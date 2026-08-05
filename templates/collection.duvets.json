@@ -19,7 +19,7 @@
         "use_body_font": true,
         "text_alignment": "center",
         "item_alignment": "center",
-        "padding_top": 8,
+        "padding_top": 32,
         "padding_bottom": 0
       }
     },
@@ -104,7 +104,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
             "text_style": "body"
           }
         },
