@@ -46,9 +46,17 @@
             "show_gift_card_recipient": true
           }
         },
+        "collapsible_tab_C3iK9C": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Weight:",
+            "icon": "none",
+            "content": "<p><strong>Summer: </strong>for hot sleepers and warm bedrooms.<br/><strong>All year: </strong>for temperature controlled bedrooms with relatively stable temperatures year-round.<br/><strong>Winter: </strong>for cold sleepers and cold bedrooms.<br/><strong>Polar: </strong>for ice cold bedrooms and very cold sleepers.</p>",
+            "page": ""
+          }
+        },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "share": {
@@ -65,6 +73,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "collapsible_tab_C3iK9C",
         "description",
         "share"
       ],
