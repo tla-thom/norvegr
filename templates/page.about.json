@@ -121,6 +121,50 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_H4F3yh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AjjiYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Norse heritage",
+            "heading_size": "h1",
+            "use_body_font": false
+          }
+        },
+        "text_yeApbE": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Our legacy is distinctly Norse, and the Vikings knew a thing or two about comfort. Sumptuous down and feathers have been keeping Norwegians cosy for more than 1,000 years.</h2><p>In 834 AD, the beautiful Oseberg Ship became Queen Asa of Agder’s final resting place. Archaeologists examining her grave discovered an ornate bed, dressed with the most luxurious Viking Age textiles ever seen. Between the gorgeous fabric covers and inside the exquisite pillows were thick layers of the softest feather – pure eiderdown. In fact, furs, feathers and down from the highest latitudes were prized long before the Viking Age. This is because arctic seabirds developed the best down to insulate their bodies against the freezing polar nights, The Oseberg still lives on in the Norvegr logo today.</p>"
+          }
+        },
+        "button_3LUM6W": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AjjiYC",
+        "text_yeApbE",
+        "button_3LUM6W"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -132,6 +176,7 @@
   "order": [
     "image_banner_kjAEK9",
     "multirow_jY6FWM",
+    "rich_text_H4F3yh",
     "main"
   ]
 }
