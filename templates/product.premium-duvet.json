@@ -118,7 +118,7 @@
         "text_mLiGyG": {
           "type": "text",
           "settings": {
-            "text": "What constitutes a good duvet?How to Choose a Duvet CollectionHow to Choose a Duvet SizeHow to Choose a Duvet WeightDuvet Vs Comforter",
+            "text": "<h3>What constitutes a good duvet?</h3><h3>How to Choose a Duvet Collection</h3><h3>How to Choose a Duvet Size</h3><h3>How to Choose a Duvet Weight</h3><h3>Duvet Vs Comforter</h3>",
             "text_style": "body"
           }
         },
@@ -270,7 +270,7 @@
         "text_taAPLm": {
           "type": "text",
           "settings": {
-            "text": "See the measurements for all our sizes.",
+            "text": "<p>See the measurements for all our sizes.</p>",
             "text_style": "body"
           }
         },
