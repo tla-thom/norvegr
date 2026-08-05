@@ -119,7 +119,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
