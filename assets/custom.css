@@ -203,7 +203,7 @@ main[data-template="product"] .banner__text a {
   text-decoration: none !important;
   text-underline-offset: unset;
   text-decoration-thickness: unset;
-  transition: color var(--duration-short) ease;
+  transition: color var(--duration-extra-long) ease;
 }
 
 main[data-template="product"] .banner__text a:hover {
@@ -220,7 +220,7 @@ main[data-template="product"] .banner__text a::before {
   bottom: 0;
   width: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  transition: width var(--duration-short) ease;
+  transition: width var(--duration-extra-long) ease;
   z-index: -1;
 }
 
