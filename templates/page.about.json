@@ -106,7 +106,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_image_width": "medium",
         "image_layout": "alternate-right",
         "fullpage_width": true,
@@ -129,14 +129,14 @@
           "type": "heading",
           "settings": {
             "heading": "Norse heritage",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "use_body_font": false
           }
         },
         "text_yeApbE": {
           "type": "text",
           "settings": {
-            "text": "<h2>Our legacy is distinctly Norse, and the Vikings knew a thing or two about comfort. Sumptuous down and feathers have been keeping Norwegians cosy for more than 1,000 years.</h2><p>In 834 AD, the beautiful Oseberg Ship became Queen Asa of Agder’s final resting place. Archaeologists examining her grave discovered an ornate bed, dressed with the most luxurious Viking Age textiles ever seen. Between the gorgeous fabric covers and inside the exquisite pillows were thick layers of the softest feather – pure eiderdown. In fact, furs, feathers and down from the highest latitudes were prized long before the Viking Age. This is because arctic seabirds developed the best down to insulate their bodies against the freezing polar nights, The Oseberg still lives on in the Norvegr logo today.</p>"
+            "text": "<h2><em>Our legacy is distinctly Norse, and the Vikings knew a thing or two about comfort. Sumptuous down and feathers have been keeping Norwegians cosy for more than 1,000 years.</em></h2><p>In 834 AD, the beautiful Oseberg Ship became Queen Asa of Agder’s final resting place. Archaeologists examining her grave discovered an ornate bed, dressed with the most luxurious Viking Age textiles ever seen. Between the gorgeous fabric covers and inside the exquisite pillows were thick layers of the softest feather – pure eiderdown. In fact, furs, feathers and down from the highest latitudes were prized long before the Viking Age. This is because arctic seabirds developed the best down to insulate their bodies against the freezing polar nights, The Oseberg still lives on in the Norvegr logo today.</p>"
           }
         },
         "button_3LUM6W": {
@@ -229,7 +229,7 @@
         "text_WTnQWb": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<h2><em>How do these tales relate to Norvegr? To us, they’re of more than historical interest. They authenticate the tradition of luxurious down that underpins our family business.</em></h2><p>To us, these are more than just stories. They validate the tradition of luxurious down that underpins our family business. When we sleep well, everything else falls into place. This is the basis of Scandinavian happiness, and what Norvegr brings to you.<br/> <br/>Filled with the finest down and covered in the softest pure cotton casings, our products really are something special. Many of our duvets are privately commissioned, creating one-of-a-kind products that will last for decades. Almost 70 years on, we remain as passionate about craftsmanship as the day we first set out on our journey.</p>"
           }
         },
         "button_Remxwc": {
