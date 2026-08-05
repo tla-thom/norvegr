@@ -359,6 +359,7 @@
         "column_UjCLpc",
         "column_9pALFy"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
@@ -386,11 +387,11 @@
       "settings": {
         "heading": "",
         "heading_size": "h2",
-        "products_to_show": 2,
-        "columns_desktop": 2,
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -410,6 +411,47 @@
         "padding_top": 36,
         "padding_bottom": 0
       }
+    },
+    "collection_list_9ctf3C": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_qyDeEr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pillows"
+          }
+        },
+        "featured_collection_NPMKFx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bed-linen"
+          }
+        },
+        "featured_collection_PM6zDk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travel-sets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_qyDeEr",
+        "featured_collection_NPMKFx",
+        "featured_collection_PM6zDk"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "You may also like",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -419,6 +461,7 @@
     "image_banner_U8xrQz",
     "multicolumn_MpPDWq",
     "related-products",
-    "disclosures"
+    "disclosures",
+    "collection_list_9ctf3C"
   ]
 }
