@@ -195,6 +195,41 @@ header {
   padding: 0 !important;
 }
 
+/* Product page — image banner text links */
+main[data-template="product"] .banner__text a {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  text-decoration: none !important;
+  text-underline-offset: unset;
+  text-decoration-thickness: unset;
+}
+
+main[data-template="product"] .banner__text a:hover {
+  text-decoration: none !important;
+  text-decoration-thickness: unset;
+}
+
+main[data-template="product"] .banner__text a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: width var(--duration-short) ease;
+  z-index: -1;
+}
+
+main[data-template="product"] .banner__text a:hover::before {
+  width: 100%;
+}
+
+main[data-template="product"] .banner__text a::after {
+  content: '\00a0→';
+}
+
 /* Product variant picker */
 .product-form__input .form__label,
 .product-form__input--pill input[type='radio'] + label,
