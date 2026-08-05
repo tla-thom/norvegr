@@ -203,9 +203,11 @@ main[data-template="product"] .banner__text a {
   text-decoration: none !important;
   text-underline-offset: unset;
   text-decoration-thickness: unset;
+  transition: color var(--duration-short) ease;
 }
 
 main[data-template="product"] .banner__text a:hover {
+  color: #000 !important;
   text-decoration: none !important;
   text-decoration-thickness: unset;
 }
@@ -217,7 +219,7 @@ main[data-template="product"] .banner__text a::before {
   left: 0;
   bottom: 0;
   width: 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
   transition: width var(--duration-short) ease;
   z-index: -1;
 }
