@@ -215,6 +215,11 @@ header {
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-background), 1);
 }*/
 
+/* Collection banner */
+.collection-hero__title {
+  margin-bottom: 1rem !important;
+}
+
 /* collection section*/
 .collection {
     .collection__title.title-wrapper {

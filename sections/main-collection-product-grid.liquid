@@ -34,6 +34,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {%- if section.settings.no_margin_top -%}
+    #shopify-section-{{ section.id }} {
+      margin-top: 0;
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 <collection-component
@@ -246,6 +252,12 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "no_margin_top",
+      "label": "No margin top",
+      "default": false
     },
     {
       "type": "header",
