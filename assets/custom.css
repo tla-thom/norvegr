@@ -202,6 +202,27 @@ header {
   font-size: 1.1rem !important;
 }
 
+.product-form__input--pill input[type='radio'] + label {
+  background-color: #fff !important;
+  border-color: #ccc !important;
+  color: rgb(var(--color-foreground));
+}
+
+.product-form__input--pill input[type='radio'] + label:hover {
+  border-color: #000 !important;
+}
+
+.product-form__input--pill input[type='radio']:checked + label {
+  background-color: #fff !important;
+  border-color: #000 !important;
+  color: rgb(var(--color-foreground));
+}
+
+.product-form__input--pill input[type='radio'].disabled:checked + label,
+.product-form__input--pill input[type='radio']:disabled:checked + label {
+  color: rgba(var(--color-foreground), 0.6);
+}
+
 /* Buy it now button 
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded {
   background-color: #C2A356 !important;
