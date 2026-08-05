@@ -260,6 +260,51 @@
         "padding_bottom": 52
       }
     },
+    "rich_text_Br36R6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VUfREP": {
+          "type": "heading",
+          "settings": {
+            "heading": "The norvegr advocates",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_zHBNQF": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><em>Our clients include some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:</em></h2><ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and Americ</li></ul>"
+          }
+        },
+        "button_KkRU9T": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VUfREP",
+        "text_zHBNQF",
+        "button_KkRU9T"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -275,6 +320,7 @@
     "rich_text_H4F3yh",
     "multirow_qpE4Em",
     "rich_text_ycKNWP",
+    "rich_text_Br36R6",
     "main"
   ]
 }
