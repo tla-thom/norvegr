@@ -406,3 +406,8 @@ slideshow-component {
 .footer__content-top.page-width{
     text-align: center;
 }
+
+/* blog section*/
+.main-blog {
+  .title--primary { display: none; }
+}
