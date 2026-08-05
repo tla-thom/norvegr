@@ -60,7 +60,7 @@
           "settings": {
             "heading": "Weight & Availability",
             "icon": "none",
-            "content": "<p><strong>Summer: </strong>for hot sleepers and warm bedrooms.<br/><strong>All year: </strong>for temperature controlled bedrooms with relatively stable temperatures year-round.<br/><strong>Winter: </strong>for cold sleepers and cold bedrooms.<br/><strong>Polar: </strong>for ice cold bedrooms and very cold sleepers.</p>",
+            "content": "<h4>Summer</h4><p>For hot sleepers and warm bedrooms.</p><h4>All year</h4><p>For temperature controlled bedrooms with relatively stable temperatures year-round.<br/><strong>Winter: </strong>for cold sleepers and cold bedrooms.<br/><strong>Polar: </strong>for ice cold bedrooms and very cold sleepers.</p>",
             "page": ""
           }
         },
