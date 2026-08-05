@@ -267,6 +267,79 @@
         "padding_bottom": 40
       }
     },
+    "multirow_mPjXNM": {
+      "type": "multirow",
+      "blocks": {
+        "row_Hcm9Cn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_29_premium-down-duvets.jpg",
+            "caption": "What kind of down is used?",
+            "heading": "",
+            "text": "<p>Filled with among the best commercially available types of goose down there are, our Premium Collection duvets are our second best goose down duvets.<br/><br/>This luxury down is 100% European White Goose down - completely feather free. On the fill power scale, these duvets are 850, which is the highest one can acquire among commercially available down qualities.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_9BQpr3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled.jpg",
+            "caption": "More about European goose down",
+            "heading": "",
+            "text": "<p>This European White Goose down is heavenly soft, and so are these duvets. Each down cluster is among the largest obtainable for commercially available goose down qualities. They trap air like few other goose down quality out there.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_JKcKEi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_101_polar-days-norvegr-2048x1395.jpg",
+            "caption": "What this means for you?",
+            "heading": "",
+            "text": "<p>These unique insulating abilities provide an impressive protection against both cold and warm temperatures. They will keep you at a perfect temperature throughout the night, no matter what climate you are sleeping in.<br/><br/>Our Premium Collection duvets are incredibly lightweight duvets, due to the extreme quality of this particular type of goose down.<br/><br/>An 850 fill power allows us to fill less down in these than we do for our Classic Collection goose down duvets, while getting the same volume of filling. This ultra lightweight quality allows for duvets that work very well in warmer climates as well as cooler ones.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_GLFUGQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "caption": "Key Features",
+            "heading": "",
+            "text": "<p>Filled in a channel constructed duvet casing made from the finest batiste, 100 % Egyptian cotton: The seams are hidden inside the casing on three sides, and there is no stitching.<br/><br/>Instead, we use baffle walls between the channels, to make sure that the down reaches everywhere inside the casing. This way, the duvet is equally as thick all the way through the channels, and you will not have any cold spots against your body.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Hcm9Cn",
+        "row_9BQpr3",
+        "row_JKcKEi",
+        "row_GLFUGQ"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": false,
+        "remove_horizontal_padding": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_U8xrQz": {
       "type": "image-banner",
       "blocks": {
@@ -458,6 +531,7 @@
     "main",
     "image_banner_b4Qm3Q",
     "slideshow_bppbjd",
+    "multirow_mPjXNM",
     "image_banner_U8xrQz",
     "multicolumn_MpPDWq",
     "related-products",
