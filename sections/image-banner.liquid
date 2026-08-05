@@ -133,7 +133,7 @@
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <p>{{ block.settings.text }}</p>
+              {{ block.settings.text }}
             </div>
           {%- when 'buttons' -%}
             <div
@@ -459,7 +459,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "richtext",
           "id": "text",
           "default": "t:sections.image-banner.blocks.text.settings.text.default",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
