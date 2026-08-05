@@ -325,7 +325,7 @@
         "heading_nk8QJQ": {
           "type": "heading",
           "settings": {
-            "heading": "Exclusive Eiderdown",
+            "heading": "Size guide",
             "heading_size": "h0",
             "use_body_font": true
           }
@@ -333,14 +333,14 @@
         "text_taAPLm": {
           "type": "text",
           "settings": {
-            "text": "Our most indulgent and limited edition collection features supremely soft eiderdown, hand-harvested from Svalbard after the nesting season.",
+            "text": "See the measurements for all our sizes.",
             "text_style": "body"
           }
         },
         "buttons_kHktnf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "See all",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
