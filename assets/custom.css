@@ -283,6 +283,10 @@ summary .icon-caret {
   row-gap: 0;
 }
 
+.section + .section:has(.multirow--no-horizontal-padding) {
+  margin-top: 0;
+}
+
 .multirow--fullpage-width .image-with-text__content {
   padding: 4rem;
 }
