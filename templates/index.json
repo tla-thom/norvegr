@@ -311,155 +311,76 @@
         "show_text_below": false
       }
     },
-    "slideshow_eGbDHj": {
-      "type": "slideshow",
+    "multirow_JNmQMM": {
+      "type": "multirow",
       "blocks": {
-        "slide_yV9Ldt": {
-          "type": "slide",
+        "row_XMxzVL": {
+          "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_32_Norvegr-AW2025-Campaign-083.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "CHANNEL CONSTRUCTION",
-            "heading_size": "hxs",
-            "subheading": "Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.",
+            "caption": "CHANNEL CONSTRUCTION",
+            "heading": "",
+            "text": "<p>Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.</p>",
             "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "button_link": ""
           }
         },
-        "slide_faJtwb": {
-          "type": "slide",
+        "row_iUJXrF": {
+          "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "Peerless Fill Power",
-            "heading_size": "hxs",
-            "subheading": "Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.",
+            "caption": "Peerless Fill Power",
+            "heading": "",
+            "text": "<p>Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.</p>",
             "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "button_link": ""
           }
         },
-        "slide_c93Gwr": {
-          "type": "slide",
+        "row_kgmpXV": {
+          "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_34_image-13.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "Lasting Legacy",
-            "heading_size": "hxs",
-            "subheading": "Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.",
+            "caption": "Lasting Legacy",
+            "heading": "",
+            "text": "<p>Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.</p>",
             "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "button_link": ""
           }
         },
-        "slide_W7UQ8Q": {
-          "type": "slide",
+        "row_rXUiCW": {
+          "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "Made For Forever",
-            "heading_size": "hxs",
-            "subheading": "An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.",
+            "caption": "Made For Forever",
+            "heading": "",
+            "text": "<p>An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.</p>",
             "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "slide_yV9Ldt",
-        "slide_faJtwb",
-        "slide_c93Gwr",
-        "slide_W7UQ8Q"
+        "row_XMxzVL",
+        "row_iUJXrF",
+        "row_kgmpXV",
+        "row_rXUiCW"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "layout": "grid",
-        "slide_height": "medium",
-        "mobile_height": "default",
-        "slider_visual": "counter",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "ambient",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "multicolumn_cXzDmN": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_UJtBA7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
-            "title": "Duvets",
-            "heading_size": "h2",
-            "text": "",
-            "link_label": "Shop Duvets",
-            "link": ""
-          }
-        },
-        "column_Amy6LG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/european-white-goose-down-pillow.jpg",
-            "title": "Pillows",
-            "heading_size": "h2",
-            "text": "",
-            "link_label": "Shop Pillows",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_UJtBA7",
-        "column_Amy6LG"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "square",
-        "contain_image": false,
-        "text_on_image": true,
-        "button_label": "",
-        "button_link": "",
-        "full_width": true,
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 8,
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -758,6 +679,160 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_cXzDmN": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UJtBA7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
+            "title": "Duvets",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "Shop Duvets",
+            "link": ""
+          }
+        },
+        "column_Amy6LG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/european-white-goose-down-pillow.jpg",
+            "title": "Pillows",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "Shop Pillows",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UJtBA7",
+        "column_Amy6LG"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "contain_image": false,
+        "text_on_image": true,
+        "button_label": "",
+        "button_link": "",
+        "full_width": true,
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_eGbDHj": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yV9Ldt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_32_Norvegr-AW2025-Campaign-083.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "CHANNEL CONSTRUCTION",
+            "heading_size": "hxs",
+            "subheading": "Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide_faJtwb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Peerless Fill Power",
+            "heading_size": "hxs",
+            "subheading": "Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide_c93Gwr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_34_image-13.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Lasting Legacy",
+            "heading_size": "hxs",
+            "subheading": "Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide_W7UQ8Q": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "split_layout": true,
+            "image_overlay_opacity": 0,
+            "heading": "Made For Forever",
+            "heading_size": "hxs",
+            "subheading": "An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yV9Ldt",
+        "slide_faJtwb",
+        "slide_c93Gwr",
+        "slide_W7UQ8Q"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "mobile_height": "default",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -767,13 +842,14 @@
     "multicolumn_rBmcKU",
     "featured_collection",
     "image_banner",
-    "slideshow_eGbDHj",
-    "multicolumn_cXzDmN",
+    "multirow_JNmQMM",
     "featured_collection_QRLXzG",
     "rich_text_wJwrgp",
     "image_banner_4dBkYj",
     "rich_text_QBdXjR",
     "multicolumn_xhRMDL",
-    "multicolumn_y7zKHG"
+    "multicolumn_y7zKHG",
+    "multicolumn_cXzDmN",
+    "slideshow_eGbDHj"
   ]
 }
