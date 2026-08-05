@@ -42,7 +42,7 @@
   endunless
 -%}
 
-<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}">
+<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}{% if section.settings.no_margin_top %} multirow--no-margin-top{% endif %}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
@@ -203,7 +203,14 @@
       "id": "remove_horizontal_padding",
       "label": "Remove left and right padding",
       "default": false,
-      "info": "Removes page side padding, row gap, and section top margin so rows bleed to the browser edge."
+      "info": "Removes page side padding and row gap so rows bleed to the browser edge."
+    },
+    {
+      "type": "checkbox",
+      "id": "no_margin_top",
+      "label": "No section margin",
+      "default": false,
+      "info": "Removes the gap above and below this section."
     },
     {
       "type": "select",

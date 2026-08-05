@@ -354,7 +354,13 @@ summary .icon-caret {
   row-gap: 0;
 }
 
-.section + .section:has(.multirow--no-horizontal-padding) {
+.section + .section:has(.multirow--no-horizontal-padding),
+.section + .section:has(.multirow--no-margin-top) {
+  margin-top: 0;
+}
+
+.section:has(.multirow--no-horizontal-padding) + .section,
+.section:has(.multirow--no-margin-top) + .section {
   margin-top: 0;
 }
 
