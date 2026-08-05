@@ -24,6 +24,17 @@ p,
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Rich text: Italic in editor applies body font instead of italic styling */
+.rich-text .rte :is(em, i) {
+  font-family: var(--font-body-family);
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Buttons use heading font */
 .button,
 .button-label,
@@ -261,9 +272,17 @@ summary .icon-caret {
   }
 }
 
-.image-with-text__content .image-with-text__text--caption {
-  font-family: var(--font-heading-family);
-  margin-bottom: 25px;
+.image-with-text__content {
+  .image-with-text__text--caption {
+    font-family: var(--font-heading-family);
+    margin-bottom: 25px;
+  }
+  .image-with-text__heading {
+    font-family: var(--font-body-family);
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1.2rem;
+  }
 }
 
 /* multi-column section*/   
