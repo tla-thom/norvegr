@@ -106,7 +106,7 @@ header {
     }
 
     .header__inline-menu .header__menu-item {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 } 
 /* header localization section*/
@@ -251,7 +251,7 @@ header {
   .product-count__text {
     font-family: var(--font-heading-family);
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     letter-spacing: 0.12rem;
     font-size: 1.2rem;
   }
@@ -259,6 +259,10 @@ header {
   .product-count__text {
     text-transform: none !important;
     font-size: 1.2rem;
+  }
+
+  facets__heading caption-large {
+    text-transform: uppercase;
   }
 }
 
