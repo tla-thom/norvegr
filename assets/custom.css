@@ -213,7 +213,7 @@ header {
 }
 
 .product-form__input--pill input[type='radio']:checked + label {
-  background-color: #fff !important;
+  background-color: #f2f2f2 !important;
   border-color: #000 !important;
   color: #000 !important;
 }
