@@ -281,7 +281,7 @@
         "text_taAPLm": {
           "type": "text",
           "settings": {
-            "text": "<p>See the measurements for all our sizes.</p>",
+            "text": "<h3>See the measurements for all our sizes.</h3>",
             "text_style": "body"
           }
         },
