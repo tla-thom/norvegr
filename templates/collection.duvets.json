@@ -15,6 +15,8 @@
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "scheme-1",
+        "heading_size": "h0",
+        "use_body_font": true,
         "text_alignment": "center",
         "item_alignment": "center",
         "padding_top": 8,
