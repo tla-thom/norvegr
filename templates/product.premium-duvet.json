@@ -50,6 +50,15 @@
           "type": "description",
           "settings": {}
         },
+        "collapsible_tab_nATAN9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "{{ block.settings.page.content }}",
+            "page": ""
+          }
+        },
         "collapsible_tab_C3iK9C": {
           "type": "collapsible_tab",
           "settings": {
@@ -83,6 +92,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "collapsible_tab_nATAN9",
         "collapsible_tab_C3iK9C",
         "collapsible_tab_ah43NT",
         "share"
