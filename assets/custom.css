@@ -240,6 +240,32 @@ summary .icon-caret {
   text-decoration: none !important;
 }
 
+/* Multirow section */
+.multirow--fullpage-width .multirow__inner {
+  max-width: none;
+}
+
+.multirow--fullpage-width .image-with-text__content {
+  padding: 4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .multirow--fullpage-width .image-with-text__content {
+    padding: 6rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .multirow--fullpage-width .image-with-text__content {
+    padding: 7rem;
+  }
+}
+
+.image-with-text__content .image-with-text__text--caption {
+  font-family: var(--font-heading-family);
+  margin-bottom: 25px;
+}
+
 /* multi-column section*/   
 .multicolumn {
     .multicolumn__title {

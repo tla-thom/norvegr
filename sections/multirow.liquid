@@ -33,7 +33,7 @@
     assign borders_class = ' collapse-borders'
   endif
 
-  if no_content_background and no_content_styles
+  if no_content_background and no_content_styles and section.settings.fullpage_width == false
     assign padding_class = ' collapse-padding'
   endif
 
@@ -42,7 +42,7 @@
   endunless
 -%}
 
-<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
@@ -190,6 +190,13 @@
     {
       "type": "header",
       "content": "t:sections.multirow.settings.header_2.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "fullpage_width",
+      "label": "Fullpage width",
+      "default": false,
+      "info": "Removes the max-width constraint while keeping page padding. Text boxes use equal padding on all sides."
     },
     {
       "type": "select",
