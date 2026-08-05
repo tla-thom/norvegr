@@ -192,7 +192,7 @@ header {
 }
 
 .product__accordion .accordion__content {
-  padding: 0;
+  padding: 0 !important;
 }
 
 /* Product variant picker */
