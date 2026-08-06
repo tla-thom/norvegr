@@ -372,6 +372,7 @@
         "image_layout": "alternate-left",
         "fullpage_width": true,
         "remove_horizontal_padding": true,
+        "no_margin_top": false,
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
@@ -409,7 +410,7 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 40,
         "padding_bottom": 0
       }
     },
@@ -473,7 +474,7 @@
         "text_fjVhnb": {
           "type": "text",
           "settings": {
-            "text": "Our most indulgent and limited edition collection features supremely soft eiderdown, hand-harvested from Svalbard after the nesting season.",
+            "text": "<p>Our most indulgent and limited edition collection features supremely soft eiderdown, hand-harvested from Svalbard after the nesting season.</p>",
             "text_style": "body"
           }
         },
