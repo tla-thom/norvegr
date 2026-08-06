@@ -43,7 +43,7 @@
           "type": "popup",
           "settings": {
             "text": "View our sizing guide",
-            "page": ""
+            "page": "sizing-guide-duvets"
           }
         },
         "buy_buttons": {
