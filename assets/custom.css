@@ -262,6 +262,69 @@ main[data-template="product"] .banner__text a::after {
   content: '\00a0→';
 }
 
+/* Product page — pop-up / size guide block */
+main[data-template="product"] .product__info-container > .product-popup-modal__opener {
+  margin-block: 0;
+}
+
+main[data-template="product"] .product-popup-modal__opener {
+  display: block;
+}
+
+main[data-template="product"] .product-popup-modal__button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0 0 0 3.8rem;
+  min-height: 0;
+  border: 0;
+  background: transparent;
+  text-decoration: none;
+  text-underline-offset: unset;
+  text-decoration-thickness: unset;
+  font-family: var(--font-heading-family);
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+  text-align: left;
+}
+
+main[data-template="product"] .product-popup-modal__button:hover {
+  text-decoration: none;
+  text-decoration-thickness: unset;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+main[data-template="product"] .product-popup-modal__button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  transform: translateY(-50%);
+  background: url('icon-ruler.svg') no-repeat center / contain;
+  opacity: 0.55;
+}
+
+main[data-template="product"] .product-popup-modal__button::after {
+  content: '(Click here to see the measurements for all our sizes)';
+  font-family: var(--font-body-family);
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.35;
+}
+
 /* Product variant picker */
 .product-form__input .form__label,
 .product-form__input--pill input[type='radio'] + label,
@@ -609,4 +672,55 @@ slideshow-component {
 /* blog section*/
 .main-blog {
   .title--primary { display: none; }
+}
+
+/* Tablesorter tables */
+table.tablesorter {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  box-shadow: none;
+}
+
+table.tablesorter thead tr th {
+  color: #414141;
+  background-color: rgba(132, 132, 132, 0.42);
+  font-family: var(--font-heading-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: 0;
+  padding: 1em;
+}
+
+table.tablesorter thead tr th:hover {
+  color: #27263c;
+}
+
+table.tablesorter tbody tr:nth-child(even) td {
+  color: #000;
+  background: rgba(132, 132, 132, 0.1);
+}
+
+table.tablesorter tbody tr td {
+  border: 0;
+  font-family: var(--font-body-family);
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 1em;
+}
+
+table.tablesorter tbody tr:nth-child(odd) td:hover {
+  color: #6d7882;
+}
+
+table.tablesorter td a {
+  color: #c15959;
+}
+
+table.tablesorter td a:hover {
+  color: #6d7882;
 }
