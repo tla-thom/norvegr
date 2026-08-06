@@ -276,23 +276,49 @@ main[data-template="product"] .banner__text a::after {
   color: rgba(var(--color-foreground), 0.6);
 }
 
-/* Buy it now button 
+/* Product page: Add to cart + Buy it now */
+.product-form .product-form__submit {
+  --color-button: 152, 129, 64;
+  --color-button-text: 152, 129, 64;
+  --alpha-button-background: 0;
+  color: #988140 !important;
+  background-color: transparent !important;
+}
+
+.product-form .product-form__submit::after {
+  --border-opacity: 1;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) transparent;
+}
+
+.product-form .product-form__submit:hover:not([disabled])::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, 1),
+    0 0 0 calc(var(--buttons-border-width) + 1px) transparent;
+}
+
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded {
-  background-color: #C2A356 !important;
-  color: rgb(var(--color-background)) !important;
-  transition: background-color var(--duration-short) ease, color var(--duration-short) ease;
+  --color-button: 152, 129, 64;
+  --color-button-text: 255, 255, 255;
+  --alpha-button-background: 1;
+  background-color: #988140 !important;
+  color: #fff !important;
+}
+
+.product-form .shopify-payment-button button.shopify-payment-button__button--unbranded::after {
+  --border-opacity: 1;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) #988140;
 }
 
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: #C2A356 !important;
-  color: rgb(var(--color-foreground)) !important;
+  background-color: #988140 !important;
+  color: #fff !important;
 }
 
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded:hover:not([disabled])::after {
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-foreground), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-background), 1);
-}*/
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, 1),
+    0 0 0 calc(var(--buttons-border-width) + 1px) #988140;
+}
 
 /* collection section*/
 .collection {

@@ -18,6 +18,17 @@
     assign current_region = 'NOR'
   endif
 
+  case current_region
+    when 'UK'
+      assign current_region_label = 'United Kingdom'
+    when 'US'
+      assign current_region_label = 'United States'
+    when 'NOR'
+      assign current_region_label = 'Norway'
+    else
+      assign current_region_label = 'Europe'
+  endcase
+
   assign show_uk = false
   assign show_us = false
   assign show_nor = false
@@ -59,7 +70,7 @@
     aria-describedby="{{ localPosition }}Label"
   >
     <span class="header-localization__currency">
-      <span class="header-localization__currency-code">{{ current_region }}</span>
+      <span class="header-localization__currency-code">{{ current_region_label }}</span>
     </span>
     {{ 'icon-caret.svg' | inline_asset_content }}
   </button>
@@ -96,7 +107,7 @@
               >
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
               </span>
-              <span class="country">UK</span>
+              <span class="country">United Kingdom</span>
             </a>
           </li>
         {%- endif -%}
@@ -118,7 +129,7 @@
               >
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
               </span>
-              <span class="country">US</span>
+              <span class="country">United States</span>
             </a>
           </li>
         {%- endif -%}
@@ -140,7 +151,7 @@
               >
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
               </span>
-              <span class="country">NOR</span>
+              <span class="country">Norway</span>
             </a>
           </li>
         {%- endif -%}
@@ -162,7 +173,7 @@
               >
                 {{- 'icon-checkmark.svg' | inline_asset_content -}}
               </span>
-              <span class="country">EUR</span>
+              <span class="country">Europe</span>
             </a>
           </li>
         {%- endif -%}
