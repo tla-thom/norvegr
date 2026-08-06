@@ -322,6 +322,21 @@ a.product__text {
   margin-top: -1.4rem;
 }
 
+.product__price-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.product__price-row .product__tax {
+  margin-top: 0;
+}
+
+.product--no-media .product__price-row {
+  justify-content: center;
+}
+
 .product--no-media .share-button {
   max-width: 100%;
 }
