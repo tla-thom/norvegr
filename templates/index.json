@@ -188,17 +188,6 @@
             "link": ""
           }
         },
-        "column_wrmUbk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
-            "title": "",
-            "heading_size": "h2",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_UyXmmQ": {
           "type": "column",
           "settings": {
@@ -218,7 +207,6 @@
         "column_pnqnaL",
         "column_jDEUFt",
         "column_46h9xb",
-        "column_wrmUbk",
         "column_UyXmmQ"
       ],
       "name": "t:sections.multicolumn.presets.name",
@@ -232,7 +220,7 @@
         "button_label": "",
         "button_link": "",
         "full_width": false,
-        "columns_desktop": 8,
+        "columns_desktop": 7,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
