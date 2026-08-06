@@ -28,7 +28,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "color_scheme": "scheme-1",
         "no_margin_top": true,
         "image_ratio": "portrait",
@@ -81,6 +81,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
