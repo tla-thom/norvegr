@@ -440,6 +440,11 @@ summary .icon-caret {
     margin-bottom: 25px;
     font-size: 1.6rem;
   }
+
+  .image-with-text__text--caption-no-heading {
+    margin-bottom: 0;
+  }
+
   .image-with-text__heading {
     font-family: var(--font-body-family);
     font-weight: 400;
