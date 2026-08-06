@@ -71,6 +71,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -109,6 +110,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -408,8 +410,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 40,
         "padding_bottom": 0
       }
@@ -452,6 +454,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -547,6 +550,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
