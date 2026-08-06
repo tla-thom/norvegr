@@ -120,6 +120,11 @@ header {
     .header__inline-menu .header__menu-item {
         font-size: 1.2rem;
     }
+
+    .header-localization .disclosure .localization-form__select,
+    .header-localization .disclosure .header-localization__currency-code {
+        font-size: 1.2rem !important;
+    }
 }
 
 .transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item,
