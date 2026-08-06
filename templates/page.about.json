@@ -131,7 +131,7 @@
           "type": "heading",
           "settings": {
             "heading": "Norse heritage",
-            "heading_size": "h2",
+            "heading_size": "hxs",
             "use_body_font": false
           }
         },
@@ -161,6 +161,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "smaller",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -256,6 +257,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -301,6 +303,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
