@@ -101,6 +101,13 @@ header {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 0.12rem;
+        color: rgb(var(--color-foreground));
+    }
+
+    .header__submenu .header__menu-item,
+    .header__submenu .header__menu-item span,
+    .mega-menu__link {
+        color: rgb(var(--color-foreground));
     }
 }
 @media screen and (min-width: 990px) {
@@ -113,7 +120,12 @@ header {
     .header__inline-menu .header__menu-item {
         font-size: 1.2rem;
     }
-} 
+}
+
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item,
+.transparent-header .section-header:not(.scrolled-past-header) .header__submenu .header__menu-item span {
+    color: rgb(0, 0, 0);
+}
 /* header localization section*/
 .header-localization .localization-form__select,
 .header-localization .header-localization__currency,
@@ -304,6 +316,7 @@ main[data-template="product"] .banner__text a::after {
   .facets__heading,
   .facets__summary-label,
   .facets__summary > div > span,
+  .facets__summary,
   .facets__label,
   .facet-filters__label,
   .facet-filters__sort,
@@ -321,6 +334,7 @@ main[data-template="product"] .banner__text a::after {
     text-transform: uppercase !important;
     letter-spacing: 0.12rem;
     font-size: 1.2rem;
+    color: rgb(var(--color-foreground));
   }
 
   .product-count__text {
