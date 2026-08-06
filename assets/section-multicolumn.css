@@ -164,10 +164,30 @@
 }
 
 @media screen and (min-width: 990px) {
-  .multicolumn-list.grid--7-col-desktop > .grid__item {
-    flex: 0 0 calc(100% / 7 - var(--grid-desktop-horizontal-spacing) * 6 / 7);
-    width: calc(100% / 7 - var(--grid-desktop-horizontal-spacing) * 6 / 7);
-    max-width: calc(100% / 7 - var(--grid-desktop-horizontal-spacing) * 6 / 7);
+  .multicolumn-list {
+    display: grid;
+    grid-template-columns: repeat(var(--multicolumn-cols-desktop, 3), minmax(0, 1fr));
+    column-gap: var(--grid-desktop-horizontal-spacing);
+    row-gap: var(--grid-desktop-vertical-spacing);
+  }
+
+  .multicolumn-list.grid--gapless {
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .multicolumn-list > .grid__item {
+    width: auto;
+    max-width: none;
+    flex: unset;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .multicolumn-list.slider {
+    display: flex;
+    flex-wrap: inherit;
+    grid-template-columns: none;
   }
 }
 
