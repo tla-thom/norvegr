@@ -70,8 +70,14 @@
           {% endif %}
           <div class="grid__item">
             {%- for block in section.blocks -%}
+              {%- liquid
+                assign row_anchor_id = block.settings.anchor_id | strip | remove: '#'
+              -%}
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                {% if row_anchor_id != blank %}
+                  id="{{ row_anchor_id | escape }}"
+                {% endif %}
                 {{ block.shopify_attributes }}
               >
                 <details
@@ -490,6 +496,13 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
+        },
+        {
+          "type": "text",
+          "id": "anchor_id",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.anchor_id.label",
+          "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.anchor_id.info",
+          "placeholder": "t:sections.collapsible_content.blocks.collapsible_row.settings.anchor_id.placeholder"
         }
       ]
     }

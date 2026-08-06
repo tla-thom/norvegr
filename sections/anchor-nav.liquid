@@ -1,0 +1,167 @@
+{{ 'section-anchor-nav.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- if section.blocks.size > 0 -%}
+  <div class="anchor-nav color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width section-{{ section.id }}-padding">
+      <nav
+        class="anchor-nav__nav"
+        aria-label="{{ section.settings.accessibility_label | escape }}"
+      >
+        <ul class="anchor-nav__list anchor-nav__list--{{ section.settings.content_alignment }}">
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign anchor_id = block.settings.anchor_id | strip | remove: '#'
+            -%}
+            {%- if block.settings.label != blank and anchor_id != blank -%}
+              <li class="anchor-nav__item" {{ block.shopify_attributes }}>
+                <a href="#{{ anchor_id | escape }}" class="anchor-nav__link">
+                  {{- block.settings.label | escape -}}
+                </a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.anchor-nav.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "accessibility_label",
+      "label": "t:sections.anchor-nav.settings.accessibility_label.label",
+      "default": "t:sections.anchor-nav.settings.accessibility_label.default",
+      "info": "t:sections.anchor-nav.settings.accessibility_label.info"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.anchor-nav.settings.content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.anchor-nav.settings.content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.anchor-nav.settings.content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.anchor-nav.settings.content_alignment.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "t:sections.anchor-nav.blocks.link.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "t:sections.anchor-nav.blocks.link.settings.label.label",
+          "default": "t:sections.anchor-nav.blocks.link.settings.label.default"
+        },
+        {
+          "type": "text",
+          "id": "anchor_id",
+          "label": "t:sections.anchor-nav.blocks.link.settings.anchor_id.label",
+          "info": "t:sections.anchor-nav.blocks.link.settings.anchor_id.info",
+          "placeholder": "t:sections.anchor-nav.blocks.link.settings.anchor_id.placeholder"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.anchor-nav.presets.name",
+      "blocks": [
+        {
+          "type": "link",
+          "settings": {
+            "label": "Single",
+            "anchor_id": "single"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Double",
+            "anchor_id": "double"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "King",
+            "anchor_id": "king"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Superking",
+            "anchor_id": "superking"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

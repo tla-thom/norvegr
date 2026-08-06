@@ -552,6 +552,47 @@
         "name": "Apps"
       }
     },
+    "anchor-nav": {
+      "name": "Anchor navigation",
+      "settings": {
+        "accessibility_label": {
+          "label": "Accessibility label",
+          "default": "Page sections",
+          "info": "Describes this navigation for screen readers."
+        },
+        "content_alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        }
+      },
+      "blocks": {
+        "link": {
+          "name": "Link",
+          "settings": {
+            "label": {
+              "label": "Label",
+              "default": "Link"
+            },
+            "anchor_id": {
+              "label": "Anchor ID",
+              "info": "The id of the element to scroll to on this page, without #.",
+              "placeholder": "single"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Anchor navigation"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -3350,6 +3391,11 @@
             },
             "page": {
               "label": "Row content from page"
+            },
+            "anchor_id": {
+              "label": "Anchor ID",
+              "info": "Optional id for in-page anchor links, without #.",
+              "placeholder": "single"
             },
             "icon": {
               "label": "Icon",
