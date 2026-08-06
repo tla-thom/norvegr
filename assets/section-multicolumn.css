@@ -163,6 +163,14 @@
   padding: 0;
 }
 
+@media screen and (min-width: 990px) {
+  .multicolumn-list.grid--7-col-desktop > .grid__item {
+    flex: 0 0 calc(100% / 7 - var(--grid-desktop-horizontal-spacing) * 6 / 7);
+    width: calc(100% / 7 - var(--grid-desktop-horizontal-spacing) * 6 / 7);
+    max-width: calc(100% / 7 - var(--grid-desktop-horizontal-spacing) * 6 / 7);
+  }
+}
+
 .multicolumn-list__item:only-child {
   max-width: 72rem;
 }
