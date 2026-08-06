@@ -39,6 +39,13 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "popup_KBfEb6": {
+          "type": "popup",
+          "settings": {
+            "text": "View our sizing guide",
+            "page": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -91,6 +98,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "popup_KBfEb6",
         "buy_buttons",
         "collapsible_tab_nATAN9",
         "collapsible_tab_C3iK9C",
