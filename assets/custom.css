@@ -379,9 +379,12 @@ summary .icon-caret {
     margin-inline-end: 0;
   }
 
-  .multirow .image-with-text__grid--reverse .image-with-text__content--desktop-left {
-    margin-left: 0;
-    margin-right: auto;
+  .multirow .image-with-text__grid--reverse .image-with-text__text-item {
+    align-items: center;
+  }
+
+  .multirow .image-with-text__grid--reverse .image-with-text__content {
+    margin-inline: auto;
   }
 }
 
