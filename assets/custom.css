@@ -358,6 +358,33 @@ summary .icon-caret {
 }
 
 /* Multirow section */
+.multirow .image-with-text__text-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.multirow .image-with-text__content {
+  max-width: 760px;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .multirow .image-with-text__content--desktop-center {
+    margin-inline: auto;
+  }
+
+  .multirow .image-with-text__content--desktop-right {
+    margin-inline-start: auto;
+    margin-inline-end: 0;
+  }
+
+  .multirow .image-with-text__grid--reverse .image-with-text__content--desktop-left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 .multirow--fullpage-width .multirow__inner {
   max-width: none;
 }
