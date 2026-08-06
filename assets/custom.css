@@ -468,7 +468,7 @@ summary .icon-caret {
   .image-with-text__text--caption {
     font-family: var(--font-heading-family);
     margin-bottom: 25px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .image-with-text__text--caption-no-heading {
@@ -478,8 +478,19 @@ summary .icon-caret {
   .image-with-text__heading {
     font-family: var(--font-body-family);
     font-weight: 400;
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-transform: none;
+  }
+}
+
+/* Rich text content max width */
+@media screen and (min-width: 750px) {
+  .rich-text__blocks.rich-text__blocks--max-width-default {
+    max-width: 66.67% !important;
+  }
+
+  .rich-text__blocks.rich-text__blocks--max-width-smaller {
+    max-width: 50% !important;
   }
 }
 
@@ -488,7 +499,7 @@ summary .icon-caret {
   font-family: var(--font-body-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 2.6rem;
+  font-size: 2rem;
   text-transform: none;
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
