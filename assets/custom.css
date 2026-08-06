@@ -566,8 +566,26 @@ slideshow-component {
 }
 
 /* footer section*/
-.footer__content-top.page-width{
+.footer__content-top.page-width {
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .footer__content-top.page-width .footer-block__heading,
+  .footer__content-top.page-width .footer-block__details-content,
+  .footer__content-top.page-width .footer-block__details-content .list-menu__item--link {
     text-align: center;
+  }
+
+  .footer__content-top.page-width .footer-block--menu .footer-block__details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__content-top.page-width .footer-block.footer-block--menu:only-child {
+    text-align: center;
+  }
 }
 
 /* blog section*/
