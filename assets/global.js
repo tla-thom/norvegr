@@ -749,6 +749,58 @@ class SliderComponent extends HTMLElement {
     this.slider.addEventListener('scroll', this.update.bind(this));
     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
+
+    if (this.slider.getAttribute('data-autoplay') === 'true') {
+      this.initAutoplay();
+    }
+  }
+
+  initAutoplay() {
+    this.autoplaySpeed = (parseInt(this.slider.dataset.speed, 10) || 5) * 1000;
+    this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.autoplayMediaQuery = window.matchMedia('(max-width: 989px)');
+
+    const updateAutoplayState = () => {
+      if (this.reducedMotion.matches || !this.autoplayMediaQuery.matches) {
+        this.pauseAutoplay();
+      } else {
+        this.playAutoplay();
+      }
+    };
+
+    this.reducedMotion.addEventListener('change', updateAutoplayState);
+    this.autoplayMediaQuery.addEventListener('change', updateAutoplayState);
+    this.addEventListener('mouseenter', this.pauseAutoplay.bind(this));
+    this.addEventListener('mouseleave', updateAutoplayState);
+    this.addEventListener('focusin', this.pauseAutoplay.bind(this));
+    this.addEventListener('focusout', (event) => {
+      if (!this.contains(event.relatedTarget)) updateAutoplayState();
+    });
+
+    updateAutoplayState();
+  }
+
+  playAutoplay() {
+    if (!this.slider || this.slider.getAttribute('data-autoplay') !== 'true') return;
+    if (this.reducedMotion?.matches || !this.autoplayMediaQuery?.matches) return;
+
+    clearInterval(this.autoplayInterval);
+    this.autoplayInterval = setInterval(this.autoRotateSlider.bind(this), this.autoplaySpeed);
+  }
+
+  pauseAutoplay() {
+    clearInterval(this.autoplayInterval);
+  }
+
+  autoRotateSlider() {
+    if (!this.nextButton || !this.sliderItemOffset) return;
+
+    if (this.nextButton.hasAttribute('disabled')) {
+      this.setSlidePosition(0);
+      return;
+    }
+
+    this.setSlidePosition(this.slider.scrollLeft + this.sliderItemOffset);
   }
 
   initPages() {

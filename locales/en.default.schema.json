@@ -2623,6 +2623,13 @@
         },
         "swipe_on_mobile": {
           "label": "Carousel"
+        },
+        "mobile_carousel_autoplay": {
+          "label": "Full slide autoplay",
+          "info": "Shows full slides without peeking at the next item, and automatically advances. Requires Carousel to be enabled."
+        },
+        "mobile_carousel_autoplay_speed": {
+          "label": "Autoplay speed"
         }
       },
       "blocks": {
