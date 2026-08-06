@@ -221,7 +221,7 @@
         "button_link": "",
         "full_width": false,
         "no_padding": false,
-        "columns_desktop": 7,
+        "columns_desktop": 6,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
