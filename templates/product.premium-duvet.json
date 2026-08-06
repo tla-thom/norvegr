@@ -152,7 +152,7 @@
         "buttons_kyF664"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_73_NorvegrBlogPost7-1-2048x1830.jpg",
+        "image": "shopify://shop_images/imgi_46_Norvegr-Winter-Campaign-01.jpg",
         "image_overlay_opacity": 30,
         "image_height": "xlarge",
         "mobile_height": "70",
@@ -227,6 +227,7 @@
         "image_layout": "alternate-left",
         "fullpage_width": true,
         "remove_horizontal_padding": true,
+        "no_margin_top": false,
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
@@ -275,7 +276,7 @@
         "buttons_kHktnf"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_66_NorvegrBlogPost8-1-2048x2048.jpg",
+        "image": "shopify://shop_images/imgi_83_missing-piece-2048x1366_7518291d-a7ca-4edf-99a8-8c7fe4a20172.jpg",
         "image_overlay_opacity": 30,
         "image_height": "large",
         "mobile_height": "70",
@@ -505,12 +506,17 @@
         "button_label": "",
         "button_link": "",
         "full_width": false,
+        "no_padding": false,
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "mobile_carousel_autoplay": false,
+        "mobile_carousel_autoplay_speed": 5,
+        "mobile_custom_image_size": false,
+        "mobile_image_size_percent": 100,
         "padding_top": 24,
         "padding_bottom": 48
       }
