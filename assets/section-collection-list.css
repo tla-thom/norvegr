@@ -22,6 +22,34 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .section-collection-list .collection-list-title.h2 {
+    font-size: calc(var(--font-heading-scale) * 2rem - 1rem);
+  }
+
+  .section-collection-list .collection-list-title.h1 {
+    font-size: calc(var(--font-heading-scale) * 3rem - 1rem);
+  }
+
+  .section-collection-list .collection-list-title.h0 {
+    font-size: calc(var(--font-heading-scale) * 4rem - 1rem);
+  }
+
+  .section-collection-list .collection-list-title.hxl {
+    font-size: calc(var(--font-heading-scale) * 5rem - 1rem);
+  }
+
+  .section-collection-list .collection-list-title.hxxl {
+    font-size: clamp(
+      calc(var(--font-heading-scale) * 5.6rem - 1rem),
+      calc(14vw - 1rem),
+      calc(var(--font-heading-scale) * 7.2rem - 1rem)
+    );
+  }
+
+  .section-collection-list .card__heading {
+    font-size: calc(var(--font-heading-scale) * 1.7rem - 1rem);
+  }
 }
 
 .collection-list__item:only-child {
