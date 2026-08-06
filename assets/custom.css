@@ -10,6 +10,19 @@ h1, h2, h3, h4, h5,
     text-transform: none !important;
 }
 
+/* announcement bar */
+.announcement-bar__message {
+  text-transform: none;
+  font-size: calc(var(--font-heading-scale) * 1.2rem - 1px);
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .announcement-bar__message {
+    font-size: calc(var(--font-heading-scale) * 1.3rem - 1px);
+  }
+}
+
 /* Featured collection & collection banner — gradual heading size steps */
 .featured-collection-section,
 .collection-hero {
