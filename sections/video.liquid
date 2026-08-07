@@ -1,3 +1,4 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
@@ -144,7 +145,7 @@
       or section.settings.text != blank
       or section.settings.button_label != blank
     -%}
-      <div class="video-section__content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="video-section__content banner__content banner__content--{{ section.settings.content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <div class="video-section__content-inner color-{{ section.settings.color_scheme }}">
           {%- if section.settings.heading != blank -%}
             <h2 class="video-section__heading inline-richtext {{ section.settings.heading_size }}{% if section.settings.use_body_font %} heading--body-font{% endif %}">
@@ -377,6 +378,50 @@
     {
       "type": "header",
       "content": "t:sections.video.settings.header__3.content"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__1.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__2.label"
+        },
+        {
+          "value": "top-right",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__3.label"
+        },
+        {
+          "value": "middle-left",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__4.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__5.label"
+        },
+        {
+          "value": "middle-right",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__6.label"
+        },
+        {
+          "value": "bottom-left",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__7.label"
+        },
+        {
+          "value": "bottom-center",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__8.label"
+        },
+        {
+          "value": "bottom-right",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__9.label"
+        }
+      ],
+      "default": "bottom-center",
+      "label": "t:sections.slideshow.blocks.slide.settings.box_align.label"
     },
     {
       "type": "checkbox",

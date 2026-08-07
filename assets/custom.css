@@ -592,12 +592,16 @@ summary .icon-caret {
 
 /* Rich text content max width */
 @media screen and (min-width: 750px) {
-  .rich-text__blocks.rich-text__blocks--max-width-default {
+  .rich-text__blocks.rich-text__blocks--max-width-default,
+  .collection .collection__title.title-wrapper.collection__title--max-width-default {
     max-width: 66.67% !important;
+    margin-inline: auto;
   }
 
-  .rich-text__blocks.rich-text__blocks--max-width-smaller {
+  .rich-text__blocks.rich-text__blocks--max-width-smaller,
+  .collection .collection__title.title-wrapper.collection__title--max-width-smaller {
     max-width: 50% !important;
+    margin-inline: auto;
   }
 }
 

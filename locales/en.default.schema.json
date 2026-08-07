@@ -837,6 +837,15 @@
             "label": "Uppercase"
           }
         },
+        "content_max_width": {
+          "label": "Max width",
+          "options__1": {
+            "label": "Default"
+          },
+          "options__2": {
+            "label": "Smaller"
+          }
+        },
         "header_collection": {
           "content": "Collection layout"
         },
@@ -2612,6 +2621,9 @@
             "label": "Square"
           },
           "options__4": {
+            "label": "Landscape"
+          },
+          "options__5": {
             "label": "Circle"
           }
         },

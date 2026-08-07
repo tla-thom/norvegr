@@ -237,6 +237,10 @@
   width: auto;
 }
 
+.multicolumn .media--landscape {
+  padding-bottom: 75%;
+}
+
 .multicolumn-list__item.center .media--adapt img {
   left: 50%;
   transform: translateX(-50%);
