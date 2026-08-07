@@ -494,8 +494,8 @@
         "buttons_mYbM79": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Shop Duvets",
+            "button_link_1": "shopify://collections/duvet-collection",
             "button_popup_page_1": "",
             "button_style_secondary_1": true,
             "button_label_2": "",
