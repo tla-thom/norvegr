@@ -1393,12 +1393,16 @@
             "button_link_1": {
               "label": "Link"
             },
+            "button_popup_page_1": {
+              "label": "Pop-up page",
+              "info": "If selected, opens this page in a pop-up instead of using the link."
+            },
             "button_style_secondary_1": {
               "label": "Outline style"
             },
             "header_2":{
-              "content": "Button 2"
-            },
+          "content": "Button 2"
+          },
             "button_label_2": {
               "label": "Label",
               "info": "Leave blank to hide",
@@ -1406,6 +1410,10 @@
             },
             "button_link_2": {
               "label": "Link"
+            },
+            "button_popup_page_2": {
+              "label": "Pop-up page",
+              "info": "If selected, opens this page in a pop-up instead of using the link."
             },
             "button_style_secondary_2": {
               "label": "Outline style"

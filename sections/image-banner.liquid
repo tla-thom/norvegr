@@ -1,5 +1,24 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  assign has_page_popups = false
+  for block in section.blocks
+    if block.type == 'popup' and block.settings.page != blank
+      assign has_page_popups = true
+      break
+    endif
+    if block.type == 'buttons'
+      if block.settings.button_popup_page_1 != blank or block.settings.button_popup_page_2 != blank
+        assign has_page_popups = true
+        break
+      endif
+    endif
+  endfor
+-%}
+{%- if has_page_popups -%}
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
     {%- unless section.settings.mobile_height != 'default' -%}
@@ -141,35 +160,114 @@
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
-                <a
-                  {% if block.settings.button_link_1 == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link_1 }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label_1 | escape -}}
-                </a>
+                {%- if block.settings.button_popup_page_1 != blank -%}
+                  <modal-opener data-modal="#PopupModal-{{ block.id }}-btn1">
+                    <button
+                      type="button"
+                      class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                      aria-haspopup="dialog"
+                    >
+                      {{- block.settings.button_label_1 | escape -}}
+                    </button>
+                  </modal-opener>
+                {%- else -%}
+                  <a
+                    {% if block.settings.button_link_1 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_1 }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label_1 | escape -}}
+                  </a>
+                {%- endif -%}
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
-                <a
-                  {% if block.settings.button_link_2 == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link_2 }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label_2 | escape -}}
-                </a>
+                {%- if block.settings.button_popup_page_2 != blank -%}
+                  <modal-opener data-modal="#PopupModal-{{ block.id }}-btn2">
+                    <button
+                      type="button"
+                      class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                      aria-haspopup="dialog"
+                    >
+                      {{- block.settings.button_label_2 | escape -}}
+                    </button>
+                  </modal-opener>
+                {%- else -%}
+                  <a
+                    {% if block.settings.button_link_2 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_2 }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label_2 | escape -}}
+                  </a>
+                {%- endif -%}
               {%- endif -%}
             </div>
+          {%- when 'popup' -%}
+            {%- if block.settings.page != blank -%}
+              <div class="banner__buttons" {{ block.shopify_attributes }}>
+                <modal-opener data-modal="#PopupModal-{{ block.id }}">
+                  <button
+                    type="button"
+                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                    aria-haspopup="dialog"
+                  >
+                    {{ block.settings.text | default: block.settings.page.title | escape }}
+                  </button>
+                </modal-opener>
+              </div>
+            {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
 </div>
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'popup' -%}
+      {%- if block.settings.page != blank -%}
+        {%- liquid
+          assign popup_dialog_label = block.settings.text | default: block.settings.page.title
+        -%}
+        {% render 'page-popup-modal',
+          block: block,
+          page: block.settings.page,
+          dialog_label: popup_dialog_label
+        %}
+      {%- endif -%}
+    {%- when 'buttons' -%}
+      {%- if block.settings.button_popup_page_1 != blank -%}
+        {%- liquid
+          assign popup_dialog_label = block.settings.button_label_1 | default: block.settings.button_popup_page_1.title
+          assign popup_modal_id = block.id | append: '-btn1'
+        -%}
+        {% render 'page-popup-modal',
+          block: block,
+          page: block.settings.button_popup_page_1,
+          dialog_label: popup_dialog_label,
+          modal_id: popup_modal_id
+        %}
+      {%- endif -%}
+      {%- if block.settings.button_popup_page_2 != blank -%}
+        {%- liquid
+          assign popup_dialog_label = block.settings.button_label_2 | default: block.settings.button_popup_page_2.title
+          assign popup_modal_id = block.id | append: '-btn2'
+        -%}
+        {% render 'page-popup-modal',
+          block: block,
+          page: block.settings.button_popup_page_2,
+          dialog_label: popup_dialog_label,
+          modal_id: popup_modal_id
+        %}
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor -%}
 
 {% schema %}
 {
@@ -508,6 +606,12 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
         },
         {
+          "type": "page",
+          "id": "button_popup_page_1",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_popup_page_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_popup_page_1.info"
+        },
+        {
           "type": "checkbox",
           "id": "button_style_secondary_1",
           "default": false,
@@ -530,10 +634,40 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
         },
         {
+          "type": "page",
+          "id": "button_popup_page_2",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_popup_page_2.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_popup_page_2.info"
+        },
+        {
           "type": "checkbox",
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        }
+      ]
+    },
+    {
+      "type": "popup",
+      "name": "t:sections.main-product.blocks.popup.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "t:sections.main-product.blocks.popup.settings.link_label.default",
+          "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
         }
       ]
     }

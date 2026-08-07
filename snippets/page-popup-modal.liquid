@@ -1,0 +1,39 @@
+{%- comment -%}
+  Renders a page content popup modal.
+
+  Accepts:
+  - block: {Object} Block object
+  - page: {Object} Page liquid object
+  - dialog_label: {String} Accessible dialog label
+  - modal_id: {String} Optional modal id suffix
+{%- endcomment -%}
+
+{%- liquid
+  assign modal_element_id = block.id
+  if modal_id != blank
+    assign modal_element_id = modal_id
+  endif
+-%}
+
+<modal-dialog id="PopupModal-{{ modal_element_id }}" class="product-popup-modal">
+  <div
+    role="dialog"
+    aria-label="{{ dialog_label | escape }}"
+    aria-modal="true"
+    class="product-popup-modal__content"
+    tabindex="-1"
+  >
+    <button
+      id="ModalClose-{{ modal_element_id }}"
+      type="button"
+      class="product-popup-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {{- 'icon-close.svg' | inline_asset_content -}}
+    </button>
+    <div class="product-popup-modal__content-info">
+      <h1 class="h2">{{ page.title | escape }}</h1>
+      {{ page.content }}
+    </div>
+  </div>
+</modal-dialog>
