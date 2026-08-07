@@ -146,13 +146,22 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              {%- assign placeholder_asset = 'placeholder-duvet-premium.jpg' -%}
+              {%- liquid
+                assign placeholder_asset = 'placeholder-duvet-premium.jpg'
+                if section.settings.collection != blank
+                  assign placeholder_buy_now_url = section.settings.collection.url
+                else
+                  assign placeholder_buy_now_url = routes.all_products_collection_url
+                endif
+              -%}
               {% render 'card-product',
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
                 lazy_load: false,
-                placeholder_asset: placeholder_asset
+                placeholder_asset: placeholder_asset,
+                show_buy_now: true,
+                buy_now_url: placeholder_buy_now_url
               %}
             </li>
           {%- endfor -%}

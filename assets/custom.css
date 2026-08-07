@@ -419,6 +419,8 @@ main[data-template="product"] .product-popup-modal__button::after {
 
 .featured-collection-section .card__buy-now {
   margin-top: 15px;
+  position: relative;
+  z-index: 2;
 }
 
 /* Collection filters */

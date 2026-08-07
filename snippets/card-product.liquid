@@ -18,6 +18,7 @@
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
   - placeholder_asset: {String} Theme asset filename for a custom placeholder image (optional)
   - show_buy_now: {Boolean} Show a Buy Now button below the price. Default: false (optional)
+  - buy_now_url: {String} Link for Buy Now on placeholder cards (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -650,6 +651,14 @@
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
             {% render 'price', placeholder: placeholder, show_compare_at_price: true %}
+            {%- if show_buy_now -%}
+              <a
+                href="{{ buy_now_url | default: routes.all_products_collection_url }}"
+                class="button button--secondary card__buy-now"
+              >
+                Buy Now
+              </a>
+            {%- endif -%}
           </div>
         </div>
       </div>
