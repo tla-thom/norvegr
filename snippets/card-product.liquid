@@ -17,6 +17,7 @@
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
   - placeholder_asset: {String} Theme asset filename for a custom placeholder image (optional)
+  - show_buy_now: {Boolean} Show a Buy Now button below the price. Default: false (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -217,6 +218,11 @@
               {%- endif -%}
 
               {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+              {%- if show_buy_now -%}
+                <a href="{{ card_product.url }}" class="button button--secondary card__buy-now">
+                  Buy Now
+                </a>
+              {%- endif -%}
               {%- if card_product.quantity_price_breaks_configured? -%}
                 {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                   {% liquid
