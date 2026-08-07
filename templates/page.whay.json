@@ -72,13 +72,13 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "content_max_width": "smaller",
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 80
       }
     },
     "multirow_jY6FWM": {
@@ -188,7 +188,7 @@
         "section_color_scheme": "",
         "row_color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "main": {
