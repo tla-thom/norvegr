@@ -126,7 +126,7 @@
         "column_mpjwpM": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_8_Red-magazine-150x150_e5a4bfe6-9dad-4d49-ad12-f1e74ecab821.png",
+            "image": "shopify://shop_images/brand-01.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -137,7 +137,7 @@
         "column_XCXfrL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_4_robb-report-duvets-pillows.png",
+            "image": "shopify://shop_images/brand-02.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -148,7 +148,7 @@
         "column_p3JnK8": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_11_elle-decoration-luxury-bedding.png",
+            "image": "shopify://shop_images/brand-04.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -159,7 +159,7 @@
         "column_pnqnaL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_9_how-to-spend-it-norwegian-duvets.png",
+            "image": "shopify://shop_images/brand-05.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -170,7 +170,7 @@
         "column_jDEUFt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_5_the-world-interiors-duvets.png",
+            "image": "shopify://shop_images/brand-06.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -181,7 +181,18 @@
         "column_46h9xb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_6_cth-2.jpg",
+            "image": "shopify://shop_images/brand-07.jpg",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KC9iDd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/brand-08.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -192,7 +203,7 @@
         "column_UyXmmQ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_10_architectural-digest-scandanavian-duvets_8e68c260-217e-476b-a6e9-99f39fdfb693.png",
+            "image": "shopify://shop_images/brand-03.jpg",
             "title": "",
             "heading_size": "h2",
             "text": "",
@@ -208,6 +219,7 @@
         "column_pnqnaL",
         "column_jDEUFt",
         "column_46h9xb",
+        "column_KC9iDd",
         "column_UyXmmQ"
       ],
       "name": "t:sections.multicolumn.presets.name",
@@ -222,7 +234,7 @@
         "button_link": "",
         "full_width": false,
         "no_padding": false,
-        "columns_desktop": 7,
+        "columns_desktop": 8,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
