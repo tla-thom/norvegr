@@ -294,9 +294,11 @@
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
+            "button_popup_page_1": "",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_popup_page_2": "",
             "button_style_secondary_2": false
           }
         }
@@ -306,9 +308,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_28_Norvegr_S26_Campaign_Website_Image-scaled.jpg",
+        "image": "shopify://shop_images/imgi_31_NORVEGR-SPRING_SUMMER2026-051-scaled.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "xlarge",
+        "image_height": "large",
         "mobile_height": "70",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",
@@ -494,9 +496,11 @@
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
+            "button_popup_page_1": "",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_popup_page_2": "",
             "button_style_secondary_2": false
           }
         }
@@ -507,7 +511,7 @@
         "buttons_mYbM79"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_101_polar-days-norvegr-2048x1395.jpg",
+        "image": "shopify://shop_images/imgi_39_Norvegr-AW2025-Campaign-035.jpg",
         "image_overlay_opacity": 30,
         "image_height": "xlarge",
         "mobile_height": "70",
