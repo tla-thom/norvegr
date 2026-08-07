@@ -18,7 +18,7 @@
         "use_body_font": true,
         "text": "",
         "button_label": "SHOP DUVETS",
-        "button_link": "#",
+        "button_link": "shopify://collections/duvet-collection",
         "button_style_secondary": true,
         "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
         "enable_video_looping": true,
