@@ -256,7 +256,7 @@
         "title": "Our Top Picks For You",
         "heading_size": "h0",
         "use_body_font": true,
-        "content_max_width": "smaller",
+        "content_max_width": "default",
         "description": "<p>Our fan-favourite duvet and pillow is an unbeatable combination, adding a touch of cloud-light elegance to take your sleep to the next level.</p>",
         "show_description": false,
         "description_style": "body",
