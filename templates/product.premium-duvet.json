@@ -147,9 +147,11 @@
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
+            "button_popup_page_1": "",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_popup_page_2": "",
             "button_style_secondary_2": false
           }
         }
@@ -271,9 +273,11 @@
           "settings": {
             "button_label_1": "See guides",
             "button_link_1": "shopify://pages/sizing-guide-duvets",
+            "button_popup_page_1": "sizing-guide-duvets",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_popup_page_2": "",
             "button_style_secondary_2": false
           }
         }
