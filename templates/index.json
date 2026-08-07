@@ -251,7 +251,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "",
         "products_to_show": 4,
         "title": "Our Top Picks For You",
         "heading_size": "h0",
