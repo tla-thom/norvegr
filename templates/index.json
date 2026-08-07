@@ -399,7 +399,7 @@
     "featured_collection_QRLXzG": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "",
         "products_to_show": 4,
         "title": "Duvet Collection",
         "heading_size": "h0",
