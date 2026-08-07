@@ -145,22 +145,13 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              {% liquid
-                assign ridx = forloop.rindex
-                case ridx
-                  when 5
-                    assign ridx = 1
-                  when 6
-                    assign ridx = 2
-                endcase
-              %}
-              {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
+              {%- assign placeholder_asset = 'placeholder-duvet-premium.jpg' -%}
               {% render 'card-product',
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
                 lazy_load: false,
-                placeholder_image: placeholder_image
+                placeholder_asset: placeholder_asset
               %}
             </li>
           {%- endfor -%}

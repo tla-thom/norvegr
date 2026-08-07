@@ -16,6 +16,7 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
+  - placeholder_asset: {String} Theme asset filename for a custom placeholder image (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -613,7 +614,16 @@
           <div
             class="media media--transparent"
           >
-            {%- if placeholder_image -%}
+            {%- if placeholder_asset != blank -%}
+              <img
+                src="{{ placeholder_asset | asset_url }}"
+                alt=""
+                class="motion-reduce"
+                loading="lazy"
+                width="800"
+                height="1200"
+              >
+            {%- elsif placeholder_image -%}
               {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
             {%- else -%}
               {{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
