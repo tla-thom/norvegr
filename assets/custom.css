@@ -423,12 +423,12 @@ main[data-template="product"] .product-popup-modal__button::after {
   z-index: 2;
 }
 
-.card__heading {
+.featured-collection-section .card__heading {
   margin-top: 5px;
   margin-bottom: 15px;
 }
 
-.card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
+.featured-collection-section .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
   margin-top: 1.8rem;
 }
 
