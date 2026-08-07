@@ -1,0 +1,333 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_kjAEK9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_yr7iWF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed to last a lifetime",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_cDRB89": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_JAXL94": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yr7iWF",
+        "text_cDRB89",
+        "buttons_JAXL94"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_10_high-end-bedding.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "multirow_jY6FWM": {
+      "type": "multirow",
+      "blocks": {
+        "row_49JpJW": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_3_classic-down-duvets-300x436.jpg",
+            "caption": "NORVEGR: MAKING SLEEP A DREAM SINCE the 1950s",
+            "heading": "Norvegr follows a legacy in creating the most comfortable down duvets and pillows in the world. ",
+            "text": "<p>A family business spanning three generations, everything we make is handcrafted to order in Trondheim, Norway, and shipped globally. All of our products are natural, sustainable, renewable and designed to last a lifetime.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_69AtiT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_12_duvet-construction-techniques.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "<p>We use unique construction techniques to create ultra-light, ultra-soft products – like sleeping on a cloud. A perfect balance between insulation and breathability ensures supreme comfort and an undisturbed rest throughout the night.</p><p>Our products will stay with you for a lifetime. Both our duvets and pillows can be returned every 10 and 5 years respectively for complete renewal. The down is restored by steam and harmless UV irradiation, then refilled and topped up. Casings are also replaced. This preserves their value for decades while sparing precious natural resources.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_CQfm6H": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_eiderdown-ducks.jpg",
+            "caption": "Who Flocks to Us?",
+            "heading": "Our clients embrace some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:",
+            "text": "<ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and America</li></ul><p>At Norvegr, we proudly draw on our Viking heritage to create extraordinary bedding for an exclusive international clientele.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_49JpJW",
+        "row_69AtiT",
+        "row_CQfm6H"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_H4F3yh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AjjiYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Norse heritage",
+            "heading_size": "hxs",
+            "use_body_font": false
+          }
+        },
+        "text_yeApbE": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><em>Our legacy is distinctly Norse, and the Vikings knew a thing or two about comfort. Sumptuous down and feathers have been keeping Norwegians cosy for more than 1,000 years.</em></h2><p>In 834 AD, the beautiful Oseberg Ship became Queen Asa of Agder’s final resting place. Archaeologists examining her grave discovered an ornate bed, dressed with the most luxurious Viking Age textiles ever seen. Between the gorgeous fabric covers and inside the exquisite pillows were thick layers of the softest feather – pure eiderdown. In fact, furs, feathers and down from the highest latitudes were prized long before the Viking Age. This is because arctic seabirds developed the best down to insulate their bodies against the freezing polar nights, The Oseberg still lives on in the Norvegr logo today.</p>"
+          }
+        },
+        "button_3LUM6W": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AjjiYC",
+        "text_yeApbE",
+        "button_3LUM6W"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_qpE4Em": {
+      "type": "multirow",
+      "blocks": {
+        "row_fcbNVe": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_14_high-end-bedding-travel.jpg",
+            "caption": "from the high seas",
+            "heading": "Queen Asa was not the only Viking enraptured by eiderdown.",
+            "text": "<p>In 870 AD, Ottar the Viking arrived at the palace of King Alfred the Great, in the Anglo-Saxon kingdom of Wessex. He captivated the royal court with colourful stories of his intrepid journey. As the fire blazed and the wine was poured, he explained the simple motive behind his quest: “I wanted to find out how far north my country ended.”</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_7cjy37": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_15_norwegian-history.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Ottar had set sail from Hålogaland, near the Arctic Circle, and voyaged the ‘North Way’ – known as ‘Norvegr’. During his travels he collected fur pelts, feathers and precious down. After many months, his voyage took him south along the Norwegian coast to Denmark, and finally to the court of King Alfred, where his treasures were eagerly received. Alfred was so impressed that he added Ottar’s stories to his version of the Compendious History of the World.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_fcbNVe",
+        "row_7cjy37"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ycKNWP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RjNieU": {
+          "type": "heading",
+          "settings": {
+            "heading": "FIT FOR ROYALTY TODAY",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_WTnQWb": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><em>How do these tales relate to Norvegr? To us, they’re of more than historical interest. They authenticate the tradition of luxurious down that underpins our family business.</em></h2><p>To us, these are more than just stories. They validate the tradition of luxurious down that underpins our family business. When we sleep well, everything else falls into place. This is the basis of Scandinavian happiness, and what Norvegr brings to you.<br/> <br/>Filled with the finest down and covered in the softest pure cotton casings, our products really are something special. Many of our duvets are privately commissioned, creating one-of-a-kind products that will last for decades. Almost 70 years on, we remain as passionate about craftsmanship as the day we first set out on our journey.</p>"
+          }
+        },
+        "button_Remxwc": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RjNieU",
+        "text_WTnQWb",
+        "button_Remxwc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_Br36R6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VUfREP": {
+          "type": "heading",
+          "settings": {
+            "heading": "The norvegr advocates",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_zHBNQF": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><em>Our clients include some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:</em></h2><ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and Americ</li></ul>"
+          }
+        },
+        "button_KkRU9T": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VUfREP",
+        "text_zHBNQF",
+        "button_KkRU9T"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_kjAEK9",
+    "multirow_jY6FWM",
+    "rich_text_H4F3yh",
+    "multirow_qpE4Em",
+    "rich_text_ycKNWP",
+    "rich_text_Br36R6",
+    "main"
+  ]
+}
