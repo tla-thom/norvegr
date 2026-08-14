@@ -72,7 +72,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_3_classic-down-duvets-300x436.jpg",
             "caption": "NORVEGR: MAKING SLEEP A DREAM SINCE the 1950s",
-            "heading": "Norvegr follows a legacy in creating the most comfortable down duvets and pillows in the world. ",
+            "heading": "<em>Norvegr follows a legacy in creating the most comfortable down duvets and pillows in the world. </em>",
             "text": "<p>A family business spanning three generations, everything we make is handcrafted to order in Trondheim, Norway, and shipped globally. All of our products are natural, sustainable, renewable and designed to last a lifetime.</p>",
             "button_label": "",
             "button_link": ""
@@ -94,8 +94,8 @@
           "settings": {
             "image": "shopify://shop_images/imgi_13_eiderdown-ducks.jpg",
             "caption": "Who Flocks to Us?",
-            "heading": "Our clients embrace some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:",
-            "text": "<ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and America</li></ul><p>At Norvegr, we proudly draw on our Viking heritage to create extraordinary bedding for an exclusive international clientele.</p>",
+            "heading": "<em>Our clients embrace some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:</em>",
+            "text": "<ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and America</li></ul><h2><em>At Norvegr, we proudly draw on our Viking heritage to create extraordinary bedding for an exclusive international clientele.</em></h2>",
             "button_label": "",
             "button_link": ""
           }
@@ -180,7 +180,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_14_high-end-bedding-travel.jpg",
             "caption": "from the high seas",
-            "heading": "Queen Asa was not the only Viking enraptured by eiderdown.",
+            "heading": "<em>Queen Asa was not the only Viking enraptured by eiderdown.</em>",
             "text": "<p>In 870 AD, Ottar the Viking arrived at the palace of King Alfred the Great, in the Anglo-Saxon kingdom of Wessex. He captivated the royal court with colourful stories of his intrepid journey. As the fire blazed and the wine was poured, he explained the simple motive behind his quest: “I wanted to find out how far north my country ended.”</p>",
             "button_label": "",
             "button_link": ""
