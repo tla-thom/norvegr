@@ -238,12 +238,15 @@ class BrandSliderComponent extends HTMLElement {
     }
 
     this._isScrolling = true;
+    this.slider.classList.add('brand-slider__list--animating');
     const startTime = performance.now();
+
+    const easeInOutCubic = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
     const step = (currentTime) => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      this.slider.scrollLeft = start + distance * progress;
+      this.slider.scrollLeft = start + distance * easeInOutCubic(progress);
 
       if (progress < 1) {
         this._scrollAnimationFrame = requestAnimationFrame(step);
@@ -251,6 +254,7 @@ class BrandSliderComponent extends HTMLElement {
       }
 
       this._isScrolling = false;
+      this.slider.classList.remove('brand-slider__list--animating');
       this.normalizeScrollPosition();
       this.update();
       if (onComplete) onComplete();

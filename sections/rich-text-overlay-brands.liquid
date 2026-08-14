@@ -102,7 +102,7 @@
                     {%- endif -%}
                     <brand-slider-component class="brand-slider__component">
                       <ul
-                        class="brand-slider__list{% if brand_slider_carousel %} brand-slider__list--carousel slider slider--everywhere{% endif %}"
+                        class="brand-slider__list{% if brand_slider_carousel %} brand-slider__list--carousel{% endif %}"
                         id="Slider-{{ section.id }}-{{ block.id }}"
                         role="list"
                       >
@@ -110,7 +110,7 @@
                           {%- if brand_block.settings.image != blank -%}
                             <li
                               id="Slide-{{ section.id }}-{{ brand_block.id }}"
-                              class="brand-slider__item{% if brand_slider_carousel %} slider__slide{% endif %}"
+                              class="brand-slider__item{% if brand_slider_carousel %} brand-slider__item--carousel{% endif %}"
                               {{ brand_block.shopify_attributes }}
                             >
                               <div class="brand-slider__logo">
