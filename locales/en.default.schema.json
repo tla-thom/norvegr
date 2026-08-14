@@ -3099,6 +3099,45 @@
         "name": "Rich text"
       }
     },
+    "rich-text-overlay": {
+      "name": "Rich text overlay",
+      "settings": {
+        "header_overlay": {
+          "content": "Overlay"
+        },
+        "drop_shadow_opacity": {
+          "label": "Drop shadow opacity"
+        },
+        "box_max_width": {
+          "label": "Max width",
+          "options__1": {
+            "label": "100%"
+          },
+          "options__2": {
+            "label": "75%"
+          },
+          "options__3": {
+            "label": "50%"
+          },
+          "options__4": {
+            "label": "30%"
+          }
+        },
+        "negative_offset": {
+          "label": "Negative offset",
+          "info": "Pulls the section up over the section above. Uses the same scale as section padding on mobile."
+        },
+        "padding_top": {
+          "label": "Box padding top"
+        },
+        "padding_bottom": {
+          "label": "Padding bottom"
+        }
+      },
+      "presets": {
+        "name": "Rich text overlay"
+      }
+    },
     "video": {
       "name": "Video",
       "settings": {
