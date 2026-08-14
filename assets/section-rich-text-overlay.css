@@ -169,18 +169,6 @@
   }
 }
 
-.brand-slider__list--carousel::after {
-  content: '';
-  flex: 0 0 calc((100% - 2 * var(--brand-slider-gap)) / var(--brand-slider-cols-mobile));
-  height: 1px;
-}
-
-@media screen and (min-width: 990px) {
-  .brand-slider__list--carousel::after {
-    flex-basis: calc((100% - 4 * var(--brand-slider-gap)) / var(--brand-slider-cols-desktop));
-  }
-}
-
 .brand-slider__item {
   margin: 0;
   padding: 0;

@@ -661,6 +661,12 @@ summary .icon-caret {
   }
 }
 
+.collection__subtitle.image-with-text__text--caption {
+  font-family: var(--font-heading-family);
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+}
+
 /* Rich text content max width */
 @media screen and (min-width: 750px) {
   .rich-text__blocks.rich-text__blocks--max-width-default,

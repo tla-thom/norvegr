@@ -79,7 +79,7 @@
         </h2>
       {%- endif -%}
       {%- if section.settings.sub_title != blank -%}
-        <p class="collection__subtitle subtitle uppercase{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <p class="collection__subtitle image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.sub_title | escape }}
         </p>
       {%- endif -%}
