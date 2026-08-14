@@ -128,6 +128,12 @@ header {
         align-items: center;
         width: auto;
         height: 4.4rem;
+        text-decoration: none;
+    }
+
+    .header__icon--search.header__icon--summary:hover,
+    .header__icon--search.header__icon--summary:focus {
+        text-decoration: none;
     }
 
     .header__icon--search .header__search-toggle,
@@ -157,6 +163,7 @@ header {
         font-size: 1.2rem;
         line-height: 1;
         color: rgb(var(--color-foreground));
+        text-decoration: none;
         transition: color 0.2s ease;
     }
 
