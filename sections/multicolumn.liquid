@@ -152,7 +152,7 @@
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
-                    class="link animate-arrow"
+                    class="{% if section.settings.column_link_button_style %}button button--secondary{% else %}link animate-arrow{% endif %}"
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
@@ -160,9 +160,11 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="svg-wrapper"
-                      ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
-                    >
+                    {%- unless section.settings.column_link_button_style -%}
+                      <span class="svg-wrapper"
+                        ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
+                      >
+                    {%- endunless -%}
                   </a>
                 {%- endif -%}
               </div>
@@ -386,6 +388,13 @@
       ],
       "default": "left",
       "label": "t:sections.multicolumn.settings.column_alignment.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "column_link_button_style",
+      "label": "t:sections.multicolumn.settings.column_link_button_style.label",
+      "info": "t:sections.multicolumn.settings.column_link_button_style.info",
+      "default": false
     },
     {
       "type": "select",

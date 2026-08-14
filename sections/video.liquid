@@ -141,10 +141,19 @@
         {%- endif -%}
       </template>
     </deferred-media>
-    {%- if section.settings.heading != blank
-      or section.settings.text != blank
-      or section.settings.button_label != blank
+    {%- liquid
+      assign show_video_content = false
+      if section.settings.heading != blank or section.settings.text != blank
+        assign show_video_content = true
+      endif
+      if section.settings.button_label != blank
+        assign show_video_content = true
+      endif
+      if section.settings.button_label_2 != blank or section.settings.button_label_3 != blank or section.settings.button_label_4 != blank
+        assign show_video_content = true
+      endif
     -%}
+    {%- if show_video_content -%}
       <div class="video-section__content banner__content banner__content--{{ section.settings.content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <div class="video-section__content-inner color-{{ section.settings.color_scheme }}">
           {%- if section.settings.heading != blank -%}
@@ -155,17 +164,61 @@
           {%- if section.settings.text != blank -%}
             <div class="video-section__text rte">{{ section.settings.text }}</div>
           {%- endif -%}
-          {%- if section.settings.button_label != blank -%}
-            <a
-              {% if section.settings.button_link == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ section.settings.button_link }}"
-              {% endif %}
-              class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-            >
-              {{- section.settings.button_label | escape -}}
-            </a>
+          {%- if section.settings.button_label != blank
+            or section.settings.button_label_2 != blank
+            or section.settings.button_label_3 != blank
+            or section.settings.button_label_4 != blank
+          -%}
+            <div class="video-section__buttons">
+              {%- if section.settings.button_label != blank -%}
+                <a
+                  {% if section.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+              {%- endif -%}
+              {%- if section.settings.button_label_2 != blank -%}
+                <a
+                  {% if section.settings.button_link_2 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link_2 }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label_2 | escape -}}
+                </a>
+              {%- endif -%}
+              {%- if section.settings.button_label_3 != blank -%}
+                <a
+                  {% if section.settings.button_link_3 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link_3 }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label_3 | escape -}}
+                </a>
+              {%- endif -%}
+              {%- if section.settings.button_label_4 != blank -%}
+                <a
+                  {% if section.settings.button_link_4 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link_4 }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label_4 | escape -}}
+                </a>
+              {%- endif -%}
+            </div>
           {%- endif -%}
         </div>
       </div>
@@ -233,20 +286,54 @@
       "label": "t:sections.image-banner.blocks.text.settings.text.label"
     },
     {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
       "type": "text",
       "id": "button_label",
-      "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+      "label": "Button 1 label",
       "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+      "label": "Button 1 link"
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Button 2 label"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Button 2 link"
+    },
+    {
+      "type": "text",
+      "id": "button_label_3",
+      "label": "Button 3 label"
+    },
+    {
+      "type": "url",
+      "id": "button_link_3",
+      "label": "Button 3 link"
+    },
+    {
+      "type": "text",
+      "id": "button_label_4",
+      "label": "Button 4 label"
+    },
+    {
+      "type": "url",
+      "id": "button_link_4",
+      "label": "Button 4 link"
     },
     {
       "type": "checkbox",
       "id": "button_style_secondary",
-      "default": false,
+      "default": true,
       "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
     },
     {

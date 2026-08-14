@@ -405,6 +405,10 @@
   margin-top: 1.5rem;
 }
 
+.multicolumn-card__info .button {
+  margin-top: 1.5rem;
+}
+
 .multicolumn-card__info .icon-wrap {
   margin-left: 0.8rem;
   white-space: nowrap;

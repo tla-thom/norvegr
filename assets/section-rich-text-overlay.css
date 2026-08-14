@@ -109,6 +109,7 @@
 }
 
 .rich-text-overlay__brand-slider slideshow-component,
+.rich-text-overlay__brand-slider slider-component,
 .rich-text-overlay__brand-slider .brand-slider__component {
   --desktop-margin-left-first-item: 0;
   display: block;
@@ -195,14 +196,6 @@
   object-fit: contain;
 }
 
-.rich-text-overlay__brand-slider .brand-slider__dots.slider-buttons--dots-only .slider-button {
-  display: none;
-}
-
-.rich-text-overlay__brand-slider .brand-slider__dots {
+.rich-text-overlay__brand-slider .brand-slider__controls {
   margin-top: 1.5rem;
-}
-
-.rich-text-overlay__brand-slider .slider-counter--dots {
-  margin: 0;
 }

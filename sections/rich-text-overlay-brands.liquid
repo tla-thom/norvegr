@@ -87,15 +87,19 @@
                     endif
                   -%}
                   <div
-                    class="rich-text-overlay__brand-slider"
+                    class="rich-text-overlay__brand-slider{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {{ block.shopify_attributes }}
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
                   >
                     {%- if block.settings.title != blank -%}
                       <p class="rich-text-overlay__brand-slider-title{% if block.settings.use_italic %} rich-text-overlay__brand-slider-title--italic{% endif %}">
                         {{ block.settings.title | escape }}
                       </p>
                     {%- endif -%}
-                    <slideshow-component class="brand-slider__component">
+                    <slider-component class="brand-slider__component">
                       <ul
                         class="brand-slider__list{% if brand_slider_carousel %} brand-slider__list--carousel slider slider--everywhere{% endif %}"
                         id="Slider-{{ section.id }}-{{ block.id }}"
@@ -105,7 +109,7 @@
                           {%- if brand_block.settings.image != blank -%}
                             <li
                               id="Slide-{{ section.id }}-{{ brand_block.id }}"
-                              class="brand-slider__item{% if brand_slider_carousel %} slider__slide slideshow__slide{% endif %}"
+                              class="brand-slider__item{% if brand_slider_carousel %} slider__slide{% endif %}"
                               {{ brand_block.shopify_attributes }}
                             >
                               <div class="brand-slider__logo">
@@ -138,7 +142,7 @@
                       </ul>
 
                       {%- if brand_slider_carousel -%}
-                        <div class="slider-buttons brand-slider__dots slider-buttons--dots-only">
+                        <div class="slider-buttons brand-slider__controls">
                           <button
                             type="button"
                             class="slider-button slider-button--prev"
@@ -148,23 +152,11 @@
                           >
                             <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
                           </button>
-                          <div class="slider-counter slider-counter--dots">
-                            <div class="slideshow__control-wrapper">
-                              {%- assign slide_index = 0 -%}
-                              {%- for brand_block in brand_blocks -%}
-                                {%- if brand_block.settings.image != blank -%}
-                                  {%- assign slide_index = slide_index | plus: 1 -%}
-                                  <button
-                                    type="button"
-                                    class="slider-counter__link slider-counter__link--dots link"
-                                    aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ slide_index }} {{ 'general.slider.of' | t }} {{ brands_with_images_count }}"
-                                    aria-controls="Slider-{{ section.id }}-{{ block.id }}"
-                                  >
-                                    <span class="dot"></span>
-                                  </button>
-                                {%- endif -%}
-                              {%- endfor -%}
-                            </div>
+                          <div class="slider-counter caption">
+                            <span class="slider-counter--current">1</span>
+                            <span aria-hidden="true"> / </span>
+                            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                            <span class="slider-counter--total">{{ brands_with_images_count }}</span>
                           </div>
                           <button
                             type="button"
@@ -177,7 +169,7 @@
                           </button>
                         </div>
                       {%- endif -%}
-                    </slideshow-component>
+                    </slider-component>
                   </div>
                 {%- endif -%}
               {%- when 'button' -%}

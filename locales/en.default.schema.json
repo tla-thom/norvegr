@@ -2647,6 +2647,10 @@
             "label": "Center"
           }
         },
+        "column_link_button_style": {
+          "label": "Column links as secondary buttons",
+          "info": "Shows column link labels as button secondary instead of text links with arrows."
+        },
         "background_style": {
           "label": "Secondary background",
           "options__1": {

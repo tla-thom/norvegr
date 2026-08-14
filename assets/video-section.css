@@ -95,7 +95,32 @@
 }
 
 .video-section__content-inner .button {
+  margin-top: 0;
+}
+
+.video-section__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
   margin-top: 1.5rem;
+  width: 100%;
+}
+
+.video-section__buttons .button {
+  width: 100%;
+  min-width: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .video-section__buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .video-section__buttons .button {
+    flex: 1 1 0;
+  }
 }
 
 @media screen and (min-width: 750px) {
