@@ -234,10 +234,10 @@
         "color_scheme": "",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "mobile_carousel_autoplay": false,
+        "mobile_carousel_autoplay": true,
         "mobile_carousel_autoplay_speed": 5,
-        "mobile_custom_image_size": false,
-        "mobile_image_size_percent": 100,
+        "mobile_custom_image_size": true,
+        "mobile_image_size_percent": 70,
         "padding_top": 0,
         "padding_bottom": 36
       }
