@@ -1,4 +1,7 @@
 class BrandSliderComponent extends HTMLElement {
+  static AUTOPLAY_INTERVAL = 2000;
+  static SCROLL_DURATION = 800;
+
   connectedCallback() {
     if (this._brandSliderReady) return;
     this._brandSliderReady = true;
@@ -8,16 +11,45 @@ class BrandSliderComponent extends HTMLElement {
     this.pageTotalElement = this.querySelector('.slider-counter--total');
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
+    this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    if (!this.slider || !this.nextButton) return;
+    if (!this.slider) return;
 
     this.initPages();
     const resizeObserver = new ResizeObserver(() => this.initPages());
     resizeObserver.observe(this.slider);
 
     this.slider.addEventListener('scroll', () => this.onScroll(), { passive: true });
-    this.prevButton.addEventListener('click', (event) => this.onButtonClick(event));
-    this.nextButton.addEventListener('click', (event) => this.onButtonClick(event));
+
+    if (this.prevButton) {
+      this.prevButton.addEventListener('click', (event) => this.onButtonClick(event));
+    }
+
+    if (this.nextButton) {
+      this.nextButton.addEventListener('click', (event) => this.onButtonClick(event));
+    }
+
+    this.addEventListener('mouseenter', () => this.pauseAutoplay());
+    this.addEventListener('mouseleave', () => this.startAutoplay());
+    this.addEventListener('focusin', () => this.pauseAutoplay());
+    this.addEventListener('focusout', (event) => {
+      if (!this.contains(event.relatedTarget)) this.startAutoplay();
+    });
+
+    this.reducedMotion.addEventListener('change', () => {
+      if (this.reducedMotion.matches) {
+        this.pauseAutoplay();
+      } else {
+        this.startAutoplay();
+      }
+    });
+
+    this.startAutoplay();
+  }
+
+  disconnectedCallback() {
+    this.pauseAutoplay();
+    cancelAnimationFrame(this._scrollAnimationFrame);
   }
 
   getOriginalSlides() {
@@ -46,11 +78,18 @@ class BrandSliderComponent extends HTMLElement {
     }
   }
 
+  shouldAutoplay() {
+    return this.originalCount > this.slidesPerPage;
+  }
+
   initPages() {
     const previousScrollLeft = this.slider.scrollLeft;
     this.removeClones();
     this.sliderItemsToShow = this.getOriginalSlides().filter((element) => element.clientWidth > 0);
-    if (this.sliderItemsToShow.length < 2) return;
+    if (this.sliderItemsToShow.length < 2) {
+      this.pauseAutoplay();
+      return;
+    }
 
     this.sliderItemOffset = this.sliderItemsToShow[1].offsetLeft - this.sliderItemsToShow[0].offsetLeft;
     this.slidesPerPage = Math.floor(this.slider.clientWidth / this.sliderItemOffset) || 1;
@@ -67,6 +106,12 @@ class BrandSliderComponent extends HTMLElement {
 
     this.slider.scrollLeft = Math.min(previousScrollLeft, this.getMaxRealScrollLeft());
     this.update();
+
+    if (this.shouldAutoplay()) {
+      this.startAutoplay();
+    } else {
+      this.pauseAutoplay();
+    }
   }
 
   getMaxRealScrollLeft() {
@@ -86,12 +131,13 @@ class BrandSliderComponent extends HTMLElement {
   }
 
   onScroll() {
+    if (this._isScrolling) return;
     this.normalizeScrollPosition();
     this.update();
   }
 
   update() {
-    if (!this.slider || !this.nextButton) return;
+    if (!this.slider) return;
 
     const maxRealScrollLeft = this.getMaxRealScrollLeft();
     const previousPage = this.currentPage;
@@ -109,8 +155,8 @@ class BrandSliderComponent extends HTMLElement {
       this.pageTotalElement.textContent = this.totalPages;
     }
 
-    this.prevButton.removeAttribute('disabled');
-    this.nextButton.removeAttribute('disabled');
+    if (this.prevButton) this.prevButton.removeAttribute('disabled');
+    if (this.nextButton) this.nextButton.removeAttribute('disabled');
 
     if (this.currentPage !== previousPage) {
       this.dispatchEvent(
@@ -124,25 +170,94 @@ class BrandSliderComponent extends HTMLElement {
     }
   }
 
+  startAutoplay() {
+    if (this.reducedMotion.matches || !this.shouldAutoplay()) return;
+
+    this.pauseAutoplay();
+    this.autoplayTimer = window.setInterval(
+      () => this.autoplayAdvance(),
+      BrandSliderComponent.AUTOPLAY_INTERVAL
+    );
+  }
+
+  pauseAutoplay() {
+    if (this.autoplayTimer) {
+      window.clearInterval(this.autoplayTimer);
+      this.autoplayTimer = null;
+    }
+  }
+
+  getNextScrollTarget() {
+    const maxRealScrollLeft = this.getMaxRealScrollLeft();
+
+    if (this.slider.scrollLeft >= maxRealScrollLeft - 1) {
+      return this.slider.scrollLeft + this.sliderItemOffset;
+    }
+
+    return Math.min(this.slider.scrollLeft + this.sliderItemOffset, maxRealScrollLeft);
+  }
+
+  autoplayAdvance() {
+    if (this._isScrolling || !this.sliderItemOffset) return;
+    this.scrollToPosition(this.getNextScrollTarget(), BrandSliderComponent.SCROLL_DURATION);
+  }
+
+  scrollToPosition(target, duration) {
+    cancelAnimationFrame(this._scrollAnimationFrame);
+
+    if (this.reducedMotion.matches) {
+      this.slider.scrollLeft = target;
+      this.normalizeScrollPosition();
+      this.update();
+      return;
+    }
+
+    const start = this.slider.scrollLeft;
+    const distance = target - start;
+
+    if (distance === 0) {
+      this.normalizeScrollPosition();
+      this.update();
+      return;
+    }
+
+    this._isScrolling = true;
+    const startTime = performance.now();
+
+    const step = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      this.slider.scrollLeft = start + distance * progress;
+
+      if (progress < 1) {
+        this._scrollAnimationFrame = requestAnimationFrame(step);
+        return;
+      }
+
+      this._isScrolling = false;
+      this.normalizeScrollPosition();
+      this.update();
+    };
+
+    this._scrollAnimationFrame = requestAnimationFrame(step);
+  }
+
   onButtonClick(event) {
     event.preventDefault();
     if (!this.sliderItemOffset) return;
 
     const maxRealScrollLeft = this.getMaxRealScrollLeft();
+    let target;
 
     if (event.currentTarget.name === 'next') {
-      if (this.slider.scrollLeft >= maxRealScrollLeft - 1) {
-        this.slideScrollPosition = this.slider.scrollLeft + this.sliderItemOffset;
-      } else {
-        this.slideScrollPosition = Math.min(this.slider.scrollLeft + this.sliderItemOffset, maxRealScrollLeft);
-      }
+      target = this.getNextScrollTarget();
     } else if (this.slider.scrollLeft <= 1) {
-      this.slideScrollPosition = maxRealScrollLeft;
+      target = maxRealScrollLeft;
     } else {
-      this.slideScrollPosition = Math.max(this.slider.scrollLeft - this.sliderItemOffset, 0);
+      target = Math.max(this.slider.scrollLeft - this.sliderItemOffset, 0);
     }
 
-    this.slider.scrollTo({ left: this.slideScrollPosition, behavior: 'smooth' });
+    this.scrollToPosition(target, BrandSliderComponent.SCROLL_DURATION);
   }
 }
 

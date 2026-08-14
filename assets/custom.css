@@ -662,7 +662,8 @@ summary .icon-caret {
 }
 
 .collection__subtitle.image-with-text__text--caption {
-  font-family: var(--font-heading-family);
+  font-family: 'Styrene A', sans-serif;
+  font-weight: 300;
   margin-bottom: 25px;
   font-size: 1.4rem;
 }
