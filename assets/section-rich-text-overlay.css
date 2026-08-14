@@ -128,3 +128,30 @@
 .rich-text-overlay__brand-slider .slider-counter--dots {
   margin: 0;
 }
+
+.rich-text-overlay__brand-slider.background-none .multicolumn-card__image-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rich-text-overlay__brand-slider .media--landscape {
+  padding-bottom: 35%;
+}
+
+.rich-text-overlay__brand-slider .multicolumn-list__item.center .media--landscape .multicolumn-card__image {
+  width: 100%;
+  left: 0;
+  transform: none;
+}
+
+.rich-text-overlay__brand-slider .multicolumn-card__image {
+  object-fit: contain;
+}
+
+@media screen and (min-width: 990px) {
+  .rich-text-overlay__brand-slider .multicolumn-list.slider {
+    display: flex;
+    flex-wrap: inherit;
+    grid-template-columns: none;
+  }
+}
