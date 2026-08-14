@@ -65,6 +65,12 @@
             "use_italic": true
           }
         },
+        "brand_4gbaUC": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/imgi_8_Red-magazine-150x150_e5a4bfe6-9dad-4d49-ad12-f1e74ecab821.png"
+          }
+        },
         "brand_PyzhUd": {
           "type": "brand",
           "settings": {
@@ -112,6 +118,7 @@
         "heading_brQw6X",
         "text_U8BiCR",
         "brand_slider_p4VtPB",
+        "brand_4gbaUC",
         "brand_PyzhUd",
         "brand_VbkFRp",
         "brand_BaRF4X",
