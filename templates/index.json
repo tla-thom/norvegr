@@ -35,6 +35,103 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_overlay_brands_FWVPmz": {
+      "type": "rich-text-overlay-brands",
+      "blocks": {
+        "heading_brQw6X": {
+          "type": "heading",
+          "settings": {
+            "heading": "The world's best down duvets.",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_U8BiCR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Three generations of ancient Norwegian craftsmanship transforms the purest natural products into the world’s most indulgent down duvets. Each duvet is made to order with a unique channel construction technique to perfectly suit, soothe and protect its owner for a lifetime of luxurious sleep. Quality duvets are a vital – yet often overlooked – piece of a restful night. Norvegr is the only duvet you will ever need.</p>"
+          }
+        },
+        "brand_slider_p4VtPB": {
+          "type": "brand_slider",
+          "settings": {
+            "title": "As featured in:",
+            "use_italic": true
+          }
+        },
+        "brand_PyzhUd": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-07.jpg"
+          }
+        },
+        "brand_Bxk3Ae": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-01.jpg"
+          }
+        },
+        "brand_VbkFRp": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-05.jpg"
+          }
+        },
+        "brand_BaRF4X": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-03.jpg"
+          }
+        },
+        "brand_Pz4Qbq": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-08.jpg"
+          }
+        },
+        "brand_B8W86Y": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-04.jpg"
+          }
+        },
+        "brand_FMX3Tx": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-02.jpg"
+          }
+        },
+        "brand_6yHyzA": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/brand-06.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "heading_brQw6X",
+        "text_U8BiCR",
+        "brand_slider_p4VtPB",
+        "brand_PyzhUd",
+        "brand_Bxk3Ae",
+        "brand_VbkFRp",
+        "brand_BaRF4X",
+        "brand_Pz4Qbq",
+        "brand_B8W86Y",
+        "brand_FMX3Tx",
+        "brand_6yHyzA"
+      ],
+      "name": "t:sections.rich-text-overlay-brands.presets.name",
+      "settings": {
+        "drop_shadow_opacity": 12,
+        "box_max_width": "50",
+        "negative_offset": 100,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
     "rich_text_overlay_3JrnkB": {
       "type": "rich-text-overlay",
       "blocks": {
@@ -57,6 +154,7 @@
         "heading_UKLHbQ",
         "text_VKpzPk"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text-overlay.presets.name",
       "settings": {
         "drop_shadow_opacity": 12,
@@ -143,6 +241,7 @@
         "heading_zGBwxf",
         "button_3gh7cK"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "content_max_width": "default",
@@ -216,6 +315,7 @@
         "brand_pkYEBE",
         "brand_hLX89g"
       ],
+      "disabled": true,
       "name": "t:sections.brand-slider.presets.name",
       "settings": {
         "title": "",
@@ -992,6 +1092,7 @@
   },
   "order": [
     "video_wP7pDz",
+    "rich_text_overlay_brands_FWVPmz",
     "rich_text_overlay_3JrnkB",
     "rich_text_iQiJ8h",
     "rich_text_DUQh9z",
