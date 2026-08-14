@@ -55,17 +55,8 @@ class BrandSliderComponent extends HTMLElement {
       this.pageTotalElement.textContent = this.totalPages;
     }
 
-    if (this.currentPage <= 1) {
-      this.prevButton.setAttribute('disabled', 'disabled');
-    } else {
-      this.prevButton.removeAttribute('disabled');
-    }
-
-    if (this.currentPage >= this.totalPages) {
-      this.nextButton.setAttribute('disabled', 'disabled');
-    } else {
-      this.nextButton.removeAttribute('disabled');
-    }
+    this.prevButton.removeAttribute('disabled');
+    this.nextButton.removeAttribute('disabled');
 
     if (this.currentPage !== previousPage) {
       this.dispatchEvent(
@@ -84,7 +75,13 @@ class BrandSliderComponent extends HTMLElement {
     const maxScrollLeft = this.getMaxScrollLeft();
 
     if (event.currentTarget.name === 'next') {
-      this.slideScrollPosition = Math.min(this.slider.scrollLeft + this.sliderItemOffset, maxScrollLeft);
+      if (this.currentPage >= this.totalPages) {
+        this.slideScrollPosition = 0;
+      } else {
+        this.slideScrollPosition = Math.min(this.slider.scrollLeft + this.sliderItemOffset, maxScrollLeft);
+      }
+    } else if (this.currentPage <= 1) {
+      this.slideScrollPosition = maxScrollLeft;
     } else {
       this.slideScrollPosition = Math.max(this.slider.scrollLeft - this.sliderItemOffset, 0);
     }
