@@ -110,7 +110,7 @@
                             >
                               <div class="multicolumn-card content-container">
                                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
-                                  <div class="media media--transparent media--landscape">
+                                  <div class="media media--transparent">
                                     {%- liquid
                                       assign grid_space_desktop = brand_columns_desktop | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
                                       assign grid_space_tablet = brand_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
@@ -129,7 +129,9 @@
                                         widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 800',
                                         sizes: sizes,
                                         class: 'multicolumn-card__image',
-                                        loading: 'lazy'
+                                        loading: 'lazy',
+                                        height: brand_block.settings.image.height,
+                                        width: brand_block.settings.image.width
                                     }}
                                   </div>
                                 </div>
