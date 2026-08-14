@@ -142,6 +142,7 @@ header {
     }
 
     .header__search-label {
+        display: none;
         font-family: var(--font-heading-family);
         font-weight: 300;
         text-transform: uppercase;
@@ -156,6 +157,14 @@ header {
     }
 }
 @media screen and (min-width: 990px) {
+    header .header__search-label {
+        display: inline;
+    }
+
+    header details[open] > summary .header__search-label {
+        display: none;
+    }
+
     .section-header.scrolled-past-header {
         .header__inline-menu {
             margin-top: 0px;
