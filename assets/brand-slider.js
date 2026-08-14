@@ -1,5 +1,5 @@
 class BrandSliderComponent extends HTMLElement {
-  static AUTOPLAY_INTERVAL = 2000;
+  static AUTOPLAY_PAUSE = 2000;
   static SCROLL_DURATION = 1200;
 
   connectedCallback() {
@@ -174,17 +174,25 @@ class BrandSliderComponent extends HTMLElement {
     if (this.reducedMotion.matches || !this.shouldAutoplay()) return;
 
     this.pauseAutoplay();
-    this.autoplayTimer = window.setInterval(
-      () => this.autoplayAdvance(),
-      BrandSliderComponent.AUTOPLAY_INTERVAL
-    );
+    this._autoplayActive = true;
+    this.queueAutoplayPause();
   }
 
   pauseAutoplay() {
+    this._autoplayActive = false;
+
     if (this.autoplayTimer) {
-      window.clearInterval(this.autoplayTimer);
+      window.clearTimeout(this.autoplayTimer);
       this.autoplayTimer = null;
     }
+  }
+
+  queueAutoplayPause() {
+    if (!this._autoplayActive) return;
+
+    this.autoplayTimer = window.setTimeout(() => {
+      this.autoplayAdvance();
+    }, BrandSliderComponent.AUTOPLAY_PAUSE);
   }
 
   getNextScrollTarget() {
@@ -198,17 +206,24 @@ class BrandSliderComponent extends HTMLElement {
   }
 
   autoplayAdvance() {
-    if (this._isScrolling || !this.sliderItemOffset) return;
-    this.scrollToPosition(this.getNextScrollTarget(), BrandSliderComponent.SCROLL_DURATION);
+    if (!this._autoplayActive || this._isScrolling || !this.sliderItemOffset) {
+      this.queueAutoplayPause();
+      return;
+    }
+
+    this.scrollToPosition(this.getNextScrollTarget(), BrandSliderComponent.SCROLL_DURATION, () => {
+      this.queueAutoplayPause();
+    });
   }
 
-  scrollToPosition(target, duration) {
+  scrollToPosition(target, duration, onComplete) {
     cancelAnimationFrame(this._scrollAnimationFrame);
 
     if (this.reducedMotion.matches) {
       this.slider.scrollLeft = target;
       this.normalizeScrollPosition();
       this.update();
+      if (onComplete) onComplete();
       return;
     }
 
@@ -218,6 +233,7 @@ class BrandSliderComponent extends HTMLElement {
     if (distance === 0) {
       this.normalizeScrollPosition();
       this.update();
+      if (onComplete) onComplete();
       return;
     }
 
@@ -237,6 +253,7 @@ class BrandSliderComponent extends HTMLElement {
       this._isScrolling = false;
       this.normalizeScrollPosition();
       this.update();
+      if (onComplete) onComplete();
     };
 
     this._scrollAnimationFrame = requestAnimationFrame(step);
