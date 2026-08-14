@@ -1,6 +1,5 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 {{ 'section-rich-text-overlay.css' | asset_url | stylesheet_tag }}
-{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -81,68 +80,65 @@
                 </div>
               {%- when 'brand_slider' -%}
                 {%- if brands_with_images_count > 0 -%}
+                  {%- liquid
+                    assign brand_slider_carousel = false
+                    if show_brand_mobile_slider or show_brand_desktop_slider
+                      assign brand_slider_carousel = true
+                    endif
+                  -%}
                   <div
-                    class="rich-text-overlay__brand-slider multicolumn multicolumn--contain-image background-none{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    class="rich-text-overlay__brand-slider"
                     {{ block.shopify_attributes }}
-                    {% if settings.animations_reveal_on_scroll %}
-                      data-cascade
-                      style="--animation-order: {{ forloop.index }};"
-                    {% endif %}
                   >
                     {%- if block.settings.title != blank -%}
                       <p class="rich-text-overlay__brand-slider-title{% if block.settings.use_italic %} rich-text-overlay__brand-slider-title--italic{% endif %}">
                         {{ block.settings.title | escape }}
                       </p>
                     {%- endif -%}
-                    <slideshow-component class="slider-mobile-gutter{% if show_brand_desktop_slider %} slider-component-desktop{% endif %}">
+                    <slideshow-component class="brand-slider__component">
                       <ul
-                        class="multicolumn-list contains-content-container grid grid--{{ brand_columns_mobile }}-col-tablet-down{% if show_brand_desktop_slider %} grid--{{ brand_columns_desktop }}-col-desktop{% endif %}{% if show_brand_mobile_slider or show_brand_desktop_slider %} slider{% if show_brand_desktop_slider %} slider--desktop{% endif %}{% if show_brand_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
+                        class="brand-slider__list{% if brand_slider_carousel %} brand-slider__list--carousel slider{% endif %}"
                         id="Slider-{{ section.id }}-{{ block.id }}"
                         role="list"
-                        style="--multicolumn-cols-desktop: {{ brand_columns_desktop }};"
                       >
                         {%- for brand_block in brand_blocks -%}
                           {%- if brand_block.settings.image != blank -%}
                             <li
                               id="Slide-{{ section.id }}-{{ brand_block.id }}"
-                              class="multicolumn-list__item grid__item center{% if show_brand_mobile_slider or show_brand_desktop_slider %} slider__slide{% endif %}"
+                              class="brand-slider__item{% if brand_slider_carousel %} slider__slide{% endif %}"
                               {{ brand_block.shopify_attributes }}
                             >
-                              <div class="multicolumn-card content-container">
-                                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
-                                  <div class="media media--transparent">
-                                    {%- liquid
-                                      assign grid_space_desktop = brand_columns_desktop | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                                      assign grid_space_tablet = brand_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                                      assign grid_space_mobile = brand_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
-                                    -%}
-                                    {% capture sizes %}
-                                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) / {{ brand_columns_desktop }}),
-                                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) / {{ brand_columns_desktop }}),
-                                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) / {{ brand_columns_mobile }}),
-                                      calc((100vw - {{ grid_space_mobile }}) / {{ brand_columns_mobile }})
-                                    {% endcapture %}
-                                    {{
-                                      brand_block.settings.image
-                                      | image_url: width: 800
-                                      | image_tag:
-                                        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 800',
-                                        sizes: sizes,
-                                        class: 'multicolumn-card__image',
-                                        loading: 'lazy',
-                                        height: brand_block.settings.image.height,
-                                        width: brand_block.settings.image.width
-                                    }}
-                                  </div>
-                                </div>
+                              <div class="brand-slider__logo">
+                                {%- liquid
+                                  assign grid_space_desktop = brand_columns_desktop | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                                  assign grid_space_tablet = brand_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                                  assign grid_space_mobile = brand_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                                -%}
+                                {% capture sizes %}
+                                  (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) / {{ brand_columns_desktop }}),
+                                  (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) / {{ brand_columns_desktop }}),
+                                  (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) / {{ brand_columns_mobile }}),
+                                  calc((100vw - {{ grid_space_mobile }}) / {{ brand_columns_mobile }})
+                                {% endcapture %}
+                                {{
+                                  brand_block.settings.image
+                                  | image_url: width: 800
+                                  | image_tag:
+                                    widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 800',
+                                    sizes: sizes,
+                                    class: 'brand-slider__image',
+                                    loading: 'lazy',
+                                    height: brand_block.settings.image.height,
+                                    width: brand_block.settings.image.width
+                                }}
                               </div>
                             </li>
                           {%- endif -%}
                         {%- endfor -%}
                       </ul>
 
-                      {%- if show_brand_mobile_slider or show_brand_desktop_slider -%}
-                        <div class="slider-buttons slider-buttons--dots-only">
+                      {%- if brand_slider_carousel -%}
+                        <div class="slider-buttons brand-slider__dots slider-buttons--dots-only">
                           <button
                             type="button"
                             class="slider-button slider-button--prev"
