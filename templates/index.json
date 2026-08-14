@@ -65,18 +65,6 @@
             "image": "shopify://shop_images/brand-07.jpg"
           }
         },
-        "brand_AeDFet": {
-          "type": "brand",
-          "settings": {
-            "image": "shopify://shop_images/brand-07.jpg"
-          }
-        },
-        "brand_Bxk3Ae": {
-          "type": "brand",
-          "settings": {
-            "image": "shopify://shop_images/brand-01.jpg"
-          }
-        },
         "brand_VbkFRp": {
           "type": "brand",
           "settings": {
@@ -119,8 +107,6 @@
         "text_U8BiCR",
         "brand_slider_p4VtPB",
         "brand_PyzhUd",
-        "brand_AeDFet",
-        "brand_Bxk3Ae",
         "brand_VbkFRp",
         "brand_BaRF4X",
         "brand_Pz4Qbq",
