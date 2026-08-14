@@ -122,6 +122,38 @@ header {
     .mega-menu__link {
         color: rgb(var(--color-foreground));
     }
+
+    .header__icon--search.header__icon--summary {
+        width: auto;
+    }
+
+    .header__search-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        height: 100%;
+        line-height: 1;
+    }
+
+    .header__search-toggle-icons {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .header__search-label {
+        font-family: var(--font-heading-family);
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.12rem;
+        font-size: 1.2rem;
+        color: rgb(var(--color-foreground));
+        transition: color 0.2s ease;
+    }
+
+    details[open] > summary .header__search-label {
+        display: none;
+    }
 }
 @media screen and (min-width: 990px) {
     .section-header.scrolled-past-header {

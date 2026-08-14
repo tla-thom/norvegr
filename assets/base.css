@@ -2453,14 +2453,16 @@ input[type='checkbox'] {
 .transparent-header .section-header:not(.scrolled-past-header) .header-wrapper,
 .transparent-header .section-header:not(.scrolled-past-header) sticky-header.header-wrapper,
 .transparent-header .section-header:not(.scrolled-past-header) .header__menu-item,
-.transparent-header .section-header:not(.scrolled-past-header) .header__icon .icon {
+.transparent-header .section-header:not(.scrolled-past-header) .header__icon .icon,
+.transparent-header .section-header:not(.scrolled-past-header) .header__search-label {
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .transparent-header .section-header.scrolled-past-header .header-wrapper,
 .transparent-header .section-header.scrolled-past-header sticky-header.header-wrapper,
 .transparent-header .section-header.scrolled-past-header .header__menu-item,
-.transparent-header .section-header.scrolled-past-header .header__icon .icon {
+.transparent-header .section-header.scrolled-past-header .header__icon .icon,
+.transparent-header .section-header.scrolled-past-header .header__search-label {
   transition: background 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -2499,7 +2501,8 @@ input[type='checkbox'] {
 .transparent-header .section-header:not(.scrolled-past-header) .header__heading-link,
 .transparent-header .section-header:not(.scrolled-past-header) .header__heading-link .h2,
 .transparent-header .section-header:not(.scrolled-past-header) .header .disclosure__link,
-.transparent-header .section-header:not(.scrolled-past-header) .header .localization-form__select {
+.transparent-header .section-header:not(.scrolled-past-header) .header .localization-form__select,
+.transparent-header .section-header:not(.scrolled-past-header) .header__search-label {
   color: rgb(var(--color-foreground));
 }
 
@@ -2574,7 +2577,8 @@ input[type='checkbox'] {
 .transparent-header .section-header.scrolled-past-header .header__heading-link,
 .transparent-header .section-header.scrolled-past-header .header__heading-link .h2,
 .transparent-header .section-header.scrolled-past-header .header .disclosure__link,
-.transparent-header .section-header.scrolled-past-header .header .localization-form__select {
+.transparent-header .section-header.scrolled-past-header .header .localization-form__select,
+.transparent-header .section-header.scrolled-past-header .header__search-label {
   color: rgb(var(--color-foreground));
 }
 

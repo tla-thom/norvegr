@@ -16,13 +16,16 @@
       aria-haspopup="dialog"
       aria-label="{{ 'general.search.search' | t }}"
     >
-      <span>
-        <span class="svg-wrapper">
-          {{- 'icon-search.svg' | inline_asset_content -}}
+      <span class="header__search-toggle">
+        <span class="header__search-toggle-icons">
+          <span class="svg-wrapper">
+            {{- 'icon-search.svg' | inline_asset_content -}}
+          </span>
+          <span class="svg-wrapper header__icon-close">
+            {{- 'icon-close.svg' | inline_asset_content -}}
+          </span>
         </span>
-        <span class="svg-wrapper header__icon-close">
-          {{- 'icon-close.svg' | inline_asset_content -}}
-        </span>
+        <span class="header__search-label" aria-hidden="true">{{ 'general.search.search' | t }}</span>
       </span>
     </summary>
     <div

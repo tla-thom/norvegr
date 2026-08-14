@@ -1,6 +1,7 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 {{ 'section-rich-text-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'brand-slider.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
   #RichTextOverlayBrands-{{ section.id }} {
@@ -99,7 +100,7 @@
                         {{ block.settings.title | escape }}
                       </p>
                     {%- endif -%}
-                    <slider-component class="brand-slider__component">
+                    <brand-slider-component class="brand-slider__component">
                       <ul
                         class="brand-slider__list{% if brand_slider_carousel %} brand-slider__list--carousel slider slider--everywhere{% endif %}"
                         id="Slider-{{ section.id }}-{{ block.id }}"
@@ -169,7 +170,7 @@
                           </button>
                         </div>
                       {%- endif -%}
-                    </slider-component>
+                    </brand-slider-component>
                   </div>
                 {%- endif -%}
               {%- when 'button' -%}
