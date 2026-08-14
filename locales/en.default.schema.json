@@ -3166,6 +3166,26 @@
         "name": "Rich text overlay"
       }
     },
+    "rich-text-overlay-brands": {
+      "name": "Rich text overlay with brands",
+      "blocks": {
+        "brand_slider": {
+          "name": "Brand slider",
+          "settings": {
+            "title": {
+              "label": "Title",
+              "default": "As featured in:"
+            },
+            "use_italic": {
+              "label": "Italic title"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Rich text overlay with brands"
+      }
+    },
     "video": {
       "name": "Video",
       "settings": {

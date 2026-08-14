@@ -89,3 +89,42 @@
 .rich-text-overlay .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+.rich-text-overlay__brand-slider {
+  width: 100%;
+}
+
+.rich-text-overlay__brand-slider .multicolumn-list {
+  margin: 0;
+  padding: 0;
+}
+
+.rich-text-overlay__brand-slider .multicolumn-card {
+  background: transparent;
+}
+
+.rich-text-overlay__brand-slider .multicolumn-card-spacing {
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rich-text-overlay__brand-slider-title {
+  margin: 0 0 1.5rem;
+}
+
+.rich-text-overlay__brand-slider-title--italic {
+  font-style: italic;
+}
+
+.rich-text-overlay__brand-slider .slider-buttons--dots-only .slider-button {
+  display: none;
+}
+
+.rich-text-overlay__brand-slider .slider-buttons--dots-only {
+  margin-top: 1.5rem;
+}
+
+.rich-text-overlay__brand-slider .slider-counter--dots {
+  margin: 0;
+}
