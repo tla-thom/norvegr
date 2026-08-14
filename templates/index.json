@@ -232,7 +232,7 @@
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "",
-        "columns_mobile": "2",
+        "columns_mobile": "4",
         "swipe_on_mobile": true,
         "mobile_carousel_autoplay": true,
         "mobile_carousel_autoplay_speed": 5,
