@@ -74,6 +74,17 @@ p,
   -moz-osx-font-smoothing: grayscale;
 }
 
+:is(.rte, .inline-richtext) :is(em, i),
+.heading--body-font :is(em, i) {
+  font-family: var(--font-body-family);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Buttons use heading font */
 .button,
 .button-label,
@@ -708,10 +719,10 @@ summary .icon-caret {
   }
 }
 
-/* Rich text: Italic in editor applies body font instead of italic styling */
+/* Rich text: Italic in editor uses Caslon italic */
 .rich-text .rte :is(em, i) {
   font-family: var(--font-body-family);
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   font-size: 2rem;
   text-transform: none;
