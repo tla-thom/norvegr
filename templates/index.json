@@ -35,6 +35,39 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_overlay_3JrnkB": {
+      "type": "rich-text-overlay",
+      "blocks": {
+        "heading_UKLHbQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "The world's best down duvets.",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_VKpzPk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Three generations of ancient Norwegian craftsmanship transforms the purest natural products into the world’s most indulgent down duvets. Each duvet is made to order with a unique channel construction technique to perfectly suit, soothe and protect its owner for a lifetime of luxurious sleep. Quality duvets are a vital – yet often overlooked – piece of a restful night. Norvegr is the only duvet you will ever need.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UKLHbQ",
+        "text_VKpzPk"
+      ],
+      "name": "t:sections.rich-text-overlay.presets.name",
+      "settings": {
+        "drop_shadow_opacity": 12,
+        "box_max_width": "75",
+        "negative_offset": 88,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "rich_text_iQiJ8h": {
       "type": "rich-text",
       "blocks": {
@@ -70,6 +103,7 @@
         "text_Hfizqn",
         "button_HQ3bJG"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "content_max_width": "smaller",
@@ -869,6 +903,7 @@
   },
   "order": [
     "video_wP7pDz",
+    "rich_text_overlay_3JrnkB",
     "rich_text_iQiJ8h",
     "rich_text_DUQh9z",
     "multicolumn_rBmcKU",
