@@ -819,6 +819,9 @@
           "label": "Heading",
           "default": "Featured collection"
         },
+        "sub_title": {
+          "label": "Sub title"
+        },
         "description": {
           "label": "Description"
         },

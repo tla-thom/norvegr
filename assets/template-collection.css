@@ -75,6 +75,14 @@
   margin-bottom: 1rem;
 }
 
+.collection__subtitle {
+  margin: 0 0 1rem;
+}
+
+.collection__subtitle + .collection__description {
+  margin-top: 0;
+}
+
 @media screen and (min-width: 990px) {
   .collection__title--desktop-slider .title {
     margin-bottom: 2.5rem;
