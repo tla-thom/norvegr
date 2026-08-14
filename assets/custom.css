@@ -682,7 +682,7 @@ summary .icon-caret {
   .image-with-text__text--caption {
     font-family: var(--font-heading-family);
     margin-bottom: 25px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .image-with-text__text--caption-no-heading {
