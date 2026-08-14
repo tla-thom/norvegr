@@ -1,6 +1,6 @@
 class BrandSliderComponent extends HTMLElement {
   static AUTOPLAY_PAUSE = 2000;
-  static SCROLL_DURATION = 1200;
+  static SCROLL_DURATION = 2400;
 
   connectedCallback() {
     if (this._brandSliderReady) return;
