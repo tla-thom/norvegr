@@ -717,6 +717,11 @@ summary .icon-caret {
     max-width: 50% !important;
     margin-inline: auto;
   }
+
+  .rich-text__blocks.rich-text__blocks--max-width-extra-small {
+    max-width: 40% !important;
+    margin-inline: auto;
+  }
 }
 
 /* Rich text: Italic in editor uses Caslon italic */
