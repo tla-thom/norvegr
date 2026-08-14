@@ -225,7 +225,7 @@
         "contain_image": true,
         "button_label": "",
         "button_link": "",
-        "content_max_width": "75",
+        "content_max_width": "50",
         "full_width": false,
         "no_padding": false,
         "columns_desktop": 8,
