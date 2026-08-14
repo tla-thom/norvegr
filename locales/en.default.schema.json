@@ -2729,6 +2729,34 @@
         "name": "Multicolumn"
       }
     },
+    "brand-slider": {
+      "name": "Brand Slider",
+      "settings": {
+        "content_max_width": {
+          "label": "Max width",
+          "options__1": {
+            "label": "100%"
+          },
+          "options__2": {
+            "label": "75%"
+          },
+          "options__3": {
+            "label": "50%"
+          },
+          "options__4": {
+            "label": "30%"
+          }
+        }
+      },
+      "blocks": {
+        "brand": {
+          "name": "Brand"
+        }
+      },
+      "presets": {
+        "name": "Brand Slider"
+      }
+    },
     "newsletter": {
       "name": "Email signup",
       "settings": {
