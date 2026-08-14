@@ -930,7 +930,7 @@
         "column_alignment": "center",
         "column_link_button_style": false,
         "background_style": "none",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "mobile_carousel_autoplay": false,
