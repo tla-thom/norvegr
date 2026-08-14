@@ -797,8 +797,8 @@
             "title": "Designer’s Choice",
             "heading_size": "hxs",
             "text": "<p>Our clients include some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They span luxury hotels, manufacturers and designers for private yachts and aircrafts, plus exclusive retailers in Europe and America.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Designers Choice",
+            "link": "#"
           }
         },
         "column_zyRhYa": {
@@ -808,8 +808,8 @@
             "title": "Travel With Us",
             "heading_size": "hxs",
             "text": "<p>Without curiosity, where would we be? The desire to seek out new horizons, to find what happens next, is a driving force as old as the hills, and as old as the vikings. Follow the Norvegr Journey to the North and celebrate the spirit of travel with us.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Travel With Us",
+            "link": "#"
           }
         },
         "column_kYtzPx": {
@@ -819,8 +819,8 @@
             "title": "FAQ",
             "heading_size": "hxs",
             "text": "<p>Browse through some of our most recently asked questions, and we’ll help you find the perfect product for your ideal rest.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "FAQ",
+            "link": "#"
           }
         },
         "column_adFiqA": {
@@ -830,8 +830,8 @@
             "title": "Where to find us",
             "heading_size": "hxs",
             "text": "<p>From luxury hotels to exclusive showrooms, take a look at our map and see where you can experience the Norvegr way.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Where to Find Us",
+            "link": "#"
           }
         }
       },
