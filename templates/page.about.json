@@ -229,7 +229,7 @@
           "type": "heading",
           "settings": {
             "heading": "FIT FOR ROYALTY TODAY",
-            "heading_size": "h2",
+            "heading_size": "hxs",
             "use_body_font": false
           }
         },
@@ -275,7 +275,7 @@
           "type": "heading",
           "settings": {
             "heading": "The norvegr advocates",
-            "heading_size": "h2",
+            "heading_size": "hxs",
             "use_body_font": false
           }
         },
