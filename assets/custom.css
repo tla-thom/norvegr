@@ -695,6 +695,20 @@ summary .icon-caret {
     font-size: 2rem;
     text-transform: none;
   }
+
+  &.image-with-text__content--bigger-margin {
+    .image-with-text__text--caption {
+      margin-bottom: 35px;
+    }
+
+    .image-with-text__text--caption-no-heading {
+      margin-bottom: 0;
+    }
+
+    .image-with-text__heading {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .collection__subtitle.image-with-text__text--caption {

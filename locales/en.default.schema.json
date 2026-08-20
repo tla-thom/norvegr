@@ -1723,6 +1723,9 @@
             "image": {
               "label": "Image"
             },
+            "bigger_margin": {
+              "label": "Bigger margin"
+            },
             "caption": {
               "label": "Caption",
               "default": "Caption"
