@@ -71,6 +71,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_3_classic-down-duvets-300x436.jpg",
+            "bigger_margin": true,
             "caption": "NORVEGR: MAKING SLEEP A DREAM SINCE the 1950s",
             "heading": "<em>Norvegr follows a legacy in creating the most comfortable down duvets and pillows in the world. </em>",
             "text": "<p>A family business spanning three generations, everything we make is handcrafted to order in Trondheim, Norway, and shipped globally. All of our products are natural, sustainable, renewable and designed to last a lifetime.</p>",
@@ -82,6 +83,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_12_duvet-construction-techniques.jpg",
+            "bigger_margin": false,
             "caption": "",
             "heading": "",
             "text": "<p>We use unique construction techniques to create ultra-light, ultra-soft products – like sleeping on a cloud. A perfect balance between insulation and breathability ensures supreme comfort and an undisturbed rest throughout the night.</p><p>Our products will stay with you for a lifetime. Both our duvets and pillows can be returned every 10 and 5 years respectively for complete renewal. The down is restored by steam and harmless UV irradiation, then refilled and topped up. Casings are also replaced. This preserves their value for decades while sparing precious natural resources.</p>",
@@ -93,6 +95,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_13_eiderdown-ducks.jpg",
+            "bigger_margin": true,
             "caption": "Who Flocks to Us?",
             "heading": "<em>Our clients embrace some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:</em>",
             "text": "<ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and America</li></ul><h2><em>At Norvegr, we proudly draw on our Viking heritage to create extraordinary bedding for an exclusive international clientele.</em></h2>",
@@ -179,6 +182,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_14_high-end-bedding-travel.jpg",
+            "bigger_margin": true,
             "caption": "from the high seas",
             "heading": "<em>Queen Asa was not the only Viking enraptured by eiderdown.</em>",
             "text": "<p>In 870 AD, Ottar the Viking arrived at the palace of King Alfred the Great, in the Anglo-Saxon kingdom of Wessex. He captivated the royal court with colourful stories of his intrepid journey. As the fire blazed and the wine was poured, he explained the simple motive behind his quest: “I wanted to find out how far north my country ended.”</p>",
@@ -190,6 +194,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_15_norwegian-history.jpg",
+            "bigger_margin": false,
             "caption": "",
             "heading": "",
             "text": "<p>Ottar had set sail from Hålogaland, near the Arctic Circle, and voyaged the ‘North Way’ – known as ‘Norvegr’. During his travels he collected fur pelts, feathers and precious down. After many months, his voyage took him south along the Norwegian coast to Denmark, and finally to the court of King Alfred, where his treasures were eagerly received. Alfred was so impressed that he added Ottar’s stories to his version of the Compendious History of the World.</p>",
