@@ -163,7 +163,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "content_max_width": "smaller",
+        "content_max_width": "extra-small",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -229,7 +229,7 @@
           "type": "heading",
           "settings": {
             "heading": "FIT FOR ROYALTY TODAY",
-            "heading_size": "h2",
+            "heading_size": "hxs",
             "use_body_font": false
           }
         },
@@ -259,7 +259,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "content_max_width": "smaller",
+        "content_max_width": "extra-small",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -275,7 +275,7 @@
           "type": "heading",
           "settings": {
             "heading": "The norvegr advocates",
-            "heading_size": "h2",
+            "heading_size": "hxs",
             "use_body_font": false
           }
         },
@@ -305,7 +305,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "content_max_width": "smaller",
+        "content_max_width": "extra-small",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
