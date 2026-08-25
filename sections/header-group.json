@@ -17,15 +17,14 @@
         "announcement_ppR9Vz": {
           "type": "announcement",
           "settings": {
-            "text": "Subscribe for 10% off your first order.",
-            "link": "shopify://pages/signup"
+            "text": "Free delivery on orders over $1,000",
+            "link": ""
           }
         }
       },
       "block_order": [
         "announcement_ppR9Vz"
       ],
-      "disabled": true,
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
