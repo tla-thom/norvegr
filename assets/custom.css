@@ -348,6 +348,8 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link 
   color: inherit;
   cursor: pointer;
   text-align: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
 }
 
 main[data-template="product"] .banner__text a:hover,
