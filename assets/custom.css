@@ -407,9 +407,17 @@ main[data-template="product"] .linked-banner modal-opener {
   left: 0 !important;
   transform: none !important;
   border-radius: 0 !important;
-  padding: 0 1.5rem 1.5rem;
+  padding: 1.5rem !important;
   display: flex;
   flex-direction: column;
+}
+
+.linked-banner-modal__content .product-popup-modal__toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  margin: 0;
+  z-index: 3;
 }
 
 .linked-banner-modal__body {
@@ -418,29 +426,35 @@ main[data-template="product"] .linked-banner modal-opener {
   overflow: auto;
 }
 
-@media screen and (min-width: 750px) {
-  .linked-banner-modal__content {
-    padding: 0;
-    overflow: hidden;
+@media screen and (max-width: 749px) {
+  .linked-banner-modal__body .image-with-text__media-item > *,
+  .linked-banner-modal__body .image-with-text__media {
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
-  .linked-banner-modal__content .product-popup-modal__toggle {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    margin: 0;
-    z-index: 3;
+  .linked-banner-modal__body .image-with-text__media-item:after,
+  .linked-banner-modal__body .image-with-text__text-item:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .linked-banner-modal__content {
+    padding: 0 !important;
+    overflow: hidden;
   }
 
   .linked-banner-modal__body {
     overflow: hidden;
     height: 100%;
+    min-height: 0;
   }
 
   .linked-banner-modal__body .image-with-text,
   .linked-banner-modal__body .image-with-text__grid {
     height: 100%;
-    min-height: 100%;
+    min-height: 0;
   }
 
   .linked-banner-modal__body .image-with-text__grid {
@@ -452,13 +466,19 @@ main[data-template="product"] .linked-banner modal-opener {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 0;
+  }
+
+  .linked-banner-modal__body .image-with-text__media-item {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    box-sizing: border-box;
   }
 
   .linked-banner-modal__body .image-with-text__media-item > *,
   .linked-banner-modal__body .image-with-text__media {
     flex: 1;
     height: 100%;
-    min-height: 100%;
+    min-height: 0;
     padding-bottom: 0 !important;
     position: relative;
     border-radius: 0 !important;
@@ -477,13 +497,14 @@ main[data-template="product"] .linked-banner modal-opener {
 
   .linked-banner-modal__body .image-with-text__text-item {
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .linked-banner-modal__body .image-with-text__content {
     height: auto;
-    min-height: 100%;
-    justify-content: center;
-    padding: 4rem 3.5rem;
+    min-height: min-content;
+    justify-content: flex-start;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
     border: none;
     border-radius: 0;
     box-shadow: none;
