@@ -86,7 +86,7 @@
           >
             {%- assign product_form_id = 'product-form-' | append: section.id -%}
             {%- liquid
-              assign display_variant = product.selected_or_first_available_variant
+              assign country_default_variant = product.selected_or_first_available_variant
               unless product.has_only_default_variant
                 capture country_default_variant_id
                   render 'country-default-variant', product: product
@@ -94,7 +94,7 @@
                 assign country_default_variant_id = country_default_variant_id | strip | plus: 0
                 for variant in product.variants
                   if variant.id == country_default_variant_id
-                    assign display_variant = variant
+                    assign country_default_variant = variant
                     break
                   endif
                 endfor
@@ -127,6 +127,7 @@
                       {%- render 'price',
                         product: product,
                         use_variant: true,
+                        variant: country_default_variant,
                         show_badges: true,
                         price_class: 'price--large'
                       -%}
@@ -154,7 +155,7 @@
                   <div {{ block.shopify_attributes }}>
                     {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                     {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                      <input type="hidden" name="id" value="{{ display_variant.id }}">
+                      <input type="hidden" name="id" value="{{ country_default_variant.id }}">
                       {{ form | payment_terms }}
                     {%- endform -%}
                   </div>
@@ -506,7 +507,8 @@
                   {% render 'product-variant-picker',
                     product: product,
                     block: block,
-                    product_form_id: product_form_id
+                    product_form_id: product_form_id,
+                    country_default_variant: country_default_variant
                   %}
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
@@ -514,7 +516,8 @@
                     product: product,
                     product_form_id: product_form_id,
                     section_id: section.id,
-                    show_pickup_availability: true
+                    show_pickup_availability: true,
+                    country_default_variant: country_default_variant
                   -%}
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
@@ -738,7 +741,7 @@
             <div class="product-popup-modal__content-info">
               <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
               {%- if template.suffix == 'premium-duvet' and block.settings.page.handle == 'sizing-guide-duvets' -%}
-                {% render 'duvet-size-guide' %}
+                {% render 'duvet-size-guide', guide_id: block.id %}
               {%- else -%}
                 {{ block.settings.page.content }}
               {%- endif -%}

@@ -8,6 +8,7 @@
   - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
   - price_class: {String} Adds a price class to the price element (optional)
   - show_compare_at_price: {Boolean} Renders the compare at price if the product matches the condition (optional)
+  - variant: {Object} Variant to price when use_variant is true (optional)
 
   Usage:
   {% render 'price', product: product %}
@@ -18,16 +19,6 @@
       assign target = variant
     else
       assign target = product.selected_or_first_available_variant
-      capture country_default_variant_id
-        render 'country-default-variant', product: product
-      endcapture
-      assign country_default_variant_id = country_default_variant_id | strip | plus: 0
-      for product_variant in product.variants
-        if product_variant.id == country_default_variant_id
-          assign target = product_variant
-          break
-        endif
-      endfor
     endif
   elsif placeholder
     assign target = null

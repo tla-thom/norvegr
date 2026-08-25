@@ -5,21 +5,26 @@
   - product: {Object} product object.
   - block: {Object} passing the block information.
   - product_form_id: {String} Id of the product form to which the variant picker is associated.
+  - country_default_variant: {Object} Pre-resolved country-aware default variant (optional)
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
-  {%- capture country_default_variant_id -%}
-    {%- render 'country-default-variant', product: product -%}
-  {%- endcapture -%}
-  {%- assign country_default_variant_id = country_default_variant_id | strip | plus: 0 -%}
-  {%- assign country_default_variant = product.selected_or_first_available_variant -%}
-  {%- for variant in product.variants -%}
-    {%- if variant.id == country_default_variant_id -%}
-      {%- assign country_default_variant = variant -%}
-      {%- break -%}
-    {%- endif -%}
-  {%- endfor -%}
+  {%- liquid
+    if country_default_variant == blank
+      assign country_default_variant = product.selected_or_first_available_variant
+      capture country_default_variant_id
+        render 'country-default-variant', product: product
+      endcapture
+      assign country_default_variant_id = country_default_variant_id | strip | plus: 0
+      for variant in product.variants
+        if variant.id == country_default_variant_id
+          assign country_default_variant = variant
+          break
+        endif
+      endfor
+    endif
+  -%}
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"

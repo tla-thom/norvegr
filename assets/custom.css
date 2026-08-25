@@ -472,10 +472,11 @@ main[data-template="product"] .product-popup-modal__button::after {
   display: none;
 }
 
-.size-guide:has(#SizeGuide-US:checked) .size-guide__panel--us,
-.size-guide:has(#SizeGuide-UK:checked) .size-guide__panel--uk,
-.size-guide:has(#SizeGuide-NOR:checked) .size-guide__panel--nor-eur,
-.size-guide:has(#SizeGuide-EUR:checked) .size-guide__panel--nor-eur {
+.size-guide:not(:has(input[type='radio']:checked)) .size-guide__panel--us,
+.size-guide:has(input[value='US']:checked) .size-guide__panel--us,
+.size-guide:has(input[value='UK']:checked) .size-guide__panel--uk,
+.size-guide:has(input[value='NOR']:checked) .size-guide__panel--nor-eur,
+.size-guide:has(input[value='EUR']:checked) .size-guide__panel--nor-eur {
   display: block;
 }
 

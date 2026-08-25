@@ -9,6 +9,10 @@
     assign current_region = 'NOR'
   endif
 
+  if guide_id == blank
+    assign guide_id = 'default'
+  endif
+
   assign size_guide_regions = 'US|United States,UK|United Kingdom,NOR|Norway,EUR|Europe' | split: ','
   assign size_guide_panels = 'us,uk,nor-eur' | split: ','
 -%}
@@ -22,13 +26,14 @@
       {%- assign region_label = region_parts[1] -%}
       <input
         type="radio"
-        name="size-guide-region"
-        id="SizeGuide-{{ region_code }}"
+        name="size-guide-region-{{ guide_id }}"
+        id="SizeGuide-{{ guide_id }}-{{ region_code }}"
+        value="{{ region_code }}"
         {% if current_region == region_code %}
           checked
         {% endif %}
       >
-      <label for="SizeGuide-{{ region_code }}">{{ region_label }}</label>
+      <label for="SizeGuide-{{ guide_id }}-{{ region_code }}">{{ region_label }}</label>
     {%- endfor -%}
   </fieldset>
 

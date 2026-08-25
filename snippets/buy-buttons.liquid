@@ -6,6 +6,7 @@
   - product_form_id: {String} product form id.
   - section_id: {String} id of section to which this snippet belongs.
   - show_pickup_availability: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
+  - country_default_variant: {Object} Pre-resolved country-aware default variant (optional)
 
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
@@ -22,19 +23,23 @@
       if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
         assign show_dynamic_checkout = true
       endif
-    -%}
 
-    {%- capture country_default_variant_id -%}
-      {%- render 'country-default-variant', product: product -%}
-    {%- endcapture -%}
-    {%- assign country_default_variant_id = country_default_variant_id | strip | plus: 0 -%}
-    {%- assign country_default_variant = product.selected_or_first_available_variant -%}
-    {%- for variant in product.variants -%}
-      {%- if variant.id == country_default_variant_id -%}
-        {%- assign country_default_variant = variant -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
+      if country_default_variant == blank
+        assign country_default_variant = product.selected_or_first_available_variant
+        unless product.has_only_default_variant
+          capture country_default_variant_id
+            render 'country-default-variant', product: product
+          endcapture
+          assign country_default_variant_id = country_default_variant_id | strip | plus: 0
+          for variant in product.variants
+            if variant.id == country_default_variant_id
+              assign country_default_variant = variant
+              break
+            endif
+          endfor
+        endunless
+      endif
+    -%}
 
     <product-form
       class="product-form"

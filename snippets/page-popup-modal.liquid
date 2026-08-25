@@ -34,7 +34,7 @@
     <div class="product-popup-modal__content-info">
       <h1 class="h2">{{ page.title | escape }}</h1>
       {%- if template.suffix == 'premium-duvet' and page.handle == 'sizing-guide-duvets' -%}
-        {% render 'duvet-size-guide' %}
+        {% render 'duvet-size-guide', guide_id: modal_element_id %}
       {%- else -%}
         {{ page.content }}
       {%- endif -%}
