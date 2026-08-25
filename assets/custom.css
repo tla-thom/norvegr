@@ -347,10 +347,28 @@ main[data-template="product"] .linked-banner .banner__text modal-opener {
   display: contents;
 }
 
-main[data-template="product"] .banner__text a,
-main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
+main[data-template="product"] .banner__text a {
   position: relative;
   display: inline-block;
+  padding: 2px;
+  text-decoration: none !important;
+  text-underline-offset: unset;
+  text-decoration-thickness: unset;
+  transition: color var(--duration-extra-long) ease;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
+  position: relative;
+  display: block;
+  width: 100%;
   padding: 2px;
   text-decoration: none !important;
   text-underline-offset: unset;
