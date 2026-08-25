@@ -821,6 +821,10 @@ slideshow-component {
   }
 }
 
+.footer__payment .list-payment .icon {
+  filter: grayscale(100%);
+}
+
 /* blog section*/
 .main-blog {
   .title--primary { display: none; }

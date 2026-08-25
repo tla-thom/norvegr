@@ -4,6 +4,7 @@
   Accepts:
   - card_product: {Object} Product Liquid object (optional)
   - media_aspect_ratio: {String} Size of the product image card. Values are "square", "portrait", and "landscape". Default is "square" (optional)
+  - image_object_position: {String} CSS object-position for cropped product images. Default is "center center" (optional)
   - image_shape: {String} Image mask to apply to the product image card. Values are "arch", "blob", "chevronleft", "chevronright", "diamond", "parallelogram", and "round". (optional)
   - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
   - show_vendor: {Boolean} Show the product vendor. Default: false
@@ -51,6 +52,8 @@
       assign ratio = 1
       assign ratio_percent = 100
     endif
+
+    assign image_object_position = image_object_position | default: 'center center'
   -%}
 
   <product-component view-event-payload="{{ card_product | standard_event_data: 'view', context: product_view_context | escape }}">
@@ -89,6 +92,7 @@
                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="{{ card_product.featured_media.alt | escape }}"
                   class="motion-reduce"
+                  style="object-position: {{ image_object_position }};"
                   {% unless lazy_load == false %}
                     loading="lazy"
                   {% endunless %}
@@ -112,6 +116,7 @@
                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                     alt="{{ card_product.media[1].alt | escape }}"
                     class="motion-reduce"
+                    style="object-position: {{ image_object_position }};"
                     loading="lazy"
                     width="{{ card_product.media[1].width }}"
                     height="{{ card_product.media[1].height }}"
@@ -601,6 +606,8 @@
       assign ratio = 1.333
       assign ratio_percent = 75
     endif
+
+    assign image_object_position = image_object_position | default: 'center center'
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
@@ -626,6 +633,7 @@
                 src="{{ placeholder_asset | asset_url }}"
                 alt=""
                 class="motion-reduce"
+                style="object-position: {{ image_object_position }};"
                 loading="lazy"
                 width="800"
                 height="1200"
