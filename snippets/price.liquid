@@ -14,7 +14,21 @@
 {% endcomment %}
 {%- liquid
   if use_variant
-    assign target = product.selected_or_first_available_variant
+    if variant != blank
+      assign target = variant
+    else
+      assign target = product.selected_or_first_available_variant
+      capture country_default_variant_id
+        render 'country-default-variant', product: product
+      endcapture
+      assign country_default_variant_id = country_default_variant_id | strip | plus: 0
+      for product_variant in product.variants
+        if product_variant.id == country_default_variant_id
+          assign target = product_variant
+          break
+        endif
+      endfor
+    endif
   elsif placeholder
     assign target = null
   else
@@ -108,8 +122,8 @@
           {{ money_price }}
         </span>
       </div>
-      {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
-        {% render 'unit-price', price: product.selected_or_first_available_variant.unit_price, measurement: product.selected_or_first_available_variant.unit_price_measurement %}
+      {%- if target.unit_price_measurement -%}
+        {% render 'unit-price', price: target.unit_price, measurement: target.unit_price_measurement %}
       {%- endif -%}
     </div>
     {%- if show_badges -%}

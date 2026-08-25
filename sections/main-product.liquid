@@ -85,6 +85,21 @@
             class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
           >
             {%- assign product_form_id = 'product-form-' | append: section.id -%}
+            {%- liquid
+              assign display_variant = product.selected_or_first_available_variant
+              unless product.has_only_default_variant
+                capture country_default_variant_id
+                  render 'country-default-variant', product: product
+                endcapture
+                assign country_default_variant_id = country_default_variant_id | strip | plus: 0
+                for variant in product.variants
+                  if variant.id == country_default_variant_id
+                    assign display_variant = variant
+                    break
+                  endif
+                endfor
+              endunless
+            -%}
 
             {%- for block in section.blocks -%}
               {%- case block.type -%}
@@ -139,7 +154,7 @@
                   <div {{ block.shopify_attributes }}>
                     {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                     {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                      <input type="hidden" name="id" value="{{ display_variant.id }}">
                       {{ form | payment_terms }}
                     {%- endform -%}
                   </div>

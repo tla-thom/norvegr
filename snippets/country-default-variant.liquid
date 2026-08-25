@@ -1,6 +1,7 @@
 {% comment %}
-  Renders the id of the first variant allowed in the current country.
-  Falls back to selected_or_first_available_variant when none match.
+  Renders the id of the country-aware default variant.
+  Uses the product default when allowed in the visitor's country,
+  otherwise the first allowed variant in the current country.
 
   Accepts:
   - product: {Object} product object.
@@ -12,23 +13,35 @@
   assign current_country = localization.country.iso_code
   assign country_default_variant = nil
 
-  for variant in product.variants
-    assign variant_allowed = false
-    assign allowed_countries = variant.metafields.custom.allowed_countries.value
-    capture variant_allowed_capture
-      render 'variant-country-allowed', allowed_countries: allowed_countries, current_country: current_country
-    endcapture
-    assign variant_allowed_result = variant_allowed_capture | strip
+  assign candidate_variant = product.selected_or_first_available_variant
+  assign candidate_allowed_countries = candidate_variant.metafields.custom.allowed_countries.value
+  capture candidate_allowed_capture
+    render 'variant-country-allowed', allowed_countries: candidate_allowed_countries, current_country: current_country
+  endcapture
+  assign candidate_allowed_result = candidate_allowed_capture | strip
 
-    if variant_allowed_result == 'true'
-      if variant.available
-        assign country_default_variant = variant
-        break
-      elsif country_default_variant == nil
-        assign country_default_variant = variant
+  if candidate_allowed_result == 'true'
+    assign country_default_variant = candidate_variant
+  endif
+
+  if country_default_variant == nil
+    for variant in product.variants
+      assign allowed_countries = variant.metafields.custom.allowed_countries.value
+      capture variant_allowed_capture
+        render 'variant-country-allowed', allowed_countries: allowed_countries, current_country: current_country
+      endcapture
+      assign variant_allowed_result = variant_allowed_capture | strip
+
+      if variant_allowed_result == 'true'
+        if variant.available
+          assign country_default_variant = variant
+          break
+        elsif country_default_variant == nil
+          assign country_default_variant = variant
+        endif
       endif
-    endif
-  endfor
+    endfor
+  endif
 
   if country_default_variant == nil
     assign country_default_variant = product.selected_or_first_available_variant

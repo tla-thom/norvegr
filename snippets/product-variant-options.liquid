@@ -92,8 +92,10 @@
 
   {%- liquid
     assign value_is_selected = false
-    if default_variant != blank and default_variant.options[option_index] == value
-      assign value_is_selected = true
+    if default_variant != blank
+      if default_variant.options[option_index] == value
+        assign value_is_selected = true
+      endif
     elsif value.selected
       assign value_is_selected = true
     endif
