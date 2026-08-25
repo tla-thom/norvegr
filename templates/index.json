@@ -560,6 +560,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_32_Norvegr-AW2025-Campaign-083.jpg",
+            "bigger_margin": false,
             "caption": "CHANNEL CONSTRUCTION",
             "heading": "",
             "text": "<p>Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.</p>",
@@ -571,6 +572,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
+            "bigger_margin": false,
             "caption": "Peerless Fill Power",
             "heading": "",
             "text": "<p>Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.</p>",
@@ -582,6 +584,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_34_image-13.jpg",
+            "bigger_margin": false,
             "caption": "Lasting Legacy",
             "heading": "",
             "text": "<p>Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.</p>",
@@ -593,6 +596,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "bigger_margin": false,
             "caption": "Made For Forever",
             "heading": "",
             "text": "<p>An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.</p>",
@@ -630,7 +634,7 @@
     "featured_collection_QRLXzG": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "duvet-collection",
         "products_to_show": 4,
         "title": "Duvet Collection",
         "heading_size": "h0",
