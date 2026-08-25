@@ -338,14 +338,23 @@ header {
 }
 
 /* Product page — banner text links */
-main[data-template="product"] .linked-banner .banner__text h5,
+main[data-template="product"] .linked-banner .banner__text h5 {
+  margin: 0;
+  cursor: pointer;
+}
+
+main[data-template="product"] .linked-banner .banner__text h5 + h5 {
+  margin-top: 0.75rem;
+}
+
 main[data-template="product"] .linked-banner .banner__text modal-opener {
-  display: contents;
+  display: inline;
 }
 
 main[data-template="product"] .banner__text a,
 main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
   position: relative;
+  display: inline-block;
   padding: 2px;
   text-decoration: none !important;
   text-underline-offset: unset;
@@ -359,15 +368,6 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link 
   text-align: inherit;
   text-transform: uppercase;
   letter-spacing: 0.12rem;
-}
-
-main[data-template="product"] .banner__text a {
-  display: inline-block;
-}
-
-main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
-  display: block;
-  width: 100%;
 }
 
 main[data-template="product"] .banner__text a:hover,
