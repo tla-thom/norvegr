@@ -365,6 +365,60 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
+    },
+    "linked_banner_nf36Th": {
+      "type": "linked-banner",
+      "blocks": {
+        "item_weMdaN": {
+          "type": "item",
+          "settings": {
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "item_KwRw3C": {
+          "type": "item",
+          "settings": {
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "item_yf6cgG": {
+          "type": "item",
+          "settings": {
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_weMdaN",
+        "item_KwRw3C",
+        "item_yf6cgG"
+      ],
+      "name": "t:sections.linked-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_41_Norvegr-Winter-Campaign-01.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "80",
+        "image_behavior": "none",
+        "title": "Duvet Buying guide",
+        "heading_size": "h0",
+        "use_body_font": true,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -373,6 +427,7 @@
     "multirow_mPjXNM",
     "image_banner_U8xrQz",
     "collection_list_9ctf3C",
-    "related-products"
+    "related-products",
+    "linked_banner_nf36Th"
   ]
 }
