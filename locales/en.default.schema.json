@@ -1440,6 +1440,36 @@
         "name": "Image banner"
       }
     },
+    "linked-banner": {
+      "name": "Linked banner",
+      "settings": {
+        "image": {
+          "label": "Background image"
+        },
+        "header_title": {
+          "content": "Title"
+        },
+        "title": {
+          "label": "Title",
+          "default": "Buying guide"
+        }
+      },
+      "blocks": {
+        "item": {
+          "name": "Link",
+          "settings": {
+            "heading": {
+              "label": "Heading",
+              "info": "Shown as the banner link and as the modal heading.",
+              "default": "Heading"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Linked banner"
+      }
+    },
     "image-with-text": {
       "name": "Image with text",
       "settings": {

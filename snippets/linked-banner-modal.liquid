@@ -1,0 +1,81 @@
+{%- comment -%}
+  Renders a full-screen modal with image left and text right.
+
+  Accepts:
+  - block: {Object} Block with image, heading, text, button settings
+{%- endcomment -%}
+
+{%- liquid
+  assign dialog_label = block.settings.heading | strip_html | strip
+  assign heading_stripped = dialog_label
+-%}
+
+<modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal linked-banner-modal">
+  <div
+    role="dialog"
+    aria-label="{{ dialog_label | escape }}"
+    aria-modal="true"
+    class="product-popup-modal__content linked-banner-modal__content"
+    tabindex="-1"
+  >
+    <button
+      id="ModalClose-{{ block.id }}"
+      type="button"
+      class="product-popup-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {{- 'icon-close.svg' | inline_asset_content -}}
+    </button>
+    <div class="linked-banner-modal__body">
+      <div class="image-with-text isolate">
+        <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet">
+          <div class="image-with-text__media-item image-with-text__media-item--medium grid__item">
+            <div
+              class="image-with-text__media image-with-text__media--adapt global-media-settings{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
+              {% if block.settings.image != blank %}
+                style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
+              {% endif %}
+            >
+              {%- if block.settings.image != blank -%}
+                {%- capture sizes -%}
+                  (min-width: 750px) 50vw, 100vw
+                {%- endcapture -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 1500
+                  | image_tag: sizes: sizes, widths: '375, 550, 750, 1100, 1500'
+                }}
+              {%- else -%}
+                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+          </div>
+          <div class="image-with-text__text-item grid__item">
+            <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container background-transparent">
+              {%- if heading_stripped != blank -%}
+                <h2 class="image-with-text__heading h1 rte">
+                  {{ block.settings.heading }}
+                </h2>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="image-with-text__text rte">{{ block.settings.text }}</div>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <a
+                  {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link }}"
+                  {% endif %}
+                  class="button button--secondary"
+                >
+                  {{ block.settings.button_label | escape }}
+                </a>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</modal-dialog>
