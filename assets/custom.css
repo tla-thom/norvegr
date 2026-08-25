@@ -829,6 +829,10 @@ slideshow-component {
   .footer-block__heading {
     font-size: 1.5rem;
   }
+
+  .footer-block__details-content > li:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .footer-block--menu .footer-block__details-content .list-menu__item--link {
