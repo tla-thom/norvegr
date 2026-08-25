@@ -382,8 +382,9 @@
         "item_KwRw3C": {
           "type": "item",
           "settings": {
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/imgi_103_Norvegr-Factory-Trondheim_03.jpg",
+            "heading": "How to Choose a Duvet Collection",
+            "text": "<p>When selecting your duvet weight, consider the climate of where you live, the temperature of your room, and how warm or cool you prefer to be.<br/><br/>Many Norvegr customers opt for our versatile all-year duvets. However if you live in a place with temperatures that fluctuate, or if you prefer to sleep a little cosier or lighter, we offer summer and winter duvets to meet your needs.<br/><br/>Filled with small amounts of down, spread over many channels, summer duvets are the definition of light and airy. The thermo-regulating properties of down mean you will feel warm on cooler nights, but not weighed down on balmy, sultry evenings.<br/><br/>Versatility is king with our all-year duvets, designed for rooms and environments with relatively uniform year-round temperatures. If you keep your bedroom windows closed at night and the ambient temperature doesn’t fluctuate dramatically, this duvet will suit you perfectly.<br/><br/>Our soft, downy winter duvets will keep you cosy and warm in chilly rooms or when temperatures plummet. The beauty of our high fill power down is that its lightweight, breathable properties guard against overheating.<br/><br/>Icy cold temperatures are no match for our polar duvets, the warmest duvets we make. Think hibernation. It’s the kind of duvet you’d expect to find in a chalet in the Alps, thick snow all around. Just remember to switch to a lighter duvet weight when the big freeze is over.<br/><br/>Many duvet brands opt for TOG systems, or thermal overall guide. We think this can be confusing when talking about the thermo-regulating properties of down, instead opting for fill power grades. However, for reference, you can think that our summer duvet is equivalent to 4 tog, all-year is 8.5 tog, winter is 11 tog and polar is 15 tog.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -391,9 +392,10 @@
         "item_yf6cgG": {
           "type": "item",
           "settings": {
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/imgi_96_Norv-Ost-Couple-2023-05-2048x1365_34744b49-461b-4d28-8e93-0d08646d5c7d.jpg",
+            "heading": "How to Choose a Duvet Size",
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
