@@ -219,9 +219,9 @@
       "settings": {
         "image": "shopify://shop_images/imgi_41_Norvegr-Winter-Campaign-01.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "xlarge",
         "mobile_height": "80",
-        "image_behavior": "none",
+        "image_behavior": "zoom-in",
         "title": "Duvet Buying guide",
         "heading_size": "h0",
         "use_body_font": true,
