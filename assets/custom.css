@@ -334,6 +334,13 @@ header {
 
 /* Product page — image banner text links */
 main[data-template="product"] .banner__text a,
+main[data-template="product"] .linked-banner .banner__text h5,
+main[data-template="product"] .linked-banner .banner__text modal-opener,
+main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
+  cursor: pointer;
+}
+
+main[data-template="product"] .banner__text a,
 main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
   position: relative;
   display: inline-block;
@@ -346,7 +353,6 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link 
   border: none;
   font: inherit;
   color: inherit;
-  cursor: pointer;
   text-align: inherit;
   text-transform: uppercase;
   letter-spacing: 0.12rem;
@@ -384,6 +390,7 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link:
 
 main[data-template="product"] .linked-banner modal-opener {
   display: inline;
+  cursor: pointer;
 }
 
 /* Linked banner — always overlay text on image (mobile) */
@@ -518,7 +525,7 @@ main[data-template="product"] .linked-banner modal-opener {
     min-height: min-content;
     flex-shrink: 0;
     justify-content: flex-start;
-    padding: 1.5rem 7rem;
+    padding: 3rem 7rem;
     border: none;
     border-radius: 0;
     box-shadow: none;
