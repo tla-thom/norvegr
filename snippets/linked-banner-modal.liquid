@@ -7,7 +7,6 @@
 
 {%- liquid
   assign dialog_label = block.settings.heading | strip_html | strip
-  assign heading_stripped = dialog_label
 -%}
 
 <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal linked-banner-modal">
@@ -51,8 +50,8 @@
             </div>
           </div>
           <div class="image-with-text__text-item grid__item">
-            <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container background-transparent">
-              {%- if heading_stripped != blank -%}
+            <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left content-container background-transparent">
+              {%- if dialog_label != blank -%}
                 <h2 class="image-with-text__heading h1 rte">
                   {{ block.settings.heading }}
                 </h2>
