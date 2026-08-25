@@ -161,6 +161,7 @@
         "text_mLiGyG",
         "buttons_kyF664"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Norvegr-Winter-Campaign-01.jpg",
         "image_overlay_opacity": 30,
@@ -218,13 +219,24 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "item_6PCCKd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_96_polar-days-norvegr-2048x1395.jpg",
+            "heading": "Duvet Vs Comforter",
+            "text": "<p>They might appear to be more or less the same thing, but there are important differences between duvets and comforters. It’s worth understanding the distinction when you’re choosing your bedding.<br/><br/>Put simply, most people in the US use the term comforters, while Europeans refer to duvets. However, many individuals who speak of comforters actually mean duvets without realising. Both are a type of thick, fluffy bedding that covers you at night to keep you warm and comfortable. However duvets will usually have a removable cover, making them easier to clean, maintain and customise. Comforters usually have a built-in cover, or no cover at all.<br/><br/>Comforters also use more stitching, which can be a cover for poor filling materials and distribution. They will also typically provide a flatter, less-fluffy experience which calls for more blankets and top sheets. This can be appealing for those who prefer to be layered up when they sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "item_weMdaN",
         "item_KwRw3C",
         "item_yf6cgG",
-        "item_AKPcry"
+        "item_AKPcry",
+        "item_6PCCKd"
       ],
       "name": "t:sections.linked-banner.presets.name",
       "settings": {
