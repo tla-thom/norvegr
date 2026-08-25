@@ -372,9 +372,10 @@
         "item_weMdaN": {
           "type": "item",
           "settings": {
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/imgi_27_1NORVEGR-SPRING_SUMMER2026-040-2048x1366.jpg",
+            "heading": "What constitutes a good duvet?",
+            "text": "<p>It’s all about balance. A really good duvet will ensure you don’t overheat, nor will you feel chilly. Instead you should be kept at the perfect temperature all night long.<br/><br/>Often if you wake up cold and clammy it is probably because you are too warm. An overly warm duvet will cause you to perspire, and often you will wake up feeling cold once the perspiration has cooled and settled on your skin. Waking up cold and dry is the opposite problem; your duvet simply isn’t doing its job in keeping you warm enough.<br/><br/>Down strikes the perfect balance. It has the magical gift of insulating and breathing simultaneously, adapting to your body and the external temperatures to keep you temperately warm and cool at the same time.<br/><br/>This is because down is made up of very fine fibres that spread off from a quill-point. The density of these fibres trap tiny air pockets, insulating against the cold but allowing excess heat and moisture to be transported away from the body. This is in stark contrast to feathers, which are brittle and have no ability to trap air. Often the more feathers in a duvet, the heavier and poorer quality it is. At Norvegr, even our entry-level duvets are just 10% feather.<br/><br/>If you’re used to a more voluminous, heavy duvet, your first experience of Norvegr may be surprising. Our duvets are unbelievably light. But after a night or two of perfect sleep, you’ll be addicted. The cloud-lightness of our down is what helps keep you so magically warm and cool at the same time.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
