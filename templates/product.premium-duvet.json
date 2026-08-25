@@ -165,7 +165,7 @@
       "settings": {
         "image": "shopify://shop_images/Norvegr-Winter-Campaign-01.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "xlarge",
+        "image_height": "large",
         "mobile_height": "70",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",
@@ -252,8 +252,7 @@
         "desktop_content_alignment": "center",
         "show_text_box": true,
         "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
-        "mobile_content_alignment": "center",
-        "show_text_below": true
+        "mobile_content_alignment": "center"
       }
     },
     "multirow_mPjXNM": {
