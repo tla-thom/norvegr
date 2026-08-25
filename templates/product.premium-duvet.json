@@ -183,6 +183,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_61_NorvegrBlogPost8-1-2048x2048.jpg",
+            "bigger_margin": false,
             "caption": "What kind of down is used?",
             "heading": "",
             "text": "<p>Filled with among the best commercially available types of goose down there are, our Premium Collection duvets are our second best goose down duvets.<br/><br/>This luxury down is 100% European White Goose down - completely feather free. On the fill power scale, these duvets are 850, which is the highest one can acquire among commercially available down qualities.</p>",
@@ -194,6 +195,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled.jpg",
+            "bigger_margin": false,
             "caption": "More about European goose down",
             "heading": "",
             "text": "<p>This European White Goose down is heavenly soft, and so are these duvets. Each down cluster is among the largest obtainable for commercially available goose down qualities. They trap air like few other goose down quality out there.</p>",
@@ -205,6 +207,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_101_polar-days-norvegr-2048x1395.jpg",
+            "bigger_margin": false,
             "caption": "What this means for you?",
             "heading": "",
             "text": "<p>These unique insulating abilities provide an impressive protection against both cold and warm temperatures. They will keep you at a perfect temperature throughout the night, no matter what climate you are sleeping in.<br/><br/>Our Premium Collection duvets are incredibly lightweight duvets, due to the extreme quality of this particular type of goose down.<br/><br/>An 850 fill power allows us to fill less down in these than we do for our Classic Collection goose down duvets, while getting the same volume of filling. This ultra lightweight quality allows for duvets that work very well in warmer climates as well as cooler ones.</p>",
@@ -216,6 +219,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "bigger_margin": false,
             "caption": "Key Features",
             "heading": "",
             "text": "<p>Filled in a channel constructed duvet casing made from the finest batiste, 100 % Egyptian cotton: The seams are hidden inside the casing on three sides, and there is no stitching.<br/><br/>Instead, we use baffle walls between the channels, to make sure that the down reaches everywhere inside the casing. This way, the duvet is equally as thick all the way through the channels, and you will not have any cold spots against your body.</p>",
@@ -343,108 +347,6 @@
         "padding_bottom": 80
       }
     },
-    "slideshow_bppbjd": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_JMwxtW": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/imgi_29_premium-down-duvets.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "What kind of down is used?",
-            "heading_size": "hxs",
-            "subheading": "Filled with among the best commercially available types of goose down there are, our Premium Collection duvets are our second best goose down duvets.This luxury down is 100% European White Goose down - completely feather free. On the fill power scale, these duvets are 850, which is the highest one can acquire among commercially available down qualities.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        },
-        "slide_tKrwTh": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/imgi_83_missing-piece-2048x1366.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "More about European goose down",
-            "heading_size": "hxs",
-            "subheading": "This European White Goose down is heavenly soft, and so are these duvets. Each down cluster is among the largest obtainable for commercially available goose down qualities. They trap air like few other goose down quality out there.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        },
-        "slide_nFaxaf": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/imgi_39_Norvegr-AW2025-Campaign-035.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "What makes our duvets so impressive",
-            "heading_size": "hxs",
-            "subheading": "These unique insulating abilities provide an impressive protection against both cold and warm temperatures. They will keep you at a perfect temperature throughout the night, no matter what climate you are sleeping in.Our Premium Collection duvets are incredibly lightweight duvets, due to the extreme quality of this particular type of goose down.An 850 fill power allows us to fill less down in these than we do for our Classic Collection goose down duvets, while getting the same volume of filling. This ultra lightweight quality allows for duvets that work very well in warmer climates as well as cooler ones.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        },
-        "slide_G37QdF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
-            "split_layout": true,
-            "image_overlay_opacity": 0,
-            "heading": "Key Features",
-            "heading_size": "hxs",
-            "subheading": "Filled in a channel constructed duvet casing made from the finest batiste, 100 % Egyptian cotton: The seams are hidden inside the casing on three sides, and there is no stitching.Instead, we use baffle walls between the channels, to make sure that the down reaches everywhere inside the casing. This way, the duvet is equally as thick all the way through the channels, and you will not have any cold spots against your body.",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": true,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        }
-      },
-      "block_order": [
-        "slide_JMwxtW",
-        "slide_tKrwTh",
-        "slide_nFaxaf",
-        "slide_G37QdF"
-      ],
-      "disabled": true,
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "grid",
-        "slide_height": "medium",
-        "mobile_height": "default",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "ambient",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -463,87 +365,6 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
-    },
-    "multicolumn_MpPDWq": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_YDiQjp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_20_norwegian-duvet-feathers-254x300-1_1.jpg",
-            "title": "10-Year Restoration",
-            "heading_size": "hxs",
-            "text": "<p>Ship it back every decade. We restore the down up to 5 times. A duvet engineered to last 60 years.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_UjCLpc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_21_vikingaskepp_norvegr.jpg",
-            "title": "Complimentary Adjustments",
-            "heading_size": "hxs",
-            "text": "<p>Test it for a few nights. We will adjust the filling for free until your sleep is perfect.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_9pALFy": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_24_eiderdown-ducks-duvets-400x400.jpg",
-            "title": "Infinite Transformation",
-            "heading_size": "hxs",
-            "text": "<p>Your product can evolve. We can transform your pillows into duvets or adapt them to a new bed size anytime.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_YDiQjp",
-        "column_UjCLpc",
-        "column_9pALFy"
-      ],
-      "disabled": true,
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "contain_image": false,
-        "text_on_image": false,
-        "button_label": "",
-        "button_link": "",
-        "full_width": false,
-        "no_padding": false,
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "mobile_carousel_autoplay": false,
-        "mobile_carousel_autoplay_speed": 5,
-        "mobile_custom_image_size": false,
-        "mobile_image_size_percent": 100,
-        "padding_top": 24,
-        "padding_bottom": 48
-      }
-    },
-    "disclosures": {
-      "type": "disclosures",
-      "disabled": true,
-      "settings": {
-        "heading": "Disclosures",
-        "heading_size": "h2",
-        "open_by_default": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -552,9 +373,6 @@
     "multirow_mPjXNM",
     "image_banner_U8xrQz",
     "collection_list_9ctf3C",
-    "slideshow_bppbjd",
-    "related-products",
-    "multicolumn_MpPDWq",
-    "disclosures"
+    "related-products"
   ]
 }
