@@ -827,7 +827,7 @@ slideshow-component {
 
 @media screen and (min-width: 750px) {
   .footer-block__heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .footer-block--menu .footer-block__details-content > li:not(:last-child) {
