@@ -330,6 +330,15 @@ header {
 
 .product__accordion .accordion__content {
   padding: 0 !important;
+  margin-bottom: 0;
+}
+
+.product__info-container .product__accordion {
+  margin-bottom: 0;
+}
+
+.product__info-container .product__accordion + .product__accordion {
+  margin-top: 0;
 }
 
 /* Product page — image banner text links */
