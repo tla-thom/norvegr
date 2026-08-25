@@ -333,11 +333,9 @@ header {
 }
 
 /* Product page — image banner text links */
-main[data-template="product"] .banner__text a,
 main[data-template="product"] .linked-banner .banner__text h5,
-main[data-template="product"] .linked-banner .banner__text modal-opener,
-main[data-template="product"] .linked-banner .banner__text .linked-banner__link {
-  cursor: pointer;
+main[data-template="product"] .linked-banner .banner__text modal-opener {
+  display: contents;
 }
 
 main[data-template="product"] .banner__text a,
@@ -353,6 +351,7 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link 
   border: none;
   font: inherit;
   color: inherit;
+  cursor: pointer;
   text-align: inherit;
   text-transform: uppercase;
   letter-spacing: 0.12rem;
@@ -376,6 +375,7 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link:
   background-color: rgba(255, 255, 255, 0.9);
   transition: width var(--duration-extra-long) ease;
   z-index: -1;
+  pointer-events: none;
 }
 
 main[data-template="product"] .banner__text a:hover::before,
@@ -386,11 +386,7 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link:
 main[data-template="product"] .banner__text a::after,
 main[data-template="product"] .linked-banner .banner__text .linked-banner__link::after {
   content: '\00a0→';
-}
-
-main[data-template="product"] .linked-banner modal-opener {
-  display: inline;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 /* Linked banner — always overlay text on image (mobile) */
