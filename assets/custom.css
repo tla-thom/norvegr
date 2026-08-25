@@ -464,6 +464,21 @@ main[data-template="product"] .product-popup-modal__button::after {
   color: rgba(var(--color-foreground), 0.6);
 }
 
+.size-guide .product-form__input--pill {
+  margin: 1.5rem 0;
+}
+
+.size-guide__panel {
+  display: none;
+}
+
+.size-guide:has(#SizeGuide-US:checked) .size-guide__panel--us,
+.size-guide:has(#SizeGuide-UK:checked) .size-guide__panel--uk,
+.size-guide:has(#SizeGuide-NOR:checked) .size-guide__panel--nor-eur,
+.size-guide:has(#SizeGuide-EUR:checked) .size-guide__panel--nor-eur {
+  display: block;
+}
+
 /* Product page: Add to cart + Buy it now */
 .product-form .product-form__submit {
   --color-button: 152, 129, 64;
