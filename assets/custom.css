@@ -830,7 +830,7 @@ slideshow-component {
     font-size: 1.5rem;
   }
 
-  .footer-block__details-content > li:not(:last-child) {
+  .footer-block--menu .footer-block__details-content > li:not(:last-child) {
     margin-right: 0;
   }
 }
