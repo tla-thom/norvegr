@@ -426,6 +426,12 @@ main[data-template="product"] .linked-banner modal-opener {
   overflow: auto;
 }
 
+.linked-banner-modal__body .image-with-text__text-item > .image-with-text__content {
+  overflow: visible;
+  height: auto;
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 749px) {
   .linked-banner-modal__body .image-with-text__media-item > *,
   .linked-banner-modal__body .image-with-text__media {
@@ -498,16 +504,19 @@ main[data-template="product"] .linked-banner modal-opener {
   .linked-banner-modal__body .image-with-text__text-item {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  @supports (justify-content: safe center) {
+    .linked-banner-modal__body .image-with-text__text-item {
+      justify-content: safe center;
+    }
   }
 
   .linked-banner-modal__body .image-with-text__content {
     width: 100%;
-    height: auto;
     min-height: min-content;
     flex-shrink: 0;
-    margin-top: auto;
-    margin-bottom: auto;
     justify-content: flex-start;
     padding: 1.5rem 7rem;
     border: none;
