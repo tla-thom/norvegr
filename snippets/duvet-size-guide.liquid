@@ -14,7 +14,7 @@
   endif
 
   assign size_guide_regions = 'US|United States,UK|United Kingdom,NOR|Norway,EUR|Europe' | split: ','
-  assign size_guide_panels = 'us,uk,nor-eur' | split: ','
+  assign size_guide_panels = 'us,uk,nor,eur' | split: ','
 -%}
 
 <div class="size-guide">
@@ -65,9 +65,12 @@
               <tr><td><em>UK SuperKing Extra Long</em></td><td>260 x 240</td><td>102 x 94.5</td></tr>
               <tr><td><em>UK Emperor</em></td><td>290 x 235</td><td>114 x 93</td></tr>
               <tr><td><em>UK King</em></td><td>230 x 220</td><td>91 x 87</td></tr>
-            {%- when 'nor-eur' -%}
-              <tr><td><em>Single</em></td><td>140 x 220</td><td>55 x 87</td></tr>
-              <tr><td><em>King</em></td><td>240 x 220</td><td>95 x 87</td></tr>
+            {%- when 'nor' -%}
+              <tr><td><em>Norway Single</em></td><td>140 x 220</td><td>55 x 87</td></tr>
+              <tr><td><em>Norway King</em></td><td>240 x 220</td><td>95 x 87</td></tr>
+            {%- when 'eur' -%}
+              <tr><td><em>EU Single</em></td><td>140 x 220</td><td>55 x 87</td></tr>
+              <tr><td><em>EU King</em></td><td>240 x 220</td><td>95 x 87</td></tr>
           {%- endcase -%}
         </tbody>
       </table>
