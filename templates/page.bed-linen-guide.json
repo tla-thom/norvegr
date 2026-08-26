@@ -162,6 +162,61 @@
         "padding_bottom": 0
       }
     },
+    "image_banner_EtWkmL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_FJViVf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Linen, the Norvegr Way",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_fRfxJd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_H7hTqw": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FJViVf",
+        "text_fRfxJd",
+        "buttons_H7hTqw"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_15_Low-res-NorvegrA_W-2024-15.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -169,46 +224,13 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "featured_collection_gLixcU": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "collection": "pillows",
-        "products_to_show": 3,
-        "title": "",
-        "heading_size": "h1",
-        "use_body_font": false,
-        "sub_title": "",
-        "content_max_width": "default",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_object_position": "center center",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 64,
-        "padding_bottom": 88
-      }
     }
   },
   "order": [
     "image_banner_E77hzD",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
-    "main",
-    "featured_collection_gLixcU"
+    "image_banner_EtWkmL",
+    "main"
   ]
 }
