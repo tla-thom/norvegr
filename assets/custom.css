@@ -433,6 +433,34 @@ modal-dialog.modal-closing[open] {
   pointer-events: none;
 }
 
+/* Modal close button — inverted on all modals */
+modal-dialog .product-popup-modal__toggle,
+modal-dialog .product-media-modal__toggle,
+modal-dialog .quick-add-modal__toggle,
+modal-dialog .modal-video__toggle {
+  background-color: rgb(var(--color-foreground));
+  border-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+modal-dialog .product-popup-modal__toggle:hover,
+modal-dialog .product-media-modal__toggle:hover,
+modal-dialog .quick-add-modal__toggle:hover,
+modal-dialog .modal-video__toggle:hover {
+  background-color: rgb(var(--color-foreground));
+  border-color: rgb(var(--color-foreground));
+  color: rgba(var(--color-background), 0.85);
+}
+
+modal-dialog .product-popup-modal__toggle .icon,
+modal-dialog .product-media-modal__toggle .icon,
+modal-dialog .quick-add-modal__toggle .icon,
+modal-dialog .modal-video__toggle .icon,
+modal-dialog .product-popup-modal__toggle .svg-wrapper svg,
+modal-dialog .modal-video__toggle .svg-wrapper svg {
+  color: inherit;
+}
+
 /* Linked banner — full-screen modals */
 .linked-banner-modal__content {
   width: 100% !important;
@@ -454,15 +482,6 @@ modal-dialog.modal-closing[open] {
   right: 1.5rem;
   margin: 0;
   z-index: 3;
-  background-color: rgb(var(--color-foreground));
-  border-color: rgb(var(--color-foreground));
-  color: rgb(var(--color-background));
-}
-
-.linked-banner-modal__content .product-popup-modal__toggle:hover {
-  background-color: rgb(var(--color-foreground));
-  border-color: rgb(var(--color-foreground));
-  color: rgba(var(--color-background), 0.85);
 }
 
 .linked-banner-modal__body {
