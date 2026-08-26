@@ -116,9 +116,9 @@
         "heading_KnXqWp": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Warmth</em>",
-            "heading_size": "h0",
-            "use_body_font": true
+            "heading": "Warmth",
+            "heading_size": "hxs",
+            "use_body_font": false
           }
         },
         "text_q7Qdkb": {
