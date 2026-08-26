@@ -205,7 +205,76 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 52,
-        "padding_bottom": 80
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_ae7VMk": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_B6etFx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_8_stuff-bag.png",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8zP8bj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_7_feather.png",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TYkhXy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_9_pillow.png",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_B6etFx",
+        "column_8zP8bj",
+        "column_TYkhXy"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "contain_image": true,
+        "text_on_image": false,
+        "button_label": "",
+        "button_link": "",
+        "full_width": false,
+        "no_padding": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "column_link_button_style": false,
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "mobile_carousel_autoplay": false,
+        "mobile_carousel_autoplay_speed": 5,
+        "mobile_custom_image_size": false,
+        "mobile_image_size_percent": 100,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "rich_text_i4wzGJ": {
@@ -214,7 +283,7 @@
         "heading_wmaPPF": {
           "type": "heading",
           "settings": {
-            "heading": "Washing",
+            "heading": "Storage",
             "heading_size": "h2",
             "use_body_font": false
           }
@@ -222,7 +291,7 @@
         "text_UCyApM": {
           "type": "text",
           "settings": {
-            "text": "<p>Between restoration cycles, you can clean your own pillows and duvets to keep them in pristine condition. Pillows will require more frequent washing than duvets, as they deal with products, moisturisers, damp hair and perspiration on a daily basis.<br/><br/>Norvegr products can be washed at up to 60°C and tumble dried. Do not dry-clean. We advise a professional cleaning service, as home machines can often be too small. Use a small amount of wool detergent and a gentle spin cycle. Rinse an extra two times when complete. When drying, avoid using maximum heat if possible. Remove from the tumble dryer just before they are finished, and allow to finish drying on a table, patting and turning from time to time.</p>"
+            "text": "<p>Always store your products in the linen bags they came in. Duvets and pillows should never be vacuum-packed, as this will destroy the down. Never store them in air- or water-tight containers. They are natural products that need to breathe.</p>"
           }
         },
         "button_knLicG": {
@@ -250,7 +319,52 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 52,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_nw9yCa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FLz8rK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Restoration",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_4teCh8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Norvegr products have the potential to last for decades. Our duvets come with a 10 year guarantee. Every down product you purchase is eligible for our restoration service. This means you can return it to our family-run cleaner in Norway; the country’s only specialist down cleaning service. We recommend using our restoration service every 10 years for duvets and every 5 years for pillows.<br/><br/>We begin by extracting the down from the product. We then steam clean it, dry it and sanitise it using harmless UV irradiation. We provide entirely new duvet and pillow shells, refill them with the clean down and top it up. Your duvet and pillows are returned to you as good as new, ready to ensure dreamy nights for years to come.<br/><br/>Restoration of Classic, Premium and Premium Plus duvets and pillows is cost at the retail price at time of restoration, divided by four. For limited edition duvets, cost is the retail price at time of restoration, divided by eight. Price does not include shipping, but we can help you find a modest cost with our preferred couriers.</p>"
+          }
+        },
+        "button_PJRbJE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FLz8rK",
+        "text_4teCh8",
+        "button_PJRbJE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
         "padding_bottom": 80
       }
     },
@@ -268,7 +382,9 @@
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
     "rich_text_Rz7XDA",
+    "multicolumn_ae7VMk",
     "rich_text_i4wzGJ",
+    "rich_text_nw9yCa",
     "main"
   ]
 }
