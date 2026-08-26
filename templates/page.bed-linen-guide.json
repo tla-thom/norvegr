@@ -295,11 +295,132 @@
         "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "",
-        "open_first_collapsible_row": true,
+        "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 76
+      }
+    },
+    "multicolumn_q337Vd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_bzWA6Q": {
+          "type": "column",
+          "settings": {
+            "title": "We use long staple cotton",
+            "heading_size": "hxs",
+            "text": "<p>The longer the cotton fibre, the stronger, softer and more robust the end product. Our long staple cotton yarn is spun by mills with decades of experience.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GK3y4c": {
+          "type": "column",
+          "settings": {
+            "title": "Our yarns are single ply",
+            "heading_size": "hxs",
+            "text": "<p>Long fibre threads don’t need to be twisted with each other to become strong. Such threads or yarns are called single ply.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_erfq94": {
+          "type": "column",
+          "settings": {
+            "title": "We use skilled weavers",
+            "heading_size": "hxs",
+            "text": "<p>Different techniques are used to weave the yarn into fabric. As with any craft, the final quality depends on the manufacturer. Talented weavers create better fabrics.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bzWA6Q",
+        "column_GK3y4c",
+        "column_erfq94"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "contain_image": false,
+        "text_on_image": false,
+        "button_label": "",
+        "button_link": "shopify://collections/bed-linen",
+        "full_width": false,
+        "no_padding": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "column_link_button_style": false,
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_carousel_autoplay": false,
+        "mobile_carousel_autoplay_speed": 5,
+        "mobile_custom_image_size": false,
+        "mobile_image_size_percent": 100,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_fxYB94": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wxFxPe": {
+          "type": "column",
+          "settings": {
+            "title": "Satin weave all the way",
+            "heading_size": "hxs",
+            "text": "<p>We’ve chosen satin weave for our bed linen because of its incredible softness and luxurious appearance. Also, because it’s one thread under and three threads over; a technique that makes linen addictively shiny and sumptuous.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tjKy7H": {
+          "type": "column",
+          "settings": {
+            "title": "Finishing touches",
+            "heading_size": "hxs",
+            "text": "<p>We use a process called ‘singeing’ to eliminate loose fibres and fuzz, enhancing the longevity. We also use a process called mercerising to increase lustre and smoothness, providing a resistance to mildew and lint.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wxFxPe",
+        "column_tjKy7H"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "contain_image": false,
+        "text_on_image": false,
+        "button_label": "Shop bed linens",
+        "button_link": "shopify://collections/bed-linen",
+        "full_width": false,
+        "no_padding": false,
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "column_link_button_style": false,
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "mobile_carousel_autoplay": false,
+        "mobile_carousel_autoplay_speed": 5,
+        "mobile_custom_image_size": false,
+        "mobile_image_size_percent": 100,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     }
   },
@@ -309,6 +430,8 @@
     "multirow_jY6FWM",
     "image_banner_EtWkmL",
     "main",
-    "collapsible_content_cMzMPe"
+    "collapsible_content_cMzMPe",
+    "multicolumn_q337Vd",
+    "multicolumn_fxYB94"
   ]
 }
