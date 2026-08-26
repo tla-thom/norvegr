@@ -1047,6 +1047,14 @@ slideshow-component {
   margin: 10px auto 20px auto;
 }
 
+@media screen and (max-width: 749px) {
+  .norvegr-page-title.h0,
+  .rich-text__heading.norvegr-page-title.h0,
+  .main-page-title.norvegr-page-title.page-title.h0 {
+    font-size: calc(var(--font-heading-scale) * 3.2rem);
+  }
+}
+
 @media screen and (min-width: 750px) {
     .main-page-title.page-title.h0 {
         margin-bottom: 0rem;
