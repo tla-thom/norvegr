@@ -421,6 +421,15 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link:
   right: 1.5rem;
   margin: 0;
   z-index: 3;
+  background-color: rgb(var(--color-foreground));
+  border-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+.linked-banner-modal__content .product-popup-modal__toggle:hover {
+  background-color: rgb(var(--color-foreground));
+  border-color: rgb(var(--color-foreground));
+  color: rgba(var(--color-background), 0.85);
 }
 
 .linked-banner-modal__body {
