@@ -220,6 +220,52 @@
         "show_text_below": true
       }
     },
+    "rich_text_cAVPRH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VRQKHF": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Makes a Good Duvet",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_FP6pTh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It’s all about balance. A really good duvet will ensure you don’t overheat, nor will you feel chilly. Instead you should be kept at the perfect temperature all night long.<br/><br/>Often if you wake up cold and clammy it is probably because you are too warm. An overly warm duvet will cause you to perspire, and often you will wake up feeling cold once the perspiration has cooled and settled on your skin. Waking up cold and dry is the opposite problem; your duvet simply isn’t doing its job in keeping you warm enough.<br/><br/>Down strikes the perfect balance. It has the magical gift of insulating and breathing simultaneously, adapting to your body and the external temperatures to keep you temperately warm and cool at the same time.<br/><br/>This is because down is made up of very fine fibres that spread off from a quill-point. The density of these fibres trap tiny air pockets, insulating against the cold but allowing excess heat and moisture to be transported away from the body. This is in stark contrast to feathers, which are brittle and have no ability to trap air. Often the more feathers in a duvet, the heavier and poorer quality it is. At Norvegr, even our entry-level duvets are just 10% feather.<br/><br/>If you’re used to a more voluminous, heavy duvet, your first experience of Norvegr may be surprising. Our duvets are unbelievably light. But after a night or two of perfect sleep, you’ll be addicted. The cloud-lightness of our down is what helps keep you so magically warm and cool at the same time.<br/><br/></p>"
+          }
+        },
+        "button_4jgrj9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VRQKHF",
+        "text_FP6pTh",
+        "button_4jgrj9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
     "multirow_jY6FWM": {
       "type": "multirow",
       "blocks": {
@@ -342,6 +388,7 @@
     "anchor_nav_MAJEa4",
     "rich_text_H4F3yh",
     "image_banner_DAPy6d",
+    "rich_text_cAVPRH",
     "multirow_jY6FWM",
     "image_banner_nFDiJj",
     "main"
