@@ -266,6 +266,62 @@
         "padding_bottom": 100
       }
     },
+    "image_banner_aXTyCD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_fByQfp": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_rdrrta": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_9pHrqm": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fByQfp",
+        "text_rdrrta",
+        "buttons_9pHrqm"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_17_NORVEGR-SPRING_SUMMER2026-054-scaled_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "multirow_jY6FWM": {
       "type": "multirow",
       "blocks": {
@@ -389,6 +445,7 @@
     "rich_text_H4F3yh",
     "image_banner_DAPy6d",
     "rich_text_cAVPRH",
+    "image_banner_aXTyCD",
     "multirow_jY6FWM",
     "image_banner_nFDiJj",
     "main"
