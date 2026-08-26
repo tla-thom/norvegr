@@ -219,6 +219,75 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "multicolumn_4Q3b8L": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xWfBqd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_6_norwegian-down-duck-400.jpg",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_D8MdJ4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_7_highest-quality-down-350.jpg",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hDFeUd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_8_norwegian-duvet-feathers-254x300-1.jpg",
+            "title": "",
+            "heading_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_xWfBqd",
+        "column_D8MdJ4",
+        "column_hDFeUd"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "contain_image": true,
+        "text_on_image": false,
+        "button_label": "",
+        "button_link": "",
+        "full_width": false,
+        "no_padding": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "column_link_button_style": false,
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "mobile_carousel_autoplay": false,
+        "mobile_carousel_autoplay_speed": 5,
+        "mobile_custom_image_size": false,
+        "mobile_image_size_percent": 100,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -226,6 +295,7 @@
     "rich_text_H4F3yh",
     "rich_text_UJ7TY9",
     "image_banner_yb6CkF",
-    "main"
+    "main",
+    "multicolumn_4Q3b8L"
   ]
 }
