@@ -123,60 +123,6 @@
         "padding_bottom": 32
       }
     },
-    "image_banner_b4Qm3Q": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_Wgk38i": {
-          "type": "heading",
-          "settings": {
-            "heading": "Duvet Buying Guide",
-            "heading_size": "h0",
-            "use_body_font": true
-          }
-        },
-        "text_mLiGyG": {
-          "type": "text",
-          "settings": {
-            "text": "<h5><a href=\"#\" title=\"#\">What constitutes a good duvet?</a></h5><h5><a href=\"#\" title=\"#\">How to Choose a Duvet Collection</a></h5><h5><a href=\"#\" title=\"#\">How to Choose a Duvet Size</a></h5><h5><a href=\"#\" title=\"#\">How to Choose a Duvet Weight</a></h5><h5><a href=\"#\" title=\"#\">Duvet Vs Comforter</a></h5>",
-            "text_style": "body"
-          }
-        },
-        "buttons_kyF664": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_popup_page_1": "",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_popup_page_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Wgk38i",
-        "text_mLiGyG",
-        "buttons_kyF664"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Norvegr-Winter-Campaign-01.jpg",
-        "image_overlay_opacity": 30,
-        "image_height": "large",
-        "mobile_height": "70",
-        "image_behavior": "zoom-in",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
     "linked_banner_nf36Th": {
       "type": "linked-banner",
       "blocks": {
@@ -448,7 +394,6 @@
   },
   "order": [
     "main",
-    "image_banner_b4Qm3Q",
     "linked_banner_nf36Th",
     "multirow_mPjXNM",
     "image_banner_U8xrQz",
