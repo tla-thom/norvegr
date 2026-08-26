@@ -15,7 +15,7 @@
         "heading_NTryEW": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Pillow Guide</em>",
+            "heading": "<em>Care Guide</em>",
             "heading_size": "h0",
             "use_body_font": true
           }
@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
+        "image": "shopify://shop_images/imgi_24_care-scaled-1.jpg",
         "image_overlay_opacity": 10,
         "image_height": "large",
         "mobile_height": "default",
@@ -70,7 +70,7 @@
         "heading_AjjiYC": {
           "type": "heading",
           "settings": {
-            "heading": "When it comes to pillows there’s no single answer.",
+            "heading": "Norvegr are on a mission",
             "heading_size": "h2",
             "use_body_font": false
           }
@@ -78,7 +78,7 @@
         "text_yeApbE": {
           "type": "text",
           "settings": {
-            "text": "<p>It’s about finding what’s right for you, and striking the personal balance between softness and support. Because we’re all different, Norvegr offers three distinctive pillow collections varying from firm to soft. Whether you prefer to like flat or propped up, to sleep on something soft or firm, we offer something for everyone.</p>"
+            "text": "<p>Combining three generations of family tradition with an ancestral culture of Norwegian craft, we provide you with everything you need for the ultimate comfort. We elevate the essentials of sleep into a lifelong luxury; products that will stay with you forever, setting the stage for the most magical moments of rest.</p>"
           }
         },
         "button_3LUM6W": {
@@ -116,11 +116,11 @@
         "row_49JpJW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
+            "image": "shopify://shop_images/imgi_25_luxury-duvet-collections.jpg",
             "bigger_margin": false,
-            "caption": "Down in Pillows",
+            "caption": "DUVETS AND PILLOWS",
             "heading": "",
-            "text": "<p>When compressed, down loses some of its ability to insulate and breathe. However its natural softness and irrepressible bounce still make it a wonderful choice for pillow filling. Feathers are usually added to increase firmness; the more feathers, the firmer the product. Our feathers are never obtrusive. They are meticulously crafted to ensure a soothing, uninterrupted night of sleep.</p>",
+            "text": "<p>Before first use or after extended storage, we recommend airing your duvets and pillows for a few hours. They can be aired inside or outside, but should not be left in direct sunlight. Alternatively, they can be tumble dried on medium heat for 30 minutes to speed up the process, and left to rest afterwards.<br/><br/>When making the bed, air duvets and pillows regularly. Fluff pillows each morning, and leave the duvet folded once lengthwise for an hour or so before making the bed. This allows any trapped moisture to escape.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -128,11 +128,11 @@
         "row_69AtiT": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_pillow-thickness.jpg",
+            "image": "shopify://shop_images/imgi_26_what-is-a-comforter.jpg",
             "bigger_margin": false,
-            "caption": "The Height of Comfort",
+            "caption": "BED LINENS",
             "heading": "",
-            "text": "<p>Your pillow height can also be a personal choice that depends on your sleep style. If you find your head frequently overheats, a low and firm pillow would be an ideal choice to allow you more space to breathe. A high pillow adds an elevated sense of sink-in indulgence, and can also be good for belly sleepers who prefer to use pillows to support their legs and body.</p>",
+            "text": "<p>Bed linens should be machine washed with warm water and on a gentle cycle. Avoid using bleach, as this may weaken the fabric and cause yellowing or decoloration. Avoid fabric softeners as these can also damage the quality of the fabric. Wash dark colours separately.<br/><br/>Linens can tumble dry on a low heat, but should be removed while still damp. This is the best time to iron them, using a cotton setting to restore their inherent lustre and sheen.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -162,6 +162,98 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_Rz7XDA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gJAbcj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Washing",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_BCxifi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Between restoration cycles, you can clean your own pillows and duvets to keep them in pristine condition. Pillows will require more frequent washing than duvets, as they deal with products, moisturisers, damp hair and perspiration on a daily basis.<br/><br/>Norvegr products can be washed at up to 60°C and tumble dried. Do not dry-clean. We advise a professional cleaning service, as home machines can often be too small. Use a small amount of wool detergent and a gentle spin cycle. Rinse an extra two times when complete. When drying, avoid using maximum heat if possible. Remove from the tumble dryer just before they are finished, and allow to finish drying on a table, patting and turning from time to time.</p>"
+          }
+        },
+        "button_3hjHVp": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gJAbcj",
+        "text_BCxifi",
+        "button_3hjHVp"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
+    "rich_text_i4wzGJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wmaPPF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Washing",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_UCyApM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Between restoration cycles, you can clean your own pillows and duvets to keep them in pristine condition. Pillows will require more frequent washing than duvets, as they deal with products, moisturisers, damp hair and perspiration on a daily basis.<br/><br/>Norvegr products can be washed at up to 60°C and tumble dried. Do not dry-clean. We advise a professional cleaning service, as home machines can often be too small. Use a small amount of wool detergent and a gentle spin cycle. Rinse an extra two times when complete. When drying, avoid using maximum heat if possible. Remove from the tumble dryer just before they are finished, and allow to finish drying on a table, patting and turning from time to time.</p>"
+          }
+        },
+        "button_knLicG": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wmaPPF",
+        "text_UCyApM",
+        "button_knLicG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -169,46 +261,14 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "featured_collection_gLixcU": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "collection": "pillows",
-        "products_to_show": 3,
-        "title": "",
-        "heading_size": "h1",
-        "use_body_font": false,
-        "sub_title": "",
-        "content_max_width": "default",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_object_position": "center center",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 64,
-        "padding_bottom": 88
-      }
     }
   },
   "order": [
     "image_banner_E77hzD",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
-    "main",
-    "featured_collection_gLixcU"
+    "rich_text_Rz7XDA",
+    "rich_text_i4wzGJ",
+    "main"
   ]
 }
