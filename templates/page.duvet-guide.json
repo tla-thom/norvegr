@@ -64,6 +64,61 @@
         "show_text_below": true
       }
     },
+    "anchor_nav_MAJEa4": {
+      "type": "anchor-nav",
+      "blocks": {
+        "link_XfefgC": {
+          "type": "link",
+          "settings": {
+            "label": "What Makes a Good Duvet ",
+            "anchor_id": "single"
+          }
+        },
+        "link_jTfEFx": {
+          "type": "link",
+          "settings": {
+            "label": "What’s Inside",
+            "anchor_id": "double"
+          }
+        },
+        "link_WBLRBt": {
+          "type": "link",
+          "settings": {
+            "label": "Choosing Weight",
+            "anchor_id": "king"
+          }
+        },
+        "link_JJ8kHz": {
+          "type": "link",
+          "settings": {
+            "label": "Duvet vs Comforter",
+            "anchor_id": "king"
+          }
+        },
+        "link_473CXt": {
+          "type": "link",
+          "settings": {
+            "label": "Sleep Like a Scandi",
+            "anchor_id": "superking"
+          }
+        }
+      },
+      "block_order": [
+        "link_XfefgC",
+        "link_jTfEFx",
+        "link_WBLRBt",
+        "link_JJ8kHz",
+        "link_473CXt"
+      ],
+      "name": "t:sections.anchor-nav.presets.name",
+      "settings": {
+        "accessibility_label": "Page sections",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "rich_text_H4F3yh": {
       "type": "rich-text",
       "blocks": {
@@ -105,7 +160,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 68,
+        "padding_top": 40,
         "padding_bottom": 100
       }
     },
@@ -284,6 +339,7 @@
   },
   "order": [
     "image_banner_E77hzD",
+    "anchor_nav_MAJEa4",
     "rich_text_H4F3yh",
     "image_banner_DAPy6d",
     "multirow_jY6FWM",
