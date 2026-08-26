@@ -117,7 +117,7 @@
           "type": "heading",
           "settings": {
             "heading": "<em>Warmth</em>",
-            "heading_size": "h2",
+            "heading_size": "h0",
             "use_body_font": true
           }
         },
