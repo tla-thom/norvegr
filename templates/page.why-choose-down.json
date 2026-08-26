@@ -156,70 +156,6 @@
         "padding_bottom": 0
       }
     },
-    "image_banner_yb6CkF": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_pthdar": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "<em>Why Choose Down</em>",
-            "heading_size": "h0",
-            "use_body_font": true
-          }
-        },
-        "text_YUXbgp": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
-            "text_style": "body"
-          }
-        },
-        "buttons_yAVPnt": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_popup_page_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_popup_page_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_pthdar",
-        "text_YUXbgp",
-        "buttons_yAVPnt"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/imgi_19_NORVEGR-SPRING_SUMMER2026-034-scaled.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "mobile_height": "default",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "multicolumn_4Q3b8L": {
       "type": "multicolumn",
       "blocks": {
@@ -285,8 +221,72 @@
         "mobile_carousel_autoplay_speed": 5,
         "mobile_custom_image_size": false,
         "mobile_image_size_percent": 100,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_yb6CkF": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pthdar": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Why Choose Down</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_YUXbgp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_yAVPnt": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pthdar",
+        "text_YUXbgp",
+        "buttons_yAVPnt"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_19_NORVEGR-SPRING_SUMMER2026-034-scaled.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     }
   },
@@ -294,8 +294,8 @@
     "image_banner_XfR4bc",
     "rich_text_H4F3yh",
     "rich_text_UJ7TY9",
+    "multicolumn_4Q3b8L",
     "image_banner_yb6CkF",
-    "main",
-    "multicolumn_4Q3b8L"
+    "main"
   ]
 }
