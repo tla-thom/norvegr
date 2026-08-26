@@ -224,6 +224,83 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_cMzMPe": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_V4CzQQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "We use long staple cotton",
+            "icon": "none",
+            "row_content": "<p>The longer the cotton fibre, the stronger, softer and more robust the end product. Our long staple cotton yarn is spun by mills with decades of experience.</p>",
+            "page": "",
+            "anchor_id": ""
+          }
+        },
+        "collapsible_row_KNwMNA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Our yarns are single ply",
+            "icon": "none",
+            "row_content": "<p>Long fibre threads don’t need to be twisted with each other to become strong. Such threads or yarns are called single ply.</p>",
+            "page": "",
+            "anchor_id": ""
+          }
+        },
+        "collapsible_row_rbqCVe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "We use skilled weavers",
+            "icon": "none",
+            "row_content": "<p>Different techniques are used to weave the yarn into fabric. As with any craft, the final quality depends on the manufacturer. Talented weavers create better fabrics.</p>",
+            "page": "",
+            "anchor_id": ""
+          }
+        },
+        "collapsible_row_3tQWkg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Satin weave all the way",
+            "icon": "none",
+            "row_content": "<p>We’ve chosen satin weave for our bed linen because of its incredible softness and luxurious appearance. Also, because it’s one thread under and three threads over; a technique that makes linen addictively shiny and sumptuous.</p>",
+            "page": "",
+            "anchor_id": ""
+          }
+        },
+        "collapsible_row_3HhUzK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Finishing touches",
+            "icon": "none",
+            "row_content": "<p>We use a process called ‘singeing’ to eliminate loose fibres and fuzz, enhancing the longevity. We also use a process called mercerising to increase lustre and smoothness, providing a resistance to mildew and lint.</p>",
+            "page": "",
+            "anchor_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_V4CzQQ",
+        "collapsible_row_KNwMNA",
+        "collapsible_row_rbqCVe",
+        "collapsible_row_3tQWkg",
+        "collapsible_row_3HhUzK"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -231,6 +308,7 @@
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
     "image_banner_EtWkmL",
-    "main"
+    "main",
+    "collapsible_content_cMzMPe"
   ]
 }
