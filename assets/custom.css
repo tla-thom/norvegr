@@ -1017,10 +1017,18 @@ slideshow-component {
 }
 
 /* Default page section*/
+.main-page-title.main-page-title--default-template {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 750px) {
     .main-page-title.page-title.h0 {
         margin-bottom: 0rem;
         font-size: calc(var(--font-heading-scale) * 3.2rem);
+    }
+
+    .main-page-title.main-page-title--default-template.page-title.h0 {
+        margin-bottom: 20px;
     }
 }
 .main-page-title {
