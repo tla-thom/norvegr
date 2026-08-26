@@ -1,0 +1,604 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_E77hzD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_NTryEW": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_iqdcLJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_wBemcX": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NTryEW",
+        "text_iqdcLJ",
+        "buttons_wBemcX"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_15_duvet-guide-1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "anchor_nav_MAJEa4": {
+      "type": "anchor-nav",
+      "blocks": {
+        "link_XfefgC": {
+          "type": "link",
+          "settings": {
+            "label": "What Makes a Good Duvet ",
+            "anchor_id": "shopify-section-template--31727302934866__rich_text_cAVPRH"
+          }
+        },
+        "link_jTfEFx": {
+          "type": "link",
+          "settings": {
+            "label": "What’s Inside",
+            "anchor_id": "shopify-section-template--31727302934866__rich_text_MiwzjV"
+          }
+        },
+        "link_WBLRBt": {
+          "type": "link",
+          "settings": {
+            "label": "Choosing Weight",
+            "anchor_id": "shopify-section-template--31727302934866__rich_text_eeMcp6"
+          }
+        },
+        "link_JJ8kHz": {
+          "type": "link",
+          "settings": {
+            "label": "Duvet vs Comforter",
+            "anchor_id": "shopify-section-template--31727302934866__multirow_jY6FWM"
+          }
+        },
+        "link_473CXt": {
+          "type": "link",
+          "settings": {
+            "label": "Sleep Like a Scandi",
+            "anchor_id": "shopify-section-template--31727302934866__multirow_jY6FWM"
+          }
+        }
+      },
+      "block_order": [
+        "link_XfefgC",
+        "link_jTfEFx",
+        "link_WBLRBt",
+        "link_JJ8kHz",
+        "link_473CXt"
+      ],
+      "name": "t:sections.anchor-nav.presets.name",
+      "settings": {
+        "accessibility_label": "Page sections",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_H4F3yh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AjjiYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "How do you know which duvet is best?",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_yeApbE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe it’s one that keeps you sleeping soundly; a pure and blissful night of uninterrupted rest. Free from the interruptions caused by your own body. Where you are never too hot, never too cold. Where you avoid feeling clammy or claustrophobic. With a Norvegr duvet, and our insiders guide, these problems will all be a relic of the past.</p>"
+          }
+        },
+        "button_3LUM6W": {
+          "type": "button",
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AjjiYC",
+        "text_yeApbE",
+        "button_3LUM6W"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_DAPy6d": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_enHRRt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_mDQt3p": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_ycJp78": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_enHRRt",
+        "text_mDQt3p",
+        "buttons_ycJp78"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_16_NORVEGR-SPRING_SUMMER2026-042-scaled.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_cAVPRH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VRQKHF": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Makes a Good Duvet",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_FP6pTh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It’s all about balance. A really good duvet will ensure you don’t overheat, nor will you feel chilly. Instead you should be kept at the perfect temperature all night long.<br/><br/>Often if you wake up cold and clammy it is probably because you are too warm. An overly warm duvet will cause you to perspire, and often you will wake up feeling cold once the perspiration has cooled and settled on your skin. Waking up cold and dry is the opposite problem; your duvet simply isn’t doing its job in keeping you warm enough.<br/><br/>Down strikes the perfect balance. It has the magical gift of insulating and breathing simultaneously, adapting to your body and the external temperatures to keep you temperately warm and cool at the same time.<br/><br/>This is because down is made up of very fine fibres that spread off from a quill-point. The density of these fibres trap tiny air pockets, insulating against the cold but allowing excess heat and moisture to be transported away from the body. This is in stark contrast to feathers, which are brittle and have no ability to trap air. Often the more feathers in a duvet, the heavier and poorer quality it is. At Norvegr, even our entry-level duvets are just 10% feather.<br/><br/>If you’re used to a more voluminous, heavy duvet, your first experience of Norvegr may be surprising. Our duvets are unbelievably light. But after a night or two of perfect sleep, you’ll be addicted. The cloud-lightness of our down is what helps keep you so magically warm and cool at the same time.<br/><br/></p>"
+          }
+        },
+        "button_4jgrj9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VRQKHF",
+        "text_FP6pTh",
+        "button_4jgrj9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_aXTyCD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_fByQfp": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_rdrrta": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_9pHrqm": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fByQfp",
+        "text_rdrrta",
+        "buttons_9pHrqm"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_17_NORVEGR-SPRING_SUMMER2026-054-scaled_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_MiwzjV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P9j4jY": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's inside",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_bCN37C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>"
+          }
+        },
+        "button_gTLXca": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_P9j4jY",
+        "text_bCN37C",
+        "button_gTLXca"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_443CMc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Qi9mhG": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_P9Tkqt": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_LkmtMU": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qi9mhG",
+        "text_P9Tkqt",
+        "buttons_LkmtMU"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_18_Low-res-NorvegrA_W-2024-41.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_eeMcp6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RpnTaL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choosing your weight",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_6iqXzH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When selecting your duvet weight, consider the climate of where you live, the temperature of your room, and how warm or cool you prefer to be.<br/><br/>Many Norvegr customers opt for our versatile all-year duvets. However if you live in a place with temperatures that fluctuate, or if you prefer to sleep a little cosier or lighter, we offer summer and winter duvets to meet your needs.<br/><br/>Filled with small amounts of down, spread over many channels, summer duvets are the definition of light and airy. The thermo-regulating properties of down mean you will feel warm on cooler nights, but not weighed down on balmy, sultry evenings.<br/><br/>Versatility is king with our all-year duvets, designed for rooms and environments with relatively uniform year-round temperatures. If you keep your bedroom windows closed at night and the ambient temperature doesn’t fluctuate dramatically, this duvet will suit you perfectly.<br/><br/>Our soft, downy winter duvets will keep you cosy and warm in chilly rooms or when temperatures plummet. The beauty of our high fill power down is that its lightweight, breathable properties guard against overheating.<br/><br/>Icy cold temperatures are no match for our polar duvets, the warmest duvets we make. Think hibernation. It’s the kind of duvet you’d expect to find in a chalet in the Alps, thick snow all around. Just remember to switch to a lighter duvet weight when the big freeze is over.<br/><br/>Many duvet brands opt for TOG systems, or thermal overall guide. We think this can be confusing when talking about the thermo-regulating properties of down, instead opting for fill power grades. However, for reference, you can think that our summer duvet is equivalent to 4 tog, all-year is 8.5 tog, winter is 11 tog and polar is 15 tog.</p>"
+          }
+        },
+        "button_PCzi4V": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RpnTaL",
+        "text_6iqXzH",
+        "button_PCzi4V"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_jY6FWM": {
+      "type": "multirow",
+      "blocks": {
+        "row_49JpJW": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_19_Norvegr-AW2025-Campaign-039.jpg",
+            "bigger_margin": false,
+            "caption": "Duvet vs Comforter",
+            "heading": "",
+            "text": "<p>They might appear to be more or less the same thing, but there are important differences between duvets and comforters. It’s worth understanding the distinction when you’re choosing your bedding. <br/><br/>Put simply, most people in the US use the term comforters, while Europeans refer to duvets. However, many individuals who speak of comforters actually mean duvets without realising. Both are a type of thick, fluffy bedding that covers you at night to keep you warm and comfortable. However duvets will usually have a removable cover, making them easier to clean, maintain and customise. Comforters usually have a built-in cover, or no cover at all. <br/><br/>Comforters also use more stitching, which can be a cover for poor filling materials and distribution. They will also typically provide a flatter, less-fluffy experience which calls for more blankets and top sheets. This can be appealing for those who prefer to be layered up when they sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_69AtiT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_20_NORVEGR-SPRING_SUMMER2026-018-scaled.jpg",
+            "bigger_margin": false,
+            "caption": "Sleep like a scandi",
+            "heading": "",
+            "text": "<p>The world is waking up to the benefits of the Scandinavian sleeping method. Popular in Norway, Sweden and Denmark, co-sleeping couples will often use two duvets on their shared bed, meaning each individual can have a personal sleeping experience.<br/><br/>The benefits of this sleeping style can be game changing. Not only will you have complete autonomy over you sleep, letting you cosy up or shed the covers without bothering your partner, but it also means you can use different duvet types to match your personal body temperature, and importantly, your nocturnal temperature fluctuations.<br/><br/>It eliminates the dreaded issue of blanket hogging, and frequently means a more restful nights’ sleep with minimal disturbances.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_49JpJW",
+        "row_69AtiT"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_nFDiJj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PJwTEW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_4XD77D": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_K6pNWd": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PJwTEW",
+        "text_4XD77D",
+        "buttons_K6pNWd"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_21_Norvegr-Factory-Trondheim_005-scaled.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_E77hzD",
+    "anchor_nav_MAJEa4",
+    "rich_text_H4F3yh",
+    "image_banner_DAPy6d",
+    "rich_text_cAVPRH",
+    "image_banner_aXTyCD",
+    "rich_text_MiwzjV",
+    "image_banner_443CMc",
+    "rich_text_eeMcp6",
+    "multirow_jY6FWM",
+    "image_banner_nFDiJj",
+    "main"
+  ]
+}
