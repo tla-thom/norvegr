@@ -361,6 +361,97 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_x7nXDP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VKNgWq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>The Best of Rest</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_NKkG7P": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Down offers an exceptional range of health benefits, ensuring your good night’s sleep becomes a life well lived.</p>"
+          }
+        },
+        "button_FyyJnk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read the Story",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VKNgWq",
+        "text_NKkG7P",
+        "button_FyyJnk"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_eAEeQ7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dGMrT8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Down Stock</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_R9LxNQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When you buy Norvegr, you are investing in a stock of down. If any filling is removed from your product, you can use it towards another duvet or pillow. After the down is cleaned, you can choose to upgrade an existing item or create something new that will perform wonderfully for years to come.</p>"
+          }
+        },
+        "button_CdKrF7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Read the Story",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dGMrT8",
+        "text_R9LxNQ",
+        "button_CdKrF7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_banner_yb6CkF": {
       "type": "image-banner",
       "blocks": {
@@ -434,6 +525,8 @@
     "rich_text_gDMLFj",
     "rich_text_UzQAd9",
     "rich_text_dYAq68",
+    "rich_text_x7nXDP",
+    "rich_text_eAEeQ7",
     "image_banner_yb6CkF",
     "main"
   ]
