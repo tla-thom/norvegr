@@ -627,6 +627,8 @@ class ModalDialog extends HTMLElement {
   show(opener) {
     this.openedBy = opener;
     const popup = this.querySelector('.template-popup');
+    this.clearCloseTransition();
+    this.classList.remove('modal-closing');
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
     if (popup) popup.loadContent();
@@ -634,12 +636,45 @@ class ModalDialog extends HTMLElement {
     window.pauseAllMedia();
   }
 
+  clearCloseTransition() {
+    if (this._closeTimeout) {
+      clearTimeout(this._closeTimeout);
+      this._closeTimeout = null;
+    }
+    if (this._onCloseTransitionEnd) {
+      this.removeEventListener('transitionend', this._onCloseTransitionEnd);
+      this._onCloseTransitionEnd = null;
+    }
+  }
+
   hide() {
-    document.body.classList.remove('overflow-hidden');
-    document.body.dispatchEvent(new CustomEvent('modalClosed'));
-    this.removeAttribute('open');
+    if (!this.hasAttribute('open') || this.classList.contains('modal-closing')) return;
+
     removeTrapFocus(this.openedBy);
-    window.pauseAllMedia();
+
+    const finishHide = () => {
+      this.clearCloseTransition();
+      this.classList.remove('modal-closing');
+      document.body.classList.remove('overflow-hidden');
+      document.body.dispatchEvent(new CustomEvent('modalClosed'));
+      this.removeAttribute('open');
+      window.pauseAllMedia();
+    };
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      finishHide();
+      return;
+    }
+
+    this.classList.add('modal-closing');
+
+    this._onCloseTransitionEnd = (event) => {
+      if (event.target !== this || event.propertyName !== 'opacity') return;
+      finishHide();
+    };
+
+    this.addEventListener('transitionend', this._onCloseTransitionEnd);
+    this._closeTimeout = setTimeout(finishHide, 250);
   }
 }
 customElements.define('modal-dialog', ModalDialog);

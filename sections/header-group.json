@@ -17,7 +17,12 @@
         "announcement_ppR9Vz": {
           "type": "announcement",
           "settings": {
+            "use_dynamic_free_delivery": true,
             "text": "FREE DELIVERY ON ORDERS OVER $1,000",
+            "threshold_us": 1000,
+            "threshold_uk": 800,
+            "threshold_nor": 10000,
+            "threshold_eur": 900,
             "link": ""
           }
         }

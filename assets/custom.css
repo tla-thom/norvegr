@@ -419,6 +419,20 @@ main[data-template="product"] .linked-banner .banner__text .linked-banner__link:
   pointer-events: none;
 }
 
+/* Modal fade — all modal-dialog instances */
+modal-dialog.product-popup-modal,
+modal-dialog.product-media-modal,
+modal-dialog.quick-add-modal,
+modal-dialog.modal-video {
+  transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
+}
+
+modal-dialog.modal-closing[open] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Linked banner — full-screen modals */
 .linked-banner-modal__content {
   width: 100% !important;

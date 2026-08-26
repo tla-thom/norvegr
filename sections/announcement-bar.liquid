@@ -32,7 +32,17 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ section.blocks.first.shopify_attributes }}
       >
-        {%- if section.blocks.first.settings.text != blank -%}
+        {%- if section.blocks.first.settings.text != blank or section.blocks.first.settings.use_dynamic_free_delivery -%}
+          {%- liquid
+            if section.blocks.first.settings.use_dynamic_free_delivery
+              capture announcement_message
+                render 'announcement-free-delivery-text', block: section.blocks.first
+              endcapture
+              assign announcement_message = announcement_message | strip
+            else
+              assign announcement_message = section.blocks.first.settings.text | escape
+            endif
+          -%}
           {%- if section.blocks.first.settings.link != blank -%}
             <a
               href="{{ section.blocks.first.settings.link }}"
@@ -40,7 +50,7 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+            <span>{{ announcement_message }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {{- 'icon-arrow.svg' | inline_asset_content -}}
             {%- endif -%}
@@ -92,7 +102,17 @@
                   role="region"
                   aria-label="{{ 'sections.header.announcement' | t }}"
                 >
-                  {%- if block.settings.text != blank -%}
+                  {%- if block.settings.text != blank or block.settings.use_dynamic_free_delivery -%}
+                    {%- liquid
+                      if block.settings.use_dynamic_free_delivery
+                        capture announcement_message
+                          render 'announcement-free-delivery-text', block: block
+                        endcapture
+                        assign announcement_message = announcement_message | strip
+                      else
+                        assign announcement_message = block.settings.text | escape
+                      endif
+                    -%}
                     {%- if block.settings.link != blank -%}
                       <a
                         href="{{ block.settings.link }}"
@@ -100,7 +120,7 @@
                       >
                     {%- endif -%}
                     <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }}</span>
+                      <span>{{ announcement_message }}</span>
                       {%- if block.settings.link != blank -%}
                         {{- 'icon-arrow.svg' | inline_asset_content -}}
                       {%- endif -%}
@@ -235,10 +255,45 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "use_dynamic_free_delivery",
+          "label": "Dynamic free delivery message by region",
+          "default": true
+        },
+        {
           "type": "text",
           "id": "text",
           "default": "t:sections.announcement-bar.blocks.announcement.settings.text.default",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label",
+          "info": "Used when dynamic free delivery message is off."
+        },
+        {
+          "type": "header",
+          "content": "Free delivery thresholds"
+        },
+        {
+          "type": "number",
+          "id": "threshold_us",
+          "label": "United States (USD)",
+          "default": 1000
+        },
+        {
+          "type": "number",
+          "id": "threshold_uk",
+          "label": "United Kingdom (GBP)",
+          "default": 800
+        },
+        {
+          "type": "number",
+          "id": "threshold_nor",
+          "label": "Norway (NOK)",
+          "default": 10000
+        },
+        {
+          "type": "number",
+          "id": "threshold_eur",
+          "label": "Europe (EUR)",
+          "default": 900
         },
         {
           "type": "url",
