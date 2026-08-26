@@ -110,121 +110,106 @@
         "padding_bottom": 100
       }
     },
-    "multirow_jY6FWM": {
-      "type": "multirow",
+    "rich_text_UJ7TY9": {
+      "type": "rich-text",
       "blocks": {
-        "row_49JpJW": {
-          "type": "row",
+        "heading_KnXqWp": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/imgi_5_norvegr-10.11-1.jpg",
-            "bigger_margin": false,
-            "caption": "The Stene Legacy",
-            "heading": "",
-            "text": "<p><br/>Norvegr is the result of three generations of Stene family heritage, passing from grandparents to children and grandchildren. Our story began in 1956, repairing down duvets in a traditional way. Since then we’ve followed a deeply felt commitment to the longevity of our products, prioritising reuse and rejuvenation. This enduring passion for excellence has fuelled our growth into one of the world’s finest suppliers of down bedding.</p>",
-            "button_label": "",
-            "button_link": ""
+            "heading": "Warmth",
+            "heading_size": "h0",
+            "use_body_font": true
           }
         },
-        "row_69AtiT": {
-          "type": "row",
+        "text_q7Qdkb": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/imgi_6_Norvegr-Factory-Trondheim_110.jpg",
-            "bigger_margin": false,
-            "caption": "Customer-Obsessed Craftsmanship",
-            "heading": "",
-            "text": "<p><br/>We are customer obsessed, tailoring each item we make to be the best of what you imagined. We have been committed to craftsmanship from the very beginning, drawing on our Norwegian heritage to ensure everything we produce is handmade and individually cared for. It is our heartfelt desire to please; consistently going above and beyond expectation with an endless aspiration to be the best in everything that we do.</p>",
-            "button_label": "",
-            "button_link": ""
+            "text": "<p>When it comes to insulation, nature knows best. Unlike the rigid structure of feathers which offer little insulation, down is found on the undercoat beneath birds’ feathers, mainly on the chest and belly. It consists of light, fluffy filaments that grow from a central quill point. As there’s no quill shaft, the structure is naturally soft. It effectively traps tiny pockets of air between the filaments, creating thousands of insulation pockets that simultaneously allow moisture to escape. This superior insulation is what keeps your body from losing heat in a way that is naturally more effective than feathers or synthetic materials.<br/><br/></p>"
           }
         },
-        "row_CQfm6H": {
-          "type": "row",
+        "button_9YHipR": {
+          "type": "button",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/imgi_7_Norvegr-AW2025-Campaign-033.jpg",
-            "bigger_margin": false,
-            "caption": "As Light as a Cloud",
-            "heading": "",
-            "text": "<p><br/>It only takes one night with Norvegr to realise our duvets are a level above. In customer feedback, our products are consistently praised for their lightness; that sleeping with our duvets feels like you are floating on a cloud. The unique design of our down duvets makes them exceptionally light, inviting tactile, and adaptable for all temperatures and seasons. </p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_N7yHdH": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_8_norvegr-10.14-1.jpg",
-            "bigger_margin": false,
-            "caption": "Longevity & Regeneration",
-            "heading": "",
-            "text": "<p><br/>Every purchase with Norvegr is a lifelong product. From our iconic duvets to pillows and mattress toppers, each item can be replaced and renewed; becoming a long-lasting and intrinsic part of the fabric of your bedroom. Our refurbishment services mean that each product can stay with you for up to half a century. A purchase with us becomes a long-term investment, while helping us creating a circularly sustainable business model.</p>",
-            "button_label": "READ MORE",
-            "button_link": "#"
-          }
-        },
-        "row_Pm9qTR": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_9_Low-res-NorvegrA_W-2024-28.jpg",
-            "bigger_margin": false,
-            "caption": "Channels for Breathability",
-            "heading": "",
-            "text": "<p><br/>We have been perfecting Norvegr’s signature channel construction since 1956. Using channels instead of box-stitching and cross-seams allows air to move freely from head to toe. Combined with the quality of our down, this provides better flow of heat, moisture and increased breathability. Moreover, this construction technique allows us to modify the amount of down in each channel. As part of the Norvegr service, we can adjust down levels to make your duvet warmer or cooler to suit your specifications.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_HGbyfj": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_10_Norvegr-AW2025-Campaign-140.jpg",
-            "bigger_margin": false,
-            "caption": "A Culture of Sleep",
-            "heading": "",
-            "text": "<p><br/>The sanctity of sleep is at the core of our DNA. With each passing day global understanding grows, appreciating that good sleep is the foundation of good wellbeing.We are invested in the science of sleep and dreaming, using the highest fill power commercially available to create items of luxury that offer the best balanced insulation. It’s everything you need to experience rest at its blissful best.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_QwD8qQ": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_11_Norvegr-2H3A8906-copy.jpg",
-            "bigger_margin": false,
-            "caption": "Our Sleep Advocates",
-            "heading": "",
-            "text": "<p><br/>Don’t just take our word for it. Discover why some of the world’s best interior designers choose Norvegr.</p>",
-            "button_label": "Read more",
-            "button_link": "#"
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "row_49JpJW",
-        "row_69AtiT",
-        "row_CQfm6H",
-        "row_N7yHdH",
-        "row_Pm9qTR",
-        "row_HGbyfj",
-        "row_QwD8qQ"
+        "heading_KnXqWp",
+        "text_q7Qdkb",
+        "button_9YHipR"
       ],
-      "name": "t:sections.multirow.presets.name",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image_height": "large",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "fullpage_width": true,
-        "remove_horizontal_padding": true,
-        "no_margin_top": false,
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "image_banner_yb6CkF": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pthdar": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Why Choose Down</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_YUXbgp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_yAVPnt": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pthdar",
+        "text_YUXbgp",
+        "buttons_yAVPnt"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_19_NORVEGR-SPRING_SUMMER2026-034-scaled.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "main": {
@@ -239,7 +224,8 @@
   "order": [
     "image_banner_XfR4bc",
     "rich_text_H4F3yh",
-    "multirow_jY6FWM",
+    "rich_text_UJ7TY9",
+    "image_banner_yb6CkF",
     "main"
   ]
 }
