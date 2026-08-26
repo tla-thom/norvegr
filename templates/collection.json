@@ -20,7 +20,7 @@
         "text_alignment": "center",
         "item_alignment": "center",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "product-grid": {
