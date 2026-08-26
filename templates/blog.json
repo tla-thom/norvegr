@@ -16,8 +16,8 @@
           "type": "heading",
           "settings": {
             "heading": "Journal",
-            "heading_size": "h1",
-            "use_body_font": false
+            "heading_size": "h0",
+            "use_body_font": true
           }
         },
         "text_4FbJBt": {

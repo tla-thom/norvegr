@@ -1029,21 +1029,22 @@ slideshow-component {
     }
 }
 
-/* Default page section*/
-.main-page-title.main-page-title--default-template {
+/* Default page & blog journal title */
+.norvegr-page-title {
   margin-bottom: 0;
   font-style: italic;
   font-weight: 400;
   letter-spacing: normal;
+  text-align: center;
 }
 
-.main-page-title.main-page-title--default-template::after {
+.norvegr-page-title::after {
   content: '';
   display: block;
   width: 100px;
   height: 1px;
   background-color: #ccc;
-  margin: 20px auto 20px;
+  margin: 10px auto 20px auto;
 }
 
 @media screen and (min-width: 750px) {
@@ -1052,9 +1053,11 @@ slideshow-component {
         font-size: calc(var(--font-heading-scale) * 3.2rem);
     }
 
-    .main-page-title.main-page-title--default-template.page-title.h0 {
+    .norvegr-page-title.h0,
+    .rich-text__heading.norvegr-page-title.h0,
+    .main-page-title.norvegr-page-title.page-title.h0 {
         margin-bottom: 0;
-        font-size: calc(var(--font-heading-scale) * 5.2rem);
+        font-size: calc(var(--font-heading-scale) * 4.4rem);
         line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
     }
 }
