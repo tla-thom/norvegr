@@ -9,38 +9,6 @@
  */
 {
   "sections": {
-    "video_PxJqMb": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "<em>Why Choose Norvegr</em>",
-        "heading_size": "h0",
-        "use_body_font": true,
-        "text": "",
-        "button_label": "",
-        "button_link": "#",
-        "button_label_2": "",
-        "button_link_2": "",
-        "button_label_3": "",
-        "button_link_3": "",
-        "button_label_4": "",
-        "button_link_4": "",
-        "button_style_secondary": true,
-        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
-        "enable_video_looping": true,
-        "enable_autoplay": true,
-        "enable_mute": true,
-        "video": "shopify://files/videos/about-nor-trim.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "video_height": "xlarge",
-        "mobile_height": "60",
-        "content_position": "middle-center",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_banner_XfR4bc": {
       "type": "image-banner",
       "blocks": {
@@ -102,7 +70,7 @@
         "heading_AjjiYC": {
           "type": "heading",
           "settings": {
-            "heading": "Norvegr create the world’s best down duvets.",
+            "heading": "From inimitable insulation properties to an almost ethereal softness, nothing beats the finest quality down for comfort and indulgence.",
             "heading_size": "h2",
             "use_body_font": false
           }
@@ -110,7 +78,7 @@
         "text_yeApbE": {
           "type": "text",
           "settings": {
-            "text": "<p>Norvegr are on a mission to elevate your bedroom essentials into a lifelong luxury. We’ve compiled some tips and tricks to help you keep your duvets, pillows and bed linen in pristine condition, and to ensure they’ll stay with you through many years of blissful comfort. </p>"
+            "text": "<p>When it comes to insulation, nature knows best. Unlike the rigid structure of feathers which offer little insulation, down is found on the undercoat beneath birds’ feathers, mainly on the chest and belly. It consists of light, fluffy filaments that grow from a central quill point. As there’s no quill shaft, the structure is naturally soft. It effectively traps tiny pockets of air between the filaments, creating thousands of insulation pockets that simultaneously allow moisture to escape. This superior insulation is what keeps your body from losing heat in a way that is naturally more effective than feathers or synthetic materials.<br/><br/></p>"
           }
         },
         "button_3LUM6W": {
@@ -269,7 +237,6 @@
     }
   },
   "order": [
-    "video_PxJqMb",
     "image_banner_XfR4bc",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
