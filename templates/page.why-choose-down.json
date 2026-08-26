@@ -41,6 +41,61 @@
         "padding_bottom": 0
       }
     },
+    "image_banner_XfR4bc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qbNkiq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Why Choose Down</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_WNyztr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_Lf4xDD": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qbNkiq",
+        "text_WNyztr",
+        "buttons_Lf4xDD"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_18_Norvegr-Factory-Trondheim_040.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "rich_text_H4F3yh": {
       "type": "rich-text",
       "blocks": {
@@ -215,6 +270,7 @@
   },
   "order": [
     "video_PxJqMb",
+    "image_banner_XfR4bc",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
     "main"
