@@ -9,36 +9,59 @@
  */
 {
   "sections": {
-    "video_PxJqMb": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "image_banner_E77hzD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_NTryEW": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_iqdcLJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_wBemcX": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NTryEW",
+        "text_iqdcLJ",
+        "buttons_wBemcX"
+      ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "heading": "<em>Why Choose Norvegr</em>",
-        "heading_size": "h0",
-        "use_body_font": true,
-        "text": "",
-        "button_label": "",
-        "button_link": "#",
-        "button_label_2": "",
-        "button_link_2": "",
-        "button_label_3": "",
-        "button_link_3": "",
-        "button_label_4": "",
-        "button_link_4": "",
-        "button_style_secondary": true,
+        "image": "shopify://shop_images/imgi_15_duvet-guide-1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
-        "enable_video_looping": true,
-        "enable_autoplay": true,
-        "enable_mute": true,
-        "video": "shopify://files/videos/about-nor-trim.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "video_height": "xlarge",
-        "mobile_height": "60",
-        "content_position": "middle-center",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "rich_text_H4F3yh": {
@@ -214,7 +237,7 @@
     }
   },
   "order": [
-    "video_PxJqMb",
+    "image_banner_E77hzD",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
     "main"
