@@ -70,9 +70,9 @@
         "heading_AjjiYC": {
           "type": "heading",
           "settings": {
-            "heading": "From inimitable insulation properties to an almost ethereal softness, nothing beats the finest quality down for comfort and indulgence.",
+            "heading": "<em>From inimitable insulation properties to an almost ethereal softness, nothing beats the finest quality down for comfort and indulgence.</em>",
             "heading_size": "h2",
-            "use_body_font": false
+            "use_body_font": true
           }
         },
         "text_yeApbE": {
