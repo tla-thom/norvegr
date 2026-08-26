@@ -292,7 +292,7 @@
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "",
         "open_first_collapsible_row": true,
