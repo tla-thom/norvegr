@@ -322,6 +322,52 @@
         "show_text_below": true
       }
     },
+    "rich_text_MiwzjV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P9j4jY": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's inside",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_bCN37C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>"
+          }
+        },
+        "button_gTLXca": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_P9j4jY",
+        "text_bCN37C",
+        "button_gTLXca"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "multirow_jY6FWM": {
       "type": "multirow",
       "blocks": {
@@ -446,6 +492,7 @@
     "image_banner_DAPy6d",
     "rich_text_cAVPRH",
     "image_banner_aXTyCD",
+    "rich_text_MiwzjV",
     "multirow_jY6FWM",
     "image_banner_nFDiJj",
     "main"
