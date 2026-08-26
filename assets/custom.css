@@ -85,6 +85,15 @@ p,
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Headings: italic in editor inherits size/line-height from heading class */
+.rich-text__heading :is(em, i),
+.banner__heading :is(em, i),
+.collection-hero__title :is(em, i),
+.video-section__heading :is(em, i) {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 /* Buttons use heading font */
 .button,
 .button-label,
@@ -934,14 +943,15 @@ summary .icon-caret {
   }
 }
 
-/* Rich text: Italic in editor uses Caslon italic */
-.rich-text .rte :is(em, i) {
+/* Rich text body: fixed italic size in text blocks only (not headings) */
+.rich-text .rich-text__text.rte :is(em, i) {
   font-family: var(--font-body-family);
   font-style: italic;
   font-weight: 400;
   font-size: 2rem;
   text-transform: none;
   letter-spacing: normal;
+  line-height: calc((1 + 0.8 / var(--font-body-scale)) * 0.9);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
