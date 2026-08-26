@@ -50,8 +50,8 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
-        "image_overlay_opacity": 10,
+        "image": "shopify://shop_images/imgi_12_linen-1-scaled-1.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "mobile_height": "default",
         "image_behavior": "none",
@@ -70,7 +70,7 @@
         "heading_AjjiYC": {
           "type": "heading",
           "settings": {
-            "heading": "When it comes to pillows there’s no single answer.",
+            "heading": "The world of luxury linens can be misleading",
             "heading_size": "h2",
             "use_body_font": false
           }
@@ -78,7 +78,7 @@
         "text_yeApbE": {
           "type": "text",
           "settings": {
-            "text": "<p>It’s about finding what’s right for you, and striking the personal balance between softness and support. Because we’re all different, Norvegr offers three distinctive pillow collections varying from firm to soft. Whether you prefer to like flat or propped up, to sleep on something soft or firm, we offer something for everyone.</p>"
+            "text": "<p>Customers can frequently get hung up on thread count, when in reality the fibre, weave and finish are the true indicators of how a fabric will feel on your skin.</p>"
           }
         },
         "button_3LUM6W": {
@@ -116,11 +116,11 @@
         "row_49JpJW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
+            "image": "shopify://shop_images/imgi_13_linen-9.jpg",
             "bigger_margin": false,
-            "caption": "Down in Pillows",
+            "caption": "THREAD COUNT FACTS",
             "heading": "",
-            "text": "<p>When compressed, down loses some of its ability to insulate and breathe. However its natural softness and irrepressible bounce still make it a wonderful choice for pillow filling. Feathers are usually added to increase firmness; the more feathers, the firmer the product. Our feathers are never obtrusive. They are meticulously crafted to ensure a soothing, uninterrupted night of sleep.</p>",
+            "text": "<p>A fabric’s thread count signifies the number of horizontal (weft) and vertical (warp) threads per square inch.Bed linen thread counts vary from roughly 100 to more than 1,000. The obsession with thread count has driven numbers ever higher, even though the overall quality of the fabric can be unexceptional. Often threads can be artificially twisted together to produce a very high thread count. Fabric that is overly dense will easily become stiff, proving difficult to wash, and will not breathe well. That’s why we have carefully selected a 300 thread count sateen for our bed linen.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -128,13 +128,13 @@
         "row_69AtiT": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_pillow-thickness.jpg",
+            "image": "shopify://shop_images/imgi_14_Low-res-NorvegrA_W-2024-46.jpg",
             "bigger_margin": false,
-            "caption": "The Height of Comfort",
+            "caption": "Sleep Like a Scandi",
             "heading": "",
-            "text": "<p>Your pillow height can also be a personal choice that depends on your sleep style. If you find your head frequently overheats, a low and firm pillow would be an ideal choice to allow you more space to breathe. A high pillow adds an elevated sense of sink-in indulgence, and can also be good for belly sleepers who prefer to use pillows to support their legs and body.</p>",
-            "button_label": "",
-            "button_link": ""
+            "text": "<p>Gone are the days of fighting for the bed sheets Read our duvet guide and discover how the Scandinavian approach to sleep is perfect for peace.</p>",
+            "button_label": "Duvet Guide",
+            "button_link": "shopify://pages/duvet-guide"
           }
         }
       },
