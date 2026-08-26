@@ -368,6 +368,108 @@
         "padding_bottom": 52
       }
     },
+    "image_banner_443CMc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Qi9mhG": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em>Duvet Guide</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_P9Tkqt": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_LkmtMU": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qi9mhG",
+        "text_P9Tkqt",
+        "buttons_LkmtMU"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_18_Low-res-NorvegrA_W-2024-41.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_eeMcp6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RpnTaL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choosing your weight",
+            "heading_size": "h2",
+            "use_body_font": false
+          }
+        },
+        "text_6iqXzH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When selecting your duvet weight, consider the climate of where you live, the temperature of your room, and how warm or cool you prefer to be.<br/><br/>Many Norvegr customers opt for our versatile all-year duvets. However if you live in a place with temperatures that fluctuate, or if you prefer to sleep a little cosier or lighter, we offer summer and winter duvets to meet your needs.<br/><br/>Filled with small amounts of down, spread over many channels, summer duvets are the definition of light and airy. The thermo-regulating properties of down mean you will feel warm on cooler nights, but not weighed down on balmy, sultry evenings.<br/><br/>Versatility is king with our all-year duvets, designed for rooms and environments with relatively uniform year-round temperatures. If you keep your bedroom windows closed at night and the ambient temperature doesn’t fluctuate dramatically, this duvet will suit you perfectly.<br/><br/>Our soft, downy winter duvets will keep you cosy and warm in chilly rooms or when temperatures plummet. The beauty of our high fill power down is that its lightweight, breathable properties guard against overheating.<br/><br/>Icy cold temperatures are no match for our polar duvets, the warmest duvets we make. Think hibernation. It’s the kind of duvet you’d expect to find in a chalet in the Alps, thick snow all around. Just remember to switch to a lighter duvet weight when the big freeze is over.<br/><br/>Many duvet brands opt for TOG systems, or thermal overall guide. We think this can be confusing when talking about the thermo-regulating properties of down, instead opting for fill power grades. However, for reference, you can think that our summer duvet is equivalent to 4 tog, all-year is 8.5 tog, winter is 11 tog and polar is 15 tog.</p>"
+          }
+        },
+        "button_PCzi4V": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RpnTaL",
+        "text_6iqXzH",
+        "button_PCzi4V"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "multirow_jY6FWM": {
       "type": "multirow",
       "blocks": {
@@ -493,6 +595,8 @@
     "rich_text_cAVPRH",
     "image_banner_aXTyCD",
     "rich_text_MiwzjV",
+    "image_banner_443CMc",
+    "rich_text_eeMcp6",
     "multirow_jY6FWM",
     "image_banner_nFDiJj",
     "main"
