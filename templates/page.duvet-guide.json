@@ -70,7 +70,7 @@
         "heading_AjjiYC": {
           "type": "heading",
           "settings": {
-            "heading": "Norvegr create the world’s best down duvets.",
+            "heading": "How do you know which duvet is best?",
             "heading_size": "h2",
             "use_body_font": false
           }
@@ -78,16 +78,15 @@
         "text_yeApbE": {
           "type": "text",
           "settings": {
-            "text": "<p>Norvegr are on a mission to elevate your bedroom essentials into a lifelong luxury. We’ve compiled some tips and tricks to help you keep your duvets, pillows and bed linen in pristine condition, and to ensure they’ll stay with you through many years of blissful comfort. </p>"
+            "text": "<p>We believe it’s one that keeps you sleeping soundly; a pure and blissful night of uninterrupted rest. Free from the interruptions caused by your own body. Where you are never too hot, never too cold. Where you avoid feeling clammy or claustrophobic. With a Norvegr duvet, and our insiders guide, these problems will all be a relic of the past.</p>"
           }
         },
         "button_3LUM6W": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
