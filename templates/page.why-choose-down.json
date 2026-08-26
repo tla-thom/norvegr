@@ -270,6 +270,97 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_UzQAd9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PHGNde": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Ethically Sourced </em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_yA4Bzk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Animal welfare is crucial to the Norvegr ethos. You can be confident that the down in our products is ethically sourced, with traceability certificates and third-party audits ensuring every animal’s wellbeing. Our down is also 100% natural and biodegradable, giving it one of the lowest carbon footprints of all fill materials.</p>"
+          }
+        },
+        "button_AagQbm": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PHGNde",
+        "text_yA4Bzk",
+        "button_AagQbm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_dYAq68": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PPAmaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>The Differences of Down</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_dQD7hW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether goose or duck, we’ll help you understand the difference in down fillers and find the product that is ideal for you.</p>"
+          }
+        },
+        "button_EUP8tN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore down options",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PPAmaF",
+        "text_dQD7hW",
+        "button_EUP8tN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "smaller",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_banner_yb6CkF": {
       "type": "image-banner",
       "blocks": {
@@ -341,6 +432,8 @@
     "rich_text_UJ7TY9",
     "multicolumn_4Q3b8L",
     "rich_text_gDMLFj",
+    "rich_text_UzQAd9",
+    "rich_text_dYAq68",
     "image_banner_yb6CkF",
     "main"
   ]
