@@ -356,6 +356,10 @@ header {
   margin-bottom: 0;
 }
 
+.product__price-row {
+  gap: 0;
+}
+
 /* Product page — banner text links */
 main[data-template="product"] .linked-banner .banner__text h5 {
   margin: 0;
