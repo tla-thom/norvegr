@@ -36,14 +36,30 @@
     ></iframe>
   {%- endif -%}
 {%- else -%}
-  {{
-    video
-    | video_tag:
-      image_size: '1100x',
-      autoplay: true,
-      loop: section.settings.enable_video_looping,
-      controls: show_video_controls,
-      muted: section.settings.enable_mute,
-      playsinline: true
-  }}
+  {%- if hero_priority -%}
+    {{
+      video
+      | video_tag:
+        image_size: '1100x',
+        autoplay: true,
+        loop: section.settings.enable_video_looping,
+        controls: show_video_controls,
+        muted: section.settings.enable_mute,
+        playsinline: true,
+        loading: 'eager',
+        preload: 'auto',
+        fetchpriority: 'high'
+    }}
+  {%- else -%}
+    {{
+      video
+      | video_tag:
+        image_size: '1100x',
+        autoplay: true,
+        loop: section.settings.enable_video_looping,
+        controls: show_video_controls,
+        muted: section.settings.enable_mute,
+        playsinline: true
+    }}
+  {%- endif -%}
 {%- endif -%}

@@ -35,16 +35,23 @@
   assign desktop_poster = desktop_video.preview_image | default: section.settings.cover_image
   assign mobile_poster = section.settings.video_mobile.preview_image | default: section.settings.cover_image_mobile | default: desktop_poster
   assign poster = desktop_poster
+  assign hero_priority = false
+  assign hero_inline = false
   assign poster_fetchpriority = 'auto'
   assign poster_loading = 'lazy'
   assign poster_max_width = 3840
   assign poster_widths = '375, 750, 1100, 1500, 1780, 2000, 3000, 3840'
 
   if section.index == 1
+    assign hero_priority = true
     assign poster_fetchpriority = 'high'
     assign poster_loading = 'eager'
     assign poster_max_width = 1500
     assign poster_widths = '375, 550, 750, 1100, 1500'
+  endif
+
+  if hero_priority and section.settings.enable_autoplay and desktop_video != blank and section.settings.video_url == blank
+    assign hero_inline = true
   endif
   assign youtube_mute = ''
   assign vimeo_mute = ''
@@ -105,6 +112,9 @@
       {% if section.settings.enable_autoplay %}
         data-autoplay="true"
       {% endif %}
+      {% if hero_inline %}
+        data-hero-inline="true"
+      {% endif %}
       {% if poster != null and section.settings.video_height == 'adapt' %}
         style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
       {% endif %}
@@ -159,17 +169,33 @@
           </span>
         </span>
       </button>
-      {%- if has_responsive_video -%}
-        <template data-responsive-video="desktop">
+      {%- if hero_inline -%}
+        <div class="video-section__hero-video{% if has_responsive_video %} small-hide{% endif %}">
           {%- render 'video-section-deferred-source',
             video: desktop_video,
             video_url: section.settings.video_url,
             section: section,
             show_video_controls: show_video_controls,
             youtube_mute: youtube_mute,
-            vimeo_mute: vimeo_mute
+            vimeo_mute: vimeo_mute,
+            hero_priority: true
           -%}
-        </template>
+        </div>
+      {%- endif -%}
+      {%- if has_responsive_video -%}
+        {%- unless hero_inline -%}
+          <template data-responsive-video="desktop">
+            {%- render 'video-section-deferred-source',
+              video: desktop_video,
+              video_url: section.settings.video_url,
+              section: section,
+              show_video_controls: show_video_controls,
+              youtube_mute: youtube_mute,
+              vimeo_mute: vimeo_mute,
+              hero_priority: hero_priority
+            -%}
+          </template>
+        {%- endunless -%}
         <template data-responsive-video="mobile">
           {%- render 'video-section-deferred-source',
             video: mobile_video,
@@ -177,10 +203,11 @@
             section: section,
             show_video_controls: show_video_controls,
             youtube_mute: youtube_mute,
-            vimeo_mute: vimeo_mute
+            vimeo_mute: vimeo_mute,
+            hero_priority: hero_priority
           -%}
         </template>
-      {%- else -%}
+      {%- elsif hero_inline == false -%}
         <template>
           {%- render 'video-section-deferred-source',
             video: desktop_video,
@@ -188,7 +215,8 @@
             section: section,
             show_video_controls: show_video_controls,
             youtube_mute: youtube_mute,
-            vimeo_mute: vimeo_mute
+            vimeo_mute: vimeo_mute,
+            hero_priority: hero_priority
           -%}
         </template>
       {%- endif -%}

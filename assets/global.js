@@ -734,7 +734,14 @@ class DeferredMedia extends HTMLElement {
     poster.addEventListener('click', this.loadContent.bind(this));
 
     if (this.dataset.autoplay === 'true') {
-      this.loadContent(false);
+      const inlineVideo = this.querySelector('.video-section__hero-video video');
+      const isMobileViewport = window.matchMedia('(max-width: 749px)').matches;
+
+      if (inlineVideo && (!isMobileViewport || this.dataset.responsiveVideo !== 'true')) {
+        inlineVideo.play().catch(() => {});
+      } else {
+        this.loadContent(false);
+      }
     }
   }
 
@@ -763,16 +770,28 @@ class DeferredMedia extends HTMLElement {
       this.setAttribute('loaded', true);
       const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
       if (focus) deferredElement.focus();
-      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
-        // force autoplay for safari
-        deferredElement.play();
+      if (deferredElement.nodeName == 'VIDEO') {
+        if (this.dataset.heroInline === 'true') {
+          deferredElement.setAttribute('fetchpriority', 'high');
+          deferredElement.setAttribute('loading', 'eager');
+          deferredElement.setAttribute('preload', 'auto');
+        }
+
+        if (deferredElement.getAttribute('autoplay')) {
+          // force autoplay for safari
+          deferredElement.play();
+        }
       }
 
       // Workaround for safari iframe bug
       const formerStyle = deferredElement.getAttribute('style');
       deferredElement.setAttribute('style', 'display: block;');
       window.setTimeout(() => {
-        deferredElement.setAttribute('style', formerStyle);
+        if (formerStyle) {
+          deferredElement.setAttribute('style', formerStyle);
+        } else {
+          deferredElement.removeAttribute('style');
+        }
       }, 0);
     }
   }
