@@ -326,7 +326,7 @@ a.product__text {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 20px;
+  gap: 0;
 }
 
 .product__price-row .product__tax {

@@ -357,7 +357,7 @@ header {
 }
 
 .product__price-row {
-  gap: 0;
+  gap: 0 !important;
 }
 
 /* Product page — banner text links */
