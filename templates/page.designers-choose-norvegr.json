@@ -70,13 +70,14 @@
         "heading_AjjiYC": {
           "type": "heading",
           "settings": {
-            "heading": "Norvegr create the world’s best down duvets.",
-            "heading_size": "h2",
+            "heading": "Over the years, acclaimed designers from across the globe have chosen Norvegr’s products to add an extra level of indulgence to private homes, hotels, aircraft, yachts and commercial projects. In turn they become good friends; trusted experts who we enjoy a close working relationship with. Read on and discover just some of the names who we ar proud to call Norvegr advocates.",
+            "heading_size": "hxs",
             "use_body_font": false
           }
         },
         "text_yeApbE": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Norvegr are on a mission to elevate your bedroom essentials into a lifelong luxury. We’ve compiled some tips and tricks to help you keep your duvets, pillows and bed linen in pristine condition, and to ensure they’ll stay with you through many years of blissful comfort. </p>"
           }
