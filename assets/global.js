@@ -734,9 +734,6 @@ class DeferredMedia extends HTMLElement {
     poster.addEventListener('click', this.loadContent.bind(this));
 
     if (this.dataset.autoplay === 'true') {
-      if (this.dataset.desktopOnly === 'true' && window.matchMedia('(max-width: 749px)').matches) {
-        return;
-      }
       this.loadContent(false);
     }
   }
