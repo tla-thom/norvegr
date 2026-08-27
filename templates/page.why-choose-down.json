@@ -294,10 +294,10 @@
           "type": "button",
           "settings": {
             "button_label": "Anti-allergenic",
-            "button_link": "#",
+            "button_link": "shopify://pages/why-choose-down",
             "button_style_secondary": true,
             "button_label_2": "",
-            "button_link_2": "",
+            "button_link_2": "shopify://pages/why-choose-down",
             "button_style_secondary_2": false
           }
         }
@@ -385,10 +385,10 @@
           "type": "button",
           "settings": {
             "button_label": "Explore down options",
-            "button_link": "#",
+            "button_link": "shopify://pages/why-choose-down",
             "button_style_secondary": true,
             "button_label_2": "",
-            "button_link_2": "",
+            "button_link_2": "shopify://pages/why-choose-down",
             "button_style_secondary_2": false
           }
         }
@@ -430,7 +430,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read the Story",
-            "button_link": "#",
+            "button_link": "shopify://pages/about-norvegr",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
