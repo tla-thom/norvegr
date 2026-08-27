@@ -5,6 +5,7 @@ class CartDrawer extends HTMLElement {
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+    this.onTouchMove = this.onTouchMove.bind(this);
   }
 
   setHeaderCartIconAccessibility() {
@@ -47,7 +48,8 @@ class CartDrawer extends HTMLElement {
       { once: true },
     );
 
-    document.body.classList.add('overflow-hidden');
+    document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
+    this.lockScroll();
 
     // cart-drawer-items is a CartItems subclass that extends createViewEventElement.
     // Its `view-event-trigger="manual"` skips auto-dispatch on connect; we fire
@@ -58,7 +60,43 @@ class CartDrawer extends HTMLElement {
   close() {
     this.classList.remove('active');
     removeTrapFocus(this.activeElement);
-    document.body.classList.remove('overflow-hidden');
+    this.unlockScroll();
+  }
+
+  lockScroll() {
+    if (this.scrollLocked) return;
+
+    this.scrollLocked = true;
+    this.scrollPosition = window.scrollY;
+    this.bodyOverflowWasHidden = document.body.classList.contains('overflow-hidden');
+
+    document.body.classList.add('overflow-hidden', 'overflow-hidden-mobile');
+    document.documentElement.classList.add('overflow-hidden');
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${this.scrollPosition}px`;
+    document.body.style.width = '100%';
+    document.addEventListener('touchmove', this.onTouchMove, { passive: false });
+  }
+
+  unlockScroll() {
+    if (!this.scrollLocked) return;
+
+    this.scrollLocked = false;
+    document.removeEventListener('touchmove', this.onTouchMove);
+
+    if (!this.bodyOverflowWasHidden) {
+      document.body.classList.remove('overflow-hidden', 'overflow-hidden-mobile');
+      document.documentElement.classList.remove('overflow-hidden');
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, this.scrollPosition || 0);
+    }
+  }
+
+  onTouchMove(event) {
+    if (event.target.closest('cart-drawer')) return;
+    event.preventDefault();
   }
 
   setSummaryAccessibility(cartDrawerNote) {

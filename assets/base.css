@@ -231,6 +231,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   overflow: hidden;
 }
 
+html.overflow-hidden {
+  overflow: hidden;
+}
+
 .skip-to-content-link:focus {
   z-index: 9999;
   position: inherit;
