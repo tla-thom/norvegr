@@ -2,24 +2,6 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-
-  #shopify-section-{{ section.id }} .video-section__media[data-autoplay='true'] .deferred-media__poster-button {
-    display: none;
-  }
-{%- endstyle -%}
-
 {%- liquid
   assign desktop_video = section.settings.video
   assign mobile_video = section.settings.video
@@ -50,9 +32,37 @@
     assign poster_widths = '375, 550, 750, 1100, 1500'
   endif
 
-  if hero_priority and section.settings.enable_autoplay and desktop_video != blank and section.settings.video_url == blank
+  if hero_priority and section.settings.enable_autoplay and desktop_video != blank
     assign hero_inline = true
   endif
+
+  assign poster_render_width = poster_max_width
+  if poster != null and poster.width < poster_render_width
+    assign poster_render_width = poster.width
+  endif
+  if poster != null
+    assign poster_render_height = poster_render_width | divided_by: poster.aspect_ratio | round
+  endif
+
+  assign video_media_height_mobile = ''
+  assign video_media_height_desktop = ''
+
+  unless section.settings.video_height == 'adapt'
+    case section.settings.video_height
+      when 'small'
+        assign video_media_height_mobile = '28rem'
+        assign video_media_height_desktop = '42rem'
+      when 'medium'
+        assign video_media_height_mobile = '34rem'
+        assign video_media_height_desktop = '56rem'
+      when 'large'
+        assign video_media_height_mobile = '39rem'
+        assign video_media_height_desktop = '72rem'
+      when 'xlarge'
+        assign video_media_height_mobile = '45rem'
+        assign video_media_height_desktop = '93rem'
+    endcase
+  endunless
   assign youtube_mute = ''
   assign vimeo_mute = ''
   assign show_video_controls = true
@@ -95,6 +105,53 @@
   endfor
 -%}
 
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .video-section__media[data-autoplay='true'] .deferred-media__poster-button {
+    display: none;
+  }
+
+  {%- if section.settings.video_height == 'adapt' and poster != null -%}
+    #shopify-section-{{ section.id }} .video-section__media {
+      aspect-ratio: {{ poster.aspect_ratio }};
+    }
+  {%- elsif video_media_height_desktop != blank -%}
+    #shopify-section-{{ section.id }} .video-section__height:not(.video-section__height--adapt) .video-section__media {
+      padding-bottom: 0;
+    }
+
+    @media screen and (max-width: 749px) {
+      #shopify-section-{{ section.id }} .video-section__height:not(.video-section__height--adapt) .video-section__media {
+        {%- if section.settings.mobile_height != 'default' -%}
+          height: {{ section.settings.mobile_height }}lvh;
+          min-height: {{ section.settings.mobile_height }}lvh;
+        {%- else -%}
+          height: {{ video_media_height_mobile }};
+          min-height: {{ video_media_height_mobile }};
+        {%- endif -%}
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .video-section__height:not(.video-section__height--adapt) .video-section__media {
+        height: {{ video_media_height_desktop }};
+        min-height: {{ video_media_height_desktop }};
+      }
+    }
+  {%- endif -%}
+{%- endstyle -%}
+
 <div class="video-section-wrapper color-{{ section.settings.color_scheme }}{% if video_transparent_button %} video-section--transparent-button{% endif %}">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
@@ -104,7 +161,7 @@
       {% endif %}
     >
     <deferred-media
-      class="video-section__media deferred-media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="video-section__media deferred-media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll and section.index != 1 %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ section.id }}"
       {% if has_responsive_video %}
         data-responsive-video="true"
@@ -143,6 +200,8 @@
                 | image_tag:
                   sizes: sizes,
                   widths: poster_widths,
+                  width: poster_render_width,
+                  height: poster_render_height,
                   alt: alt,
                   fetchpriority: poster_fetchpriority,
                   loading: poster_loading
@@ -155,6 +214,8 @@
               | image_tag:
                 sizes: sizes,
                 widths: poster_widths,
+                width: poster_render_width,
+                height: poster_render_height,
                 alt: alt,
                 fetchpriority: poster_fetchpriority,
                 loading: poster_loading
@@ -234,7 +295,7 @@
       endif
     -%}
     {%- if show_video_content -%}
-      <div class="video-section__content banner__content banner__content--{{ section.settings.content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="video-section__content banner__content banner__content--{{ section.settings.content_position }} page-width{% if settings.animations_reveal_on_scroll and section.index != 1 %} scroll-trigger animate--slide-in{% endif %}">
         <div class="video-section__content-inner color-{{ section.settings.color_scheme }}">
           {%- if section.settings.heading != blank -%}
             <h2 class="video-section__heading inline-richtext {{ section.settings.heading_size }}{% if section.settings.use_body_font %} heading--body-font{% endif %}">
