@@ -31,6 +31,7 @@
         "enable_autoplay": true,
         "enable_mute": true,
         "video": "shopify://files/videos/about-nor-trim.mp4",
+        "video_mobile": "shopify://files/videos/about-nor-trim-mob.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "video_height": "xlarge",
