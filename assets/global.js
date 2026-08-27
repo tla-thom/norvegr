@@ -738,11 +738,27 @@ class DeferredMedia extends HTMLElement {
     }
   }
 
+  getContentTemplate() {
+    if (this.dataset.responsiveVideo === 'true') {
+      const source = window.matchMedia('(max-width: 749px)').matches ? 'mobile' : 'desktop';
+      const template =
+        this.querySelector(`template[data-responsive-video="${source}"]`) ||
+        this.querySelector('template[data-responsive-video="desktop"]');
+
+      if (template?.content.firstElementChild) return template;
+    }
+
+    return this.querySelector('template');
+  }
+
   loadContent(focus = true) {
     window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
+      const template = this.getContentTemplate();
+      if (!template) return;
+
       const content = document.createElement('div');
-      content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
+      content.appendChild(template.content.firstElementChild.cloneNode(true));
 
       this.setAttribute('loaded', true);
       const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));

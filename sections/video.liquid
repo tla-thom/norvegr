@@ -17,10 +17,20 @@
 {%- endstyle -%}
 
 {%- liquid
-  assign video_id = section.settings.video.id | default: section.settings.video_url.id
-  assign video_alt = section.settings.video.alt | default: section.settings.description
+  assign desktop_video = section.settings.video
+  assign mobile_video = section.settings.video
+  assign has_responsive_video = false
+
+  if section.settings.video_mobile != blank
+    assign mobile_video = section.settings.video_mobile
+    assign has_responsive_video = true
+  endif
+
+  assign video_alt = desktop_video.alt | default: section.settings.description
   assign alt = 'sections.video.load_video' | t: description: video_alt | escape
-  assign poster = section.settings.video.preview_image | default: section.settings.cover_image
+  assign desktop_poster = desktop_video.preview_image | default: section.settings.cover_image
+  assign mobile_poster = section.settings.video_mobile.preview_image | default: section.settings.cover_image_mobile | default: desktop_poster
+  assign poster = desktop_poster
   assign youtube_mute = ''
   assign vimeo_mute = ''
   assign show_video_controls = true
@@ -34,8 +44,8 @@
     assign vimeo_mute = '&muted=1'
   endif
 
-  if section.settings.video != null
-    assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+  if desktop_video != null
+    assign ratio_diff = desktop_video.aspect_ratio | minus: poster.aspect_ratio | abs
     if ratio_diff < 0.01 and ratio_diff > 0
       assign fix_ratio = true
     endif
@@ -73,7 +83,10 @@
     >
     <deferred-media
       class="video-section__media deferred-media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-      data-media-id="{{ video_id }}"
+      data-media-id="{{ section.id }}"
+      {% if has_responsive_video %}
+        data-responsive-video="true"
+      {% endif %}
       {% if section.settings.enable_autoplay %}
         data-autoplay="true"
       {% endif %}
@@ -82,17 +95,36 @@
       {% endif %}
     >
       <button
-        id="Deferred-Poster-Modal-{{ video_id }}"
+        id="Deferred-Poster-Modal-{{ section.id }}"
         class="video-section__poster media deferred-media__poster media--landscape"
         type="button"
         aria-label="{{ alt }}"
       >
         {%- if poster != null -%}
-          {{
-            poster
-            | image_url: width: 3840
-            | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
-          }}
+          {%- if has_responsive_video -%}
+            <picture>
+              <source
+                media="(max-width: 749px)"
+                srcset="
+                  {%- if mobile_poster.width >= 375 -%}{{ mobile_poster | image_url: width: 375 }} 375w,{%- endif -%}
+                  {%- if mobile_poster.width >= 550 -%}{{ mobile_poster | image_url: width: 550 }} 550w,{%- endif -%}
+                  {%- if mobile_poster.width >= 750 -%}{{ mobile_poster | image_url: width: 750 }} 750w,{%- endif -%}
+                  {{ mobile_poster | image_url: width: 1100 }} 1100w
+                "
+              >
+              {{
+                desktop_poster
+                | image_url: width: 3840
+                | image_tag: sizes: sizes, widths: '750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+              }}
+            </picture>
+          {%- else -%}
+            {{
+              poster
+              | image_url: width: 3840
+              | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+            }}
+          {%- endif -%}
         {%- else -%}
           {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
@@ -102,44 +134,39 @@
           </span>
         </span>
       </button>
-      <template>
-        {%- if section.settings.video == null and section.settings.video_url != null -%}
-          {%- liquid
-            assign loop = ''
-            if section.settings.enable_video_looping
-              assign loop = '&loop=1&playlist=' | append: video_id
-            endif
+      {%- if has_responsive_video -%}
+        <template data-responsive-video="desktop">
+          {%- render 'video-section-deferred-source',
+            video: desktop_video,
+            video_url: section.settings.video_url,
+            section: section,
+            show_video_controls: show_video_controls,
+            youtube_mute: youtube_mute,
+            vimeo_mute: vimeo_mute
           -%}
-          {%- if section.settings.video_url.type == 'youtube' -%}
-            <iframe
-              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ youtube_mute }}{{ loop }}"
-              class="js-youtube"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ section.settings.description | escape }}"
-            ></iframe>
-          {%- else -%}
-            <iframe
-              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ vimeo_mute }}{{ loop }}"
-              class="js-vimeo"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ section.settings.description | escape }}"
-            ></iframe>
-          {%- endif -%}
-        {%- else -%}
-          {{
-            section.settings.video
-            | video_tag:
-              image_size: '1100x',
-              autoplay: true,
-              loop: section.settings.enable_video_looping,
-              controls: show_video_controls,
-              muted: section.settings.enable_mute,
-              playsinline: true
-          }}
-        {%- endif -%}
-      </template>
+        </template>
+        <template data-responsive-video="mobile">
+          {%- render 'video-section-deferred-source',
+            video: mobile_video,
+            video_url: section.settings.video_url,
+            section: section,
+            show_video_controls: show_video_controls,
+            youtube_mute: youtube_mute,
+            vimeo_mute: vimeo_mute
+          -%}
+        </template>
+      {%- else -%}
+        <template>
+          {%- render 'video-section-deferred-source',
+            video: desktop_video,
+            video_url: section.settings.video_url,
+            section: section,
+            show_video_controls: show_video_controls,
+            youtube_mute: youtube_mute,
+            vimeo_mute: vimeo_mute
+          -%}
+        </template>
+      {%- endif -%}
     </deferred-media>
     {%- liquid
       assign show_video_content = false
@@ -372,6 +399,12 @@
       "label": "t:sections.video.settings.video.label"
     },
     {
+      "type": "video",
+      "id": "video_mobile",
+      "label": "Mobile video",
+      "info": "Optional. Used on screens under 750px. If not set, the desktop video above is used on all devices."
+    },
+    {
       "type": "header",
       "content": "t:sections.video.settings.header__2.content"
     },
@@ -391,6 +424,12 @@
       "type": "image_picker",
       "id": "cover_image",
       "label": "t:sections.video.settings.cover_image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image_mobile",
+      "label": "Mobile cover image",
+      "info": "Optional poster for mobile. If not set, the desktop cover image or video preview is used."
     },
     {
       "type": "text",

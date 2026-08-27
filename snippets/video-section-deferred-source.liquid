@@ -1,0 +1,49 @@
+{%- comment -%}
+  Renders the deferred video/iframe content for the video section.
+  Accepts:
+  - video: {Object} Shopify-hosted video
+  - video_url: {Object} External video URL setting
+  - section: {Object} Section settings object
+  - show_video_controls: {Boolean}
+  - youtube_mute: {String}
+  - vimeo_mute: {String}
+{%- endcomment -%}
+{%- liquid
+  assign source_video_id = video.id | default: video_url.id
+-%}
+{%- if video == null and video_url != null -%}
+  {%- liquid
+    assign loop = ''
+    if section.settings.enable_video_looping
+      assign loop = '&loop=1&playlist=' | append: source_video_id
+    endif
+  -%}
+  {%- if video_url.type == 'youtube' -%}
+    <iframe
+      src="https://www.youtube.com/embed/{{ source_video_id }}?enablejsapi=1&autoplay=1{{ youtube_mute }}{{ loop }}"
+      class="js-youtube"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="{{ section.settings.description | escape }}"
+    ></iframe>
+  {%- else -%}
+    <iframe
+      src="https://player.vimeo.com/video/{{ source_video_id }}?autoplay=1{{ vimeo_mute }}{{ loop }}"
+      class="js-vimeo"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="{{ section.settings.description | escape }}"
+    ></iframe>
+  {%- endif -%}
+{%- else -%}
+  {{
+    video
+    | video_tag:
+      image_size: '1100x',
+      autoplay: true,
+      loop: section.settings.enable_video_looping,
+      controls: show_video_controls,
+      muted: section.settings.enable_mute,
+      playsinline: true
+  }}
+{%- endif -%}
