@@ -139,11 +139,16 @@
 
 .video-section__media.global-media-settings--full-width {
   padding-bottom: var(--ratio-percent);
+  border: none;
 }
 
 .video-section__media.deferred-media {
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.video-section__media.deferred-media.global-media-settings--full-width {
+  box-shadow: none;
 }
 
 .video-section__media.deferred-media:after {
