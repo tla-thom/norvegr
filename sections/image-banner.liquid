@@ -67,8 +67,24 @@
     assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
   endif
   assign fetch_priority = 'auto'
+  assign banner_loading = 'lazy'
+  assign banner_max_width = 3840
+  assign banner_image_alt = section.settings.image.alt
+  if banner_image_alt == blank
+    for block in section.blocks
+      if block.type == 'heading' and block.settings.heading != blank
+        assign banner_image_alt = block.settings.heading
+        break
+      endif
+    endfor
+  endif
+  assign banner_image_alt = banner_image_alt | escape
   if section.index == 1
     assign fetch_priority = 'high'
+    assign banner_loading = 'eager'
+  else
+    assign widths = '375, 550, 750, 1100, 1500'
+    assign banner_max_width = 1500
   endif
 -%}
 
@@ -96,14 +112,16 @@
       -%}
       {{
         section.settings.image
-        | image_url: width: 3840
+        | image_url: width: banner_max_width
         | image_tag:
           width: section.settings.image.width,
           height: image_height,
           class: image_class,
           sizes: sizes,
           widths: widths,
-          fetchpriority: fetch_priority
+          fetchpriority: fetch_priority,
+          loading: banner_loading,
+          alt: banner_image_alt
       }}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
@@ -128,14 +146,16 @@
       -%}
       {{
         section.settings.image_2
-        | image_url: width: 3840
+        | image_url: width: banner_max_width
         | image_tag:
           width: section.settings.image_2.width,
           height: image_height_2,
           class: image_class_2,
           sizes: sizes,
           widths: widths,
-          fetchpriority: fetch_priority
+          fetchpriority: fetch_priority,
+          loading: banner_loading,
+          alt: section.settings.image_2.alt | escape
       }}
     </div>
   {%- endif -%}

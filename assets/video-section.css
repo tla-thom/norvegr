@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.video-section__height:not(.video-section__height--adapt) {
+  contain: layout style;
+}
+
 .video-section-wrapper,
 .video-section-wrapper .video-section,
 .video-section-wrapper .video-section__content,

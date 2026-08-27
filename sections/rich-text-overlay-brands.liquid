@@ -1,6 +1,6 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 {{ 'section-rich-text-overlay.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{% render 'deferred-stylesheet', asset: 'component-slider.css' %}
 <script src="{{ 'brand-slider.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
@@ -125,6 +125,9 @@
                                   (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) / {{ brand_columns_mobile }}),
                                   calc((100vw - {{ grid_space_mobile }}) / {{ brand_columns_mobile }})
                                 {% endcapture %}
+                                {%- liquid
+                                  assign brand_image_alt = brand_block.settings.image.alt | default: brand_block.settings.title | default: block.settings.title | escape
+                                -%}
                                 {{
                                   brand_block.settings.image
                                   | image_url: width: 800
@@ -133,6 +136,7 @@
                                     sizes: sizes,
                                     class: 'brand-slider__image',
                                     loading: 'lazy',
+                                    alt: brand_image_alt,
                                     height: brand_block.settings.image.height,
                                     width: brand_block.settings.image.width
                                 }}

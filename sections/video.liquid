@@ -31,6 +31,17 @@
   assign desktop_poster = desktop_video.preview_image | default: section.settings.cover_image
   assign mobile_poster = section.settings.video_mobile.preview_image | default: section.settings.cover_image_mobile | default: desktop_poster
   assign poster = desktop_poster
+  assign poster_fetchpriority = 'auto'
+  assign poster_loading = 'lazy'
+  assign poster_max_width = 3840
+  assign poster_widths = '375, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+
+  if section.index == 1
+    assign poster_fetchpriority = 'high'
+    assign poster_loading = 'eager'
+    assign poster_max_width = 1500
+    assign poster_widths = '375, 550, 750, 1100, 1500'
+  endif
   assign youtube_mute = ''
   assign vimeo_mute = ''
   assign show_video_controls = true
@@ -114,15 +125,25 @@
               >
               {{
                 desktop_poster
-                | image_url: width: 3840
-                | image_tag: sizes: sizes, widths: '750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+                | image_url: width: poster_max_width
+                | image_tag:
+                  sizes: sizes,
+                  widths: poster_widths,
+                  alt: alt,
+                  fetchpriority: poster_fetchpriority,
+                  loading: poster_loading
               }}
             </picture>
           {%- else -%}
             {{
               poster
-              | image_url: width: 3840
-              | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+              | image_url: width: poster_max_width
+              | image_tag:
+                sizes: sizes,
+                widths: poster_widths,
+                alt: alt,
+                fetchpriority: poster_fetchpriority,
+                loading: poster_loading
             }}
           {%- endif -%}
         {%- else -%}

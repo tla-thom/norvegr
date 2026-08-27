@@ -1,0 +1,6 @@
+{%- comment -%}
+  Loads a stylesheet without blocking first render.
+  Usage: {% render 'deferred-stylesheet', asset: 'component-slider.css' %}
+{%- endcomment -%}
+<link rel="stylesheet" href="{{ asset | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ asset | asset_url | stylesheet_tag }}</noscript>
