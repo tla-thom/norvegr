@@ -1,6 +1,6 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 {{ 'section-rich-text-overlay.css' | asset_url | stylesheet_tag }}
-{% render 'deferred-stylesheet', asset: 'component-slider.css' %}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'brand-slider.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}

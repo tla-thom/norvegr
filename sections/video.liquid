@@ -14,6 +14,28 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  #shopify-section-{{ section.id }} .video-section__media--mobile-image {
+    display: block;
+  }
+
+  #shopify-section-{{ section.id }} .video-section__media--desktop {
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .video-section__media[data-autoplay='true'] .deferred-media__poster-button {
+    display: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .video-section__media--mobile-image {
+      display: none;
+    }
+
+    #shopify-section-{{ section.id }} .video-section__media--desktop {
+      display: block;
+    }
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -92,9 +114,40 @@
         style="--banner-mobile-height: {{ section.settings.mobile_height }}lvh;"
       {% endif %}
     >
+    <div
+      class="video-section__media video-section__media--mobile-image global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}"
+      aria-hidden="true"
+    >
+      {%- if mobile_poster != null -%}
+        <picture>
+          <source
+            media="(max-width: 749px)"
+            srcset="
+              {%- if mobile_poster.width >= 375 -%}{{ mobile_poster | image_url: width: 375 }} 375w,{%- endif -%}
+              {%- if mobile_poster.width >= 550 -%}{{ mobile_poster | image_url: width: 550 }} 550w,{%- endif -%}
+              {%- if mobile_poster.width >= 750 -%}{{ mobile_poster | image_url: width: 750 }} 750w,{%- endif -%}
+              {{ mobile_poster | image_url: width: 1100 }} 1100w
+            "
+          >
+          {{
+            mobile_poster
+            | image_url: width: 1100
+            | image_tag:
+              sizes: '100vw',
+              widths: '375, 550, 750, 1100',
+              alt: alt,
+              fetchpriority: poster_fetchpriority,
+              loading: poster_loading
+          }}
+        </picture>
+      {%- else -%}
+        {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+      {%- endif -%}
+    </div>
     <deferred-media
-      class="video-section__media deferred-media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="video-section__media video-section__media--desktop deferred-media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if section.settings.video_height != 'adapt' or fix_ratio or section.settings.mobile_height != 'default' %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ section.id }}"
+      data-desktop-only="true"
       {% if has_responsive_video %}
         data-responsive-video="true"
       {% endif %}
@@ -450,7 +503,7 @@
       "type": "image_picker",
       "id": "cover_image_mobile",
       "label": "Mobile cover image",
-      "info": "Optional poster for mobile. If not set, the desktop cover image or video preview is used."
+      "info": "Hero image on screens under 750px (no video). Falls back to the video preview or desktop cover image."
     },
     {
       "type": "text",

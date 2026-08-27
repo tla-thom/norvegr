@@ -1,10 +1,8 @@
-{% render 'deferred-stylesheet', asset: 'component-card.css' %}
-{% render 'deferred-stylesheet', asset: 'component-price.css' %}
-{% render 'deferred-stylesheet', asset: 'template-collection.css' %}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
 
-{%- if section.settings.enable_desktop_slider or section.settings.swipe_on_mobile -%}
-  {% render 'deferred-stylesheet', asset: 'component-slider.css' %}
-{%- endif -%}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}

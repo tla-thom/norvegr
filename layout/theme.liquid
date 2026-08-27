@@ -339,14 +339,20 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+
+    {%- if template.name == 'index' -%}
+      {{ 'video-section.css' | asset_url | stylesheet_tag }}
+      {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
+
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
     {%- if settings.cart_type == 'drawer' -%}
-      {% render 'deferred-stylesheet', asset: 'component-cart-drawer.css' %}
-      {% render 'deferred-stylesheet', asset: 'component-cart.css' %}
-      {% render 'deferred-stylesheet', asset: 'component-totals.css' %}
-      {% render 'deferred-stylesheet', asset: 'component-price.css' %}
-      {% render 'deferred-stylesheet', asset: 'component-discounts.css' %}
+      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+      {{ 'component-price.css' | asset_url | stylesheet_tag }}
+      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
     {%- if settings.use_custom_fonts -%}
@@ -365,7 +371,7 @@
     {%- endif -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      {% render 'deferred-stylesheet', asset: 'component-localization-form.css' %}
+      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
