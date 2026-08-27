@@ -492,7 +492,7 @@
             "heading_size": "hxs",
             "text": "<p>Without curiosity, where would we be? The desire to seek out new horizons, to find what happens next, is a driving force as old as the hills, and as old as the vikings. Follow the Norvegr Journey to the North and celebrate the spirit of travel with us.</p>",
             "link_label": "Travel With Us",
-            "link": "#"
+            "link": "shopify://pages/hotel-locator"
           }
         },
         "column_kYtzPx": {
@@ -503,7 +503,7 @@
             "heading_size": "hxs",
             "text": "<p>Browse through some of our most recently asked questions, and we’ll help you find the perfect product for your ideal rest.</p>",
             "link_label": "FAQ",
-            "link": "#"
+            "link": "shopify://pages/frequently-asked-questions"
           }
         },
         "column_adFiqA": {
@@ -514,7 +514,7 @@
             "heading_size": "hxs",
             "text": "<p>From luxury hotels to exclusive showrooms, take a look at our map and see where you can experience the Norvegr way.</p>",
             "link_label": "Where to Find Us",
-            "link": "#"
+            "link": "shopify://pages/hotel-locator"
           }
         }
       },
