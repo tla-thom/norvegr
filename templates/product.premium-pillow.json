@@ -65,9 +65,9 @@
         "collapsible_tab_C3iK9C": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Duvet Weight Information",
+            "heading": "Pillow Firmness Information",
             "icon": "none",
-            "content": "<h5>Summer: </h5><p>For hot sleepers and warm bedrooms.</p><h5>All year:</h5><p>For temperature controlled bedrooms with relatively stable temperatures year-round.</p><h5>Winter:</h5><p>For cold sleepers and cold bedrooms.</p><h5>Polar:</h5><p>For ice cold bedrooms and very cold sleepers.</p>",
+            "content": "<p>Each size is available in soft, medium and firm versions.</p>",
             "page": ""
           }
         },
