@@ -355,8 +355,15 @@ header {
 }
 
 .product__accordion .accordion__content {
-  padding: 0 !important;
+  padding: 10px !important;
   margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+
+@media screen and (min-width: 750px) {
+  .product__accordion .accordion__content {
+    padding: 15px !important;
+  }
 }
 
 .product__info-container .product__accordion {
