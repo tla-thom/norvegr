@@ -1,0 +1,403 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "popup_KBfEb6": {
+          "type": "popup",
+          "settings": {
+            "text": "SIZE GUIDE",
+            "page": "sizing-guide-duvets"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "collapsible_tab_nATAN9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_C3iK9C": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Duvet Weight Information",
+            "icon": "none",
+            "content": "<h5>Summer: </h5><p>For hot sleepers and warm bedrooms.</p><h5>All year:</h5><p>For temperature controlled bedrooms with relatively stable temperatures year-round.</p><h5>Winter:</h5><p>For cold sleepers and cold bedrooms.</p><h5>Polar:</h5><p>For ice cold bedrooms and very cold sleepers.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_ah43NT": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "10 Year Restoration",
+            "icon": "none",
+            "content": "<p>We recommend to ship the duvet back to us every ten years for complete <a href=\"https://www.norvegr.com/lifetime-products/\">restoration</a>. The down inside these duvets is very durable and can be restored up to five times without the quality decreasing – thereby lasting at least 60 years if maintained properly.</p><p>The restoration cost is the retail price at time of restoration, divided by four. Shipping back and forth is extra, but thanks to a generous discount with our courier, costs are modest. We will gladly help arrange your product’s return to make the process as effortless as possible for you.</p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "popup_KBfEb6",
+        "buy_buttons",
+        "collapsible_tab_nATAN9",
+        "collapsible_tab_C3iK9C",
+        "collapsible_tab_ah43NT",
+        "share",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "image_ratio": "square",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
+    "linked_banner_nf36Th": {
+      "type": "linked-banner",
+      "blocks": {
+        "item_weMdaN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_27_1NORVEGR-SPRING_SUMMER2026-040-2048x1366.jpg",
+            "heading": "What constitutes a good duvet?",
+            "text": "<p>It’s all about balance. A really good duvet will ensure you don’t overheat, nor will you feel chilly. Instead you should be kept at the perfect temperature all night long.<br/><br/>Often if you wake up cold and clammy it is probably because you are too warm. An overly warm duvet will cause you to perspire, and often you will wake up feeling cold once the perspiration has cooled and settled on your skin. Waking up cold and dry is the opposite problem; your duvet simply isn’t doing its job in keeping you warm enough.<br/><br/>Down strikes the perfect balance. It has the magical gift of insulating and breathing simultaneously, adapting to your body and the external temperatures to keep you temperately warm and cool at the same time.<br/><br/>This is because down is made up of very fine fibres that spread off from a quill-point. The density of these fibres trap tiny air pockets, insulating against the cold but allowing excess heat and moisture to be transported away from the body. This is in stark contrast to feathers, which are brittle and have no ability to trap air. Often the more feathers in a duvet, the heavier and poorer quality it is. At Norvegr, even our entry-level duvets are just 10% feather.<br/><br/>If you’re used to a more voluminous, heavy duvet, your first experience of Norvegr may be surprising. Our duvets are unbelievably light. But after a night or two of perfect sleep, you’ll be addicted. The cloud-lightness of our down is what helps keep you so magically warm and cool at the same time.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_KwRw3C": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_103_Norvegr-Factory-Trondheim_03.jpg",
+            "heading": "How to Choose a Duvet Collection",
+            "text": "<p>When selecting your duvet weight, consider the climate of where you live, the temperature of your room, and how warm or cool you prefer to be.<br/><br/>Many Norvegr customers opt for our versatile all-year duvets. However if you live in a place with temperatures that fluctuate, or if you prefer to sleep a little cosier or lighter, we offer summer and winter duvets to meet your needs.<br/><br/>Filled with small amounts of down, spread over many channels, summer duvets are the definition of light and airy. The thermo-regulating properties of down mean you will feel warm on cooler nights, but not weighed down on balmy, sultry evenings.<br/><br/>Versatility is king with our all-year duvets, designed for rooms and environments with relatively uniform year-round temperatures. If you keep your bedroom windows closed at night and the ambient temperature doesn’t fluctuate dramatically, this duvet will suit you perfectly.<br/><br/>Our soft, downy winter duvets will keep you cosy and warm in chilly rooms or when temperatures plummet. The beauty of our high fill power down is that its lightweight, breathable properties guard against overheating.<br/><br/>Icy cold temperatures are no match for our polar duvets, the warmest duvets we make. Think hibernation. It’s the kind of duvet you’d expect to find in a chalet in the Alps, thick snow all around. Just remember to switch to a lighter duvet weight when the big freeze is over.<br/><br/>Many duvet brands opt for TOG systems, or thermal overall guide. We think this can be confusing when talking about the thermo-regulating properties of down, instead opting for fill power grades. However, for reference, you can think that our summer duvet is equivalent to 4 tog, all-year is 8.5 tog, winter is 11 tog and polar is 15 tog.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_yf6cgG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_96_Norv-Ost-Couple-2023-05-2048x1365_34744b49-461b-4d28-8e93-0d08646d5c7d.jpg",
+            "heading": "How to Choose a Duvet Size",
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_AKPcry": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_61_NorvegrBlogPost8-1-2048x2048.jpg",
+            "heading": "How to Choose a Duvet Weight",
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_6PCCKd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_96_polar-days-norvegr-2048x1395.jpg",
+            "heading": "Duvet Vs Comforter",
+            "text": "<p>They might appear to be more or less the same thing, but there are important differences between duvets and comforters. It’s worth understanding the distinction when you’re choosing your bedding.<br/><br/>Put simply, most people in the US use the term comforters, while Europeans refer to duvets. However, many individuals who speak of comforters actually mean duvets without realising. Both are a type of thick, fluffy bedding that covers you at night to keep you warm and comfortable. However duvets will usually have a removable cover, making them easier to clean, maintain and customise. Comforters usually have a built-in cover, or no cover at all.<br/><br/>Comforters also use more stitching, which can be a cover for poor filling materials and distribution. They will also typically provide a flatter, less-fluffy experience which calls for more blankets and top sheets. This can be appealing for those who prefer to be layered up when they sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_weMdaN",
+        "item_KwRw3C",
+        "item_yf6cgG",
+        "item_AKPcry",
+        "item_6PCCKd"
+      ],
+      "name": "t:sections.linked-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_41_Norvegr-Winter-Campaign-01.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "xlarge",
+        "mobile_height": "80",
+        "image_behavior": "zoom-in",
+        "title": "Duvet Buying guide",
+        "heading_size": "h0",
+        "use_body_font": true,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "multirow_mPjXNM": {
+      "type": "multirow",
+      "blocks": {
+        "row_Hcm9Cn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_61_NorvegrBlogPost8-1-2048x2048.jpg",
+            "bigger_margin": false,
+            "caption": "What kind of down is used?",
+            "heading": "",
+            "text": "<p>Filled with among the best commercially available types of goose down there are, our Premium Collection duvets are our second best goose down duvets.<br/><br/>This luxury down is 100% European White Goose down - completely feather free. On the fill power scale, these duvets are 850, which is the highest one can acquire among commercially available down qualities.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_9BQpr3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled.jpg",
+            "bigger_margin": false,
+            "caption": "More about European goose down",
+            "heading": "",
+            "text": "<p>This European White Goose down is heavenly soft, and so are these duvets. Each down cluster is among the largest obtainable for commercially available goose down qualities. They trap air like few other goose down quality out there.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_JKcKEi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_101_polar-days-norvegr-2048x1395.jpg",
+            "bigger_margin": false,
+            "caption": "What this means for you?",
+            "heading": "",
+            "text": "<p>These unique insulating abilities provide an impressive protection against both cold and warm temperatures. They will keep you at a perfect temperature throughout the night, no matter what climate you are sleeping in.<br/><br/>Our Premium Collection duvets are incredibly lightweight duvets, due to the extreme quality of this particular type of goose down.<br/><br/>An 850 fill power allows us to fill less down in these than we do for our Classic Collection goose down duvets, while getting the same volume of filling. This ultra lightweight quality allows for duvets that work very well in warmer climates as well as cooler ones.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_GLFUGQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "bigger_margin": false,
+            "caption": "Key Features",
+            "heading": "",
+            "text": "<p>Filled in a channel constructed duvet casing made from the finest batiste, 100 % Egyptian cotton: The seams are hidden inside the casing on three sides, and there is no stitching.<br/><br/>Instead, we use baffle walls between the channels, to make sure that the down reaches everywhere inside the casing. This way, the duvet is equally as thick all the way through the channels, and you will not have any cold spots against your body.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Hcm9Cn",
+        "row_9BQpr3",
+        "row_JKcKEi",
+        "row_GLFUGQ"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_U8xrQz": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_nk8QJQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Size guide",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_taAPLm": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>See the measurements for all our sizes.</h3>",
+            "text_style": "body"
+          }
+        },
+        "buttons_kHktnf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "See guides",
+            "button_link_1": "shopify://pages/sizing-guide-duvets",
+            "button_popup_page_1": "sizing-guide-duvets",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nk8QJQ",
+        "text_taAPLm",
+        "buttons_kHktnf"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/imgi_83_missing-piece-2048x1366_7518291d-a7ca-4edf-99a8-8c7fe4a20172.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "large",
+        "mobile_height": "70",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "collection_list_9ctf3C": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_qyDeEr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pillows"
+          }
+        },
+        "featured_collection_NPMKFx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bed-linen"
+          }
+        },
+        "featured_collection_PM6zDk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travel-sets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_qyDeEr",
+        "featured_collection_NPMKFx",
+        "featured_collection_PM6zDk"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "You may also like",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "linked_banner_nf36Th",
+    "multirow_mPjXNM",
+    "image_banner_U8xrQz",
+    "collection_list_9ctf3C",
+    "related-products"
+  ]
+}
