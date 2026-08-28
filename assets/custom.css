@@ -1211,6 +1211,14 @@ table.tablesorter td a:hover {
   color: #6d7882;
 }
 
+@media screen and (max-width: 749px) {
+  table.tablesorter thead tr th,
+  table.tablesorter tbody tr td {
+    font-size: 1.2rem;
+    padding: 0.5em;
+  }
+}
+
 /* Override Vertical lift hover: scale 5% instead of translateY */
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
   .animate--hover-vertical-lift .card-wrapper .card--card,
