@@ -67,7 +67,7 @@
           "settings": {
             "heading": "Duvet Weight Information",
             "icon": "none",
-            "content": "<p><strong>Summer: </strong>For hot sleepers and warm bedrooms.</p><p><strong>All year:</strong> For temperature controlled bedrooms with relatively stable temperatures year-round.</p><p><strong>Winter: </strong>for cold sleepers and cold bedrooms.</p><p><strong>Polar: </strong>for ice cold bedrooms and very cold sleepers.</p>",
+            "content": "<p><strong>Summer: <br/></strong>For hot sleepers and warm bedrooms.</p><p><strong>All year:</strong><br/>For temperature controlled bedrooms with relatively stable temperatures year-round.</p><p><strong>Winter:<br/></strong>for cold sleepers and cold bedrooms.</p><p><strong>Polar:<br/></strong>for ice cold bedrooms and very cold sleepers.</p>",
             "page": ""
           }
         },
