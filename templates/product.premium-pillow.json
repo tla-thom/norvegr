@@ -129,9 +129,9 @@
         "item_weMdaN": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/imgi_27_1NORVEGR-SPRING_SUMMER2026-040-2048x1366.jpg",
-            "heading": "What constitutes a good duvet?",
-            "text": "<p>It’s all about balance. A really good duvet will ensure you don’t overheat, nor will you feel chilly. Instead you should be kept at the perfect temperature all night long.<br/><br/>Often if you wake up cold and clammy it is probably because you are too warm. An overly warm duvet will cause you to perspire, and often you will wake up feeling cold once the perspiration has cooled and settled on your skin. Waking up cold and dry is the opposite problem; your duvet simply isn’t doing its job in keeping you warm enough.<br/><br/>Down strikes the perfect balance. It has the magical gift of insulating and breathing simultaneously, adapting to your body and the external temperatures to keep you temperately warm and cool at the same time.<br/><br/>This is because down is made up of very fine fibres that spread off from a quill-point. The density of these fibres trap tiny air pockets, insulating against the cold but allowing excess heat and moisture to be transported away from the body. This is in stark contrast to feathers, which are brittle and have no ability to trap air. Often the more feathers in a duvet, the heavier and poorer quality it is. At Norvegr, even our entry-level duvets are just 10% feather.<br/><br/>If you’re used to a more voluminous, heavy duvet, your first experience of Norvegr may be surprising. Our duvets are unbelievably light. But after a night or two of perfect sleep, you’ll be addicted. The cloud-lightness of our down is what helps keep you so magically warm and cool at the same time.</p>",
+            "image": "shopify://shop_images/imgi_33_Pillow_Down_005-Premium.jpg",
+            "heading": "What constitutes a good pillow?",
+            "text": "<p>It’s about finding what’s right for you, and striking the personal balance between softness and support. Because we’re all different, Norvegr offers three distinctive pillow collections varying from firm to soft. Whether you prefer to like flat or propped up, to sleep on something soft or firm, we offer something for everyone.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -186,12 +186,12 @@
       ],
       "name": "t:sections.linked-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_41_Norvegr-Winter-Campaign-01.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
+        "image_overlay_opacity": 20,
         "image_height": "xlarge",
         "mobile_height": "80",
         "image_behavior": "zoom-in",
-        "title": "Duvet Buying guide",
+        "title": "Pillow Buying guide",
         "heading_size": "h0",
         "use_body_font": true,
         "desktop_content_position": "middle-center",
