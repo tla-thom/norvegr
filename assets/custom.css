@@ -1217,6 +1217,12 @@ table.tablesorter td a:hover {
     font-size: 1.2rem;
     padding: 0.5em;
   }
+
+  table.tablesorter tbody tr td :is(em, i) {
+    font-family: var(--font-body-family);
+    font-style: italic;
+    font-size: 1.4rem;
+  }
 }
 
 /* Override Vertical lift hover: scale 5% instead of translateY */
