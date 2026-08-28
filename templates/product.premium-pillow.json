@@ -43,7 +43,7 @@
           "type": "popup",
           "settings": {
             "text": "SIZE GUIDE",
-            "page": "sizing-guide-duvets"
+            "page": "sizing-guide-pillows"
           }
         },
         "buy_buttons": {
@@ -291,8 +291,8 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "See guides",
-            "button_link_1": "shopify://pages/sizing-guide-duvets",
-            "button_popup_page_1": "sizing-guide-duvets",
+            "button_link_1": "shopify://pages/sizing-guide-pillows",
+            "button_popup_page_1": "sizing-guide-pillows",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",

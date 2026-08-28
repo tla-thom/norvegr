@@ -1,0 +1,82 @@
+{%- liquid
+  assign current_iso = localization.country.iso_code
+  assign current_region = 'EUR'
+  if current_iso == 'GB'
+    assign current_region = 'UK'
+  elsif current_iso == 'US'
+    assign current_region = 'US'
+  elsif current_iso == 'NO'
+    assign current_region = 'NOR'
+  endif
+
+  if guide_id == blank
+    assign guide_id = 'default'
+  endif
+
+  assign size_guide_regions = 'US|United States,UK|United Kingdom,NOR|Norway,EUR|Europe' | split: ','
+  assign size_guide_panels = 'us,uk,nor,eur' | split: ','
+-%}
+
+<div class="size-guide">
+  <fieldset class="product-form__input product-form__input--pill">
+    <legend class="visually-hidden">Size guide region</legend>
+    {%- for region_config in size_guide_regions -%}
+      {%- assign region_parts = region_config | split: '|' -%}
+      {%- assign region_code = region_parts[0] -%}
+      {%- assign region_label = region_parts[1] -%}
+      <input
+        type="radio"
+        name="size-guide-region-{{ guide_id }}"
+        id="SizeGuide-{{ guide_id }}-{{ region_code }}"
+        value="{{ region_code }}"
+        {% if current_region == region_code %}
+          checked
+        {% endif %}
+      >
+      <label for="SizeGuide-{{ guide_id }}-{{ region_code }}">{{ region_label }}</label>
+    {%- endfor -%}
+  </fieldset>
+
+  {%- for panel in size_guide_panels -%}
+    <div class="size-guide__panel size-guide__panel--{{ panel }}">
+      <table class="tablesorter center">
+        <thead>
+          <tr>
+            <th scope="col"><span class="visually-hidden">Size</span></th>
+            <th scope="col">Pillows<br>(W x L, cm)</th>
+            <th scope="col">Pillows<br>(W x L, Inches)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- case panel -%}
+            {%- when 'us' -%}
+              <tr><td><em>US Boudoir</em></td><td>31 x 41</td><td>12 x 16</td></tr>
+              <tr><td><em>US Boudoir XL</em></td><td>45 x 50</td><td>18 x 20</td></tr>
+              <tr><td><em>US Standard</em></td><td>50 x 70</td><td>20 x 28</td></tr>
+              <tr><td><em>US Queen</em></td><td>50 x 76</td><td>20 x 30</td></tr>
+              <tr><td><em>US King</em></td><td>50 x 90</td><td>20 x 36</td></tr>
+              <tr><td><em>Euro/Square</em></td><td>65 x 65</td><td>26 x 26</td></tr>
+            {%- when 'uk' -%}
+              <tr><td><em>UK Boudoir</em></td><td>31 x 41</td><td>12 x 16</td></tr>
+              <tr><td><em>UK Boudoir XL</em></td><td>45 x 50</td><td>18 x 20</td></tr>
+              <tr><td><em>UK Standard</em></td><td>50 x 70</td><td>20 x 28</td></tr>
+              <tr><td><em>UK King</em></td><td>50 x 90</td><td>20 x 36</td></tr>
+              <tr><td><em>Euro/Square</em></td><td>65 x 65</td><td>26 x 26</td></tr>
+            {%- when 'nor' -%}
+              <tr><td><em>Norwegian Boudoir</em></td><td>31 x 41</td><td>12 x 16</td></tr>
+              <tr><td><em>Norwegian Boudoir XL</em></td><td>45 x 50</td><td>18 x 20</td></tr>
+              <tr><td><em>Norwegian Standard</em></td><td>50 x 70</td><td>20 x 28</td></tr>
+              <tr><td><em>Norwegian King</em></td><td>50 x 90</td><td>20 x 36</td></tr>
+              <tr><td><em>Euro/Square</em></td><td>65 x 65</td><td>26 x 26</td></tr>
+            {%- when 'eur' -%}
+              <tr><td><em>European Boudoir</em></td><td>31 x 41</td><td>12 x 16</td></tr>
+              <tr><td><em>European Boudoir XL</em></td><td>45 x 50</td><td>18 x 20</td></tr>
+              <tr><td><em>European Standard</em></td><td>50 x 70</td><td>20 x 28</td></tr>
+              <tr><td><em>European King</em></td><td>50 x 90</td><td>20 x 36</td></tr>
+              <tr><td><em>Euro/Square</em></td><td>65 x 65</td><td>26 x 26</td></tr>
+          {%- endcase -%}
+        </tbody>
+      </table>
+    </div>
+  {%- endfor -%}
+</div>

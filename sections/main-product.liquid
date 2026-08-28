@@ -742,6 +742,8 @@
               <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
               {%- if template.suffix == 'premium-duvet' and block.settings.page.handle == 'sizing-guide-duvets' -%}
                 {% render 'duvet-size-guide', guide_id: block.id %}
+              {%- elsif template.suffix == 'premium-pillow' and block.settings.page.handle == 'sizing-guide-pillows' -%}
+                {% render 'pillow-size-guide', guide_id: block.id %}
               {%- else -%}
                 {{ block.settings.page.content }}
               {%- endif -%}
