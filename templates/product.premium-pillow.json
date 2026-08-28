@@ -139,15 +139,16 @@
         "item_KwRw3C": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/imgi_103_Norvegr-Factory-Trondheim_03.jpg",
-            "heading": "How to Choose a Duvet Collection",
-            "text": "<p>When selecting your duvet weight, consider the climate of where you live, the temperature of your room, and how warm or cool you prefer to be.<br/><br/>Many Norvegr customers opt for our versatile all-year duvets. However if you live in a place with temperatures that fluctuate, or if you prefer to sleep a little cosier or lighter, we offer summer and winter duvets to meet your needs.<br/><br/>Filled with small amounts of down, spread over many channels, summer duvets are the definition of light and airy. The thermo-regulating properties of down mean you will feel warm on cooler nights, but not weighed down on balmy, sultry evenings.<br/><br/>Versatility is king with our all-year duvets, designed for rooms and environments with relatively uniform year-round temperatures. If you keep your bedroom windows closed at night and the ambient temperature doesn’t fluctuate dramatically, this duvet will suit you perfectly.<br/><br/>Our soft, downy winter duvets will keep you cosy and warm in chilly rooms or when temperatures plummet. The beauty of our high fill power down is that its lightweight, breathable properties guard against overheating.<br/><br/>Icy cold temperatures are no match for our polar duvets, the warmest duvets we make. Think hibernation. It’s the kind of duvet you’d expect to find in a chalet in the Alps, thick snow all around. Just remember to switch to a lighter duvet weight when the big freeze is over.<br/><br/>Many duvet brands opt for TOG systems, or thermal overall guide. We think this can be confusing when talking about the thermo-regulating properties of down, instead opting for fill power grades. However, for reference, you can think that our summer duvet is equivalent to 4 tog, all-year is 8.5 tog, winter is 11 tog and polar is 15 tog.</p>",
+            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
+            "heading": "How to Choose a Pillow",
+            "text": "<p>It’s about finding what’s right for you, and striking the personal balance between softness and support. Because we’re all different, Norvegr offers three distinctive pillow collections varying from firm to soft. Whether you prefer to like flat or propped up, to sleep on something soft or firm, we offer something for everyone.</p>",
             "button_label": "",
             "button_link": ""
           }
         },
         "item_yf6cgG": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/imgi_96_Norv-Ost-Couple-2023-05-2048x1365_34744b49-461b-4d28-8e93-0d08646d5c7d.jpg",
             "heading": "How to Choose a Duvet Size",
@@ -158,6 +159,7 @@
         },
         "item_AKPcry": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/imgi_61_NorvegrBlogPost8-1-2048x2048.jpg",
             "heading": "How to Choose a Duvet Weight",
@@ -168,6 +170,7 @@
         },
         "item_6PCCKd": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/imgi_96_polar-days-norvegr-2048x1395.jpg",
             "heading": "Duvet Vs Comforter",
