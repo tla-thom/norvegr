@@ -210,11 +210,23 @@
         "row_Hcm9Cn": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_61_NorvegrBlogPost8-1-2048x2048.jpg",
+            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
             "bigger_margin": false,
-            "caption": "What kind of down is used?",
+            "caption": "Down in Pillows",
             "heading": "",
-            "text": "<p>Filled with among the best commercially available types of goose down there are, our Premium Collection duvets are our second best goose down duvets.<br/><br/>This luxury down is 100% European White Goose down - completely feather free. On the fill power scale, these duvets are 850, which is the highest one can acquire among commercially available down qualities.</p>",
+            "text": "<p>When compressed, down loses some of its ability to insulate and breathe. However its natural softness and irrepressible bounce still make it a wonderful choice for pillow filling. Feathers are usually added to increase firmness; the more feathers, the firmer the product. Our feathers are never obtrusive. They are meticulously crafted to ensure a soothing, uninterrupted night of sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kTJgDd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_pillow-thickness.jpg",
+            "bigger_margin": false,
+            "caption": "The Height of Comfort",
+            "heading": "",
+            "text": "<p>Your pillow height can also be a personal choice that depends on your sleep style. If you find your head frequently overheats, a low and firm pillow would be an ideal choice to allow you more space to breathe. A high pillow adds an elevated sense of sink-in indulgence, and can also be good for belly sleepers who prefer to use pillows to support their legs and body.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -230,37 +242,12 @@
             "button_label": "",
             "button_link": ""
           }
-        },
-        "row_JKcKEi": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_101_polar-days-norvegr-2048x1395.jpg",
-            "bigger_margin": false,
-            "caption": "What this means for you?",
-            "heading": "",
-            "text": "<p>These unique insulating abilities provide an impressive protection against both cold and warm temperatures. They will keep you at a perfect temperature throughout the night, no matter what climate you are sleeping in.<br/><br/>Our Premium Collection duvets are incredibly lightweight duvets, due to the extreme quality of this particular type of goose down.<br/><br/>An 850 fill power allows us to fill less down in these than we do for our Classic Collection goose down duvets, while getting the same volume of filling. This ultra lightweight quality allows for duvets that work very well in warmer climates as well as cooler ones.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_GLFUGQ": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
-            "bigger_margin": false,
-            "caption": "Key Features",
-            "heading": "",
-            "text": "<p>Filled in a channel constructed duvet casing made from the finest batiste, 100 % Egyptian cotton: The seams are hidden inside the casing on three sides, and there is no stitching.<br/><br/>Instead, we use baffle walls between the channels, to make sure that the down reaches everywhere inside the casing. This way, the duvet is equally as thick all the way through the channels, and you will not have any cold spots against your body.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
         "row_Hcm9Cn",
-        "row_9BQpr3",
-        "row_JKcKEi",
-        "row_GLFUGQ"
+        "row_kTJgDd",
+        "row_9BQpr3"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
