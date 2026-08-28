@@ -664,6 +664,18 @@ main[data-template="product"] .product-popup-modal__button::after {
   color: rgb(var(--color-foreground));
 }
 
+@media screen and (max-width: 749px) {
+  .product-form__input--pill input[type='radio'] + label {
+    padding: 0.8rem 0.8rem;
+  }
+
+  .product-form__input--pill .form__label,
+  .product-form__input--swatch .form__label,
+  .product-form__input--dropdown .form__label {
+    font-size: 2.7rem !important;
+  }
+}
+
 .product-form__input--pill input[type='radio'] + label:hover {
   border-color: #000 !important;
 }
