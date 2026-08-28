@@ -30,6 +30,10 @@
 }
 
 @media screen and (max-width: 749px) {
+  .drawer.active {
+    background-color: rgb(var(--color-background));
+  }
+
   .drawer__inner {
     width: 100vw;
     max-width: 100vw;
