@@ -152,6 +152,13 @@ header {
         color: rgb(var(--color-foreground));
     }
 
+    .menu-drawer__menu-item--active,
+    .menu-drawer__menu-item--active:hover,
+    .menu-drawer__menu-item--active:focus {
+        color: #988140;
+        background-color: transparent;
+    }
+
     .header__submenu .header__menu-item,
     .header__submenu .header__menu-item span,
     .mega-menu__link {
