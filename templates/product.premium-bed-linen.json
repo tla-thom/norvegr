@@ -205,58 +205,6 @@
         "mobile_content_alignment": "center"
       }
     },
-    "multirow_mPjXNM": {
-      "type": "multirow",
-      "blocks": {
-        "row_Hcm9Cn": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_5_linen-9.jpg",
-            "bigger_margin": false,
-            "caption": "THREAD COUNT FACTS",
-            "heading": "",
-            "text": "<p>A fabric’s thread count signifies the number of horizontal (weft) and vertical (warp) threads per square inch.Bed linen thread counts vary from roughly 100 to more than 1,000. The obsession with thread count has driven numbers ever higher, even though the overall quality of the fabric can be unexceptional. Often threads can be artificially twisted together to produce a very high thread count. Fabric that is overly dense will easily become stiff, proving difficult to wash, and will not breathe well. That’s why we have carefully selected a 300 thread count sateen for our bed linen.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_kTJgDd": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/imgi_14_Low-res-NorvegrA_W-2024-46.jpg",
-            "bigger_margin": false,
-            "caption": "Sleep Like a Scandi",
-            "heading": "",
-            "text": "<p>Gone are the days of fighting for the bed sheets Read our duvet guide and discover how the Scandinavian approach to sleep is perfect for peace.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_Hcm9Cn",
-        "row_kTJgDd"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "large",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "fullpage_width": true,
-        "remove_horizontal_padding": true,
-        "no_margin_top": false,
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_banner_U8xrQz": {
       "type": "image-banner",
       "blocks": {
@@ -309,6 +257,58 @@
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
+      }
+    },
+    "multirow_mPjXNM": {
+      "type": "multirow",
+      "blocks": {
+        "row_Hcm9Cn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_5_linen-9.jpg",
+            "bigger_margin": false,
+            "caption": "THREAD COUNT FACTS",
+            "heading": "",
+            "text": "<p>A fabric’s thread count signifies the number of horizontal (weft) and vertical (warp) threads per square inch.Bed linen thread counts vary from roughly 100 to more than 1,000. The obsession with thread count has driven numbers ever higher, even though the overall quality of the fabric can be unexceptional. Often threads can be artificially twisted together to produce a very high thread count. Fabric that is overly dense will easily become stiff, proving difficult to wash, and will not breathe well. That’s why we have carefully selected a 300 thread count sateen for our bed linen.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kTJgDd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_14_Low-res-NorvegrA_W-2024-46.jpg",
+            "bigger_margin": false,
+            "caption": "Sleep Like a Scandi",
+            "heading": "",
+            "text": "<p>Gone are the days of fighting for the bed sheets Read our duvet guide and discover how the Scandinavian approach to sleep is perfect for peace.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Hcm9Cn",
+        "row_kTJgDd"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "collection_list_9ctf3C": {
@@ -375,8 +375,8 @@
   "order": [
     "main",
     "linked_banner_nf36Th",
-    "multirow_mPjXNM",
     "image_banner_U8xrQz",
+    "multirow_mPjXNM",
     "collection_list_9ctf3C",
     "related-products"
   ]
