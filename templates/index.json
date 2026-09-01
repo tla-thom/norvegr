@@ -201,7 +201,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_31_NORVEGR-SPRING_SUMMER2026-051-scaled.jpg",
+        "image": "shopify://shop_images/NORVEGR-SPRING_SUMMER2026-051.jpg",
         "image_overlay_opacity": 10,
         "image_height": "large",
         "mobile_height": "70",
@@ -221,7 +221,7 @@
         "row_XMxzVL": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_32_Norvegr-AW2025-Campaign-083.jpg",
+            "image": "shopify://shop_images/Norvegr-AW2025-Campaign-083.jpg",
             "bigger_margin": false,
             "caption": "CHANNEL CONSTRUCTION",
             "heading": "",
@@ -233,7 +233,7 @@
         "row_iUJXrF": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_33_norvegr-packaging-levels.jpg",
+            "image": "shopify://shop_images/Packaging_076.jpg",
             "bigger_margin": false,
             "caption": "Peerless Fill Power",
             "heading": "",
@@ -245,7 +245,7 @@
         "row_kgmpXV": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_34_image-13.jpg",
+            "image": "shopify://shop_images/DSC_9179_l.jpg",
             "bigger_margin": false,
             "caption": "Lasting Legacy",
             "heading": "",
@@ -257,7 +257,7 @@
         "row_rXUiCW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_35_Norvegr-Factory-Trondheim_049_1.jpg",
+            "image": "shopify://shop_images/Norvegr-Factory-Trondheim_049.jpg",
             "bigger_margin": false,
             "caption": "Made For Forever",
             "heading": "",
@@ -410,7 +410,7 @@
         "buttons_mYbM79"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_39_Norvegr-AW2025-Campaign-035.jpg",
+        "image": "shopify://shop_images/Norvegr-AW2025-Campaign-035.jpg",
         "image_overlay_opacity": 30,
         "image_height": "xlarge",
         "mobile_height": "70",
@@ -568,7 +568,7 @@
         "column_CDmRFP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled_1.jpg",
+            "image": "shopify://shop_images/NORVEGR-SPRING_SUMMER2026-013.jpg",
             "title": "Bed Linen",
             "heading_size": "h2",
             "text": "",
