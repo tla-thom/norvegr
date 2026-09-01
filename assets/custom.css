@@ -710,24 +710,29 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
   display: none !important;
 }
 
-/* Product page: Add to cart + Buy it now */
+/* Product page: Add to cart + dynamic checkout (Shop Pay, etc.) */
 .product-form .product-form__submit {
   --color-button: 152, 129, 64;
-  --color-button-text: 152, 129, 64;
-  --alpha-button-background: 0;
-  color: #988140 !important;
-  background-color: transparent !important;
+  --color-button-text: 255, 255, 255;
+  --alpha-button-background: 1;
+  color: #fff !important;
+  background-color: #988140 !important;
 }
 
 .product-form .product-form__submit::after {
   --border-opacity: 1;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) transparent;
+    0 0 0 var(--buttons-border-width) #988140;
+}
+
+.product-form .product-form__submit:hover:not([disabled]) {
+  color: #fff !important;
+  background-color: #988140 !important;
 }
 
 .product-form .product-form__submit:hover:not([disabled])::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, 1),
-    0 0 0 calc(var(--buttons-border-width) + 1px) transparent;
+    0 0 0 calc(var(--buttons-border-width) + 1px) #988140;
 }
 
 .product-form .shopify-payment-button button.shopify-payment-button__button--unbranded {
