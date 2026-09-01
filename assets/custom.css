@@ -770,6 +770,14 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
     }    
 }
 
+/* Collection pages: uniform square product images on mobile */
+@media screen and (max-width: 749px) {
+  collection-component .product-card-wrapper .card.ratio,
+  collection-component .product-card-wrapper .card__inner.ratio {
+    --ratio-percent: 100% !important;
+  }
+}
+
 .featured-collection-section .card__buy-now {
   margin-top: 15px;
   position: relative;

@@ -5,18 +5,14 @@
  */
 (function () {
   const INIT_FLAG = 'dependentOptionsInit';
-  const REVEALED_FLAG = 'dependentRevealed';
 
   class DependentVariantOptions {
     constructor(root) {
       this.root = root;
-      this.productInfo = root.closest('product-info');
       [this.controllerName, this.dependentName] = root.dataset.dependentOptions.split(':');
       this.typeToSizes = this.buildTypeMap();
       this.controllerFieldset = this.findOptionGroup(this.controllerName);
       this.dependentFieldset = this.findOptionGroup(this.dependentName);
-      this.revealed =
-        this.productInfo?.dataset[REVEALED_FLAG] === 'true' || this.hasVariantInUrl();
     }
 
     buildTypeMap() {
@@ -47,29 +43,23 @@
       return this.root.querySelector(`[data-option-name="${name}"]`);
     }
 
-    hasVariantInUrl() {
-      return new URLSearchParams(window.location.search).has('variant');
-    }
-
     bind() {
       if (!this.controllerFieldset || !this.dependentFieldset) return;
 
       this.onChange = (event) => {
         const input = event.target;
-        if (input.type !== 'radio' || !this.controllerFieldset.contains(input)) return;
-        this.setRevealed(true);
+        if (input.type !== 'radio') return;
+        if (
+          !this.controllerFieldset.contains(input) &&
+          !this.dependentFieldset.contains(input)
+        ) {
+          return;
+        }
         this.update();
       };
 
       this.root.addEventListener('change', this.onChange);
       this.update();
-    }
-
-    setRevealed(revealed) {
-      this.revealed = revealed;
-      if (this.productInfo) {
-        this.productInfo.dataset[REVEALED_FLAG] = revealed ? 'true' : 'false';
-      }
     }
 
     hideDependent() {
@@ -97,7 +87,8 @@
     update() {
       const selectedType = this.getSelectedController();
 
-      if (!selectedType || !this.revealed) {
+      // Hide Size only when no Product Type is selected (including on load).
+      if (!selectedType) {
         this.hideDependent();
         return;
       }
