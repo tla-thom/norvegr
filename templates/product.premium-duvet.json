@@ -49,8 +49,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
         "collapsible_tab_nATAN9": {
@@ -119,6 +119,7 @@
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
+        "enable_dependent_variant_options": false,
         "padding_top": 20,
         "padding_bottom": 32
       }
