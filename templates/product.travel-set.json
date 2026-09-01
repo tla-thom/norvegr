@@ -1,0 +1,393 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "popup_KBfEb6": {
+          "type": "popup",
+          "settings": {
+            "text": "SIZE GUIDE",
+            "page": "sizing-guide-pillows"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "collapsible_tab_nATAN9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_C3iK9C": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Pillow Firmness Information",
+            "icon": "none",
+            "content": "<p>Each size is available in soft, medium and firm versions.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_ah43NT": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "5 Year Restoration",
+            "icon": "none",
+            "content": "<p>We recommend to ship the pillow back to us every five years for complete restoration. The down inside these pillows is very durable and can be restored up to four times without the quality decreasing – thereby lasting at least 25 years if maintained properly. </p><p>The restoration cost is the retail price at time of restoration, divided by four. Shipping back and forth is extra, but thanks to a generous discount with our courier, costs are modest. We will gladly help arrange your product’s return to make the process as effortless as possible for you.</p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "popup_KBfEb6",
+        "buy_buttons",
+        "collapsible_tab_nATAN9",
+        "collapsible_tab_C3iK9C",
+        "collapsible_tab_ah43NT",
+        "share",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "image_ratio": "square",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
+    "linked_banner_nf36Th": {
+      "type": "linked-banner",
+      "blocks": {
+        "item_weMdaN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_33_Pillow_Down_005-Premium.jpg",
+            "heading": "What constitutes a good pillow?",
+            "text": "<p>We make the finest duvets and pillows fromnatures most exclusive materials. Providing you with products that give you the highest quality of sleep that will last for a lifetime.</p><p>Made with the very finest, pure down, Norvegr down duvets provide you with an unparalleled sleeping experience. They come with a 10-year guarantee and, along with our pillows, they can be restored by us several times.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_KwRw3C": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
+            "heading": "How to Choose a Pillow",
+            "text": "<p>It’s about finding what’s right for you, and striking the personal balance between softness and support. Because we’re all different, Norvegr offers three distinctive pillow collections varying from firm to soft. Whether you prefer to like flat or propped up, to sleep on something soft or firm, we offer something for everyone.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_yf6cgG": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/imgi_96_Norv-Ost-Couple-2023-05-2048x1365_34744b49-461b-4d28-8e93-0d08646d5c7d.jpg",
+            "heading": "How to Choose a Duvet Size",
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_AKPcry": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/imgi_61_NorvegrBlogPost8-1-2048x2048.jpg",
+            "heading": "How to Choose a Duvet Weight",
+            "text": "<p>Aside from our exclusive eiderdown products, we use only goose down for our duvets, sourcing it from the coldest corners of the world where birds develop the richest, most insulating coats. The same regions are often warm in summer, yet the birds thrive with the same coat. This is the magic of quality down; it warms when it’s cold and cools when it’s hot. <br/><br/>Our construction is free of cross seams, opting for a unique channel construction design that harkens back to the duvet’s origins. It allows air to circulate more freely. Any excess heat and moisture are distributed evenly across the body and escape through the down into the air. Temperature is regulated far more effectively than with box-stitched duvets.<br/><br/>When sourcing down for our products, fill power, density and cling are of the utmost importance. Norvegr’s collections move up through tiers, with these properties improving the higher you go.<br/><br/>Duvet fill power is a measure of fluffiness or ‘loft’. The higher the fill power, the more space one ounce of down takes up. Higher fill means better insulation and breathability. Higher quality down improves the fill power.<br/><br/>For most high-end duvets, 600 fill power is the benchmark. For Norvegr, that isn’t even the beginning. We factor in the increased insulating abilities that higher fill power provides. This means we fill the duvet with less down as we move up through the tiers. Our entry collection begins at 755, while our exclusive Eiderdown collection is the equivalent of 1000.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "item_6PCCKd": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/imgi_96_polar-days-norvegr-2048x1395.jpg",
+            "heading": "Duvet Vs Comforter",
+            "text": "<p>They might appear to be more or less the same thing, but there are important differences between duvets and comforters. It’s worth understanding the distinction when you’re choosing your bedding.<br/><br/>Put simply, most people in the US use the term comforters, while Europeans refer to duvets. However, many individuals who speak of comforters actually mean duvets without realising. Both are a type of thick, fluffy bedding that covers you at night to keep you warm and comfortable. However duvets will usually have a removable cover, making them easier to clean, maintain and customise. Comforters usually have a built-in cover, or no cover at all.<br/><br/>Comforters also use more stitching, which can be a cover for poor filling materials and distribution. They will also typically provide a flatter, less-fluffy experience which calls for more blankets and top sheets. This can be appealing for those who prefer to be layered up when they sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_weMdaN",
+        "item_KwRw3C",
+        "item_yf6cgG",
+        "item_AKPcry",
+        "item_6PCCKd"
+      ],
+      "name": "t:sections.linked-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "xlarge",
+        "mobile_height": "80",
+        "image_behavior": "zoom-in",
+        "title": "Pillow Buying guide",
+        "heading_size": "h0",
+        "use_body_font": true,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "multirow_mPjXNM": {
+      "type": "multirow",
+      "blocks": {
+        "row_Hcm9Cn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
+            "bigger_margin": false,
+            "caption": "Down in Pillows",
+            "heading": "",
+            "text": "<p>When compressed, down loses some of its ability to insulate and breathe. However its natural softness and irrepressible bounce still make it a wonderful choice for pillow filling. Feathers are usually added to increase firmness; the more feathers, the firmer the product. Our feathers are never obtrusive. They are meticulously crafted to ensure a soothing, uninterrupted night of sleep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kTJgDd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_pillow-thickness.jpg",
+            "bigger_margin": false,
+            "caption": "The Height of Comfort",
+            "heading": "",
+            "text": "<p>Your pillow height can also be a personal choice that depends on your sleep style. If you find your head frequently overheats, a low and firm pillow would be an ideal choice to allow you more space to breathe. A high pillow adds an elevated sense of sink-in indulgence, and can also be good for belly sleepers who prefer to use pillows to support their legs and body.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_9BQpr3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_41_NORVEGR-SPRING_SUMMER2026-013-scaled.jpg",
+            "bigger_margin": false,
+            "caption": "More about European goose down",
+            "heading": "",
+            "text": "<p>This European White Goose down is heavenly soft, and so are these duvets. Each down cluster is among the largest obtainable for commercially available goose down qualities. They trap air like few other goose down quality out there.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Hcm9Cn",
+        "row_kTJgDd",
+        "row_9BQpr3"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_U8xrQz": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_nk8QJQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Size guide",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_taAPLm": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>See the measurements for all our sizes.</h3>",
+            "text_style": "body"
+          }
+        },
+        "buttons_kHktnf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "See guides",
+            "button_link_1": "shopify://pages/sizing-guide-pillows",
+            "button_popup_page_1": "sizing-guide-pillows",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nk8QJQ",
+        "text_taAPLm",
+        "buttons_kHktnf"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/imgi_83_missing-piece-2048x1366_7518291d-a7ca-4edf-99a8-8c7fe4a20172.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "large",
+        "mobile_height": "70",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "collection_list_9ctf3C": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_qyDeEr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pillows"
+          }
+        },
+        "featured_collection_NPMKFx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bed-linen"
+          }
+        },
+        "featured_collection_PM6zDk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travel-sets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_qyDeEr",
+        "featured_collection_NPMKFx",
+        "featured_collection_PM6zDk"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "You may also like",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "linked_banner_nf36Th",
+    "multirow_mPjXNM",
+    "image_banner_U8xrQz",
+    "collection_list_9ctf3C",
+    "related-products"
+  ]
+}
