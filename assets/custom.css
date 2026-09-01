@@ -701,6 +701,15 @@ main[data-template="product"] .product-popup-modal__button::after {
   display: block;
 }
 
+/* premium-bed-linen: hide Size until Product Type is chosen */
+variant-selects[data-dependent-options] .variant-option--dependent-hidden {
+  display: none !important;
+}
+
+variant-selects[data-dependent-options] .dependent-option--hidden {
+  display: none !important;
+}
+
 /* Product page: Add to cart + Buy it now */
 .product-form .product-form__submit {
   --color-button: 152, 129, 64;

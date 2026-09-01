@@ -11,6 +11,11 @@
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
   {%- liquid
+    assign dependent_variant_options = false
+    if template.suffix == 'premium-bed-linen'
+      assign dependent_variant_options = true
+    endif
+
     if country_default_variant == blank
       assign country_default_variant = product.selected_or_first_available_variant
       capture country_default_variant_id
@@ -32,11 +37,19 @@
     data-product-title="{{ product.title | escape }}"
     data-product-id="{{ product.id }}"
     data-currency-code="{{ cart.currency.iso_code }}"
+    {% if dependent_variant_options %}
+      data-dependent-options="Product Type:Size"
+    {% endif %}
     {% # theme-check-disable %}
     data-selected-price-amount="{{ country_default_variant.price | default: 0 | money_amount | escape }}"
     {% # theme-check-enable %}
     {{ block.shopify_attributes }}
   >
+    {%- if dependent_variant_options -%}
+      <script type="application/json" data-dependent-variants>
+        {{ product.variants | json }}
+      </script>
+    {%- endif -%}
     {%- for option in product.options_with_values -%}
       {%- liquid
         assign swatch_count = option.values | map: 'swatch' | compact | size
@@ -50,8 +63,17 @@
           endif
         endif
       -%}
+      {%- liquid
+        assign option_group_class = ''
+        if dependent_variant_options and option.name == 'Size'
+          assign option_group_class = 'variant-option--dependent-hidden'
+        endif
+      -%}
       {%- if picker_type == 'swatch' -%}
-        <fieldset class="js product-form__input product-form__input--swatch">
+        <fieldset
+          class="js product-form__input product-form__input--swatch {{ option_group_class }}"
+          data-option-name="{{ option.name | escape }}"
+        >
           <legend class="form__label">
             {{ option.name }}:
             <span data-selected-value>
@@ -67,7 +89,10 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <fieldset class="js product-form__input product-form__input--pill">
+        <fieldset
+          class="js product-form__input product-form__input--pill {{ option_group_class }}"
+          data-option-name="{{ option.name | escape }}"
+        >
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'product-variant-options',
             product: product,
@@ -78,7 +103,10 @@
           %}
         </fieldset>
       {%- else -%}
-        <div class="product-form__input product-form__input--dropdown">
+        <div
+          class="product-form__input product-form__input--dropdown {{ option_group_class }}"
+          data-option-name="{{ option.name | escape }}"
+        >
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>

@@ -1,0 +1,37 @@
+UN APPLICATO — allowed_countries (variant metafield)
+=====================================================
+Set via: Products → Inventory → filter Un Applicato → select all 19 variants → Bulk edit
+→ Columns → Allowed Countries (pin under Settings → Custom data → Variants if missing)
+
+Variant                              | Allowed Countries
+-------------------------------------|----------------------------
+Boudoir, Boudoir XL (pillow)         | (blank)
+Standard, Euro/Square, King (pillow) | UK, EURO, NO, US
+Queen (pillow)                       | US
+Single, Double, Superking, SK XL, Emperor (duvet) | UK, EURO, NO
+King (duvet)                         | US, UK, EURO, NO
+Twin, XL Twin, Full, Queen, CA King, Imperial, Alaskan (duvet) | US
+
+--- By SKU ---
+
+SKU           | Variant                    | Allowed Countries
+--------------|----------------------------|----------------------------
+LIN-UA-PC-BDR | Pillow Case / Boudoir      | (blank)
+LIN-UA-PC-BDX | Pillow Case / Boudoir XL   | (blank)
+LIN-UA-PC-STD | Pillow Case / Standard     | UK, EURO, NO, US
+LIN-UA-PC-EUR | Pillow Case / Euro/Square  | UK, EURO, NO, US
+LIN-UA-PC-QUN | Pillow Case / Queen        | US
+LIN-UA-PC-KNG | Pillow Case / King         | UK, EURO, NO, US
+LIN-UA-DC-SNG | Duvet Cover / Single       | UK, EURO, NO
+LIN-UA-DC-DBL | Duvet Cover / Double       | UK, EURO, NO
+LIN-UA-DC-KNG | Duvet Cover / King         | US, UK, EURO, NO
+LIN-UA-DC-SKG | Duvet Cover / Superking    | UK, EURO, NO
+LIN-UA-DC-SKX | Duvet Cover / Superking XL | UK, EURO, NO
+LIN-UA-DC-EMP | Duvet Cover / Emperor      | UK, EURO, NO
+LIN-UA-DC-TWN | Duvet Cover / Twin         | US
+LIN-UA-DC-XLT | Duvet Cover / XL Twin      | US
+LIN-UA-DC-FUL | Duvet Cover / Full         | US
+LIN-UA-DC-QUN | Duvet Cover / Queen        | US
+LIN-UA-DC-CAK | Duvet Cover / California King | US
+LIN-UA-DC-IMK | Duvet Cover / Imperial King   | US
+LIN-UA-DC-ALK | Duvet Cover / Alaskan King      | US

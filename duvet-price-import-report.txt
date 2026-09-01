@@ -1,0 +1,60 @@
+DUVET PRICE IMPORT REPORT
+==================================================
+Output: /Users/thombennett/Documents/GitHub/norvegr-new/products_export-duvet-prices-updated.csv
+
+Variants updated from Woo US: 144
+Variants updated from Woo UK: 64
+Total updated: 208
+Still unmatched: 0
+
+All updated variants: same USD in Variant Price + all market columns
+
+UK-priced samples (UK sizes, Woo UK USD -> all columns):
+  Single                 Summer     -> $1140.00
+  Single                 All Year   -> $1320.00
+  Single                 Winter     -> $1725.00
+  Single                 Polar      -> $2355.00
+  Superking              Summer     -> $2095.00
+  Superking              All Year   -> $2425.00
+  Superking              Winter     -> $3170.00
+  Superking              Polar      -> $4510.00
+
+BED LINEN PRICE IMPORT
+==================================================
+Flat Bottom Sheets | 180 x 290cm (71" x 114") | $120.00 -> $151.00 (Woo direct)
+Flat Bottom Sheets | 240 x 290cm (95" x 114") | $140.00 -> $179.00 (Woo direct)
+Flat Bottom Sheets | 270 x 290cm (106" x 114") | $160.00 -> $203.00 (Woo direct)
+Flat Bottom Sheets | 300 x 290 cm (118" x 114") | $180.00 -> $217.00 (Woo direct)
+Un Applicato | Pillow Case / Boudoir XL | $105.96 -> $141.00 (Woo Europe)
+Un Applicato | Pillow Case / Boudoir | $95.44 -> $127.00 (Woo Europe)
+Un Applicato | Pillow Case / Standard | $124.00 -> $165.00 (Woo UK)
+Un Applicato | Pillow Case / Euro/Square | $134.52 -> $179.00 (Woo UK)
+Un Applicato | Pillow Case / King | $127.76 -> $170.00 (Woo UK)
+Un Applicato | Duvet Cover / Single | $354.72 -> $472.00 (Woo UK)
+Un Applicato | Duvet Cover / Double | $442.65 -> $589.00 (Woo UK)
+Un Applicato | Duvet Cover / King | $474.96 -> $632.00 (Woo UK)
+Un Applicato | Duvet Cover / Superking | $492.25 -> $655.00 (Woo UK)
+Un Applicato | Duvet Cover / Superking Extra Long | $503.52 -> $670.00 (Woo UK)
+Un Applicato | Duvet Cover / Emperor | $503.52 -> $670.00 (Woo UK)
+
+Total bed linen variants updated: 15
+
+Un Applicato US duvet cover variants added:
+  Duvet Cover / Twin -> $552.00 (Woo US)
+  Duvet Cover / XL Twin -> $571.00 (Woo US)
+  Duvet Cover / Full -> $604.00 (Woo US)
+  Duvet Cover / Queen -> $632.00 (Woo US)
+  Duvet Cover / California King -> $670.00 (Woo US)
+  Duvet Cover / Imperial King -> $670.00 (Woo US)
+  Duvet Cover / Alaskan King -> $1122.00 (Woo US)
+
+
+CURRENCY CONVERSION (2026-08-28)
+==================================================
+Source: Woo USD per variant
+Rule: convert then round UP to nearest 10, no decimals
+  1 USD = 1.0 USD
+  1 USD = 0.7357 GBP
+  1 USD = 0.8623 EUR
+  1 USD = 9.3212 NOK
+Variants updated: 288

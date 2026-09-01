@@ -39,13 +39,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "popup_KBfEb6": {
-          "type": "popup",
-          "settings": {
-            "text": "SIZE GUIDE",
-            "page": "sizing-guide-pillows"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -98,7 +91,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "popup_KBfEb6",
         "buy_buttons",
         "collapsible_tab_nATAN9",
         "collapsible_tab_C3iK9C",
