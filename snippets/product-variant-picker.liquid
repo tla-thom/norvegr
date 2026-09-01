@@ -6,14 +6,14 @@
   - block: {Object} passing the block information.
   - product_form_id: {String} Id of the product form to which the variant picker is associated.
   - country_default_variant: {Object} Pre-resolved country-aware default variant (optional)
+  - dependent_variant_options: {Boolean} Hide Size until Product Type is selected (optional)
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
   {%- liquid
-    assign dependent_variant_options = false
-    if template.suffix == 'premium-bed-linen'
-      assign dependent_variant_options = true
+    if dependent_variant_options == blank
+      assign dependent_variant_options = false
     endif
 
     if country_default_variant == blank
@@ -63,16 +63,12 @@
           endif
         endif
       -%}
-      {%- liquid
-        assign option_group_class = ''
-        if dependent_variant_options and option.name == 'Size'
-          assign option_group_class = 'variant-option--dependent-hidden'
-        endif
-      -%}
       {%- if picker_type == 'swatch' -%}
         <fieldset
-          class="js product-form__input product-form__input--swatch {{ option_group_class }}"
-          data-option-name="{{ option.name | escape }}"
+          class="js product-form__input product-form__input--swatch{% if dependent_variant_options %} variant-option-group{% endif %}"
+          {% if dependent_variant_options %}
+            data-option-name="{{ option.name | escape }}"
+          {% endif %}
         >
           <legend class="form__label">
             {{ option.name }}:
@@ -90,8 +86,10 @@
         </fieldset>
       {%- elsif picker_type == 'button' -%}
         <fieldset
-          class="js product-form__input product-form__input--pill {{ option_group_class }}"
-          data-option-name="{{ option.name | escape }}"
+          class="js product-form__input product-form__input--pill{% if dependent_variant_options %} variant-option-group{% endif %}"
+          {% if dependent_variant_options %}
+            data-option-name="{{ option.name | escape }}"
+          {% endif %}
         >
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'product-variant-options',
@@ -104,8 +102,10 @@
         </fieldset>
       {%- else -%}
         <div
-          class="product-form__input product-form__input--dropdown {{ option_group_class }}"
-          data-option-name="{{ option.name | escape }}"
+          class="product-form__input product-form__input--dropdown{% if dependent_variant_options %} variant-option-group{% endif %}"
+          {% if dependent_variant_options %}
+            data-option-name="{{ option.name | escape }}"
+          {% endif %}
         >
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}

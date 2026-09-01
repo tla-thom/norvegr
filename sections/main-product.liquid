@@ -41,7 +41,7 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-  {%- if template.suffix == 'premium-bed-linen' -%}
+  {%- if section.settings.enable_dependent_variant_options -%}
     <script src="{{ 'dependent-variant-options.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
   {%- if product.quantity_price_breaks_configured? -%}
@@ -511,7 +511,8 @@
                     product: product,
                     block: block,
                     product_form_id: product_form_id,
-                    country_default_variant: country_default_variant
+                    country_default_variant: country_default_variant,
+                    dependent_variant_options: section.settings.enable_dependent_variant_options
                   %}
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
@@ -2350,6 +2351,13 @@
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_dependent_variant_options",
+      "default": false,
+      "label": "Hide Size until Product Type is selected (bed linen template)",
+      "info": "Shows only relevant sizes for the chosen product type. Enable on premium-bed-linen template only."
     },
     {
       "type": "range",

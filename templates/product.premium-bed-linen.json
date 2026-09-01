@@ -107,6 +107,7 @@
         "description"
       ],
       "settings": {
+        "enable_dependent_variant_options": true,
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "medium",
