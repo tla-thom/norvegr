@@ -46,6 +46,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "content_max_width": "default",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -57,10 +58,10 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "collage",
+        "layout": "grid",
         "show_image": true,
         "image_height": "large",
-        "show_date": true,
+        "show_date": false,
         "show_author": false,
         "padding_top": 0,
         "padding_bottom": 36
