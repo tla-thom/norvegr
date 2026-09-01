@@ -189,7 +189,7 @@
       ],
       "name": "t:sections.linked-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
+        "image": "shopify://shop_images/imgi_12_linen-1-scaled-1.jpg",
         "image_overlay_opacity": 20,
         "image_height": "xlarge",
         "mobile_height": "80",
@@ -275,13 +275,14 @@
         "heading_nk8QJQ": {
           "type": "heading",
           "settings": {
-            "heading": "Size guide",
+            "heading": "Linen, the Norvegr Way",
             "heading_size": "h0",
             "use_body_font": true
           }
         },
         "text_taAPLm": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h3>See the measurements for all our sizes.</h3>",
             "text_style": "body"
@@ -289,6 +290,7 @@
         },
         "buttons_kHktnf": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "See guides",
             "button_link_1": "shopify://pages/sizing-guide-pillows",
@@ -307,7 +309,7 @@
         "buttons_kHktnf"
       ],
       "settings": {
-        "image": "shopify://shop_images/imgi_83_missing-piece-2048x1366_7518291d-a7ca-4edf-99a8-8c7fe4a20172.jpg",
+        "image": "shopify://shop_images/imgi_7_Low-res-NorvegrA_W-2024-15.jpg",
         "image_overlay_opacity": 30,
         "image_height": "large",
         "mobile_height": "70",
@@ -333,7 +335,7 @@
         "featured_collection_NPMKFx": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bed-linen"
+            "collection": "duvet-collection"
           }
         },
         "featured_collection_PM6zDk": {
