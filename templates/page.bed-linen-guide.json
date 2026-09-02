@@ -51,7 +51,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Norv-Ost-Fam-Washing-Line-2023-05.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 10,
         "image_height": "large",
         "mobile_height": "default",
         "image_behavior": "none",
@@ -203,7 +203,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Norv-Ost-Family-in-Bed-2023-05.jpg",
+        "image": "shopify://shop_images/imgi_7_Low-res-NorvegrA_W-2024-15_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "mobile_height": "default",
