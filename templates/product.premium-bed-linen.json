@@ -107,7 +107,6 @@
         "description"
       ],
       "settings": {
-        "enable_dependent_variant_options": true,
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "medium",
@@ -117,9 +116,10 @@
         "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "hover",
         "hide_variants": true,
         "enable_video_looping": false,
+        "enable_dependent_variant_options": true,
         "padding_top": 20,
         "padding_bottom": 32
       }
