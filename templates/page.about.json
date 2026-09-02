@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_10_high-end-bedding.jpg",
+        "image": "shopify://shop_images/Norwegian_fjord_from_brochure_ccd82b92-868b-49f2-a238-e791aa4a4c46.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "mobile_height": "default",
@@ -70,7 +70,7 @@
         "row_49JpJW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_3_classic-down-duvets-300x436.jpg",
+            "image": "shopify://shop_images/Down_044_e234c068-b888-42a1-ad98-65a096ede834.jpg",
             "bigger_margin": true,
             "caption": "NORVEGR: MAKING SLEEP A DREAM SINCE the 1950s",
             "heading": "<em>Norvegr follows a legacy in creating the most comfortable down duvets and pillows in the world. </em>",
@@ -82,7 +82,7 @@
         "row_69AtiT": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_12_duvet-construction-techniques.jpg",
+            "image": "shopify://shop_images/DSC9440.jpg",
             "bigger_margin": false,
             "caption": "",
             "heading": "",
@@ -94,7 +94,7 @@
         "row_CQfm6H": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_eiderdown-ducks.jpg",
+            "image": "shopify://shop_images/Birds_flying_over_water_from_brochure.jpg",
             "bigger_margin": true,
             "caption": "Who Flocks to Us?",
             "heading": "<em>Our clients embrace some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:</em>",
