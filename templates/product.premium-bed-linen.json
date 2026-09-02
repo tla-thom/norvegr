@@ -116,7 +116,7 @@
         "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "media_position": "left",
-        "image_zoom": "hover",
+        "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
         "enable_dependent_variant_options": true,
