@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_12_linen-1-scaled-1.jpg",
+        "image": "shopify://shop_images/Norv-Ost-Fam-Washing-Line-2023-05.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "mobile_height": "default",
@@ -116,7 +116,7 @@
         "row_49JpJW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_linen-9.jpg",
+            "image": "shopify://shop_images/Norv-Ost-Fam-Washing-Line-2023-11.jpg",
             "bigger_margin": false,
             "caption": "THREAD COUNT FACTS",
             "heading": "",
@@ -128,7 +128,7 @@
         "row_69AtiT": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_14_Low-res-NorvegrA_W-2024-46.jpg",
+            "image": "shopify://shop_images/Low-res-NorvegrA_W-2024-28_522e446f-59a3-42cf-a978-8cc5c6fa93ad.jpg",
             "bigger_margin": false,
             "caption": "Sleep Like a Scandi",
             "heading": "",
