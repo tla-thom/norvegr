@@ -116,7 +116,7 @@
         "row_49JpJW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_12_Norv-Ost-Woman-2023-16-scaled.jpg",
+            "image": "shopify://shop_images/Norv-Ost-Woman-2023-16.jpg",
             "bigger_margin": false,
             "caption": "Down in Pillows",
             "heading": "",
@@ -128,7 +128,7 @@
         "row_69AtiT": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_pillow-thickness.jpg",
+            "image": "shopify://shop_images/Thickness_251.jpg",
             "bigger_margin": false,
             "caption": "The Height of Comfort",
             "heading": "",
@@ -190,7 +190,7 @@
         "show_view_all": false,
         "view_all_style": "solid",
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_object_position": "center center",
         "image_shape": "default",
         "show_secondary_image": false,
