@@ -1,0 +1,53 @@
+Redirect from,Redirect to,Category,Notes
+/product/duck-goose-down-and-feather-pillows,/products/european-white-goose-60-down-pillows-fill-power-500,Product,Slug mapped
+/product/duck-goose-down-pillows,/products/european-white-goose-90-down-pillows-fill-power-625,Product,Slug mapped
+/product/eiderdown-from-the-island-of-svalbard,/products/norwegian-eiderdown-duvet-hand-picked-limited-supply,Product,Slug mapped
+/product/european-white-goose-850-fill-power-100-down-duvet,/products/european-white-goose-100-down-duvet-fill-power-850,Product,Slug mapped
+/product/european-white-goose-down-pillows,/products/european-white-goose-down-pillows,Product,Prefix only (/product -> /products)
+/product/luxury-egyptian-cotton-flat-bottom-sheets,/products/luxury-egyptian-cotton-flat-bottom-sheets,Product,Prefix only (/product -> /products)
+/product/luxury-goose-down-duvet,/products/european-white-goose-755-fill-power-90-down-duvet,Product,Slug mapped
+/product/luxury-travel-bedding-set-with-leather-holdall,/products/luxury-travel-bedding-set-with-leather-holdall,Product,Prefix only (/product -> /products)
+/product/masurian-white-goose-down-duvet,/products/masurian-white-goose-100-down-duvet-fill-power-915,Product,Slug mapped
+/product/un-applicato-100-egyptian-cotton-duvet-cover-pillowcase,/products/un-applicato-100-egyptian-cotton-duvet-cover-pillowcase,Product,Prefix only (/product -> /products)
+/collections/classic-collection,/collections/duvet-collection,Collection,NEEDS REVIEW: Handle changed — tier/legacy collection mapped to nearest live collection
+/collections/duvets,/collections/duvet-collection,Collection,Handle changed
+/collections/limited-edition-collection,/collections/duvet-collection,Collection,NEEDS REVIEW: Handle changed — tier/legacy collection mapped to nearest live collection
+/collections/premium-collection,/collections/duvet-collection,Collection,NEEDS REVIEW: Handle changed — tier/legacy collection mapped to nearest live collection
+/collections/premium-plus-collection,/collections/duvet-collection,Collection,NEEDS REVIEW: Handle changed — tier/legacy collection mapped to nearest live collection
+/collections/standard-collection,/collections/pillows,Collection,NEEDS REVIEW: Handle changed — tier/legacy collection mapped to nearest live collection
+/collections/top-pics,/,Collection,NEEDS REVIEW: no direct Shopify collection — redirected to homepage
+/collections/uncategorised,/,Collection,NEEDS REVIEW: no direct Shopify collection — redirected to homepage
+/about-norvegr,/pages/about-norvegr,Page,
+/basket,/cart,Page,
+/basket-new,/cart,Page,
+/bed-linen-guide,/pages/bed-linen-guide,Page,
+/buying-online,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/care-guide,/pages/care-guide,Page,
+/checkout-new,/checkout,Page,
+/contact-us,/pages/contact,Page,
+/corporate-gifts,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/designers-choose-norvegr,/pages/designers-choose-norvegr,Page,
+/down-the-natural-anti-allergenic-solution,/pages/why-choose-down,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/duvet-guide,/pages/duvet-guide,Page,
+/evercompare,/,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/faqs,/pages/frequently-asked-questions,Page,
+/health-benefits,/pages/why-choose-down,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/hotels,/pages/hotel-locator,Page,
+/journal,/,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/my-account,/account,Page,
+/norvegr-retailers,/pages/hotel-locator,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/pillow-guide,/pages/pillow-guide,Page,
+/quotes,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/security-privacy,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/shipping-returns,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/shop,/collections/all,Page,
+/shop/duvet-collection,/collections/duvet-collection,Page,
+/sign-up,/pages/sign-up,Page,
+/terms-conditions,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/thank-you,/,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/trade-inquiries,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/trade-login-request-access,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/travel-with-us,/collections/travel-sets,Page,
+/wholesale,/pages/contact,Page,NEEDS REVIEW: provisional target — confirm with client or create Shopify page
+/why-choose-down,/pages/why-choose-down,Page,
+/why-choose-norvegr,/pages/why-choose-norvegr,Page,

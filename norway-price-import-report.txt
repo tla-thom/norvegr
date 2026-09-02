@@ -1,0 +1,55 @@
+Norway price rebuild
+Woo Norway USD × 9.326 → else Woo UK → else Woo Europe → else US × 1.05
+
+fallback_5pct: 175
+woo_norway: 32
+woo_uk: 81
+
+Benchmarks:
+  DVT-850-SNG-SUM: 11840 kr (target 11830, diff +10)
+  DVT-755-SNG-SUM: 9890 kr (target 9880, diff +10)
+  DVT-915-SNG-SUM: 15430 kr (target 15420, diff +10)
+  DVT-EID-SNG-SUM: 52600 kr (target 52520, diff +80)
+
+Fallback variants (175):
+DVT-850-ALK-SUM: Alaskan King/Summer -> 43140 kr (US $4405.0 × 5%)
+DVT-850-ALK-ALY: Alaskan King/All Year -> 49500 kr (US $5055.0 × 5%)
+DVT-850-ALK-WIN: Alaskan King/Winter -> 65460 kr (US $6685.0 × 5%)
+DVT-850-ALK-POL: Alaskan King/Polar -> 89400 kr (US $9130.0 × 5%)
+DVT-850-TWN-SUM: Twin/Summer -> 15030 kr (US $1535.0 × 5%)
+DVT-850-TWN-ALY: Twin/All Year -> 17040 kr (US $1740.0 × 5%)
+DVT-850-TWN-WIN: Twin/Winter -> 21250 kr (US $2170.0 × 5%)
+DVT-850-TWN-POL: Twin/Polar -> 26730 kr (US $2730.0 × 5%)
+DVT-850-QUN-SUM: Queen/Summer -> 20270 kr (US $2070.0 × 5%)
+DVT-850-QUN-ALY: Queen/All Year -> 23010 kr (US $2350.0 × 5%)
+DVT-850-QUN-WIN: Queen/Winter -> 29280 kr (US $2990.0 × 5%)
+DVT-850-QUN-POL: Queen/Polar -> 41180 kr (US $4205.0 × 5%)
+DVT-850-XLT-SUM: XL Twin/Summer -> 16600 kr (US $1695.0 × 5%)
+DVT-850-XLT-ALY: XL Twin/All Year -> 19340 kr (US $1975.0 × 5%)
+DVT-850-XLT-WIN: XL Twin/Winter -> 23890 kr (US $2440.0 × 5%)
+DVT-850-XLT-POL: XL Twin/Polar -> 34520 kr (US $3525.0 × 5%)
+DVT-850-CAK-SUM: California King/Summer -> 22870 kr (US $2335.0 × 5%)
+DVT-850-CAK-ALY: California King/All Year -> 26050 kr (US $2660.0 × 5%)
+DVT-850-CAK-WIN: California King/Winter -> 33290 kr (US $3400.0 × 5%)
+DVT-850-CAK-POL: California King/Polar -> 47690 kr (US $4870.0 × 5%)
+DVT-850-IMK-SUM: Imperial King/Summer -> 27170 kr (US $2775.0 × 5%)
+DVT-850-IMK-ALY: Imperial King/All Year -> 30800 kr (US $3145.0 × 5%)
+DVT-850-IMK-WIN: Imperial King/Winter -> 39020 kr (US $3985.0 × 5%)
+DVT-850-IMK-POL: Imperial King/Polar -> 54540 kr (US $5570.0 × 5%)
+PIL-830-BDX-SFT: Boudoir XL/Soft -> 3480 kr (US $355.0 × 5%)
+PIL-830-BDX-MED: Boudoir XL/Medium -> 3870 kr (US $395.0 × 5%)
+PIL-830-BDX-FRM: Boudoir XL/Firm -> 4600 kr (US $470.0 × 5%)
+PIL-830-BDR-SFT: Boudoir/Soft -> 2790 kr (US $285.0 × 5%)
+PIL-830-BDR-MED: Boudoir/Medium -> 3130 kr (US $320.0 × 5%)
+PIL-830-BDR-FRM: Boudoir/Firm -> 3720 kr (US $380.0 × 5%)
+PIL-830-STD-SFT: Standard/Soft -> 6220 kr (US $635.0 × 5%)
+PIL-830-STD-MED: Standard/Medium -> 7300 kr (US $745.0 × 5%)
+PIL-830-STD-FRM: Standard/Firm -> 8370 kr (US $855.0 × 5%)
+PIL-830-EUR-SFT: Euro/Square/Soft -> 8320 kr (US $850.0 × 5%)
+PIL-830-EUR-MED: Euro/Square/Medium -> 9650 kr (US $985.0 × 5%)
+PIL-830-EUR-FRM: Euro/Square/Firm -> 10970 kr (US $1120.0 × 5%)
+PIL-830-QUN-SFT: Queen/Soft -> 6220 kr (US $635.0 × 5%)
+PIL-830-QUN-MED: Queen/Medium -> 7300 kr (US $745.0 × 5%)
+PIL-830-QUN-FRM: Queen/Firm -> 8370 kr (US $855.0 × 5%)
+PIL-830-KNG-SFT: King/Soft -> 8320 kr (US $850.0 × 5%)
+... and 135 more
