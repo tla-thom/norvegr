@@ -178,6 +178,7 @@
                     {% render 'card-product',
                       card_product: product,
                       media_aspect_ratio: section.settings.image_ratio,
+                      image_object_position: section.settings.image_object_position,
                       image_shape: section.settings.image_shape,
                       show_secondary_image: section.settings.show_secondary_image,
                       show_vendor: section.settings.show_vendor,
@@ -288,6 +289,26 @@
       ],
       "default": "adapt",
       "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "image_object_position",
+      "options": [
+        {
+          "value": "center center",
+          "label": "t:sections.main-collection-product-grid.settings.image_object_position.options__1.label"
+        },
+        {
+          "value": "top center",
+          "label": "t:sections.main-collection-product-grid.settings.image_object_position.options__2.label"
+        },
+        {
+          "value": "bottom center",
+          "label": "t:sections.main-collection-product-grid.settings.image_object_position.options__3.label"
+        }
+      ],
+      "default": "center center",
+      "label": "t:sections.main-collection-product-grid.settings.image_object_position.label"
     },
     {
       "type": "select",

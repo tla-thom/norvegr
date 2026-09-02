@@ -1961,6 +1961,18 @@
             "label": "Landscape"
           }
         },
+        "image_object_position": {
+          "label": "Image crop position",
+          "options__1": {
+            "label": "Middle / center"
+          },
+          "options__2": {
+            "label": "Top middle"
+          },
+          "options__3": {
+            "label": "Bottom middle"
+          }
+        },
         "show_secondary_image": {
           "label": "Show second image on hover"
         },

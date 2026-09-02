@@ -1,0 +1,56 @@
+Norvegr WooCommerce -> Shopify Orders import
+===========================================
+Orders exported: 511
+Line items: 778
+Product-linked line items: 22
+Custom/historical line items: 756
+Service orders (no Woo line items): 12
+Skipped orders (missing email): 0
+
+Files:
+  Full import: /Users/thombennett/Downloads/Orders.csv
+  Repo copy:   /Users/thombennett/Documents/GitHub/norvegr-new/Orders.csv
+  Delete test orders first: /Users/thombennett/Downloads/Orders-delete-test.csv
+
+Tomorrow import steps (Matrixify Basic):
+  1. Upgrade to Basic ($20/mo)
+  2. Import Orders-delete-test.csv to remove the 10 test orders
+  3. Import Orders.csv (511 orders, one file)
+  4. Spot-check 2-3 customers for Orders + Amount spent
+  5. Downgrade/uninstall Matrixify if no longer needed
+
+Payment totals are calculated from line items + shipping (fixes multi-item orders).
+
+Woo vs calculated total mismatches: 41
+  WOO-56: woo=583.26 calculated=0.00
+  WOO-69: woo=5080.00 calculated=6350.00
+  WOO-74: woo=3904.00 calculated=4880.00
+  WOO-76: woo=45.00 calculated=380.00
+  WOO-80: woo=1657.50 calculated=1950.00
+  WOO-82: woo=172.00 calculated=430.00
+  WOO-87: woo=1033.54 calculated=4134.15
+  WOO-90: woo=9266.18 calculated=33821.18
+  WOO-91: woo=6435.14 calculated=7150.16
+  WOO-96: woo=2321.72 calculated=2731.44
+
+Top unmatched item names (imported as custom line items with historical prices):
+  172x  European White Goose, 100% Down Pillows, Fill Power 830
+  119x  European White Goose, 90% Down Pillows, Fill Power 625
+  106x  Un Applicato - 100% Egyptian Cotton Duvet Cover / Pillowcase
+   93x  European White Goose, 100% Down Duvet, Fill Power 850
+   66x  European White Goose, 60% Down Pillows, Fill Power 500
+   53x  European White Goose, 90% Down Duvet, Fill Power 755
+   47x  Masurian White Goose, 100% Down Duvet, Fill Power 915
+   13x  Norwegian Eiderdown Duvet, Hand picked, limited supply
+    6x  European White Goose, 100% Down Pillows, Fill Power 830 - UK King/US King, 50 x 90 cm (20" x 36"), Medium
+    5x  European White Goose, 100% Down Pillows, Fill Power 830 - UK King/US King, 50 x 90 cm (20" x 36"), Soft/Low
+    3x  European White Goose, 90% Down Pillows, Fill Power 625 - UK Standard/US Queen, 50 x 75 cm (20" x 30"), Firm/High
+    3x  European White Goose, 100% Down Pillows, Fill Power 830 - UK Standard/US Queen, 50 x 75 cm (20" x 30"), Firm/High
+    3x  Norwegian Eiderdown Duvet
+    2x  European White Goose, 90% Down Duvet, Fill Power 755 - UK Superking, 260cm x 220 cm (102" x 87"), All Year
+    2x  European White Goose, 90% Down Pillows, Fill Power 625 - US Standard, 51 x 66 cm (20" x 26"), Firm/High
+    2x  European White Goose, 60% Down Pillows, Fill Power 500 - UK Standard/US Queen, 50 x 75 cm (20" x 30"), Medium
+    2x  European White Goose, 100% Down Duvet, Fill Power 850 - Norwegian King, 240cm x 220cm (95" x 87"), Summer
+    2x  European White Goose, 60% Down Pillows, Fill Power 500 - European Standard, 50x70cm, Soft/Low
+    2x  Masurian White Goose, 100% Down Duvet, Fill Power 915 - US Queen, 90" x 94" / 229 x 239 cm, All Year
+    2x  European White Goose, 90% Down Pillows, Fill Power 625 - UK King/US King, 50 x 90 cm (20" x 36"), Soft/Low
