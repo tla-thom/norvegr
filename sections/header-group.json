@@ -18,11 +18,11 @@
           "type": "announcement",
           "settings": {
             "use_dynamic_free_delivery": true,
-            "text": "FREE DELIVERY ON ORDERS OVER $1,000",
-            "text_us": "FREE DELIVERY ON ORDERS OVER $1,000",
-            "text_uk": "FREE DELIVERY ON ORDERS OVER £800",
-            "text_nor": "FREE DELIVERY ON ALL ORDERS",
-            "text_eur": "FREE DELIVERY ON ORDERS OVER €900",
+            "text": "FREE SHIPPING ON ORDERS OVER $1,000",
+            "text_us": "FREE SHIPPING ON ORDERS OVER $1,000",
+            "text_uk": "FREE SHIPPING ON ORDERS OVER £800",
+            "text_nor": "FREE SHIPPING ON ALL ORDERS",
+            "text_eur": "FREE SHIPPING ON ORDERS OVER €900",
             "link": ""
           }
         }
