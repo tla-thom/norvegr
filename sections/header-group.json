@@ -19,10 +19,10 @@
           "settings": {
             "use_dynamic_free_delivery": true,
             "text": "FREE DELIVERY ON ORDERS OVER $1,000",
-            "threshold_us": 1000,
-            "threshold_uk": 800,
-            "threshold_nor": 10000,
-            "threshold_eur": 900,
+            "text_us": "FREE DELIVERY ON ORDERS OVER $1,000",
+            "text_uk": "FREE DELIVERY ON ORDERS OVER £800",
+            "text_nor": "Free Shipping with all orders.",
+            "text_eur": "FREE DELIVERY ON ORDERS OVER €900",
             "link": ""
           }
         }

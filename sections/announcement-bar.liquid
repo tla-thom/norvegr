@@ -36,7 +36,7 @@
           {%- liquid
             if section.blocks.first.settings.use_dynamic_free_delivery
               capture announcement_message
-                render 'announcement-free-delivery-text', block: section.blocks.first
+                render 'announcement-region-text', block: section.blocks.first
               endcapture
               assign announcement_message = announcement_message | strip
             else
@@ -106,7 +106,7 @@
                     {%- liquid
                       if block.settings.use_dynamic_free_delivery
                         capture announcement_message
-                          render 'announcement-free-delivery-text', block: block
+                          render 'announcement-region-text', block: block
                         endcapture
                         assign announcement_message = announcement_message | strip
                       else
@@ -257,7 +257,7 @@
         {
           "type": "checkbox",
           "id": "use_dynamic_free_delivery",
-          "label": "Dynamic free delivery message by region",
+          "label": "Dynamic message by region",
           "default": true
         },
         {
@@ -265,35 +265,35 @@
           "id": "text",
           "default": "t:sections.announcement-bar.blocks.announcement.settings.text.default",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label",
-          "info": "Used when dynamic free delivery message is off."
+          "info": "Used when dynamic message by region is off, or as fallback when a regional field is empty."
         },
         {
           "type": "header",
-          "content": "Free delivery thresholds"
+          "content": "Regional messages"
         },
         {
-          "type": "number",
-          "id": "threshold_us",
-          "label": "United States (USD)",
-          "default": 1000
+          "type": "text",
+          "id": "text_us",
+          "label": "United States",
+          "default": "FREE DELIVERY ON ORDERS OVER $1,000"
         },
         {
-          "type": "number",
-          "id": "threshold_uk",
-          "label": "United Kingdom (GBP)",
-          "default": 800
+          "type": "text",
+          "id": "text_uk",
+          "label": "United Kingdom",
+          "default": "FREE DELIVERY ON ORDERS OVER £800"
         },
         {
-          "type": "number",
-          "id": "threshold_nor",
-          "label": "Norway (NOK)",
-          "default": 10000
+          "type": "text",
+          "id": "text_nor",
+          "label": "Norway",
+          "default": "Free Shipping with all orders."
         },
         {
-          "type": "number",
-          "id": "threshold_eur",
-          "label": "Europe (EUR)",
-          "default": 900
+          "type": "text",
+          "id": "text_eur",
+          "label": "Europe",
+          "default": "FREE DELIVERY ON ORDERS OVER €900"
         },
         {
           "type": "url",

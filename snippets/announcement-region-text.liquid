@@ -1,0 +1,35 @@
+{%- comment -%}
+  Region-based announcement text.
+  Uses the same regions as country-localization: US, UK, NOR, EUR.
+
+  Accepts:
+    - block: {Object} announcement block with regional text settings
+{%- endcomment -%}
+
+{%- liquid
+  assign current_iso = localization.country.iso_code
+  assign current_region = 'EUR'
+
+  if current_iso == 'GB'
+    assign current_region = 'UK'
+  elsif current_iso == 'US'
+    assign current_region = 'US'
+  elsif current_iso == 'NO'
+    assign current_region = 'NOR'
+  endif
+
+  case current_region
+    when 'US'
+      assign message = block.settings.text_us
+    when 'UK'
+      assign message = block.settings.text_uk
+    when 'NOR'
+      assign message = block.settings.text_nor
+    else
+      assign message = block.settings.text_eur
+  endcase
+
+  if message == blank
+    assign message = block.settings.text
+  endif
+-%}{{- message | escape -}}
