@@ -32,6 +32,7 @@
         "color_scheme": "scheme-1",
         "no_margin_top": true,
         "image_ratio": "square",
+        "image_object_position": "bottom center",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
