@@ -34,7 +34,7 @@
         "video_mobile": "shopify://files/videos/novegr-home-sm-mob_b7d70f02-c8d7-4d53-82b6-71165b269227.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
-        "video_height": "xlarge",
+        "video_height": "large",
         "mobile_height": "80",
         "content_position": "middle-center",
         "full_width": true,
@@ -275,7 +275,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
@@ -412,7 +412,7 @@
       "settings": {
         "image": "shopify://shop_images/Norvegr-AW2025-Campaign-035.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "xlarge",
+        "image_height": "large",
         "mobile_height": "70",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",
