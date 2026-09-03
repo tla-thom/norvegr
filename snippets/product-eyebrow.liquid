@@ -1,0 +1,20 @@
+{%- comment -%}
+  Collection label / eyebrow above product titles.
+
+  Accepts:
+    - product: {Object} Product Liquid object
+    - class: {String} Optional extra classes
+{%- endcomment -%}
+
+{%- liquid
+  assign eyebrow = product.metafields.custom.product_eyebrow.value
+  if eyebrow == blank
+    assign eyebrow = product.metafields.custom.product_eyebrow
+  endif
+-%}
+
+{%- if eyebrow != blank -%}
+  <p class="product-eyebrow caption-with-letter-spacing light{% if class != blank %} {{ class }}{% endif %}">
+    {{- eyebrow | escape -}}
+  </p>
+{%- endif -%}

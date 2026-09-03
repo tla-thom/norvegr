@@ -6,6 +6,12 @@ Product-linked line items: 22
 Custom/historical line items: 756
 Service orders (no Woo line items): 12
 Skipped orders (missing email): 0
+Addresses normalised: 10
+Emails normalised: 11
+Invalid phones left blank: 35
+
+Import fixes: Name on all rows, inline sale transaction on first line item,
+customer linked by Customer: Email only, address fallbacks for incomplete Woo data.
 
 Files:
   Full import: /Users/thombennett/Downloads/Orders.csv

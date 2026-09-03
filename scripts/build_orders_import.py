@@ -13,6 +13,8 @@ SHOPIFY_PRODUCTS = Path("/Users/thombennett/Downloads/products_export 4.csv")
 OUT_FULL = Path("/Users/thombennett/Downloads/Orders.csv")
 OUT_REPO = Path("/Users/thombennett/Documents/GitHub/norvegr-new/Orders.csv")
 OUT_SAMPLE = Path("/Users/thombennett/Downloads/Orders-sample.csv")
+OUT_SAMPLE_20 = Path("/Users/thombennett/Downloads/Orders-sample-20.csv")
+OUT_SAMPLE_20_REPO = Path("/Users/thombennett/Documents/GitHub/norvegr-new/Orders-sample-20.csv")
 OUT_DELETE_TEST = Path("/Users/thombennett/Downloads/Orders-delete-test.csv")
 OUT_REPORT = Path("/Users/thombennett/Documents/GitHub/norvegr-new/orders-import-report.txt")
 OUT_REPORT_DL = Path("/Users/thombennett/Downloads/orders-import-report.txt")
@@ -236,6 +238,50 @@ def blank_row() -> dict:
     return {header: "" for header in HEADERS}
 
 
+def valid_email(value: str) -> bool:
+    value = (value or "").strip()
+    if not value:
+        return False
+    return re.match(r"^[^@\s]+@[^@\s]+\.[^@\s]+$", value) is not None
+
+
+def sanitize_email(email: str, order_number: str, note: str) -> tuple[str, str]:
+    """Return email safe for Shopify import and updated note if adjusted."""
+    email = (email or "").strip().lower()
+    if valid_email(email):
+        return email, note
+
+    note = f"{note} Original email: {email}.".strip()
+    fallback = f"woo-{order_number}@orders.norvegr.com"
+    return fallback, note
+
+
+def address_fields(first: dict, kind: str) -> dict[str, str]:
+    prefix = "Billing" if kind == "billing" else "Shipping"
+    other = "Shipping" if kind == "billing" else "Billing"
+
+    def get(field: str, source: str) -> str:
+        return (first.get(f"{field} ({source})") or "").strip()
+
+    first_name = get("First Name", prefix) or get("First Name", other)
+    last_name = get("Last Name", prefix) or get("Last Name", other) or first_name or "Customer"
+    address_1 = get("Address 1&2", prefix) or get("Address 1&2", other) or "Address not recorded"
+    city = get("City", prefix) or get("City", other) or "City not recorded"
+    province = get("State Code", prefix) or get("State Code", other)
+    zip_code = get("Postcode", prefix) or get("Postcode", other)
+    country = (get("Country Code", prefix) or get("Country Code", other)).upper()
+
+    return {
+        "first_name": first_name,
+        "last_name": last_name,
+        "address_1": address_1,
+        "city": city,
+        "province": province,
+        "zip": zip_code,
+        "country": country,
+    }
+
+
 def build_orders() -> tuple[list[dict], dict]:
     lookup = load_product_lookup(SHOPIFY_PRODUCTS)
 
@@ -257,14 +303,17 @@ def build_orders() -> tuple[list[dict], dict]:
         "custom_line_items": 0,
         "service_orders": 0,
         "skipped_orders": 0,
+        "fixed_addresses": 0,
+        "fixed_emails": 0,
+        "blank_phones": 0,
         "unmatched_names": Counter(),
     }
 
     for order_number in sorted(grouped.keys(), key=lambda value: int(value)):
         rows = grouped[order_number]
         first = rows[0]
-        email = (first.get("Email (Billing)") or "").strip()
-        if not email:
+        raw_email = (first.get("Email (Billing)") or "").strip()
+        if not raw_email:
             stats["skipped_orders"] += 1
             continue
 
@@ -281,6 +330,10 @@ def build_orders() -> tuple[list[dict], dict]:
         note = "Imported from WooCommerce."
         if customer_note:
             note = f"{note} {customer_note}"
+
+        email, note = sanitize_email(raw_email, order_number, note)
+        if email != raw_email:
+            stats["fixed_emails"] += 1
 
         line_items = []
         for index, row in enumerate(rows, start=1):
@@ -332,10 +385,39 @@ def build_orders() -> tuple[list[dict], dict]:
 
         fulfillment_id = str(int(order_number)) if fulfill else ""
         order_number_value = str(int(order_number))
-        billing_country = (first.get("Country Code (Billing)") or "").strip().upper()
-        shipping_country = (first.get("Country Code (Shipping)") or "").strip().upper() or billing_country
-        billing_phone = fmt_phone(first.get("Phone (Billing)", ""), billing_country)
-        shipping_phone = fmt_phone(first.get("Phone (Shipping)", ""), shipping_country)
+        billing = address_fields(first, "billing")
+        shipping = address_fields(first, "shipping")
+
+        raw_billing = {
+            "first_name": (first.get("First Name (Billing)") or "").strip(),
+            "last_name": (first.get("Last Name (Billing)") or "").strip(),
+            "address_1": (first.get("Address 1&2 (Billing)") or "").strip(),
+            "city": (first.get("City (Billing)") or "").strip(),
+            "country": (first.get("Country Code (Billing)") or "").strip().upper(),
+        }
+        raw_shipping = {
+            "first_name": (first.get("First Name (Shipping)") or "").strip(),
+            "last_name": (first.get("Last Name (Shipping)") or "").strip(),
+            "address_1": (first.get("Address 1&2 (Shipping)") or "").strip(),
+            "city": (first.get("City (Shipping)") or "").strip(),
+            "country": (first.get("Country Code (Shipping)") or "").strip().upper(),
+        }
+        if (
+            billing["last_name"] != raw_billing["last_name"]
+            or billing["address_1"] != raw_billing["address_1"]
+            or billing["city"] != raw_billing["city"]
+            or shipping["last_name"] != raw_shipping["last_name"]
+            or shipping["address_1"] != raw_shipping["address_1"]
+            or shipping["city"] != raw_shipping["city"]
+        ):
+            stats["fixed_addresses"] += 1
+
+        billing_phone = fmt_phone(first.get("Phone (Billing)", ""), billing["country"])
+        shipping_phone = fmt_phone(first.get("Phone (Shipping)", ""), shipping["country"])
+        if not billing_phone and first.get("Phone (Billing)", "").strip():
+            stats["blank_phones"] += 1
+        if not shipping_phone and first.get("Phone (Shipping)", "").strip():
+            stats["blank_phones"] += 1
 
         order_header = {
             "Name": order_name,
@@ -349,28 +431,26 @@ def build_orders() -> tuple[list[dict], dict]:
             "Tags": "WooCommerce",
             "Note": note,
             "Email": email,
-            "Phone": billing_phone,
+            "Phone": "",
             "Payment: Status": payment,
             "Customer: Email": email,
-            "Customer: First Name": (first.get("First Name (Billing)") or "").strip(),
-            "Customer: Last Name": (first.get("Last Name (Billing)") or "").strip(),
-            "Billing: First Name": (first.get("First Name (Billing)") or "").strip(),
-            "Billing: Last Name": (first.get("Last Name (Billing)") or "").strip(),
+            "Billing: First Name": billing["first_name"],
+            "Billing: Last Name": billing["last_name"],
             "Billing: Company": (first.get("Company (Billing)") or "").strip(),
-            "Billing: Address 1": (first.get("Address 1&2 (Billing)") or "").strip(),
-            "Billing: City": (first.get("City (Billing)") or "").strip(),
-            "Billing: Province Code": (first.get("State Code (Billing)") or "").strip(),
-            "Billing: Zip": (first.get("Postcode (Billing)") or "").strip(),
-            "Billing: Country Code": billing_country,
-            "Billing: Phone": billing_phone,
-            "Shipping: First Name": (first.get("First Name (Shipping)") or "").strip(),
-            "Shipping: Last Name": (first.get("Last Name (Shipping)") or "").strip(),
-            "Shipping: Address 1": (first.get("Address 1&2 (Shipping)") or "").strip(),
-            "Shipping: City": (first.get("City (Shipping)") or "").strip(),
-            "Shipping: Province Code": (first.get("State Code (Shipping)") or "").strip(),
-            "Shipping: Zip": (first.get("Postcode (Shipping)") or "").strip(),
-            "Shipping: Country Code": shipping_country,
-            "Shipping: Phone": shipping_phone,
+            "Billing: Address 1": billing["address_1"],
+            "Billing: City": billing["city"],
+            "Billing: Province Code": billing["province"],
+            "Billing: Zip": billing["zip"],
+            "Billing: Country Code": billing["country"],
+            "Billing: Phone": "",
+            "Shipping: First Name": shipping["first_name"],
+            "Shipping: Last Name": shipping["last_name"],
+            "Shipping: Address 1": shipping["address_1"],
+            "Shipping: City": shipping["city"],
+            "Shipping: Province Code": shipping["province"],
+            "Shipping: Zip": shipping["zip"],
+            "Shipping: Country Code": shipping["country"],
+            "Shipping: Phone": "",
         }
 
         if shipping_amount > 0:
@@ -379,9 +459,10 @@ def build_orders() -> tuple[list[dict], dict]:
 
         line_subtotal = sum(line["quantity"] * line["price"] for line in line_items)
         calculated_total = max(line_subtotal + shipping_amount - refund_amount, 0)
-        if payment == "paid":
-            paid_amount = calculated_total
+        paid_amount = 0.0
         woo_total = max(order_total - refund_amount, 0)
+        if payment == "paid":
+            paid_amount = calculated_total if calculated_total > 0 else woo_total
         if payment == "paid" and woo_total and abs(woo_total - calculated_total) > 0.05:
             stats.setdefault("total_mismatches", []).append(
                 f"WOO-{order_number}: woo={woo_total:.2f} calculated={calculated_total:.2f}"
@@ -389,9 +470,20 @@ def build_orders() -> tuple[list[dict], dict]:
 
         for index, line in enumerate(line_items):
             row = blank_row()
+            row["Name"] = order_name
             row["Number"] = order_number_value
             if index == 0:
                 row.update(order_header)
+                if payment == "paid" and paid_amount > 0:
+                    row.update(
+                        {
+                            "Transaction: Kind": "sale",
+                            "Transaction: Processed At": processed_at,
+                            "Transaction: Amount": f"{paid_amount:.2f}",
+                            "Transaction: Currency": "USD",
+                            "Transaction: Status": "success",
+                        }
+                    )
 
             row.update(
                 {
@@ -414,21 +506,6 @@ def build_orders() -> tuple[list[dict], dict]:
                 row["Fulfillment: Processed At"] = processed_at
 
             output_rows.append(row)
-
-        if payment == "paid" and paid_amount > 0:
-            txn_row = blank_row()
-            txn_row.update(
-                {
-                    "Number": order_number_value,
-                    "Line: Type": "Transaction",
-                    "Transaction: Kind": "sale",
-                    "Transaction: Processed At": processed_at,
-                    "Transaction: Amount": f"{paid_amount:.2f}",
-                    "Transaction: Currency": "USD",
-                    "Transaction: Status": "success",
-                }
-            )
-            output_rows.append(txn_row)
 
     return output_rows, stats
 
@@ -469,6 +546,9 @@ def main() -> None:
 
     sample_rows = write_sample(rows, 10)
     write_csv(OUT_SAMPLE, sample_rows)
+    sample_rows_20 = write_sample(rows, 20)
+    write_csv(OUT_SAMPLE_20, sample_rows_20)
+    write_csv(OUT_SAMPLE_20_REPO, sample_rows_20)
     write_delete_test_orders(OUT_DELETE_TEST)
 
     unmatched = stats["unmatched_names"]
@@ -481,6 +561,12 @@ def main() -> None:
         f"Custom/historical line items: {stats['custom_line_items']}",
         f"Service orders (no Woo line items): {stats['service_orders']}",
         f"Skipped orders (missing email): {stats['skipped_orders']}",
+        f"Addresses normalised: {stats['fixed_addresses']}",
+        f"Emails normalised: {stats['fixed_emails']}",
+        f"Invalid phones left blank: {stats['blank_phones']}",
+        "",
+        "Import fixes: Name on all rows, inline sale transaction on first line item,",
+        "customer linked by Customer: Email only, address fallbacks for incomplete Woo data.",
         "",
         "Files:",
         f"  Full import: {OUT_FULL}",
