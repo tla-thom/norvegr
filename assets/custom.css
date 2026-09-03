@@ -784,7 +784,8 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
   }
 }
 
-.featured-collection-section .card__buy-now {
+.featured-collection-section .card__buy-now,
+collection-component .card__buy-now {
   margin-top: 15px;
   position: relative;
   z-index: 2;
@@ -793,26 +794,6 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
 .featured-collection-section .card__heading {
   margin-top: 5px;
   margin-bottom: 15px;
-}
-
-/* Featured collection — swap eyebrow and title sizes */
-.featured-collection-section .card__eyebrow {
-  font-size: calc(var(--font-heading-scale) * 1.2rem);
-  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
-}
-
-@media screen and (min-width: 750px) {
-  .featured-collection-section .card__eyebrow {
-    font-size: calc(var(--font-heading-scale) * 1.3rem);
-  }
-}
-
-.featured-collection-section .card__eyebrow + .card__heading,
-.featured-collection-section .card__heading {
-  font-size: 1.2rem;
-  letter-spacing: 0.12rem;
-  line-height: 1.3;
-  font-weight: 400;
 }
 
 .featured-collection-section .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
@@ -1039,14 +1020,36 @@ main[data-template="product"] .product__title .product-eyebrow {
   z-index: 2;
 }
 
-.featured-collection-section .card__eyebrow,
-.collection .card__eyebrow {
+.featured-collection-section .product-card-wrapper .product-eyebrow.card__eyebrow,
+collection-component .product-card-wrapper .product-eyebrow.card__eyebrow {
   margin-bottom: 2rem;
 }
 
-.featured-collection-section .card__eyebrow + .card__heading,
-.collection .card__eyebrow + .card__heading {
+.featured-collection-section .product-card-wrapper .card__eyebrow + .card__heading,
+collection-component .product-card-wrapper .card__eyebrow + .card__heading {
   margin-top: 0;
+}
+
+/* Card eyebrow/title size swap — keep after base .product-eyebrow rules */
+.featured-collection-section .product-card-wrapper .product-eyebrow.card__eyebrow,
+collection-component .product-card-wrapper .product-eyebrow.card__eyebrow {
+  font-size: calc(var(--font-heading-scale) * 1.7rem);
+  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+}
+
+@media screen and (min-width: 750px) {
+  .featured-collection-section .product-card-wrapper .product-eyebrow.card__eyebrow,
+  collection-component .product-card-wrapper .product-eyebrow.card__eyebrow {
+    font-size: calc(var(--font-heading-scale) * 1.6rem);
+  }
+}
+
+.featured-collection-section .product-card-wrapper h3.card__heading,
+collection-component .product-card-wrapper h3.card__heading {
+  font-size: 1.2rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.3;
+  font-weight: 400;
 }
 
 /* Rich text content max width */
