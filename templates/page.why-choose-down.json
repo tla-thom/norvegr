@@ -111,11 +111,6 @@
         "padding_bottom": 0
       }
     },
-    "why_choose_down_decorations_aV4fkf": {
-      "type": "why-choose-down-decorations",
-      "name": "Why Choose Down decor",
-      "settings": {}
-    },
     "rich_text_dLrXck": {
       "type": "rich-text",
       "blocks": {
@@ -162,6 +157,11 @@
         "padding_top": 0,
         "padding_bottom": 40
       }
+    },
+    "why_choose_down_decorations_aV4fkf": {
+      "type": "why-choose-down-decorations",
+      "name": "Why Choose Down decor",
+      "settings": {}
     },
     "rich_text_UJ7TY9": {
       "type": "rich-text",
@@ -504,8 +504,8 @@
   "order": [
     "image_banner_XfR4bc",
     "rich_text_H4F3yh",
-    "why_choose_down_decorations_aV4fkf",
     "rich_text_dLrXck",
+    "why_choose_down_decorations_aV4fkf",
     "rich_text_UJ7TY9",
     "rich_text_gDMLFj",
     "rich_text_UzQAd9",
