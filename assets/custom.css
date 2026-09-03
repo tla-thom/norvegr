@@ -786,7 +786,7 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
 
 .featured-collection-section .card__buy-now,
 collection-component .card__buy-now {
-  margin-top: 15px;
+  margin-top: 30px;
   position: relative;
   z-index: 2;
 }
@@ -1040,7 +1040,7 @@ collection-component .product-card-wrapper .product-eyebrow.card__eyebrow {
 @media screen and (min-width: 750px) {
   .featured-collection-section .product-card-wrapper .product-eyebrow.card__eyebrow,
   collection-component .product-card-wrapper .product-eyebrow.card__eyebrow {
-    font-size: calc(var(--font-heading-scale) * 1.6rem);
+    font-size: calc(var(--font-heading-scale) * 1.4rem);
   }
 }
 
