@@ -1329,11 +1329,3 @@ table.tablesorter td a:hover {
     transform: scale(1);
   }
 }
-
-/* Collection card — Buy Now spacing (after component-card.css sibling rules) */
-collection-component .card-information .card__buy-now,
-.featured-collection-section .card-information .card__buy-now {
-  margin-top: 20px;
-  position: relative;
-  z-index: 2;
-}
