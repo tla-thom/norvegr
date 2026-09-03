@@ -30,7 +30,7 @@
   letter-spacing: 0.08rem;
   font-size: 1.1rem;
   border: var(--variant-pills-border-width) solid #ccc;
-  background-color: #fff;
+  background-color: transparent;
   color: rgb(var(--color-foreground));
   border-radius: var(--variant-pills-radius);
   display: inline-block;

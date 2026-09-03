@@ -3,7 +3,7 @@
   bottom: 40px;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -12,12 +12,22 @@
 }
 
 .banner-anchor-nav__nav .page-width {
-  padding-left: var(--page-width-margin, 1.5rem);
-  padding-right: var(--page-width-margin, 1.5rem);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .banner-anchor-nav .banner__content {
-  z-index: 1;
+  z-index: 3;
+}
+
+.banner-anchor-nav .anchor-nav__link {
+  border-color: rgba(var(--color-foreground), 0.5);
+  background-color: transparent;
+}
+
+.banner-anchor-nav .anchor-nav__link:hover {
+  border-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-foreground));
 }
 
 @media screen and (max-width: 749px) {
