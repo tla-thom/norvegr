@@ -760,6 +760,16 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
     0 0 0 calc(var(--buttons-border-width) + 1px) #988140;
 }
 
+/* Shop Pay — greyscale on storefront (product, cart, drawer) */
+shop-pay-wallet-button,
+shop-pay-button,
+shopify-accelerated-checkout,
+shopify-accelerated-checkout-cart,
+.shopify-payment-button .shopify-payment-button__button:not(.shopify-payment-button__button--unbranded) {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 /* collection section*/
 .collection {
     .collection__title.title-wrapper {
@@ -1003,9 +1013,16 @@ summary .icon-caret {
   margin-top: 0;
 }
 
-/* Product page — eyebrow spacing only */
+/* Product page — eyebrow and title sizes */
 main[data-template="product"] .product__title .product-eyebrow {
-  margin-bottom: 25px !important;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 15px !important;
+}
+
+main[data-template="product"] .product__title > h1 {
+  font-size: 1.8rem;
+  line-height: 1.3;
 }
 
 .card__eyebrow {
@@ -1328,4 +1345,12 @@ table.tablesorter td a:hover {
   .animate--hover-vertical-lift .shopify-payment-button__button:active {
     transform: scale(1);
   }
+}
+
+/* Collection card — Buy Now spacing */
+collection-component .card-information .card__buy-now,
+.featured-collection-section .card-information .card__buy-now {
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
 }

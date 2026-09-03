@@ -204,6 +204,26 @@
   object-fit: contain;
 }
 
+@media screen and (min-width: 990px) {
+  .rich-text-overlay__brand-slider .brand-slider__logo {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    min-height: 0;
+    position: relative;
+  }
+
+  .rich-text-overlay__brand-slider .brand-slider__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+    transform: scale(2);
+    transform-origin: center center;
+  }
+}
+
 .rich-text-overlay__brand-slider .brand-slider__controls {
   display: none;
 }
