@@ -113,7 +113,7 @@
         "constrain_to_viewport": false,
         "media_fit": "cover",
         "image_ratio": "square",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
@@ -189,7 +189,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_41_Norvegr-Winter-Campaign-01.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "mobile_height": "80",
         "image_behavior": "zoom-in",
         "title": "Duvet Buying guide",
@@ -262,7 +262,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
@@ -320,7 +320,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_83_missing-piece-2048x1366_7518291d-a7ca-4edf-99a8-8c7fe4a20172.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "large",
+        "image_height": "small",
         "mobile_height": "70",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",
