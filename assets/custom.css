@@ -1222,6 +1222,38 @@ slideshow-component {
   filter: grayscale(100%);
 }
 
+/* Footer copyright + policy links — center align */
+.footer__copyright {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center) .footer__copyright {
+    text-align: center;
+  }
+}
+
+/* Footer prow — under About Norvegr menu, desktop only */
+.footer-prow {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-prow {
+    display: block;
+    margin-top: 2.4rem;
+    max-width: 150px;
+    margin-inline: auto;
+  }
+
+  .footer-prow img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .footer-block__heading {
     font-size: 1.5rem;

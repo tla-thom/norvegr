@@ -34,6 +34,7 @@
         },
         "footer_image_KyKFrM": {
           "type": "footer_image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/prow.svg",
             "image_width": "small",
@@ -67,7 +68,6 @@
       },
       "block_order": [
         "forms_inline_z3nmk3",
-        "footer_image_KyKFrM",
         "link_list_W7NqxQ",
         "link_list_mA6MUP",
         "link_list_6fUWTK"

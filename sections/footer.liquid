@@ -83,6 +83,9 @@
             {% endif %}
           >
             {%- for block in section.blocks -%}
+              {%- if block.type == 'footer_image' -%}
+                {%- continue -%}
+              {%- endif -%}
               <div
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if block.type == 'footer_image' %} footer-block--footer-image{% endif %}{% if block.type == 'footer_image' and block.settings.display_block %} footer-block--display-block{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
@@ -116,6 +119,9 @@
                           </li>
                         {%- endfor -%}
                       </ul>
+                    {%- endif -%}
+                    {%- if block.settings.menu.handle == 'about-nervegr' -%}
+                      {%- render 'footer-prow' -%}
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
