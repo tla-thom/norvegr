@@ -593,3 +593,9 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+.card-information .card__buy-now {
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
