@@ -770,6 +770,12 @@ shopify-accelerated-checkout-cart,
   -webkit-filter: grayscale(100%);
 }
 
+/* Sign in with Shop — login page + footer follow button */
+shop-login-button {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 /* collection section*/
 .collection {
     .collection__title.title-wrapper {
