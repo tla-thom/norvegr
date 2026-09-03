@@ -412,7 +412,7 @@
       "settings": {
         "image": "shopify://shop_images/Norvegr-AW2025-Campaign-035.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "70",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",

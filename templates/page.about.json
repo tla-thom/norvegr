@@ -52,7 +52,7 @@
       "settings": {
         "image": "shopify://shop_images/Norwegian_fjord_from_brochure_ccd82b92-868b-49f2-a238-e791aa4a4c46.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -111,7 +111,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-right",
         "fullpage_width": true,
@@ -209,7 +209,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
