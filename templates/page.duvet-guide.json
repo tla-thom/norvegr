@@ -69,7 +69,7 @@
         "image": "shopify://shop_images/Norv-Ost-Couple-2023-03.jpg",
         "image_overlay_opacity": 10,
         "image_height": "large",
-        "mobile_height": "default",
+        "mobile_height": "60",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
