@@ -105,12 +105,13 @@
         "constrain_to_viewport": false,
         "media_fit": "cover",
         "image_ratio": "square",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
         "enable_video_looping": false,
+        "enable_dependent_variant_options": false,
         "padding_top": 20,
         "padding_bottom": 32
       }
