@@ -113,7 +113,7 @@
         "constrain_to_viewport": false,
         "media_fit": "cover",
         "image_ratio": "square",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
@@ -248,7 +248,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_7_Low-res-NorvegrA_W-2024-15.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "large",
+        "image_height": "small",
         "mobile_height": "70",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",
@@ -294,7 +294,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
