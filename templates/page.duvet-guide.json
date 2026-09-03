@@ -52,7 +52,7 @@
       "settings": {
         "image": "shopify://shop_images/Norv-Ost-Couple-2023-03.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -208,7 +208,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_16_NORVEGR-SPRING_SUMMER2026-042-scaled.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -310,7 +310,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_17_NORVEGR-SPRING_SUMMER2026-054-scaled_1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -412,7 +412,7 @@
       "settings": {
         "image": "shopify://shop_images/Low-res-NorvegrA_W-2024-41.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -504,7 +504,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
@@ -566,7 +566,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_21_Norvegr-Factory-Trondheim_005-scaled.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
