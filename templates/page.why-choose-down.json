@@ -480,7 +480,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_19_NORVEGR-SPRING_SUMMER2026-034-scaled.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
