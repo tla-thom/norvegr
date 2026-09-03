@@ -30,6 +30,17 @@
   color: rgb(var(--color-foreground));
 }
 
+@media screen and (min-width: 750px) {
+  .banner-anchor-nav__nav {
+    bottom: 80px;
+  }
+
+  .banner-anchor-nav .anchor-nav__link {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .banner-anchor-nav.banner--mobile-bottom .banner-anchor-nav__nav {
     position: absolute;
