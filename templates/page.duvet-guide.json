@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "image_banner_E77hzD": {
-      "type": "image-banner",
+    "banner_anchor_nav_GJ9ity": {
+      "type": "banner-anchor-nav",
       "blocks": {
-        "heading_NTryEW": {
+        "heading_kfLLg8": {
           "type": "heading",
           "settings": {
             "heading": "<em>Duvet Guide</em>",
@@ -20,82 +20,35 @@
             "use_body_font": true
           }
         },
-        "text_iqdcLJ": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
-            "text_style": "body"
-          }
-        },
-        "buttons_wBemcX": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_popup_page_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_popup_page_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_NTryEW",
-        "text_iqdcLJ",
-        "buttons_wBemcX"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Norv-Ost-Couple-2023-03.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "mobile_height": "default",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
-    "anchor_nav_MAJEa4": {
-      "type": "anchor-nav",
-      "blocks": {
-        "link_XfefgC": {
+        "link_tCU7XB": {
           "type": "link",
           "settings": {
             "label": "What Makes a Good Duvet ",
             "anchor_id": "shopify-section-template--31727302934866__rich_text_cAVPRH"
           }
         },
-        "link_jTfEFx": {
+        "link_MUT6q4": {
           "type": "link",
           "settings": {
             "label": "What’s Inside",
             "anchor_id": "shopify-section-template--31727302934866__rich_text_MiwzjV"
           }
         },
-        "link_WBLRBt": {
+        "link_CX8JXc": {
           "type": "link",
           "settings": {
             "label": "Choosing Weight",
             "anchor_id": "shopify-section-template--31727302934866__rich_text_eeMcp6"
           }
         },
-        "link_JJ8kHz": {
+        "link_8bqnbt": {
           "type": "link",
           "settings": {
             "label": "Duvet vs Comforter",
             "anchor_id": "shopify-section-template--31727302934866__multirow_jY6FWM"
           }
         },
-        "link_473CXt": {
+        "link_nHGp4Q": {
           "type": "link",
           "settings": {
             "label": "Sleep Like a Scandi",
@@ -104,19 +57,28 @@
         }
       },
       "block_order": [
-        "link_XfefgC",
-        "link_jTfEFx",
-        "link_WBLRBt",
-        "link_JJ8kHz",
-        "link_473CXt"
+        "heading_kfLLg8",
+        "link_tCU7XB",
+        "link_MUT6q4",
+        "link_CX8JXc",
+        "link_8bqnbt",
+        "link_nHGp4Q"
       ],
-      "name": "t:sections.anchor-nav.presets.name",
+      "name": "t:sections.banner-anchor-nav.presets.name",
       "settings": {
+        "image": "shopify://shop_images/Norv-Ost-Couple-2023-03.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "large",
+        "mobile_height": "default",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
         "accessibility_label": "Page sections",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "anchor_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "show_text_below": false
       }
     },
     "rich_text_H4F3yh": {
@@ -588,8 +550,7 @@
     }
   },
   "order": [
-    "image_banner_E77hzD",
-    "anchor_nav_MAJEa4",
+    "banner_anchor_nav_GJ9ity",
     "rich_text_H4F3yh",
     "image_banner_DAPy6d",
     "rich_text_cAVPRH",
