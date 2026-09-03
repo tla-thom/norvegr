@@ -461,7 +461,7 @@
   overflow: hidden;
 }
 
-.card-information > * + * {
+.card-information > * + *:not(.card__buy-now) {
   margin-top: 0.5rem;
 }
 
@@ -494,7 +494,7 @@
   margin-top: 0;
 }
 
-.card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
+.card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note):not(.card__buy-now) {
   margin-top: 0.7rem;
 }
 

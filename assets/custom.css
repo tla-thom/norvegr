@@ -784,13 +784,6 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
   }
 }
 
-collection-component .product-card-wrapper .card-information > .price + .card__buy-now,
-.featured-collection-section .product-card-wrapper .card-information > .price + .card__buy-now {
-  margin-top: 30px;
-  position: relative;
-  z-index: 2;
-}
-
 .featured-collection-section .card__heading {
   margin-top: 5px;
   margin-bottom: 15px;
@@ -1335,4 +1328,12 @@ table.tablesorter td a:hover {
   .animate--hover-vertical-lift .shopify-payment-button__button:active {
     transform: scale(1);
   }
+}
+
+/* Collection card — Buy Now spacing (after component-card.css sibling rules) */
+collection-component .card-information .card__buy-now,
+.featured-collection-section .card-information .card__buy-now {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
 }
