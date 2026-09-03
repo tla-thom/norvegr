@@ -117,7 +117,8 @@ header .header__menu-item span,
 header .header__search-label,
 .collection .price,
 .image-with-text__content .image-with-text__text--caption,
-.collection__subtitle.image-with-text__text--caption {
+.collection__subtitle.image-with-text__text--caption,
+.product-eyebrow {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
@@ -994,12 +995,14 @@ summary .icon-caret {
 
 .product-eyebrow {
   font-family: 'Styrene A', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.12rem;
   font-size: 1.2rem;
   line-height: 1.3;
   margin: 0 0 0.8rem;
+  color: rgb(var(--color-foreground));
+  opacity: 1;
 }
 
 .product__eyebrow + h1 {
@@ -1013,7 +1016,7 @@ summary .icon-caret {
 
 .featured-collection-section .card__eyebrow,
 .collection .card__eyebrow {
-  margin-bottom: 0.6rem;
+  margin-bottom: 2rem;
 }
 
 .featured-collection-section .card__eyebrow + .card__heading,

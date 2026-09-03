@@ -14,7 +14,7 @@
 -%}
 
 {%- if eyebrow != blank -%}
-  <p class="product-eyebrow caption-with-letter-spacing light{% if class != blank %} {{ class }}{% endif %}">
+  <p class="product-eyebrow caption-with-letter-spacing{% if class != blank %} {{ class }}{% endif %}">
     {{- eyebrow | escape -}}
   </p>
 {%- endif -%}
