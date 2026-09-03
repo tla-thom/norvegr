@@ -1223,15 +1223,13 @@ slideshow-component {
 }
 
 /* Footer copyright + policy links — center align */
-.footer__copyright {
-  text-align: center;
-  width: 100%;
+.footer__content-bottom-wrapper:last-child {
+  justify-content: center;
 }
 
-@media screen and (min-width: 750px) {
-  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center) .footer__copyright {
-    text-align: center;
-  }
+.footer__copyright {
+  text-align: center !important;
+  width: 100%;
 }
 
 /* Footer prow — under About Norvegr menu, desktop only */
