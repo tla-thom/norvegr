@@ -1266,19 +1266,19 @@ slideshow-component {
   .why-choose-down-decorations__img--duck {
     left: 0;
     top: 2rem;
-    width: min(28rem, 22vw);
+    width: min(32.2rem, 22vw);
   }
 
   .why-choose-down-decorations__img--down {
     right: 0;
     top: 24rem;
-    width: min(26rem, 20vw);
+    width: min(29.9rem, 20vw);
   }
 
   .why-choose-down-decorations__img--feathers {
     left: 2rem;
     top: 46rem;
-    width: min(18rem, 14vw);
+    width: min(20.7rem, 14vw);
   }
 }
 

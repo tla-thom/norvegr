@@ -593,6 +593,20 @@
         "name": "Anchor navigation"
       }
     },
+    "banner-anchor-nav": {
+      "name": "Banner anchor nav",
+      "settings": {
+        "anchor_header": {
+          "content": "Anchor links"
+        },
+        "anchor_alignment": {
+          "label": "Anchor link alignment"
+        }
+      },
+      "presets": {
+        "name": "Banner anchor nav"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {

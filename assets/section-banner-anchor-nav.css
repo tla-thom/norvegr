@@ -1,0 +1,32 @@
+.banner-anchor-nav__nav {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.banner-anchor-nav__nav .anchor-nav__nav {
+  pointer-events: auto;
+}
+
+.banner-anchor-nav__nav .page-width {
+  padding-left: var(--page-width-margin, 1.5rem);
+  padding-right: var(--page-width-margin, 1.5rem);
+}
+
+.banner-anchor-nav .banner__content {
+  z-index: 1;
+}
+
+@media screen and (max-width: 749px) {
+  .banner-anchor-nav.banner--mobile-bottom .banner-anchor-nav__nav {
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .banner-anchor-nav.banner--mobile-bottom .banner__media {
+    position: relative;
+  }
+}
