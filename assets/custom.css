@@ -1232,6 +1232,56 @@ slideshow-component {
   width: 100%;
 }
 
+/* Why Choose Down — decorative side images, desktop only */
+.why-choose-down-decorations {
+  display: none;
+}
+
+@media screen and (min-width: 990px) {
+  .section-why-choose-down-decorations {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .why-choose-down-decorations {
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .why-choose-down-decorations__inner {
+    position: relative;
+    height: 0;
+  }
+
+  .why-choose-down-decorations__img {
+    position: absolute;
+    height: auto;
+    max-width: none;
+  }
+
+  .why-choose-down-decorations__img--duck {
+    left: 0;
+    top: 2rem;
+    width: min(28rem, 22vw);
+  }
+
+  .why-choose-down-decorations__img--down {
+    right: 0;
+    top: 24rem;
+    width: min(26rem, 20vw);
+  }
+
+  .why-choose-down-decorations__img--feathers {
+    left: 2rem;
+    top: 46rem;
+    width: min(18rem, 14vw);
+  }
+}
+
 /* Footer prow — under About Norvegr menu, desktop only */
 .footer-prow {
   display: none;
