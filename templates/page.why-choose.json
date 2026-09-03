@@ -34,7 +34,7 @@
         "video_mobile": "shopify://files/videos/about-nor-trim-mob.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
-        "video_height": "xlarge",
+        "video_height": "large",
         "mobile_height": "60",
         "content_position": "middle-center",
         "full_width": true,
@@ -187,7 +187,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
