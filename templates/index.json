@@ -227,7 +227,8 @@
             "heading": "",
             "text": "<p>Our signature, time-tested construction style perfectly balances insulation with breathability, keeping heat circulated from top to toe.</p>",
             "button_label": "Why Norvegr",
-            "button_link": "shopify://pages/why-choose-norvegr"
+            "button_link": "shopify://pages/why-choose-norvegr",
+            "button_anchor": "anchor5"
           }
         },
         "row_iUJXrF": {
@@ -239,7 +240,8 @@
             "heading": "",
             "text": "<p>Down with exceptional fill power combined with our signature channel construction result in some of the world’s lightest, most breathable products.</p>",
             "button_label": "Why Norvegr",
-            "button_link": "shopify://pages/why-choose-down"
+            "button_link": "shopify://pages/why-choose-down",
+            "button_anchor": ""
           }
         },
         "row_kgmpXV": {
@@ -251,7 +253,8 @@
             "heading": "",
             "text": "<p>Three generations of Stene family expertise are layered onto a rich legacy of Norwegian craft excellence.</p>",
             "button_label": "About Norvegr",
-            "button_link": "shopify://pages/about-norvegr"
+            "button_link": "shopify://pages/about-norvegr",
+            "button_anchor": ""
           }
         },
         "row_rXUiCW": {
@@ -263,7 +266,8 @@
             "heading": "",
             "text": "<p>An exclusive restoration service for our products ensures that your purchase will become a lifelong luxury.</p>",
             "button_label": "Why Norvegr",
-            "button_link": "shopify://pages/why-choose-norvegr"
+            "button_link": "shopify://pages/why-choose-norvegr",
+            "button_anchor": ""
           }
         }
       },
