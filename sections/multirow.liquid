@@ -92,11 +92,22 @@
                 <div class="image-with-text__text rte {{ section.settings.text_style }}">{{ block.settings.text }}</div>
               {%- endif -%}
               {%- if block.settings.button_label != blank -%}
+                {%- liquid
+                  assign button_anchor = block.settings.button_anchor | strip | remove: '#'
+                  assign button_href = block.settings.button_link
+                  if button_anchor != blank
+                    if button_href == blank
+                      assign button_href = '#' | append: button_anchor
+                    else
+                      assign button_href = button_href | append: '#' | append: button_anchor
+                    endif
+                  endif
+                -%}
                 <a
-                  {% if block.settings.button_link == blank %}
+                  {% if button_href == blank %}
                     role="link" aria-disabled="true"
                   {% else %}
-                    href="{{ block.settings.button_link }}"
+                    href="{{ button_href }}"
                   {% endif %}
                   class="button button--{{ section.settings.button_style }}"
                 >
@@ -423,6 +434,13 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.multirow.blocks.row.settings.button_link.label"
+        },
+        {
+          "type": "text",
+          "id": "button_anchor",
+          "label": "t:sections.multirow.blocks.row.settings.button_anchor.label",
+          "info": "t:sections.multirow.blocks.row.settings.button_anchor.info",
+          "placeholder": "t:sections.multirow.blocks.row.settings.button_anchor.placeholder"
         }
       ]
     }

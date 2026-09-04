@@ -1801,6 +1801,11 @@
             },
             "button_link": {
               "label": "Button link"
+            },
+            "button_anchor": {
+              "label": "Button anchor",
+              "info": "Optional anchor name appended to the button link, e.g. anchor1. Leave the link blank to jump to an anchor on this page.",
+              "placeholder": "anchor1"
             }
           }
         }
