@@ -52,7 +52,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_4_down-anti-allergenic.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "medium",
+        "image_height": "large",
         "mobile_height": "70",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
