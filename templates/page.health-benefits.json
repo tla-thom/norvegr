@@ -254,6 +254,99 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_Adk9fT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7yc7NJ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "The truth is Backed by Science",
+            "heading_size": "hxs",
+            "use_body_font": false
+          }
+        },
+        "text_RLy4Dm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Løviks stressed that, for eight hours a day, for a third of our lives, our heads are on the pillow. Each time we lift or turn our head, dust and air are forced into and out of the pillow. Modern medical research agrees that a synthetic-filled pillow may be the biggest indoor factor when it comes to triggering allergies.<br/><br/>In conclusion, synthetic pillows should be avoided by people with asthma/allergies. The same applies to duvets, even though pillows are closer to your airways.<br/></p>"
+          }
+        },
+        "button_dMPVDp": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7yc7NJ",
+        "text_RLy4Dm",
+        "button_dMPVDp"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "extra-small",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
+    "rich_text_QRjgGw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VTkpga": {
+          "type": "heading",
+          "settings": {
+            "heading": "ADDITIONAL sources",
+            "heading_size": "hxs",
+            "use_body_font": false
+          }
+        },
+        "text_pGCRHm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Løvik M, Gaarder PI, Mehl R. “The house-dust mite: its biology and role in allergy. A synopsis.” Allergy 1998<br/><br/>Sporik R, Chapman MD, Platts-Mills TA. “House dust mite exposure as a cause of asthma.” Clin Exp Allergy 1992; 22:897-906<br/><br/>Omenaas E, Bakke P, Eide GE, Elsayed S, Gulsvik A. “Serum house-dust-mite antibodies and reduced FEV in adults of a Norwegian community.” Am J Respir Crit Care Med 1995; 152: 1158-63<br/><br/>Omenaas E, Bakke P, Eide GE, Elsayed S, Gulsvik A. “Serum house dust mite antibodies: Predictor of increased bronchial responsiveness in adults of a community.” Eur Respir J 1996; 9:919-25<br/><br/>Naspitz CK, Diniz C, Cândida Rizzo M, Fernández-Caldas E, Solé D. “Human scalps as a reservoir of domestic mites.” Lancet 1997; 349:404<br/><br/>Strachan D, Carey IM. “Reduced risk of wheezing in children using feather pillows is confirmed.” BMJ 1997; 314:518<br/><br/>Butland BK, Strachan DP, Anderson HR. “The home environment and asthma symptoms in childhood: two population based case-control studies 13 years apart.” Thorax 1997; 52:618-24<br/><br/>Kilpiö K, Mäkinen-Kiljunen S, Haahtela T, Hannuksela M. “Allergy to feathers.” Allergy 1998; 53:159-64<br/><br/>Linna O, Niinimaki A, Makinen-Kiljunen S. “Immunologic cross-reactivity between hen’s feather and house-dust-mite allergen extracts.” Allergy 1994; 49:795-6<br/><br/><br/></p>"
+          }
+        },
+        "button_MhUnkF": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VTkpga",
+        "text_pGCRHm",
+        "button_MhUnkF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "extra-small",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -269,6 +362,8 @@
     "multirow_jY6FWM",
     "rich_text_rNBgD4",
     "multirow_wcQWrq",
+    "rich_text_Adk9fT",
+    "rich_text_QRjgGw",
     "main"
   ]
 }
