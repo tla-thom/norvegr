@@ -101,7 +101,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "content_max_width": "default",
+        "content_max_width": "smaller",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
