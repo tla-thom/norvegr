@@ -15,7 +15,7 @@
         "heading_NTryEW": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Pillow Guide</em>",
+            "heading": "<em>The Health Benefits of down</em>",
             "heading_size": "h0",
             "use_body_font": true
           }
@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
+        "image": "shopify://shop_images/imgi_6_luxury-norwegian-duvets-pillows.jpg",
         "image_overlay_opacity": 10,
         "image_height": "medium",
         "mobile_height": "default",
@@ -58,7 +58,7 @@
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
-        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "color_scheme": "scheme-1",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": false
