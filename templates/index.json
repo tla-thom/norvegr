@@ -275,7 +275,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "fullpage_width": true,
