@@ -1,0 +1,207 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_YWLYhx": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_QT6Hj3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Designers choose Norvegr</em>",
+            "heading_size": "h0",
+            "use_body_font": true
+          }
+        },
+        "text_rTrpa4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_PyG9yB": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_popup_page_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_popup_page_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QT6Hj3",
+        "text_rTrpa4",
+        "buttons_PyG9yB"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/imgi_12_designers-down-bedding.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "mobile_height": "70",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-b66202a3-3ffc-4019-8413-59cb1f1351b5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_H4F3yh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AjjiYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Over the years, acclaimed designers from across the globe have chosen Norvegr’s products to add an extra level of indulgence to private homes, hotels, aircraft, yachts and commercial projects. In turn they become good friends; trusted experts who we enjoy a close working relationship with. Read on and discover just some of the names who we ar proud to call Norvegr advocates.",
+            "heading_size": "hxs",
+            "use_body_font": false
+          }
+        },
+        "text_yeApbE": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Norvegr are on a mission to elevate your bedroom essentials into a lifelong luxury. We’ve compiled some tips and tricks to help you keep your duvets, pillows and bed linen in pristine condition, and to ensure they’ll stay with you through many years of blissful comfort. </p>"
+          }
+        },
+        "button_3LUM6W": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AjjiYC",
+        "text_yeApbE",
+        "button_3LUM6W"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "default",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 100
+      }
+    },
+    "multirow_jY6FWM": {
+      "type": "multirow",
+      "blocks": {
+        "row_49JpJW": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_bannenberg-rowell1.jpg",
+            "bigger_margin": true,
+            "caption": "Bannenberg & Rowell Design",
+            "heading": "<em>Bannenberg & Rowell is the direct descendant of the convention-breaking studio established by Jon Bannenberg – the universally acknowledged father of modern yacht design – in the early 1960s.</em>",
+            "text": "<p>Dickie Bannenberg and Simon Rowell continue the vision of the founder, and lead the design team in new directions: working with all the major shipyards; designing residences for private clients and real estate developers; collaborating with furniture designers and developing other creative partnerships.<br/> <br/>https://www.bannenbergandrowell.com/</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_69AtiT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_16_bannenberg-rowell4.jpg",
+            "bigger_margin": true,
+            "caption": "Marmol Radziner",
+            "heading": "<em>Founded in 1989, Marmol Radziner is a unique design-build practice led by architects. Since its inception, the firm has developed a reputation for innovative design and precision in applying construction standards.</em>",
+            "text": "<p>Marmol Radziner offer interior design services, as well as custom furniture design and fabrication. In-house designers and master craftsmen can create environments at any level of customisation.<br/> <br/>By adopting the role of the traditional “master builder,” Marmol Radziner integrates a variety of design services with construction capabilities. A team of architects, interior designers, landscape designers, metal fabricators, carpenters, furniture makers, and construction crew possess a depth of knowledge and breadth of experience that cannot be found at a single-discipline firm. Marmol Radziner currently employs over 200 people in our office, shops and in the field.”<br/><br/>https://www.marmol-radziner.com/</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_CQfm6H": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_25_tollgard-desgin-group4.jpg",
+            "bigger_margin": true,
+            "caption": "Rachel Laxer Interiors",
+            "heading": "<em>Established in 2005, Rachel Laxer Interiors is a luxury interior design studio based in London and New York</em>",
+            "text": "<p>The studio focuses on high-end luxury residential homes, hospitality and corporate spaces, delivering bespoke and exclusive interiors to clients.<br/> <br/>Projects span the UK, US and Europe, with the ability to work globally backed by a distributed workforce.<br/> <br/>Their service covers full and partial interior design, furniture design, vintage and antique collectible design sourcing, art curation and a styling service; working from concept through completion of the project.”<br/><br/>https://www.rlaxerinteriors.com/</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_N7yHdH": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_30_tollgard-desgin-group6.jpg",
+            "bigger_margin": true,
+            "caption": "Tollgard Design Group",
+            "heading": "<em>Partners in design and life, Tollgard was founded by Inchbald-educated, husband-and-wife team Staffan and Monique.</em>",
+            "text": "<p>Hailing from Sweden and South Africa respectively, with previous careers in film and documentary making, their nuanced understanding of culture and a love of story-telling through design have been consistently recognised by the world’s leading design publications.”<br/><br/>https://www.tollgard.com/</p>",
+            "button_label": "",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "row_49JpJW",
+        "row_69AtiT",
+        "row_CQfm6H",
+        "row_N7yHdH"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_YWLYhx",
+    "rich_text_H4F3yh",
+    "multirow_jY6FWM",
+    "main"
+  ]
+}
