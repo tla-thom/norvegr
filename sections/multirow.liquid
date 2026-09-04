@@ -46,10 +46,10 @@
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
-        id="anchor{{ forloop.index }}"
         class="image-with-text isolate{{ borders_class }}{{ corners_class }}{{ padding_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         {{ block.shopify_attributes }}
       >
+        <div id="anchor{{ forloop.index }}" class="multirow__anchor-target">
         <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.image_layout contains 'alternate' %}{% cycle odd_class, even_class %}{% else %}{{ odd_class }}{% endif %}">
           <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
             <div
@@ -105,6 +105,7 @@
               {%- endif -%}
             </div>
           </div>
+        </div>
         </div>
       </div>
     {%- endfor -%}

@@ -865,6 +865,10 @@ summary .icon-caret {
 }
 
 /* Multirow section */
+.multirow [id^="anchor"] {
+  scroll-margin-top: calc(var(--header-height, 8rem) + 2rem);
+}
+
 .multirow .image-with-text__text-item {
   display: flex;
   flex-direction: column;
