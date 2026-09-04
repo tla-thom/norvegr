@@ -170,7 +170,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_16_NORVEGR-SPRING_SUMMER2026-042-scaled.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -271,7 +271,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_17_NORVEGR-SPRING_SUMMER2026-054-scaled_1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -372,7 +372,7 @@
       "settings": {
         "image": "shopify://shop_images/Low-res-NorvegrA_W-2024-41.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -529,7 +529,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_21_Norvegr-Factory-Trondheim_005-scaled.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
