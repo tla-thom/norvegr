@@ -32,6 +32,7 @@
         "color_scheme": "scheme-1",
         "no_margin_top": true,
         "image_ratio": "landscape",
+        "image_object_position": "center center",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -41,116 +42,12 @@
         "filter_type": "horizontal",
         "enable_sorting": false,
         "padding_top": 0,
-        "padding_bottom": 20
-      }
-    },
-    "rich_text_hiBEC8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Q3TAbH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Fill Power Explained",
-            "heading_size": "h2",
-            "use_body_font": false
-          }
-        },
-        "text_X86rjb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Fill power indicates how many cubic inches are occupied by one ounce of down. Higher fill power means larger, fluffier and denser down, providing better heat modulation while also being lighter in weight as less feathers are used.</p>"
-          }
-        },
-        "button_RcyKiQ": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Q3TAbH",
-        "text_X86rjb",
-        "button_RcyKiQ"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "content_max_width": "default",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
-    },
-    "image_banner_MYw3xj": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_z64ek7": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ collection.title }}",
-            "heading_size": "h1",
-            "use_body_font": false
-          }
-        },
-        "text_d8khEj": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
-            "text_style": "body"
-          }
-        },
-        "buttons_H8i4JX": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_popup_page_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_popup_page_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_z64ek7",
-        "text_d8khEj",
-        "buttons_H8i4JX"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/norwegian-down-duvets-pillows.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "mobile_height": "70",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "banner",
-    "product-grid",
-    "rich_text_hiBEC8",
-    "image_banner_MYw3xj"
+    "product-grid"
   ]
 }
