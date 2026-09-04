@@ -98,7 +98,16 @@ p,
 .button,
 .button-label,
 .shopify-challenge__button,
-.customer button,
+.customer button {
+  font-family: var(--font-heading-family);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  transition: transform var(--duration-medium) ease, box-shadow var(--duration-medium) ease;
+}
+
 button.shopify-payment-button__button--unbranded,
 .shopify-payment-button__button {
   font-family: var(--font-heading-family);
@@ -107,7 +116,7 @@ button.shopify-payment-button__button--unbranded,
   font-size: 1.2rem;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  transition: transform var(--duration-medium) ease, box-shadow var(--duration-medium) ease;
+  transition: box-shadow var(--duration-medium) ease;
 }
 
 .button::after,
@@ -1325,6 +1334,56 @@ slideshow-component {
   }
 }
 
+/* Care Guide — decorative side images beside Washing, desktop only */
+.care-guide-decorations {
+  display: none;
+}
+
+@media screen and (min-width: 990px) {
+  .section-care-guide-decorations {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .care-guide-decorations {
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .care-guide-decorations__inner {
+    position: relative;
+    height: 0;
+  }
+
+  .care-guide-decorations__img {
+    position: absolute;
+    height: auto;
+    max-width: none;
+  }
+
+  .care-guide-decorations__img--feather {
+    right: 0;
+    top: 4.5rem;
+    width: min(16rem, 11vw);
+  }
+
+  .care-guide-decorations__img--stuff-bag {
+    left: 0;
+    top: 33rem;
+    width: min(24rem, 16vw);
+  }
+
+  .care-guide-decorations__img--pillow {
+    right: 0;
+    top: 54rem;
+    width: min(22rem, 15vw);
+  }
+}
+
 /* Footer prow — under About Norvegr menu, desktop only */
 .footer-prow {
   display: none;
@@ -1448,26 +1507,51 @@ table.tablesorter td a:hover {
 
 /* Global button hover — scale 5% + border highlight, all pages */
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
-  .button:not(.button--tertiary):not([disabled]):hover,
+  .button:not(.button--tertiary):not(.card__buy-now):not([disabled]):hover,
   .shopify-challenge__button:not([disabled]):hover,
   .customer button:not([disabled]):hover {
     transform: scale(1.05);
   }
 
-  .button:not(.button--tertiary):not([disabled]):active,
+  .button:not(.button--tertiary):not(.card__buy-now):not([disabled]):active,
   .shopify-challenge__button:not([disabled]):active,
   .customer button:not([disabled]):active {
     transform: scale(1);
   }
 
-  /* Dynamic checkout (Shop Pay etc.) — no scale */
+  /* Dynamic checkout (Shop Pay etc.) — no scale or lift */
+  .shopify-payment-button,
+  .shopify-payment-button:hover,
+  .shopify-payment-button__button,
+  .shopify-payment-button__button--unbranded,
+  .shopify-payment-button__button [role='button'],
+  shopify-accelerated-checkout,
   .shopify-payment-button__button--unbranded:hover:not([disabled]),
   .shopify-payment-button__button:hover,
+  .shopify-payment-button__button [role='button']:hover,
   .shopify-payment-button__button--unbranded:active:not([disabled]),
   .shopify-payment-button__button:active,
+  .shopify-payment-button__button [role='button']:active,
   .animate--hover-vertical-lift .shopify-payment-button__button:hover,
   .animate--hover-vertical-lift .shopify-payment-button__button:active,
+  .animate--hover-3d-lift .shopify-payment-button__button,
   .animate--hover-3d-lift .shopify-payment-button__button:hover {
+    transform: none !important;
+  }
+
+  /* Collection Buy Now + single-product card image */
+  .card__buy-now:hover,
+  .card__buy-now:active {
+    transform: none;
+  }
+
+  .collection .product-grid--center-single .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child,
+  .collection .product-grid--center-single .card-wrapper:hover .media.media--hover-effect > img + img {
+    transform: none;
+  }
+
+  .animate--hover-vertical-lift .collection .product-grid--center-single .card-wrapper:hover .card--card,
+  .animate--hover-vertical-lift .collection .product-grid--center-single .card-wrapper:hover .card--standard .card__inner {
     transform: none;
   }
 }
