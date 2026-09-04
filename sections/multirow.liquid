@@ -46,6 +46,7 @@
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
+        id="anchor{{ forloop.index }}"
         class="image-with-text isolate{{ borders_class }}{{ corners_class }}{{ padding_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         {{ block.shopify_attributes }}
       >
