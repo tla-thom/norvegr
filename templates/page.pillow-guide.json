@@ -52,7 +52,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_11_pillow-guide-scaled.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "medium",
+        "image_height": "large",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
