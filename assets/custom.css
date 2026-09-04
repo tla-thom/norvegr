@@ -897,6 +897,31 @@ summary .icon-caret {
   .multirow .image-with-text__grid--reverse .image-with-text__content {
     margin-inline: auto;
   }
+
+  .multirow--alt-right-align-text .image-with-text__grid--reverse .image-with-text__content {
+    margin-inline-start: auto;
+    margin-inline-end: 0;
+  }
+
+  .multirow--alt-right-align-text .image-with-text__grid--reverse .image-with-text__content > * {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .multirow--alt-right-align-text
+    .image-with-text__grid:not(.image-with-text__grid--reverse)
+    .image-with-text__content {
+    margin-inline-start: 0;
+    margin-inline-end: auto;
+  }
+
+  .multirow--alt-right-align-text
+    .image-with-text__grid:not(.image-with-text__grid--reverse)
+    .image-with-text__content
+    > * {
+    align-self: flex-start;
+    text-align: left;
+  }
 }
 
 .multirow--fullpage-width .multirow__inner {

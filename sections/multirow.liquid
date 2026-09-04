@@ -42,7 +42,7 @@
   endunless
 -%}
 
-<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}{% if section.settings.no_margin_top %} multirow--no-margin-top{% endif %}">
+<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}{% if section.settings.no_margin_top %} multirow--no-margin-top{% endif %}{% if section.settings.alt_right_align_text %} multirow--alt-right-align-text{% endif %}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
@@ -202,6 +202,13 @@
       ],
       "default": "alternate-left",
       "label": "t:sections.multirow.settings.image_layout.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "alt_right_align_text",
+      "label": "Alt right align text",
+      "default": false,
+      "info": "Right-align text on alternating rows where text is on the left and image is on the right (desktop only)."
     },
     {
       "type": "header",
