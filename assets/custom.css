@@ -107,7 +107,14 @@ button.shopify-payment-button__button--unbranded,
   font-size: 1.2rem;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  transition: transform var(--duration-short) ease, box-shadow var(--duration-short) ease;
+  transition: transform var(--duration-medium) ease, box-shadow var(--duration-medium) ease;
+}
+
+.button::after,
+.shopify-challenge__button::after,
+.customer button::after,
+.shopify-payment-button__button--unbranded::after {
+  transition: box-shadow var(--duration-medium) ease;
 }
 
 /* Styrene (heading font): no font smoothing — Caslon .heading--body-font keeps smoothing below */
