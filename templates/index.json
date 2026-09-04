@@ -279,7 +279,7 @@
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
         "alt_right_align_text": true,
