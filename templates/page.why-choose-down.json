@@ -366,7 +366,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read the Story",
-            "button_link": "shopify://pages/about-norvegr",
+            "button_link": "shopify://pages/the-health-benefits-of-down",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
