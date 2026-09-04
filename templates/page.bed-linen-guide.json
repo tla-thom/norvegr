@@ -136,7 +136,7 @@
             "text": "<p>Gone are the days of fighting for the bed sheets Read our duvet guide and discover how the Scandinavian approach to sleep is perfect for peace.</p>",
             "button_label": "Duvet Guide",
             "button_link": "shopify://pages/duvet-guide",
-            "button_anchor": ""
+            "button_anchor": "anchor2"
           }
         }
       },
