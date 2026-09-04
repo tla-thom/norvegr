@@ -444,7 +444,8 @@
             "heading": "",
             "text": "<p>They might appear to be more or less the same thing, but there are important differences between duvets and comforters. It’s worth understanding the distinction when you’re choosing your bedding. <br/><br/>Put simply, most people in the US use the term comforters, while Europeans refer to duvets. However, many individuals who speak of comforters actually mean duvets without realising. Both are a type of thick, fluffy bedding that covers you at night to keep you warm and comfortable. However duvets will usually have a removable cover, making them easier to clean, maintain and customise. Comforters usually have a built-in cover, or no cover at all. <br/><br/>Comforters also use more stitching, which can be a cover for poor filling materials and distribution. They will also typically provide a flatter, less-fluffy experience which calls for more blankets and top sheets. This can be appealing for those who prefer to be layered up when they sleep.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_69AtiT": {
@@ -456,7 +457,8 @@
             "heading": "",
             "text": "<p>The world is waking up to the benefits of the Scandinavian sleeping method. Popular in Norway, Sweden and Denmark, co-sleeping couples will often use two duvets on their shared bed, meaning each individual can have a personal sleeping experience.<br/><br/>The benefits of this sleeping style can be game changing. Not only will you have complete autonomy over you sleep, letting you cosy up or shed the covers without bothering your partner, but it also means you can use different duvet types to match your personal body temperature, and importantly, your nocturnal temperature fluctuations.<br/><br/>It eliminates the dreaded issue of blanket hogging, and frequently means a more restful nights’ sleep with minimal disturbances.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         }
       },
@@ -469,6 +471,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": true,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -477,6 +480,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
