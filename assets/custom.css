@@ -1450,18 +1450,25 @@ table.tablesorter td a:hover {
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
   .button:not(.button--tertiary):not([disabled]):hover,
   .shopify-challenge__button:not([disabled]):hover,
-  .customer button:not([disabled]):hover,
-  .shopify-payment-button__button--unbranded:hover:not([disabled]),
-  .shopify-payment-button__button:hover {
+  .customer button:not([disabled]):hover {
     transform: scale(1.05);
   }
 
   .button:not(.button--tertiary):not([disabled]):active,
   .shopify-challenge__button:not([disabled]):active,
-  .customer button:not([disabled]):active,
-  .shopify-payment-button__button--unbranded:active:not([disabled]),
-  .shopify-payment-button__button:active {
+  .customer button:not([disabled]):active {
     transform: scale(1);
+  }
+
+  /* Dynamic checkout (Shop Pay etc.) — no scale */
+  .shopify-payment-button__button--unbranded:hover:not([disabled]),
+  .shopify-payment-button__button:hover,
+  .shopify-payment-button__button--unbranded:active:not([disabled]),
+  .shopify-payment-button__button:active,
+  .animate--hover-vertical-lift .shopify-payment-button__button:hover,
+  .animate--hover-vertical-lift .shopify-payment-button__button:active,
+  .animate--hover-3d-lift .shopify-payment-button__button:hover {
+    transform: none;
   }
 }
 
