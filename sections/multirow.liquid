@@ -42,7 +42,7 @@
   endunless
 -%}
 
-<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}{% if section.settings.no_margin_top %} multirow--no-margin-top{% endif %}{% if section.settings.alt_right_align_text %} multirow--alt-right-align-text{% endif %}">
+<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}{% if section.settings.fullpage_width %} multirow--fullpage-width{% endif %}{% if section.settings.remove_horizontal_padding %} multirow--no-horizontal-padding{% endif %}{% if section.settings.no_margin_top %} multirow--no-margin-top{% endif %}{% if section.settings.alt_right_align_text %} multirow--alt-right-align-text{% endif %}{% if section.settings.center_content_block %} multirow--center-content-block{% endif %}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
@@ -208,7 +208,7 @@
       "id": "alt_right_align_text",
       "label": "Alt right align text",
       "default": false,
-      "info": "Right-align text on alternating rows where text is on the left and image is on the right (desktop only)."
+      "info": "Right-align text on alternating rows where text is on the left and image is on the right (desktop only). Mobile always uses left-aligned text."
     },
     {
       "type": "header",
@@ -334,6 +334,13 @@
       ],
       "default": "left",
       "label": "t:sections.multirow.settings.desktop_content_alignment.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "center_content_block",
+      "label": "Center content block",
+      "default": false,
+      "info": "Horizontally centers the text block within its column while keeping its max width. Text alignment is controlled separately above."
     },
     {
       "type": "select",
