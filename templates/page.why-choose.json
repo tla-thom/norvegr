@@ -140,7 +140,7 @@
             "text": "<p>Every purchase with Norvegr is a lifelong product. From our iconic duvets to pillows and mattress toppers, each item can be replaced and renewed; becoming a long-lasting and intrinsic part of the fabric of your bedroom. Our refurbishment services mean that each product can stay with you for up to half a century. A purchase with us becomes a long-term investment, while helping us creating a circularly sustainable business model.</p>",
             "button_label": "READ MORE",
             "button_link": "shopify://pages/frequently-asked-questions",
-            "button_anchor": ""
+            "button_anchor": "anchor-res"
           }
         },
         "row_Pm9qTR": {
@@ -197,6 +197,7 @@
         "image_height": "large",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": false,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -205,6 +206,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
