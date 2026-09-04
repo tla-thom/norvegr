@@ -166,6 +166,11 @@
         "padding_bottom": 0
       }
     },
+    "care_guide_decorations_k4prML": {
+      "type": "care-guide-decorations",
+      "name": "Care Guide decor",
+      "settings": {}
+    },
     "rich_text_Rz7XDA": {
       "type": "rich-text",
       "blocks": {
@@ -209,75 +214,6 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 72,
-        "padding_bottom": 0
-      }
-    },
-    "multicolumn_ae7VMk": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_B6etFx": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_8_stuff-bag.png",
-            "title": "",
-            "heading_size": "h2",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_8zP8bj": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_7_feather.png",
-            "title": "",
-            "heading_size": "h2",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_TYkhXy": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/imgi_9_pillow.png",
-            "title": "",
-            "heading_size": "h2",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_B6etFx",
-        "column_8zP8bj",
-        "column_TYkhXy"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "contain_image": true,
-        "text_on_image": false,
-        "button_label": "",
-        "button_link": "",
-        "full_width": false,
-        "no_padding": false,
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "column_link_button_style": false,
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "3",
-        "swipe_on_mobile": false,
-        "mobile_carousel_autoplay": false,
-        "mobile_carousel_autoplay_speed": 5,
-        "mobile_custom_image_size": false,
-        "mobile_image_size_percent": 100,
-        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -379,22 +315,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "why_choose_down_decorations_eT3CY9": {
-      "type": "why-choose-down-decorations",
-      "name": "Why Choose Down decor",
-      "settings": {}
     }
   },
   "order": [
     "image_banner_E77hzD",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
+    "care_guide_decorations_k4prML",
     "rich_text_Rz7XDA",
-    "multicolumn_ae7VMk",
     "rich_text_i4wzGJ",
     "rich_text_nw9yCa",
-    "main",
-    "why_choose_down_decorations_eT3CY9"
+    "main"
   ]
 }
