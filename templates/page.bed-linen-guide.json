@@ -293,7 +293,7 @@
         "button_label": "",
         "button_link": "shopify://collections/bed-linen",
         "full_width": false,
-        "no_padding": false,
+        "no_padding": true,
         "columns_desktop": 5,
         "column_alignment": "left",
         "column_link_button_style": false,
