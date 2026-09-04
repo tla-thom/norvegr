@@ -31,6 +31,7 @@
         "columns_mobile": "1",
         "color_scheme": "scheme-1",
         "no_margin_top": true,
+        "center_single_product": true,
         "image_ratio": "landscape",
         "image_shape": "default",
         "show_secondary_image": false,

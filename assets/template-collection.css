@@ -5,6 +5,14 @@
   }
 }
 
+@media screen and (min-width: 750px) {
+  .collection .product-grid--center-single .grid__item:only-child {
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 0;
+  }
+}
+
 @media screen and (max-width: 989px) {
   .collection .slider.slider--tablet {
     margin-bottom: 1.5rem;
