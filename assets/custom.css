@@ -778,6 +778,32 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
     0 0 0 calc(var(--buttons-border-width) + 1px) #988140;
 }
 
+/* Cart page + drawer: checkout button matches product Add to cart gold */
+.cart__checkout-button {
+  --color-button: 152, 129, 64;
+  --color-button-text: 255, 255, 255;
+  --alpha-button-background: 1;
+  color: #fff !important;
+  background-color: #988140 !important;
+  transition: box-shadow var(--duration-medium) ease;
+}
+
+.cart__checkout-button::after {
+  --border-opacity: 1;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) #988140;
+}
+
+.cart__checkout-button:hover:not([disabled]) {
+  color: #fff !important;
+  background-color: #988140 !important;
+}
+
+.cart__checkout-button:hover:not([disabled])::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(152, 129, 64, 1),
+    0 0 0 calc(var(--buttons-border-width) + 1px) #988140;
+}
+
 /* Shop Pay — greyscale on storefront (product, drawer) */
 shop-pay-wallet-button,
 shop-pay-button,
