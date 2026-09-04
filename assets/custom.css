@@ -778,14 +778,26 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
     0 0 0 calc(var(--buttons-border-width) + 1px) #988140;
 }
 
-/* Shop Pay — greyscale on storefront (product, cart, drawer) */
+/* Shop Pay — greyscale on storefront (product, drawer) */
 shop-pay-wallet-button,
 shop-pay-button,
 shopify-accelerated-checkout,
-shopify-accelerated-checkout-cart,
 .shopify-payment-button .shopify-payment-button__button:not(.shopify-payment-button__button--unbranded) {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+}
+
+/* Cart page — dynamic checkout buttons in full colour */
+.cart__dynamic-checkout-buttons shopify-accelerated-checkout-cart,
+.cart__dynamic-checkout-buttons shopify-accelerated-checkout,
+.cart__dynamic-checkout-buttons shop-pay-button,
+.cart__dynamic-checkout-buttons shop-pay-wallet-button,
+.additional-checkout-buttons shopify-accelerated-checkout-cart,
+.additional-checkout-buttons shopify-accelerated-checkout,
+.additional-checkout-buttons shop-pay-button,
+.additional-checkout-buttons shop-pay-wallet-button {
+  filter: none;
+  -webkit-filter: none;
 }
 
 /* Sign in with Shop — login page + footer follow button */
