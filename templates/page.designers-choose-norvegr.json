@@ -52,7 +52,7 @@
       "settings": {
         "image": "shopify://shop_images/imgi_12_designers-down-bedding.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "medium",
+        "image_height": "large",
         "mobile_height": "70",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -123,7 +123,8 @@
             "heading": "<em>Bannenberg & Rowell is the direct descendant of the convention-breaking studio established by Jon Bannenberg – the universally acknowledged father of modern yacht design – in the early 1960s.</em>",
             "text": "<p>Dickie Bannenberg and Simon Rowell continue the vision of the founder, and lead the design team in new directions: working with all the major shipyards; designing residences for private clients and real estate developers; collaborating with furniture designers and developing other creative partnerships.<br/> <br/>https://www.bannenbergandrowell.com/</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_69AtiT": {
@@ -135,7 +136,8 @@
             "heading": "<em>Founded in 1989, Marmol Radziner is a unique design-build practice led by architects. Since its inception, the firm has developed a reputation for innovative design and precision in applying construction standards.</em>",
             "text": "<p>Marmol Radziner offer interior design services, as well as custom furniture design and fabrication. In-house designers and master craftsmen can create environments at any level of customisation.<br/> <br/>By adopting the role of the traditional “master builder,” Marmol Radziner integrates a variety of design services with construction capabilities. A team of architects, interior designers, landscape designers, metal fabricators, carpenters, furniture makers, and construction crew possess a depth of knowledge and breadth of experience that cannot be found at a single-discipline firm. Marmol Radziner currently employs over 200 people in our office, shops and in the field.”<br/><br/>https://www.marmol-radziner.com/</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_CQfm6H": {
@@ -147,7 +149,8 @@
             "heading": "<em>Established in 2005, Rachel Laxer Interiors is a luxury interior design studio based in London and New York</em>",
             "text": "<p>The studio focuses on high-end luxury residential homes, hospitality and corporate spaces, delivering bespoke and exclusive interiors to clients.<br/> <br/>Projects span the UK, US and Europe, with the ability to work globally backed by a distributed workforce.<br/> <br/>Their service covers full and partial interior design, furniture design, vintage and antique collectible design sourcing, art curation and a styling service; working from concept through completion of the project.”<br/><br/>https://www.rlaxerinteriors.com/</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_N7yHdH": {
@@ -159,7 +162,8 @@
             "heading": "<em>Partners in design and life, Tollgard was founded by Inchbald-educated, husband-and-wife team Staffan and Monique.</em>",
             "text": "<p>Hailing from Sweden and South Africa respectively, with previous careers in film and documentary making, their nuanced understanding of culture and a love of story-telling through design have been consistently recognised by the world’s leading design publications.”<br/><br/>https://www.tollgard.com/</p>",
             "button_label": "",
-            "button_link": "#"
+            "button_link": "#",
+            "button_anchor": ""
           }
         }
       },
@@ -174,6 +178,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-right",
+        "alt_right_align_text": false,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -182,6 +187,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
