@@ -122,7 +122,8 @@
             "heading": "",
             "text": "<p>A fabric’s thread count signifies the number of horizontal (weft) and vertical (warp) threads per square inch.Bed linen thread counts vary from roughly 100 to more than 1,000. The obsession with thread count has driven numbers ever higher, even though the overall quality of the fabric can be unexceptional. Often threads can be artificially twisted together to produce a very high thread count. Fabric that is overly dense will easily become stiff, proving difficult to wash, and will not breathe well. That’s why we have carefully selected a 300 thread count sateen for our bed linen.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_69AtiT": {
@@ -134,7 +135,8 @@
             "heading": "",
             "text": "<p>Gone are the days of fighting for the bed sheets Read our duvet guide and discover how the Scandinavian approach to sleep is perfect for peace.</p>",
             "button_label": "Duvet Guide",
-            "button_link": "shopify://pages/duvet-guide"
+            "button_link": "shopify://pages/duvet-guide",
+            "button_anchor": ""
           }
         }
       },
@@ -147,6 +149,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": true,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -155,6 +158,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
