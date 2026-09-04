@@ -35,10 +35,6 @@
   margin: 0;
 }
 
-.anchor-nav__link {
-  z-index: 0;
-}
-
 .anchor-nav__link:focus-visible {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;

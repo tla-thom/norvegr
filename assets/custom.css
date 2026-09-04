@@ -107,6 +107,7 @@ button.shopify-payment-button__button--unbranded,
   font-size: 1.2rem;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+  transition: transform var(--duration-short) ease, box-shadow var(--duration-short) ease;
 }
 
 /* Styrene (heading font): no font smoothing — Caslon .heading--body-font keeps smoothing below */
@@ -1403,32 +1404,46 @@ table.tablesorter td a:hover {
   }
 }
 
+/* Global button hover — scale 5% + border highlight, all pages */
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+  .button:not(.button--tertiary):not([disabled]):hover,
+  .shopify-challenge__button:not([disabled]):hover,
+  .customer button:not([disabled]):hover,
+  .shopify-payment-button__button--unbranded:hover:not([disabled]),
+  .shopify-payment-button__button:hover {
+    transform: scale(1.05);
+  }
+
+  .button:not(.button--tertiary):not([disabled]):active,
+  .shopify-challenge__button:not([disabled]):active,
+  .customer button:not([disabled]):active,
+  .shopify-payment-button__button--unbranded:active:not([disabled]),
+  .shopify-payment-button__button:active {
+    transform: scale(1);
+  }
+
+  .button:not([disabled]).button--secondary:hover::after,
+  .shopify-challenge__button:hover::after,
+  .customer button:not([disabled]):hover::after,
+  .shopify-payment-button__button--unbranded:hover::after {
+    --border-offset: 0;
+  }
+}
+
 /* Override Vertical lift hover: scale 5% instead of translateY */
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
   .animate--hover-vertical-lift .card-wrapper .card--card,
-  .animate--hover-vertical-lift .card-wrapper .card--standard .card__inner,
-  .animate--hover-vertical-lift .button:not(.button--tertiary),
-  .animate--hover-vertical-lift .shopify-challenge__button,
-  .animate--hover-vertical-lift .customer button,
-  .animate--hover-vertical-lift .shopify-payment-button__button {
+  .animate--hover-vertical-lift .card-wrapper .card--standard .card__inner {
     transform-origin: center;
   }
 
   .animate--hover-vertical-lift .card-wrapper:hover .card--card,
-  .animate--hover-vertical-lift .card-wrapper:hover .card--standard .card__inner,
-  .animate--hover-vertical-lift .button:not(.button--tertiary):not([disabled]):hover,
-  .animate--hover-vertical-lift .shopify-challenge__button:not([disabled]):hover,
-  .animate--hover-vertical-lift .customer button:not([disabled]):hover,
-  .animate--hover-vertical-lift .shopify-payment-button__button:hover {
+  .animate--hover-vertical-lift .card-wrapper:hover .card--standard .card__inner {
     transform: scale(1.05);
   }
 
   .animate--hover-vertical-lift .card-wrapper:active .card--card,
-  .animate--hover-vertical-lift .card-wrapper:active .card--standard .card__inner,
-  .animate--hover-vertical-lift .button:not(.button--tertiary):not([disabled]):active,
-  .animate--hover-vertical-lift .shopify-challenge__button:not([disabled]):active,
-  .animate--hover-vertical-lift .customer button:not([disabled]):active,
-  .animate--hover-vertical-lift .shopify-payment-button__button:active {
+  .animate--hover-vertical-lift .card-wrapper:active .card--standard .card__inner {
     transform: scale(1);
   }
 }
