@@ -735,6 +735,7 @@ variant-selects[data-dependent-options] .dependent-option--hidden {
   --alpha-button-background: 1;
   color: #fff !important;
   background-color: #988140 !important;
+  transition: box-shadow var(--duration-medium) ease;
 }
 
 .product-form .product-form__submit::after {
@@ -1507,25 +1508,32 @@ table.tablesorter td a:hover {
 
 /* Global button hover — scale 5% + border highlight, all pages */
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
-  .button:not(.button--tertiary):not(.card__buy-now):not([disabled]):hover,
+  .button:not(.button--tertiary):not(.card__buy-now):not(.product-form__submit):not([disabled]):hover,
   .shopify-challenge__button:not([disabled]):hover,
   .customer button:not([disabled]):hover {
     transform: scale(1.05);
   }
 
-  .button:not(.button--tertiary):not(.card__buy-now):not([disabled]):active,
+  .button:not(.button--tertiary):not(.card__buy-now):not(.product-form__submit):not([disabled]):active,
   .shopify-challenge__button:not([disabled]):active,
   .customer button:not([disabled]):active {
     transform: scale(1);
   }
 
-  /* Dynamic checkout (Shop Pay etc.) — no scale or lift */
+  /* Product page purchase buttons — no scale or lift */
+  .product-form .product-form__submit:hover:not([disabled]),
+  .product-form .product-form__submit:active:not([disabled]),
+  .animate--hover-vertical-lift .product-form .product-form__submit:hover:not([disabled]),
+  .animate--hover-vertical-lift .product-form .product-form__submit:active:not([disabled]),
+  .animate--hover-3d-lift .product-form .product-form__submit:hover:not([disabled]),
+  .animate--hover-3d-lift .product-form .product-form__submit:active:not([disabled]),
   .shopify-payment-button,
   .shopify-payment-button:hover,
   .shopify-payment-button__button,
   .shopify-payment-button__button--unbranded,
   .shopify-payment-button__button [role='button'],
   shopify-accelerated-checkout,
+  shopify-accelerated-checkout:hover,
   .shopify-payment-button__button--unbranded:hover:not([disabled]),
   .shopify-payment-button__button:hover,
   .shopify-payment-button__button [role='button']:hover,
