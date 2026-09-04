@@ -166,11 +166,6 @@
         "padding_bottom": 0
       }
     },
-    "care_guide_decorations_8Kp2mQ": {
-      "type": "care-guide-decorations",
-      "name": "Care Guide decor",
-      "settings": {}
-    },
     "rich_text_Rz7XDA": {
       "type": "rich-text",
       "blocks": {
@@ -259,7 +254,6 @@
         "column_8zP8bj",
         "column_TYkhXy"
       ],
-      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
@@ -283,7 +277,7 @@
         "mobile_carousel_autoplay_speed": 5,
         "mobile_custom_image_size": false,
         "mobile_image_size_percent": 100,
-        "padding_top": 72,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -329,7 +323,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 72,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -374,7 +368,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 72,
+        "padding_top": 0,
         "padding_bottom": 80
       }
     },
@@ -385,16 +379,22 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "why_choose_down_decorations_eT3CY9": {
+      "type": "why-choose-down-decorations",
+      "name": "Why Choose Down decor",
+      "settings": {}
     }
   },
   "order": [
     "image_banner_E77hzD",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
-    "care_guide_decorations_8Kp2mQ",
     "rich_text_Rz7XDA",
+    "multicolumn_ae7VMk",
     "rich_text_i4wzGJ",
     "rich_text_nw9yCa",
-    "main"
+    "main",
+    "why_choose_down_decorations_eT3CY9"
   ]
 }
