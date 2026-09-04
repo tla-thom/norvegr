@@ -1421,13 +1421,6 @@ table.tablesorter td a:hover {
   .shopify-payment-button__button:active {
     transform: scale(1);
   }
-
-  .button:not([disabled]).button--secondary:hover::after,
-  .shopify-challenge__button:hover::after,
-  .customer button:not([disabled]):hover::after,
-  .shopify-payment-button__button--unbranded:hover::after {
-    --border-offset: 0;
-  }
 }
 
 /* Override Vertical lift hover: scale 5% instead of translateY */
