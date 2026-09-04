@@ -282,6 +282,7 @@
         "image_height": "large",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": true,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
