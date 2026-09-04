@@ -291,6 +291,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": true,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
