@@ -52,7 +52,7 @@
       "settings": {
         "image": "shopify://shop_images/Norwegian_fjord_from_brochure_ccd82b92-868b-49f2-a238-e791aa4a4c46.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "mobile_height": "default",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -76,7 +76,8 @@
             "heading": "<em>Norvegr follows a legacy in creating the most comfortable down duvets and pillows in the world. </em>",
             "text": "<p>A family business spanning three generations, everything we make is handcrafted to order in Trondheim, Norway, and shipped globally. All of our products are natural, sustainable, renewable and designed to last a lifetime.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_69AtiT": {
@@ -88,7 +89,8 @@
             "heading": "",
             "text": "<p>We use unique construction techniques to create ultra-light, ultra-soft products – like sleeping on a cloud. A perfect balance between insulation and breathability ensures supreme comfort and an undisturbed rest throughout the night.</p><p>Our products will stay with you for a lifetime. Both our duvets and pillows can be returned every 10 and 5 years respectively for complete renewal. The down is restored by steam and harmless UV irradiation, then refilled and topped up. Casings are also replaced. This preserves their value for decades while sparing precious natural resources.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_CQfm6H": {
@@ -100,7 +102,8 @@
             "heading": "<em>Our clients embrace some of the world’s foremost interior designers, all regulars on Architectural Digest’s AD100 and House & Garden’s Top 100 lists. They include:</em>",
             "text": "<ul><li>Designers for – and manufacturers of – private aircraft and yachts</li><li>Belmond, a collection of five-star hotels, trains and river cruisers</li><li>Select premier retailers and showrooms in Europe and America</li></ul><h2><em>At Norvegr, we proudly draw on our Viking heritage to create extraordinary bedding for an exclusive international clientele.</em></h2>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         }
       },
@@ -114,6 +117,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-right",
+        "alt_right_align_text": false,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -122,6 +126,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
@@ -187,7 +192,8 @@
             "heading": "<em>Queen Asa was not the only Viking enraptured by eiderdown.</em>",
             "text": "<p>In 870 AD, Ottar the Viking arrived at the palace of King Alfred the Great, in the Anglo-Saxon kingdom of Wessex. He captivated the royal court with colourful stories of his intrepid journey. As the fire blazed and the wine was poured, he explained the simple motive behind his quest: “I wanted to find out how far north my country ended.”</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_7cjy37": {
@@ -199,7 +205,8 @@
             "heading": "",
             "text": "<p>Ottar had set sail from Hålogaland, near the Arctic Circle, and voyaged the ‘North Way’ – known as ‘Norvegr’. During his travels he collected fur pelts, feathers and precious down. After many months, his voyage took him south along the Norwegian coast to Denmark, and finally to the court of King Alfred, where his treasures were eagerly received. Alfred was so impressed that he added Ottar’s stories to his version of the Compendious History of the World.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         }
       },
@@ -212,6 +219,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": false,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -220,6 +228,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
