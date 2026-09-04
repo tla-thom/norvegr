@@ -302,9 +302,8 @@
         },
         "button_gTLXca": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "WHY CHOOSE NORVEGR",
+            "button_label": "Back to top",
             "button_link": "#",
             "button_style_secondary": true,
             "button_label_2": "",
