@@ -122,7 +122,8 @@
             "heading": "",
             "text": "<p>Before first use or after extended storage, we recommend airing your duvets and pillows for a few hours. They can be aired inside or outside, but should not be left in direct sunlight. Alternatively, they can be tumble dried on medium heat for 30 minutes to speed up the process, and left to rest afterwards.<br/><br/>When making the bed, air duvets and pillows regularly. Fluff pillows each morning, and leave the duvet folded once lengthwise for an hour or so before making the bed. This allows any trapped moisture to escape.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_69AtiT": {
@@ -134,7 +135,8 @@
             "heading": "",
             "text": "<p>Bed linens should be machine washed with warm water and on a gentle cycle. Avoid using bleach, as this may weaken the fabric and cause yellowing or decoloration. Avoid fabric softeners as these can also damage the quality of the fabric. Wash dark colours separately.<br/><br/>Linens can tumble dry on a low heat, but should be removed while still damp. This is the best time to iron them, using a cotton setting to restore their inherent lustre and sheen.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         }
       },
@@ -147,6 +149,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": true,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -155,6 +158,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
