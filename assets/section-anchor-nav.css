@@ -24,26 +24,7 @@
 }
 
 .anchor-nav__link {
-  font-family: var(--font-heading-family);
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  font-size: 1.1rem;
-  border: var(--variant-pills-border-width) solid #ccc;
-  background-color: transparent;
-  color: rgb(var(--color-foreground));
-  border-radius: var(--variant-pills-radius);
-  display: inline-block;
-  padding: 1rem 2rem;
-  line-height: 1;
-  text-align: center;
-  text-decoration: none;
-  transition: border var(--duration-short) ease, color var(--duration-short) ease;
-}
-
-.anchor-nav__link:hover {
-  border-color: #000;
-  color: #000;
+  z-index: 0;
 }
 
 .anchor-nav__link:focus-visible {

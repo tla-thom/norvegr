@@ -119,34 +119,32 @@
           </h2>
         {%- endif -%}
       {%- endfor -%}
+
+      {%- if anchor_blocks.size > 0 -%}
+        <div class="banner-anchor-nav__nav">
+          <nav
+            class="anchor-nav__nav"
+            aria-label="{{ section.settings.accessibility_label | escape }}"
+          >
+            <ul class="anchor-nav__list anchor-nav__list--{{ section.settings.anchor_content_alignment }}">
+              {%- for block in anchor_blocks -%}
+                {%- liquid
+                  assign anchor_id = block.settings.anchor_id | strip | remove: '#'
+                -%}
+                {%- if block.settings.label != blank and anchor_id != blank -%}
+                  <li class="anchor-nav__item" {{ block.shopify_attributes }}>
+                    <a href="#{{ anchor_id | escape }}" class="button button--secondary anchor-nav__link">
+                      {{- block.settings.label | escape -}}
+                    </a>
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </nav>
+        </div>
+      {%- endif -%}
     </div>
   </div>
-
-  {%- if anchor_blocks.size > 0 -%}
-    <div class="banner-anchor-nav__nav color-{{ section.settings.color_scheme }} gradient">
-      <div class="page-width">
-        <nav
-          class="anchor-nav__nav"
-          aria-label="{{ section.settings.accessibility_label | escape }}"
-        >
-          <ul class="anchor-nav__list anchor-nav__list--{{ section.settings.anchor_content_alignment }}">
-            {%- for block in anchor_blocks -%}
-              {%- liquid
-                assign anchor_id = block.settings.anchor_id | strip | remove: '#'
-              -%}
-              {%- if block.settings.label != blank and anchor_id != blank -%}
-                <li class="anchor-nav__item" {{ block.shopify_attributes }}>
-                  <a href="#{{ anchor_id | escape }}" class="anchor-nav__link">
-                    {{- block.settings.label | escape -}}
-                  </a>
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        </nav>
-      </div>
-    </div>
-  {%- endif -%}
 </div>
 
 {% schema %}

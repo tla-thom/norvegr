@@ -28,7 +28,7 @@
             -%}
             {%- if block.settings.label != blank and anchor_id != blank -%}
               <li class="anchor-nav__item" {{ block.shopify_attributes }}>
-                <a href="#{{ anchor_id | escape }}" class="anchor-nav__link">
+                <a href="#{{ anchor_id | escape }}" class="button button--secondary anchor-nav__link">
                   {{- block.settings.label | escape -}}
                 </a>
               </li>
