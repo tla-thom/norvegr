@@ -122,7 +122,8 @@
             "heading": "",
             "text": "<p>When compressed, down loses some of its ability to insulate and breathe. However its natural softness and irrepressible bounce still make it a wonderful choice for pillow filling. Feathers are usually added to increase firmness; the more feathers, the firmer the product. Our feathers are never obtrusive. They are meticulously crafted to ensure a soothing, uninterrupted night of sleep.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         },
         "row_69AtiT": {
@@ -134,7 +135,8 @@
             "heading": "",
             "text": "<p>Your pillow height can also be a personal choice that depends on your sleep style. If you find your head frequently overheats, a low and firm pillow would be an ideal choice to allow you more space to breathe. A high pillow adds an elevated sense of sink-in indulgence, and can also be good for belly sleepers who prefer to use pillows to support their legs and body.</p>",
             "button_label": "",
-            "button_link": ""
+            "button_link": "",
+            "button_anchor": ""
           }
         }
       },
@@ -147,6 +149,7 @@
         "image_height": "medium",
         "desktop_image_width": "medium",
         "image_layout": "alternate-left",
+        "alt_right_align_text": true,
         "fullpage_width": true,
         "remove_horizontal_padding": true,
         "no_margin_top": false,
@@ -155,6 +158,7 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "center_content_block": false,
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
