@@ -152,6 +152,108 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_rNBgD4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p4Dm6q": {
+          "type": "heading",
+          "settings": {
+            "heading": "The truth is Backed by Science",
+            "heading_size": "hxs",
+            "use_body_font": false
+          }
+        },
+        "text_pYRLRy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As far back as 1998, the issue of asthma caused by synthetic materials was carefully researched by Martinus Løvik, who published a paper in the Journal of the Norwegian Medical Association (Tidsskrift for den Norske Lægeforening nr. 10,1998;118:1585-7). Løvik stressed that the advice for asthma sufferers to switch from down to synthetic filling was based on tradition and belief rather than research and analysis. His article referenced two British and New Zealand studies examining the content of pillows and duvets and exploring whether that content contributed to serious asthma.<br/><br/></p>"
+          }
+        },
+        "button_VLFTiQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "WHY CHOOSE NORVEGR",
+            "button_link": "#",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_p4Dm6q",
+        "text_pYRLRy",
+        "button_VLFTiQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "content_max_width": "extra-small",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
+    "multirow_wcQWrq": {
+      "type": "multirow",
+      "blocks": {
+        "row_VybhtV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_8_anti-allergy-down-pillows.jpg",
+            "bigger_margin": false,
+            "caption": "The Conclusions?",
+            "heading": "<em>It’s what’s inside the pillow that counts.</em>",
+            "text": "<p>The research papers were: Strachan DP, Carey IM “Home environment and severe asthma in adolescence; a population based case-control study.” BMJ 1995; 311:1053-6 Kemp TJ, Siebers RW, Fishwick D, O’Grady GB, Fitzharris P, Crane J. “House dust mite allergen in pillows.” BMJ 1996; 313:916.<br/><br/>The first article focused on British children suffering from serious breathing problems. Two key factors were shown to be significant: living with fur-coated pets increased breathing problems, while pillows filled with down had a significant protective effect in comparison with synthetic pillows.<br/><br/>The second paper compared the ability of down pillows and synthetic pillows to increase the risk of severe asthma. It concluded that synthetic pillows could contain as many as eight times more allergens from mites than down-filled pillows, and that it was the allergy to mites that was the major factor.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_anchor": ""
+          }
+        },
+        "row_KVqMJQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/imgi_9_down-pillows-better-asthma-allergies.jpg",
+            "bigger_margin": false,
+            "caption": "",
+            "heading": "<em>The research also highlighted that both pillows with polyester filling and pillows with down filling had the same type of pillow shell made from down-proof cotton textile. This negated earlier claims that the more loosely woven shells of down pillows made them more penetrable and therefore more susceptible to mites.</em>",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_anchor": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_VybhtV",
+        "row_KVqMJQ"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "alt_right_align_text": false,
+        "fullpage_width": true,
+        "remove_horizontal_padding": true,
+        "no_margin_top": false,
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "center_content_block": false,
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -165,6 +267,8 @@
     "image_banner_E77hzD",
     "rich_text_H4F3yh",
     "multirow_jY6FWM",
+    "rich_text_rNBgD4",
+    "multirow_wcQWrq",
     "main"
   ]
 }
